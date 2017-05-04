@@ -1,0 +1,16 @@
+PODS:
+  - HyperioniOS (0.1.0)
+
+DEPENDENCIES:
+  - HyperioniOS (from `../`)
+
+EXTERNAL SOURCES:
+  HyperioniOS:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HyperioniOS: c08062945acbe1ab6e5f2b57c10142225c46d769
+
+PODFILE CHECKSUM: 14863e8a95aff042b29b517897f6734c96144c67
+
+COCOAPODS: 1.1.1

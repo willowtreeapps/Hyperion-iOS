@@ -1,0 +1,22 @@
+{
+  "name": "HyperioniOS",
+  "version": "0.1.0",
+  "summary": "A short description of HyperioniOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/chrsmys/HyperioniOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chrsmys": "chris.mays@willowtreeapps.com"
+  },
+  "source": {
+    "git": "https://github.com/chrsmys/HyperioniOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HyperioniOS/Classes/**/*"
+}

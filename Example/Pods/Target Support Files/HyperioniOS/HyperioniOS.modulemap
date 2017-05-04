@@ -1,0 +1,6 @@
+framework module HyperioniOS {
+  umbrella header "HyperioniOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

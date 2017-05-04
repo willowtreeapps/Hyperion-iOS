@@ -7,6 +7,7 @@
 //
 
 #import "WTAViewController.h"
+#import "DebuggingWindow.h"
 
 @interface WTAViewController ()
 
