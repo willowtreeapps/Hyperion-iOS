@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HyperioniOS_Example' do
+  pod 'HyperioniOS', :path => '../'
+
+  target 'HyperioniOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
