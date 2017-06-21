@@ -24,7 +24,7 @@
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "View\\ debugger/**/*"
+      "source_files": "Core/**/*"
     },
     {
       "name": "AttributesInspector",

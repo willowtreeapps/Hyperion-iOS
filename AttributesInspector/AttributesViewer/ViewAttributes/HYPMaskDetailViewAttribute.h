@@ -7,6 +7,7 @@
 //
 
 #import "ViewAttribute.h"
+#import <UIKit/UIKit.h>
 
 @interface HYPMaskDetailViewAttribute : DetailViewAttribute
 

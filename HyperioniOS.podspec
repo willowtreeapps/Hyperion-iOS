@@ -40,7 +40,7 @@ Hyperion is a view debugging tool that allows you to inspect views attributes an
   s.frameworks = 'UIKit'
 
   s.subspec 'Core' do |core|
-    core.source_files = 'View\ debugger/**/*'
+    core.source_files = 'Core/**/*'
   end
 
   s.subspec 'AttributesInspector' do |attributes|

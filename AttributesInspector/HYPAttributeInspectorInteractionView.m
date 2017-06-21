@@ -7,7 +7,6 @@
 //
 
 #import "HYPAttributeInspectorInteractionView.h"
-#import "AttributesTabViewController.h"
 #import "HYPPluginExtension.h"
 
 @class UIButtonLabel;
@@ -140,25 +139,6 @@
         NSLog(@"%@", ((UILabel *)view).font.familyName);
         NSLog(@"%@", ((UILabel *)view).font.fontName);
     }
-}
-
-
--(void)setCurrentlySelectedView:(UIView *)currentlySelectedView
-{
-    if (self.lastTab)
-    {
-        [self.datasource removeTab:self.lastTab];
-    }
-
-    _currentlySelectedView = currentlySelectedView;
-
-    AttributesTabViewController *vc = [[AttributesTabViewController alloc] initWithSelectedView:currentlySelectedView];
-    vc.title = @"View Attributes";
-
-    self.lastTab = [[TabView alloc] initWithTitle:[NSString stringWithFormat:@"%@", [currentlySelectedView class]]];
-
-    [self.datasource addTab:self.lastTab withAssociatedViewController:vc];
-
 }
 
 

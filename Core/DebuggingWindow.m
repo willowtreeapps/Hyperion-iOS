@@ -13,7 +13,6 @@
 #import "HYPPluginExtension.h"
 #import "HYPPluginExtensionImp.h"
 #import "HYPPlugin.h"
-#import "HYPAttributesInspectorPlugin.h"
 #import "HYPOverlayContainerImp.h"
 
 @interface TabViewTuple : NSObject
