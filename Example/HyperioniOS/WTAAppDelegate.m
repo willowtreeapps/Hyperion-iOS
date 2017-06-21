@@ -7,6 +7,11 @@
 //
 
 #import "WTAAppDelegate.h"
+#import "DebuggingWindow.h"
+
+@interface WTAAppDelegate()
+@property (nonatomic) DebuggingWindow *debugWindow;
+@end
 
 @implementation WTAAppDelegate
 
@@ -41,6 +46,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)setWindow:(UIWindow *)window
+{
+    _window = window;
+    [_window makeKeyWindow];
+    self.debugWindow =[[DebuggingWindow alloc] initWithFrame:[[[UIApplication sharedApplication] keyWindow] frame]];
+    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:self.debugWindow.panGesture];
 }
 
 @end

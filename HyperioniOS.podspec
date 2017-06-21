@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Hyperion'
+  s.name             = 'HyperioniOS'
   s.version          = '0.1.0'
   s.summary          = 'Hyperion is a view debugging tool that allows you to inspect views attributes and measurements in app.'
 
@@ -30,13 +30,29 @@ Hyperion is a view debugging tool that allows you to inspect views attributes an
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HyperioniOS/Classes/**/*'
+  s.source_files = 'HyperioniOS/Classes/View\ debugger/**/*'
 
   # s.resource_bundles = {
   #   'HyperioniOS' => ['HyperioniOS/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = '**/*.h'
+  s.frameworks = 'UIKit'
+
+  s.subspec 'Core' do |core|
+    core.source_files = 'View\ debugger/**/*'
+  end
+
+  s.subspec 'AttributesInspector' do |attributes|
+    attributes.source_files = 'AttributesInspector/**/*'
+  end
+
+  s.subspec 'SlowAnimations' do |slowanimations|
+    slowanimations.source_files = 'SlowAnimations/**/*'
+  end
+
+  s.subspec 'Measurements' do |measurements|
+    measurements.source_files = 'Measurements/**/*'
+  end
+      # s.dependency 'AFNetworking', '~> 2.3'
 end

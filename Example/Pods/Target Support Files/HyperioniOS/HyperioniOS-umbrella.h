@@ -1,23 +1,30 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
 #endif
 
-#import "AttributeInspectorInteractionView.h"
-#import "DebuggingWindow.h"
-#import "TabStack.h"
-#import "TabView.h"
-#import "AttributesInspectorToolGenerator.h"
 #import "AttributesTabViewController.h"
-#import "BinaryToolTableViewCell.h"
-#import "InteractionView.h"
-#import "InteractionViewDatasource.h"
-#import "MeasurementsInteractionView.h"
-#import "MeasurementsToolGenerator.h"
-#import "SlowAnimationBinaryToolGenerator.h"
-#import "BinaryToolGenerator.h"
-#import "InteractionViewToolGenerator.h"
-#import "ToolGenerator.h"
-#import "ToolsTabViewController.h"
+#import "HYPFontPickerViewController.h"
+#import "HYPMaskDetailViewController.h"
+#import "ViewAttribute.h"
+#import "FontDetailViewAttribute.h"
+#import "HYPMaskDetailViewAttribute.h"
+#import "HYPAttributesInspectorPlugin.h"
+#import "HYPAttributesInspectorPluginModule.h"
+#import "HYPOverlayContainerListener.h"
+#import "HYPTargetViewListener.h"
+#import "HYPMeasurementsInteractionView.h"
+#import "HYPMeasurementsPlugin.h"
+#import "HYPMeasurementsPluginModule.h"
+#import "HYPSlowAnimationsPlugin.h"
+#import "HYPSlowAnimationsPluginModule.h"
 
 FOUNDATION_EXPORT double HyperioniOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char HyperioniOSVersionString[];
