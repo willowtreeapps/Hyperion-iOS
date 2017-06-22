@@ -43,10 +43,43 @@
     if (view == _currentOverlay)
     {
         _currentOverlay = nil;
+        [view removeFromSuperview];
         [self notifyOverlayViewChanged:nil];
     }
+    else
+    {
+        [view removeFromSuperview];
+    }
+}
 
-    [view removeFromSuperview];
+
+-(BOOL)containsOverlaysOfClass:(Class)overlayClass
+{
+    for (UIView *subview in self.subviews)
+    {
+        if (subview != self.snapshotView && [subview isKindOfClass:overlayClass])
+        {
+            return YES;
+        }
+    }
+
+    return NO;
+}
+
+-(BOOL)removeAllOverlaysOfClass:(Class)overlayClass
+{
+    BOOL containedOverlays = false;
+
+    for (UIView *subview in self.subviews)
+    {
+        if (subview != self.snapshotView && [subview isKindOfClass:overlayClass])
+        {
+            containedOverlays = true;
+            [self removeOverlayView:subview];
+        }
+    }
+
+    return containedOverlays;
 }
 
 -(void)setSnapshotView:(UIView *)snapshotView
@@ -94,6 +127,12 @@
     }
 
     self.listeners = mutableListeners;
+}
+
+-(NSUInteger)numberOfOverlays
+{
+    //Don't count the snapshotview
+    return [[self subviews] count] - 1;
 }
 
 @end

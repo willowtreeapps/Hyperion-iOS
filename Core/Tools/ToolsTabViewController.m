@@ -11,7 +11,7 @@
 @interface ToolsTabViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic) UITableView *toolsTable;
-
+@property (nonatomic) NSArray<UITableViewCell *> *moduleViews;
 
 @end
 
@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 
     self.toolsTable = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
 
@@ -43,8 +42,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  
-    return self.customTools.count;
+    return self.moduleViews.count;
     
 }
 
@@ -62,14 +60,34 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    return [self.customTools objectAtIndex:indexPath.row];
+    return [self.moduleViews objectAtIndex:indexPath.row];
     
 }
 
--(void)setCustomTools:(NSArray<UITableViewCell *> *)customTools
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    _customTools = customTools;
+    id<HYPPluginModule> module = self.pluginModules[indexPath.row];
+
+    if ([module respondsToSelector:@selector(pluginViewSelected:)])
+    {
+        UITableViewCell *cell = self.moduleViews[indexPath.row];
+        [module pluginViewSelected:cell];
+    }
+
+}
+
+-(void)setPluginModules:(NSArray<id<HYPPluginModule>> *)pluginModules
+{
+    _pluginModules = pluginModules;
+
+    NSMutableArray<UITableViewCell *> *pluginViews = [[NSMutableArray alloc] init];
+
+    for (id<HYPPluginModule> module in pluginModules)
+    {
+        [pluginViews addObject:[module pluginView]];
+    }
+
+    _moduleViews = pluginViews;
 
     [self.toolsTable reloadData];
 }

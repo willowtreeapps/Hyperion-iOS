@@ -12,5 +12,5 @@
 @interface HYPOverlayContainerImp : UIView <HYPOverlayContainer>
 
 @property (nonatomic) UIView *snapshotView;
-
+@property (nonatomic) NSUInteger numberOfOverlays;
 @end

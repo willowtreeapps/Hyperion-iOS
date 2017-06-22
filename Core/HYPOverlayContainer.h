@@ -18,4 +18,7 @@
 -(void)addContainerListener:(NSObject<HYPOverlayContainerListener> *)listener;
 -(void)removeContainerListener:(NSObject<HYPOverlayContainerListener> *)listener;
 
+-(BOOL)containsOverlaysOfClass:(Class)overlayClass;
+-(BOOL)removeAllOverlaysOfClass:(Class)overlayClass;
+
 @end

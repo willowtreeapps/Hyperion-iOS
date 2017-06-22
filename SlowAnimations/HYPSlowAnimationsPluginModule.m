@@ -47,6 +47,8 @@
 
 @implementation HYPSlowAnimationsPluginModule
 
+@synthesize pluginView = _pluginView;
+
 -(id)initWithPluginExtension:(id<HYPPluginExtension>)extension
 {
     self = [super init];
@@ -56,20 +58,32 @@
     return self;
 }
 
--(UITableViewCell *)createPluginView
+-(UITableViewCell *)pluginView
 {
+    if (_pluginView)
+    {
+        return _pluginView;
+    }
+
     HYPSlowAnimationTableViewCell *slowAnimationsCell = [[HYPSlowAnimationTableViewCell alloc] init];
     
     [slowAnimationsCell.slowAnimationsSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     
     slowAnimationsCell.slowAnimationsSwitch.on = self.extension.appWindow.layer.speed <= 0.5;
-    
+
+    _pluginView = slowAnimationsCell;
+
     return slowAnimationsCell;
 }
 
 -(void)switchChanged:(UISwitch *)slowAnimation
 {
     self.extension.appWindow.layer.speed = slowAnimation.on ? 0.08 : 1.0;
+}
+
+-(void)pluginViewSelected:(UITableViewCell *)pluginView
+{
+    
 }
 
 @end

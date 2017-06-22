@@ -11,7 +11,7 @@
 #import "HYPOverlayContainerListener.h"
 #import "AttributesTabViewController.h"
 
-@interface HYPAttributesInspectorPluginModule () <HYPOverlayContainerListener, HYPTargetViewListener, UIGestureRecognizerDelegate>
+@interface HYPAttributesInspectorPluginModule () <HYPOverlayContainerListener, HYPTargetViewListener>
 
 @property (nonatomic) id<HYPPluginExtension> extension;
 @property (nonatomic) UINavigationController *attributesNavigation;
@@ -23,6 +23,8 @@
 @end
 
 @implementation HYPAttributesInspectorPluginModule
+
+@synthesize pluginView = _pluginView;
 
 const CGFloat InspectorHeight = 350;
 
@@ -38,25 +40,24 @@ const CGFloat InspectorHeight = 350;
     return self;
 }
 
--(UITableViewCell *)createPluginView
+-(UITableViewCell *)pluginView
 {
+    if (_pluginView)
+    {
+        return _pluginView;
+    }
+
     UITableViewCell *tableViewCell = [[UITableViewCell alloc] init];
 
     tableViewCell.textLabel.text = @"Attributes Inspector";
 
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
-
-    tapGesture.delegate = self;
-    
-    [tableViewCell addGestureRecognizer:tapGesture];
+    _pluginView = tableViewCell;
 
     return  tableViewCell;
 }
 
-
 -(void)navigationTap:(UITapGestureRecognizer *)pan
 {
-    
     if (self.attributesNavigationFromBottomConstraint.constant == -50)
     {
         self.attributesNavigationFromBottomConstraint.constant = -InspectorHeight;
@@ -111,7 +112,7 @@ const CGFloat InspectorHeight = 350;
     }
 }
 
--(void)activate
+-(void)pluginViewSelected:(UITableViewCell *)pluginView
 {
     HYPAttributeInspectorInteractionView *view = [[HYPAttributeInspectorInteractionView alloc] initWithPluginExtension:self.extension];
 
@@ -124,8 +125,13 @@ const CGFloat InspectorHeight = 350;
 {
     self.active = [overlayView isKindOfClass:[HYPAttributeInspectorInteractionView class]];
 
-    if (!self.active)
+    if (self.active)
     {
+        _pluginView.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
+        _pluginView.accessoryType = UITableViewCellAccessoryNone;
         [self.attributesNavigation removeFromParentViewController];
         [self.attributesNavigation.view removeFromSuperview];
     }
@@ -171,21 +177,12 @@ const CGFloat InspectorHeight = 350;
             self.attributesNavigationFromBottomConstraint.constant = -50;
         }
         
-        
-        
         [UIView animateWithDuration:0.3 animations:^{
             [rootView layoutIfNeeded];
         }];
 
         self.inspectionWindowOpen = self.attributesNavigationFromBottomConstraint.constant < -50;
     }
-}
-
-#pragma mark - UIGestureRecognizerDelegate
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
-{
-    return YES;
 }
 
 @end

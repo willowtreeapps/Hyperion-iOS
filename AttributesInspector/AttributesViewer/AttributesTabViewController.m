@@ -95,6 +95,9 @@
         [attributes addObject:windowFrameAttribute];
     }
 
+      ViewAttribute *accessibilirtLabelAttribute = [[ViewAttribute alloc] initWithKey:@"Accessibility Label" value:view.accessibilityLabel];
+    [attributes addObject:accessibilirtLabelAttribute];
+
     return attributes;
 
 }

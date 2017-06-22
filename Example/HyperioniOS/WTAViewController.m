@@ -7,11 +7,12 @@
 //
 
 #import "WTAViewController.h"
-#import "DebuggingWindow.h"
 #import "TabView.h"
+#import "HYPDebuggingWindow.h"
 
 @interface WTAViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *button;
+@property (nonatomic) HYPDebuggingWindow *debugWindow;
 @end
 
 @implementation WTAViewController
@@ -19,8 +20,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.button = [[UIButton alloc] init];
 
     self.button.transform = CGAffineTransformRotate(self.button.transform, M_PI/2);
 
@@ -36,11 +35,13 @@
 
 }
 
-- (IBAction)changeColor:(UIButton *)sender
+-(void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
 
+    self.debugWindow =[[HYPDebuggingWindow alloc] initWithFrame:[[[UIApplication sharedApplication] keyWindow] frame]];
+    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:self.debugWindow.panGesture];
 }
-
 
 - (void)didReceiveMemoryWarning
 {

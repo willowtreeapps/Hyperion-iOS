@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "HYPPluginModule.h"
+
 @class InteractionView;
 
 @protocol ToolsTabViewControllerDelegate
@@ -20,6 +22,6 @@
 
 @property (nonatomic, weak) id<ToolsTabViewControllerDelegate> delegate;
 
-@property (nonatomic) NSArray<UITableViewCell *> *customTools;
+@property (nonatomic) NSArray <id<HYPPluginModule>> *pluginModules;
 
 @end
