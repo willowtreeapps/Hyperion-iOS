@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface DebuggingWindow : UIWindow
+@interface HYPDebuggingWindow : UIWindow
 
 @property (nonatomic) UIEvent *lastEvent;
 @property (nonatomic) UIView *highlightView;

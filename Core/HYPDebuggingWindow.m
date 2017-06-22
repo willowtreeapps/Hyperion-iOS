@@ -1,12 +1,11 @@
 //
-//  DebuggingWindow.m
-//  WhatIsThatFont
+//  HYPDebuggingWindow.m
 //
 //  Created by Chris Mays on 5/2/17.
 //  Copyright © 2017 Willow. All rights reserved.
 //
 
-#import "DebuggingWindow.h"
+#import "HYPDebuggingWindow.h"
 #import "TabStack.h"
 #import "TabView.h"
 #import "ToolsTabViewController.h"
@@ -26,7 +25,7 @@
 
 @end
 
-@interface DebuggingWindow() <UIGestureRecognizerDelegate, TabStackDelegate, ToolsTabViewControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
+@interface HYPDebuggingWindow() <UIGestureRecognizerDelegate, TabStackDelegate, ToolsTabViewControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
 
 @property (nonatomic) TabStack *tabStack;
 @property (nonatomic) UINavigationController *menuContainer;
@@ -47,7 +46,7 @@
 
 @end
 
-@implementation DebuggingWindow
+@implementation HYPDebuggingWindow
 
 const CGFloat MenuWidth = 300;
 
