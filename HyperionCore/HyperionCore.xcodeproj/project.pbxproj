@@ -61,6 +61,8 @@
 		498E354F1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */; };
 		498E35501EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */; };
 		498E35511EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */; };
+		49C6B4DF1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C6B4DD1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h */; };
+		49C6B4E01EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C6B4DE1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +121,8 @@
 		498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesInspectorPlugin.m; sourceTree = "<group>"; };
 		498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPAttributesInspectorPluginModule.h; sourceTree = "<group>"; };
 		498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesInspectorPluginModule.m; sourceTree = "<group>"; };
+		49C6B4DD1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPDebuggingOverlayViewController.h; sourceTree = "<group>"; };
+		49C6B4DE1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPDebuggingOverlayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 		498E34B81EFA0D5700A0BC4E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				49C6B4DD1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h */,
+				49C6B4DE1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m */,
 				498E34B91EFA0D5700A0BC4E /* HYPDebuggingWindow.h */,
 				498E34BA1EFA0D5700A0BC4E /* HYPDebuggingWindow.m */,
 				498E34BD1EFA0D5700A0BC4E /* HyperionDependencies-Internal.plist */,
@@ -316,6 +322,7 @@
 				498E34E51EFA0D5700A0BC4E /* HYPTargetView.h in Headers */,
 				498E35281EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.h in Headers */,
 				498E34D61EFA0D5700A0BC4E /* HYPDebuggingWindow.h in Headers */,
+				49C6B4DF1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h in Headers */,
 				498E351B1EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.h in Headers */,
 				498E354A1EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.h in Headers */,
 				498E34DD1EFA0D5700A0BC4E /* HYPOverlayContainer.h in Headers */,
@@ -424,6 +431,7 @@
 				498E354B1EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.m in Sources */,
 				498E35451EFA20D800A0BC4E /* HYPMaskDetailViewController.m in Sources */,
 				498E34EE1EFA0D5700A0BC4E /* ToolsTabViewController.m in Sources */,
+				49C6B4E01EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m in Sources */,
 				498E34DC1EFA0D5700A0BC4E /* HYPListenerContainer.m in Sources */,
 				498E35471EFA20D800A0BC4E /* ViewAttribute.m in Sources */,
 				498E35491EFA20D800A0BC4E /* FontDetailViewAttribute.m in Sources */,
