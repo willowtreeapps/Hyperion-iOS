@@ -44,7 +44,6 @@
 
 -(void)setup
 {
-
     self.overlayVC = [[HYPDebuggingOverlayViewController alloc] initWithDebuggingWindow:self];
     [self setRootViewController:self.overlayVC];
 

@@ -36,6 +36,7 @@
 #import "InteractionView.h"
 #import "InteractionViewDatasource.h"
 #import "ToolsTabViewController.h"
+#import "UIWindow+Swizzling.h"
 #import "HYPMeasurementsInteractionView.h"
 #import "HYPMeasurementsPlugin.h"
 #import "HYPMeasurementsPluginModule.h"

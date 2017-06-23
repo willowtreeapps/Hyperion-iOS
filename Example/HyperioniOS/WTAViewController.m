@@ -12,7 +12,6 @@
 
 @interface WTAViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *button;
-@property (nonatomic) HYPDebuggingWindow *debugWindow;
 @end
 
 @implementation WTAViewController
@@ -33,15 +32,21 @@
     [tab.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor constant:100].active = YES;
     [tab.widthAnchor constraintEqualToConstant:50].active = YES;
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChanged:) name:UIKeyboardWillHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChanged:) name:UIKeyboardWillShowNotification object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChanged:) name:UIKeyboardDidShowNotification object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChanged:) name:UIKeyboardDidHideNotification object:nil];
+
+
 }
 
--(void)viewWillAppear:(BOOL)animated
+-(void)keyboardChanged:(NSNotification *)notification
 {
-    [super viewWillAppear:animated];
 
-    self.debugWindow =[[HYPDebuggingWindow alloc] initWithFrame:[[[UIApplication sharedApplication] keyWindow] frame]];
-    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:self.debugWindow.panGesture];
 }
+
 
 - (void)didReceiveMemoryWarning
 {

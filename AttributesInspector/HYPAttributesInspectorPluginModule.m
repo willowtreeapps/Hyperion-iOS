@@ -48,7 +48,6 @@ const CGFloat InspectorHeight = 350;
     }
 
     UITableViewCell *tableViewCell = [[UITableViewCell alloc] init];
-
     tableViewCell.textLabel.text = @"Attributes Inspector";
 
     _pluginView = tableViewCell;

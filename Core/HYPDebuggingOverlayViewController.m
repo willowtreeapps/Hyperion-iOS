@@ -15,6 +15,7 @@
 #import "HYPPlugin.h"
 #import "HYPOverlayContainerImp.h"
 #import "HYPDebuggingWindow.h"
+#import <objc/runtime.h>
 
 @interface TabViewTuple : NSObject
 
@@ -62,6 +63,8 @@ const CGFloat MenuWidth = 300;
     self = [super init];
 
     _debuggingWindow = debuggingWindow;
+
+    _debuggingWindow.windowLevel = 10000001;
 
     self.panGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self.panGesture setEdges:UIRectEdgeRight];
@@ -165,6 +168,22 @@ const CGFloat MenuWidth = 300;
     [self.fadeView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (scrollView.zoomScale <= 1)
+    {
+        self.scrollViewContainer.center = self.scrollView.center;
+    }
+}
+
+-(void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+    if (scrollView.zoomScale <= 1)
+    {
+        self.scrollViewContainer.center = self.scrollView.center;
+    }
+}
+
 -(void)initializePlugins
 {
     NSMutableArray<id<HYPPluginModule>> *mutablePluginModules = [[NSMutableArray alloc] init];
@@ -193,6 +212,38 @@ const CGFloat MenuWidth = 300;
             NSLog(@"Failed to load class: %@", pluginStrings);
         }
     }
+
+
+    //Fallback to internal list
+    if (!plugins)
+    {
+        int numClasses;
+        Class * classes = NULL;
+
+        classes = NULL;
+        numClasses = objc_getClassList(NULL, 0);
+
+        if (numClasses > 0 )
+        {
+            classes = (Class *)malloc(sizeof(Class) * numClasses);
+            numClasses = objc_getClassList(classes, numClasses);
+
+            for (int i = 0; i < numClasses; i++)
+            {
+                Class class = classes[i];
+                Protocol *pluginProtocol = @protocol(HYPPlugin);
+                if (class_conformsToProtocol(class, pluginProtocol))
+                {
+                    [pluginClasses addObject:class];
+                }
+            }
+
+            free(classes);
+        }
+    }
+
+
+
 
 
     for (Class pluginClass in pluginClasses)
@@ -311,6 +362,11 @@ const CGFloat MenuWidth = 300;
 {
     self.scrollView.layer.borderColor = self.scrollViewContainer.numberOfOverlays > 0 ? [[UIColor purpleColor] CGColor] : [[UIColor clearColor] CGColor];
     self.scrollView.layer.borderWidth = 3;
+
+    if (self.scrollViewContainer.numberOfOverlays == 0)
+    {
+        [self.scrollView setZoomScale:1.0 animated:YES];
+    }
 }
 
 @end

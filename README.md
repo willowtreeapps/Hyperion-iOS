@@ -1,6 +1,6 @@
 # HyperioniOS
 
-[![CI Status](http://img.shields.io/travis/chrsmys/HyperioniOS.svg?style=flat)](https://travis-ci.org/chrsmys/HyperioniOS)
+[![CI Status](http://img.shields.io/travis/chrsmys/HyperioniOS.svg?style=flat)](https://travis-ci.org/willowtreeapps/HyperioniOS)
 [![Version](https://img.shields.io/cocoapods/v/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
 [![License](https://img.shields.io/cocoapods/l/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
 [![Platform](https://img.shields.io/cocoapods/p/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
@@ -12,7 +12,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 iOS 9+
 
 ## Installation
-
 HyperioniOS is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -26,7 +25,7 @@ pod 'HyperioniOS/SlowAnimations'
 ```
 
 ## Adding Tools
-Once tools have been installed you can configure which tools Hyperion displays by adding a file called `HyperionDependencies.plist`. Below is an example of the contents
+Hyperion automatically finds every class that conforms to HYPPlugin and adds it to the drawer. If you want to customize what tools show up in your drawer you can add a special plist file called `HyperionDependencies.plist` that lists all of the plugins that should be added. Below is an example of the contents:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -38,7 +37,6 @@ Once tools have been installed you can configure which tools Hyperion displays b
 	<string>HYPMeasurementsPlugin</string>
 </array>
 </plist>
-
 ```
 
 ## Author

@@ -22,7 +22,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7ABEAF13BA949419D3828EFB /* Pods_HyperioniOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3BA150BED4927CCFC989D2 /* Pods_HyperioniOS_Tests.framework */; };
-		83226E6A1EF8D3D500DB2EE9 /* HyperionDependencies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83226E691EF8D3D500DB2EE9 /* HyperionDependencies.plist */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A05FBD5041F0612B43A58C1A /* Pods_HyperioniOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195D0D548733E8445D11CB7E /* Pods_HyperioniOS_Example.framework */; };
 /* End PBXBuildFile section */
@@ -62,7 +61,6 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		83226E691EF8D3D500DB2EE9 /* HyperionDependencies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HyperionDependencies.plist; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA56E073DC44B19561D68203 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BC4960CBFCD5EC799CB38C89 /* Pods-HyperioniOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperioniOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HyperioniOS_Tests/Pods-HyperioniOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				83226E691EF8D3D500DB2EE9 /* HyperionDependencies.plist */,
 			);
 			name = "Example for HyperioniOS";
 			path = HyperioniOS;
@@ -289,7 +286,6 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				83226E6A1EF8D3D500DB2EE9 /* HyperionDependencies.plist in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
