@@ -54,5 +54,9 @@ Hyperion is a view debugging tool that allows you to inspect views attributes an
   s.subspec 'Measurements' do |measurements|
     measurements.source_files = 'Measurements/**/*'
   end
+
+  s.subspec 'VisualLogger' do |visuallogger|
+    visuallogger.source_files = 'VisualLogger/**/*'
+  end
       # s.dependency 'AFNetworking', '~> 2.3'
 end

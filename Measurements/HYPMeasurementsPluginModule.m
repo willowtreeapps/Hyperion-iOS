@@ -9,7 +9,7 @@
 #import "HYPMeasurementsPluginModule.h"
 #import "HYPMeasurementsInteractionView.h"
 
-@interface HYPMeasurementsPluginModule () <HYPOverlayContainerListener>
+@interface HYPMeasurementsPluginModule () <HYPOverlayContainerListener, HYPOverlayViewProvider>
 
 @property (nonatomic) id<HYPPluginExtension> extension;
 @property (nonatomic) BOOL active;
@@ -17,6 +17,7 @@
 
 @implementation HYPMeasurementsPluginModule
 @synthesize pluginView = _pluginView;
+@synthesize overlayView = _overlayView;
 
 -(instancetype)initWithPluginExtension:(id<HYPPluginExtension>)extension
 {
@@ -46,18 +47,22 @@
 
 -(void)pluginViewSelected:(UITableViewCell *)pluginView
 {
-    _active = ![self.extension.overlayContainer removeAllOverlaysOfClass:[HYPMeasurementsInteractionView class]];
+    _active = ![self.extension.overlayContainer.overlayModule isKindOfClass:[self class]];
 
     if (_active)
     {
-        HYPMeasurementsInteractionView *view = [[HYPMeasurementsInteractionView alloc] initWithPluginExtension:self.extension];
-        [self.extension.overlayContainer addOverlayView:view];
+        _overlayView = [[HYPMeasurementsInteractionView alloc] initWithPluginExtension:self.extension];
+        self.extension.overlayContainer.overlayModule  = self;
+    }
+    else
+    {
+        self.extension.overlayContainer.overlayModule = nil;
     }
 }
 
--(void)overlayViewChanged:(UIView *)overlayView
+-(void)overlayModuleChanged:(id<HYPPluginModule, HYPOverlayViewProvider>)overlayProvider;
 {
-    if ([overlayView isKindOfClass:[HYPMeasurementsInteractionView class]])
+    if ([overlayProvider isKindOfClass:[self class]])
     {
         _pluginView.accessoryType = UITableViewCellAccessoryCheckmark;
     }

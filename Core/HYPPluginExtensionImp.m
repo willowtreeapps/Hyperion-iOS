@@ -72,19 +72,21 @@
 @interface HYPPluginExtensionImp ()
 @property (nonatomic) id<HYPTargetView> targetView;
 @property (nonatomic) id<HYPOverlayContainer> overlayContainer;
+@property (nonatomic) id<HYPOverlayContainer> inAppOverlayContainer;
 @property (nonatomic, weak) UIWindow *hypeWindow;
 @end
 
 @implementation HYPPluginExtensionImp
 
--(instancetype)initWithOverlayContainer:(id<HYPOverlayContainer>)overlayContainer hypeWindow:(UIWindow *)hypeWindow;
+-(instancetype)initWithOverlayContainer:(id<HYPOverlayContainer>)overlayContainer inAppOverlay:(id<HYPOverlayContainer>)inAppOverlay hypeWindow:(UIWindow *)hypeWindow;
 {
     self = [super init];
 
     _targetView = [[HYPTargetViewImp alloc] init];
     _overlayContainer = overlayContainer;
     _hypeWindow = hypeWindow;
-
+    _inAppOverlayContainer = inAppOverlay;
+    
     return self;
 }
 
@@ -101,6 +103,11 @@
 -(id<HYPOverlayContainer>)overlayContainer
 {
     return _overlayContainer;
+}
+
+-(id<HYPOverlayContainer>)inAppOverlayContainer
+{
+    return _inAppOverlayContainer;
 }
 
 -(id<HYPTargetView>)getViewTarget

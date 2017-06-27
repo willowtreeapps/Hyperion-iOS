@@ -11,7 +11,7 @@
 #import "HYPOverlayContainerListener.h"
 #import "AttributesTabViewController.h"
 
-@interface HYPAttributesInspectorPluginModule () <HYPOverlayContainerListener, HYPTargetViewListener>
+@interface HYPAttributesInspectorPluginModule () <HYPOverlayContainerListener, HYPTargetViewListener, HYPOverlayViewProvider>
 
 @property (nonatomic) id<HYPPluginExtension> extension;
 @property (nonatomic) UINavigationController *attributesNavigation;
@@ -25,6 +25,7 @@
 @implementation HYPAttributesInspectorPluginModule
 
 @synthesize pluginView = _pluginView;
+@synthesize overlayView = _overlayView;
 
 const CGFloat InspectorHeight = 350;
 
@@ -113,16 +114,16 @@ const CGFloat InspectorHeight = 350;
 
 -(void)pluginViewSelected:(UITableViewCell *)pluginView
 {
-    HYPAttributeInspectorInteractionView *view = [[HYPAttributeInspectorInteractionView alloc] initWithPluginExtension:self.extension];
+    _overlayView = [[HYPAttributeInspectorInteractionView alloc] initWithPluginExtension:self.extension];
 
     _active = YES;
 
-    [self.extension.overlayContainer addOverlayView:view];
+    self.extension.overlayContainer.overlayModule = self;
 }
 
--(void)overlayViewChanged:(UIView *)overlayView
+-(void)overlayModuleChanged:(id<HYPPluginModule, HYPOverlayViewProvider>)overlayProvider
 {
-    self.active = [overlayView isKindOfClass:[HYPAttributeInspectorInteractionView class]];
+    self.active = [overlayProvider isKindOfClass:[self class]];
 
     if (self.active)
     {

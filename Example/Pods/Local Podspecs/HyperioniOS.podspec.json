@@ -37,6 +37,10 @@
     {
       "name": "Measurements",
       "source_files": "Measurements/**/*"
+    },
+    {
+      "name": "VisualLogger",
+      "source_files": "VisualLogger/**/*"
     }
   ]
 }

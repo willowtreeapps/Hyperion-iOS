@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@protocol HYPPluginModule;
+@protocol HYPOverlayViewProvider;
+
 @protocol HYPOverlayContainerListener <NSObject>
 
--(void)overlayViewChanged:(UIView *)overlayView;
+-(void)overlayModuleChanged:(id<HYPPluginModule, HYPOverlayViewProvider>)overlayProvider;
 
 @end

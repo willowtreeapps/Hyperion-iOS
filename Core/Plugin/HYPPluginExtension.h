@@ -16,6 +16,7 @@
 -(UIWindow *)appWindow;
 -(UIWindow *)hypeWindow;
 -(id<HYPOverlayContainer>)overlayContainer;
+-(id<HYPOverlayContainer>)inAppOverlayContainer;
 -(id<HYPTargetView>)getViewTarget;
 
 @end

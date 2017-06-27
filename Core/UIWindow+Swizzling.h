@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "HYPDebuggingWindow.h"
+#import "HYPInAppDebuggingWindow.h"
 
 @interface UIWindow (Swizzling)
 

@@ -1,25 +1,40 @@
 //
-//  HYPOverlayContainerImp.m
-//  Pods
+//  HYPInAppOverlayContainer.m
+//  HyperionCore
 //
-//  Created by Chris Mays on 6/19/17.
-//
+//  Created by Chris Mays on 6/26/17.
+//  Copyright © 2017 WillowTree. All rights reserved.
 //
 
-#import "HYPOverlayContainerImp.h"
-#import "HYPOverlayContainerListener.h"
+#import "HYPInAppOverlayContainer.h"
 #import "HYPListenerContainer.h"
 
-@interface HYPOverlayContainerImp ()
-
-@property (nonatomic) UIView *currentOverlay;
+@interface HYPInAppOverlayContainer ()
 @property (nonatomic) NSMutableArray *listeners;
-
 @end
 
-@implementation HYPOverlayContainerImp
-
+@implementation HYPInAppOverlayContainer
 @synthesize overlayModule = _overlayModule;
+
+-(instancetype)init
+{
+    self = [super init];
+
+    _listeners = [[NSMutableArray alloc] init];
+
+    return self;
+}
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    UIView *hitTest = [super hitTest:point withEvent:event];
+
+    if (hitTest == self)
+    {
+        return [[[UIApplication sharedApplication] keyWindow] hitTest:point withEvent:event];
+    }
+
+    return hitTest;
+}
 
 -(void)setOverlayModule:(id<HYPPluginModule, HYPOverlayViewProvider>)overlayModule
 {
@@ -27,10 +42,7 @@
 
     for (UIView *subview in self.subviews)
     {
-        if (subview != self.snapshotView)
-        {
-            [subview removeFromSuperview];
-        }
+        [subview removeFromSuperview];
     }
 
     if (!overlayModule)
@@ -44,28 +56,6 @@
     [self addSubview:newOverlay];
     newOverlay.frame = self.bounds;
     [self notifyOverlayModuleChanged:_overlayModule];
-}
-
--(void)setSnapshotView:(UIView *)snapshotView
-{
-    [_snapshotView removeFromSuperview];
-    _snapshotView = snapshotView;
-    _currentOverlay.frame = _snapshotView.frame;
-    [self addSubview:snapshotView];
-    [self sendSubviewToBack:snapshotView];
-}
-
--(void)notifyOverlayModuleChanged:(id<HYPPluginModule, HYPOverlayViewProvider>)overlayModule
-{
-    for (HYPListenerContainer *container in self.listeners)
-    {
-        id<HYPOverlayContainerListener> listener = (id<HYPOverlayContainerListener>)container.listener;
-
-        if ([listener conformsToProtocol:@protocol(HYPOverlayContainerListener)])
-        {
-            [listener overlayModuleChanged:overlayModule];
-        }
-    }
 }
 
 -(void)addContainerListener:(NSObject<HYPOverlayContainerListener> *)listener
@@ -93,10 +83,18 @@
     self.listeners = mutableListeners;
 }
 
--(NSUInteger)numberOfOverlays
+-(void)notifyOverlayModuleChanged:(id<HYPPluginModule, HYPOverlayViewProvider>)overlayModule
 {
-    //Don't count the snapshotview
-    return [[self subviews] count] - 1;
+    for (HYPListenerContainer *container in self.listeners)
+    {
+        id<HYPOverlayContainerListener> listener = (id<HYPOverlayContainerListener>)container.listener;
+
+        if ([listener conformsToProtocol:@protocol(HYPOverlayContainerListener)])
+        {
+            [listener overlayModuleChanged:overlayModule];
+        }
+    }
 }
+
 
 @end

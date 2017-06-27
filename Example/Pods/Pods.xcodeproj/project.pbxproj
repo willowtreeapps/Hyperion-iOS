@@ -7,73 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B9ADB79C2448A5C51C5707C8337D642 /* HYPMaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7354099B5566E3E7997882B746581C /* HYPMaskDetailViewController.m */; };
-		14541CEFFEA9A8B9A0ABA005832F2AF1 /* HYPAttributeInspectorInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0F67D6AECDE71985C80A4F716BA6E9 /* HYPAttributeInspectorInteractionView.m */; };
-		15A0348B2525D01729F4209280EA9D77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		16DBE8CD2150BC863346647C7EC1B024 /* HYPOverlayContainerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F1CED31B22427F94DA67534E7427DD /* HYPOverlayContainerImp.m */; };
-		1A2173D65A7924B7ACC01F7BB401BA48 /* HYPAttributeInspectorInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C3FEEB2DFDE04871CB01B45C3FF1C3 /* HYPAttributeInspectorInteractionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		218870E6611A3E046B2A9E2DBB8DB918 /* HYPSlowAnimationsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0DB1C4BE5E2B6360C6DBF00F5A388 /* HYPSlowAnimationsPlugin.m */; };
-		22226A3F0C356666AC3E558C4971374B /* HYPSlowAnimationsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EBAA552AFE258DC07789DA0A4284E161 /* HYPSlowAnimationsPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22D80428A94B299E3002693C609E493D /* HYPFontPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F483DB47458647FA5E054C2A8005AEE7 /* HYPFontPickerViewController.m */; };
-		250F883A33BE2DD7C13CE51C53BE7FB5 /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9571D46DD397A44031003AF397B1B32A /* HYPAttributesInspectorPluginModule.m */; };
-		27DCBA38F494192F4C645C5A075514B4 /* HyperionDependencies-Internal.plist in Sources */ = {isa = PBXBuildFile; fileRef = 746CE370D6090AC6510EA86908DFBF96 /* HyperionDependencies-Internal.plist */; };
-		2B0704A6FB232E5980B630B776AA9FF1 /* HYPMaskDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0AC791CB681C02B4EE35A1C67255D3 /* HYPMaskDetailViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02317FF32E8E4E7918464008A00A0955 /* HYPAttributeInspectorInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B99C183B8E0E874F2B93B2445683F8 /* HYPAttributeInspectorInteractionView.m */; };
+		08B4BD8678D1E466D392A1FAFB3C3F45 /* HYPPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A11CCBA44274F7DA8DC6539C22B43D7 /* HYPPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		097F605E6BF84E1A855734F137BBDAB3 /* HYPVisualLoggingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB30BB2D3BC9DEC3EA138CE213CD971 /* HYPVisualLoggingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ABC2157E2605101C474727D23033210 /* HYPMaskDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E51989D31927357487E03F04C0FC66 /* HYPMaskDetailViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		103A6EE3807EFC4562166AEAF9976A24 /* InteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD4393491C03DE9F6C14C2B34000AB3 /* InteractionView.m */; };
+		1462506CC77A00C59D7879E9014E0B0E /* HyperioniOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C865950DF344C921EE9FA92E4E1CCE6 /* HyperioniOS-dummy.m */; };
+		14C48DC19FD20D05EF4854E92DBFB011 /* HYPMaskDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 539F56E094FB3ED3CB857274536BB748 /* HYPMaskDetailViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15AD3D1B3AF11B9F89CE6B47F67EF2BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		17C0EA11EA3FB96117971EED9D5F4657 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 489660E409F9485099CE72CA9CA89C27 /* HYPInAppOverlayContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE9DAD47FCD70D131D7EC97EDB21DF1 /* HYPMeasurementsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 208F7DA3560E172BA6FE9FAB1105E1F9 /* HYPMeasurementsPlugin.m */; };
+		1E49047F32A56A94D9344A6CA3135D60 /* HYPTargetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 802B254FAB58B1F640772C774FBEC3BD /* HYPTargetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EE9A2268C6A30F7485B2E61E1E08B2D /* HYPPluginExtensionImp.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E8BC46DE98D774D49B2B81012DB60D /* HYPPluginExtensionImp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20F01D7E0E0C8F98DF18117D1E9EAFE3 /* HYPAttributeInspectorInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 413289DBF7137BDB5E606129F1FDF6BE /* HYPAttributeInspectorInteractionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		237C92A9227FD7D1DAFAA7F2A916128B /* ViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE116B7282251459A7D6C6D02E49AF2 /* ViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24B4A9AFD1F732490F15698F1A2927CD /* HYPVisualLoggerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E50A206C518682D9DA13B37E122974A /* HYPVisualLoggerPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2556EEAEE42587431125203C151FE6A8 /* HYPVisualLoggerPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E6159544012B4383D5B989D34263EF3A /* HYPVisualLoggerPluginModule.m */; };
+		295CACC67354FE2094455782ED532262 /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8C458FE537E7862BF970E5A3CE4FE9 /* HYPAttributesInspectorPluginModule.m */; };
+		2A8C6E719B3AA8CB1008223884F5972F /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 79124711795C453182A633BA3BBA1247 /* HYPAttributesInspectorPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B66857B5CFC4BFA3CC1463655662FD3 /* HYPMaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325357ECD40B4EC09D359631307316D9 /* HYPMaskDetailViewController.m */; };
+		2F5477CDC11AC4A99D4E3DD7FE7C8998 /* HYPFontPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A326005D70D038BB841E8201948078EC /* HYPFontPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3195D857A0E98CAED48B91C730B026D6 /* HYPSlowAnimationsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 189500E660D2422740A24A455E923033 /* HYPSlowAnimationsPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3433CC2B0596A76D06D3F19B1A6271F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		3713BE284BFEE51643940DC2B004A491 /* HYPMeasurementsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEECAAEC42FDD7E4B86BB5774D9156D /* HYPMeasurementsPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		354F64F7D52D83E24DEEA197867E9C0C /* HYPLogItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B845981CF180C884658EC3C580E637B /* HYPLogItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39A89A06D77B27B41E1789902AF702B8 /* InteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 079FB7D668506EA8E4BD0393526B8975 /* InteractionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39BD09D98BB1C2C3F39039303B1A93DE /* Pods-HyperioniOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 008A375D275DF6330FF022C5F18B6523 /* Pods-HyperioniOS_Tests-dummy.m */; };
-		3C1C0E47D9078DD01933F9FBE6C4BBCE /* HYPAttributesInspectorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A39B4AF335EFBAC85B3310A748AE3E /* HYPAttributesInspectorPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E7C5E202CF1C79D32B5995C119568DE /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7611C9C22AA4E38096DEEEAB083413FE /* HYPAttributesInspectorPlugin.m */; };
-		4520636299A46B71334069D4C48414B4 /* HYPMeasurementsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC380CB8988A8C498DB59C334AD58D /* HYPMeasurementsPlugin.m */; };
-		4816AB33F68921C6B669F7575E99DE61 /* HYPFontPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C80F97EF499BD49DFDA4B3828184C2F3 /* HYPFontPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4887B367883A2F20FE3B2615C75F21F7 /* AttributesTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CC1370510BF3A8F545D855188032B7F1 /* AttributesTabViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CDD8B7197B078BA0600EBFDE8CC064C /* HYPOverlayContainerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A07D5A451A2C29BD7FC617F6632DAAF /* HYPOverlayContainerListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DF6661C98704C01F4D9871E2F73864D /* HYPMaskDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D19AB3F54BCE1EB303FEBCA9D138DBA /* HYPMaskDetailViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5027A6E94ABB5DB314B8CC067A03249E /* AttributesTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8956CF900C2B82425164776AEE657 /* AttributesTabViewController.m */; };
+		3EB9E4A61AB402D56B379339B3409766 /* HYPDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B2723915A188AC9A683649D60AD5BF /* HYPDebuggingWindow.m */; };
+		409B314188201774E09E886C0A4D0AB3 /* HYPDebuggingOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65FB8198D16B3A3500C5059563C0884 /* HYPDebuggingOverlayViewController.m */; };
+		41A574754870B143DA4A272E113FDF58 /* HYPOverlayContainerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CD19146071BC9B086F852C37853400 /* HYPOverlayContainerImp.m */; };
+		472B534690046BE0295A832CBBBD30F5 /* HYPPluginExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 667153C093B35473DEF819A75DB5F805 /* HYPPluginExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		478DDC7A9AB7CD2D075A1007ED42BD27 /* HYPListenerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 456DA822E6200FB1A7D1AE60A21620F4 /* HYPListenerContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F1BD1558B88E8A793304AD06E9F3F39 /* TabStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 890185C784127D6B9AE856F511A79E38 /* TabStack.m */; };
+		4FE91F3B6B3B9F297BAB57F4BC3EBC70 /* AttributesTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1B21572B24CD75D38197F361148C9E /* AttributesTabViewController.m */; };
 		505C7434085385B54BF91C5597BDEA0B /* Pods-HyperioniOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8DF16FB85D4C81238914E099C3CAC2 /* Pods-HyperioniOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5140897F14F765B3F6F7D3BA6F0123DF /* HYPMaskDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A158FB390EE618841346D22AE4003324 /* HYPMaskDetailViewAttribute.m */; };
-		5691D76172FD2BA77A3D043A10BB7938 /* HYPPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBC3A7521A77E238029D3C6A8A06C73 /* HYPPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		592F79DCC006010CB5B2A40BFD97E392 /* TabView.h in Headers */ = {isa = PBXBuildFile; fileRef = A228A1C1BFF0109134695198E04FAB65 /* TabView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53CF084C675B9EB317A2EA44FA8A608E /* ViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5880C74857909077BE591E93509A725B /* ViewAttribute.m */; };
+		549A3C1E4D4D923D9D950DC30DA46DEF /* HYPSlowAnimationsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B6AEF54953C6B1093B2A3A43D8E4F8 /* HYPSlowAnimationsPlugin.m */; };
 		5D6306CBEEF22CA51D83615F0CBDE79A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		5DBF62E521A7201B471CB7D68BBB1113 /* HYPInAppDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 29742529D29D7660E12CF753B93F0FB8 /* HYPInAppDebuggingWindow.m */; };
+		61CDC78C432E158AF29F40BE30CBC033 /* HyperionDependencies-Internal.plist in Sources */ = {isa = PBXBuildFile; fileRef = E4B2A3BACE69040FAF9227CC4612421F /* HyperionDependencies-Internal.plist */; };
+		62205565BE6011B182D9D385FF110526 /* InteractionViewDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 55309D1913AC646A9F5B336B7BE43C0C /* InteractionViewDatasource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		623023BD1DFB04777E868D75C4971916 /* Pods-HyperioniOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC333522D4C6B583FF5FB9195556B9A1 /* Pods-HyperioniOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C5C6639B48BE8074E327B4010F94838 /* ToolsTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F61717B7DA9F1637348CB291D59AFF90 /* ToolsTabViewController.m */; };
-		6C8F32922AD21050308F3A422316F9AC /* UIWindow+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A13E397FCDE570D1E5EA36A9D4B90E1 /* UIWindow+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		707AEE2E7BD111E1E41ED5B21D7E7F0C /* FontDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FEB1461CA39112E72DBFC5AF889C71 /* FontDetailViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		736DAB6666E5C9E147F0A8EEAB107776 /* HYPDebuggingOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8363852B4BDDCF15BD268F88444994 /* HYPDebuggingOverlayViewController.m */; };
-		79C4018311C0C0CBA23F1BE4140749BF /* ToolsTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDA70D5BBBB76B92461DCCD61F695E0 /* ToolsTabViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8114EC1A44BC3EAE20DB38BD9DA7956B /* HYPListenerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D355BF5722A73247A1CEDDA33A58B /* HYPListenerContainer.m */; };
-		813C9A0D221C32D7BCEAE138FF1D92FC /* ViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E15104A453B34C8A63D47B0713C21B43 /* ViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		859BD6FCB789B75B641C050CBD5300C1 /* HYPPluginExtensionImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8FE228D2CD667EE28CEC02D2D67336 /* HYPPluginExtensionImp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86C9644C209AE403CABC3919A9998501 /* HYPTargetView.h in Headers */ = {isa = PBXBuildFile; fileRef = 60CC199C24CF739133F6A90B981A31B4 /* HYPTargetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87C48215A813C3397629058776FA151B /* HyperioniOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20097DA9464130E92B4BB7314A3E99A8 /* HyperioniOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89E9E818A7F1AC86278451E851EB9E06 /* HYPDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DA203D7A0817FB4685E2D61483ACE /* HYPDebuggingWindow.m */; };
-		8C2FAF5233E61272314F192F79F5ACD0 /* TabStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EE0253D8AC988777E728EF7407C5B2 /* TabStack.m */; };
-		948139B0193DC85E9CA75570A4AD98FC /* HYPTargetViewListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E60F0A8C4A90335B8DD75422E5FECD /* HYPTargetViewListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9945D2ED97FD3895D811395C26B9706A /* HYPOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3E49C864F9F56E1EA28BC902BC651A /* HYPOverlayContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B01A1CDE871C70ECA47D8A64A5A928B /* ViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B4C462AE42E0CE74334224647C948F /* ViewAttribute.m */; };
-		A345F02AD80692D04E80EED526F847EC /* HYPMeasurementsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0138475A1947A6344D96329FF607A15B /* HYPMeasurementsPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A51E6E0E2FC3FF291CA8870D56B342BD /* HYPSlowAnimationsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 12075EE2C3E8BBF2F624B6D8492EEDBB /* HYPSlowAnimationsPluginModule.m */; };
-		A5310BFD663B999A98E0BE6A1D996A89 /* HYPDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F0259D2B087B95C5035716E0685481 /* HYPDebuggingWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5654447B1D06434CAD9E3DE2FE36979 /* HYPListenerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C19E5DE5D4653F94B7C009B2044F4DE1 /* HYPListenerContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC0A982376E3922969EAE6F9C5F2DF94 /* HYPPluginExtensionImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA73834AAAAEBB6EE276D28D2402A38 /* HYPPluginExtensionImp.m */; };
-		B2D4C8BB86F76D0EF1EDF37DCC4F8D93 /* InteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC987E6A8EE1AC32A681E59C1BC41D23 /* InteractionView.m */; };
-		B4DB27C935F04DD897DB4031A8D6776B /* HYPDebuggingOverlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8668E7B60D1B8C8175A294387C9582AB /* HYPDebuggingOverlayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7E9494E54B98154AA6B65E215664678 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		C01EE2FFEBF424F88BEEA4AC885D0531 /* HYPPluginExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E5DC4A38A6AFE6A531901653B36C24 /* HYPPluginExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C299655139A135818E926C6CA1ED3288 /* TabStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 7347699993CE53B424722F3076B0DD62 /* TabStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8DA0A7A0EE731048FC8CEC19301EFE0 /* HYPMeasurementsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 228A5953EAD2D1C835C0E424FE0E6610 /* HYPMeasurementsPluginModule.m */; };
-		C9085ECC9020952D846E26BBFFB64F38 /* HYPMeasurementsInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = AC03782A341643DF1F45C6BC940B7888 /* HYPMeasurementsInteractionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE28E6BB3D6A73A59448E78EDE69EE12 /* HYPOverlayContainerImp.h in Headers */ = {isa = PBXBuildFile; fileRef = FE4D565F516C84CE48CAADEB21B672B3 /* HYPOverlayContainerImp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8FD1C6D73CD0665D9D497A51F3584FE /* InteractionViewDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = A5CF09407C430CCD99377A23668D2D5B /* InteractionViewDatasource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9092B1B2CDD058090ADD24A53C69D49 /* HYPSlowAnimationsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = D59AD78606CFAB2425A643781D97C8F2 /* HYPSlowAnimationsPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E18C26BC4582557268A70F2451D73B6C /* InteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3AE6D21A7D76F87A8CDBB942279C7E /* InteractionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		629172A0F370DF60E803D763CCB5413D /* HYPListenerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9DFFA28093C61B458DA4A626310283 /* HYPListenerContainer.m */; };
+		6B698CA8FDA64E3A6E0E0AB4EB4AC730 /* ToolsTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8003DDBB8ED11B168F869536BBA8DE28 /* ToolsTabViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B7B010E0124FAAD4AB42AB7A268AE16 /* HYPOverlayViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 61065E0DCEDC9BCA3C533F9D973CBE1F /* HYPOverlayViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CE1E0E728C3C52C8F706159D973D6E4 /* HYPSlowAnimationsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F19B8FBAB935C6AEAB38243E22110688 /* HYPSlowAnimationsPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7087F6FADF1C7E4F5F6B7AB9E299DBA1 /* HYPMeasurementsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 57AD451D0E4EDF6B019D0B62529DDF8E /* HYPMeasurementsPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74CF54526EB600951825AFB3EA9F7B3B /* HYPOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D57A5ED55C9132EF90697AC334391C3 /* HYPOverlayContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7543CFAABCAE3C636B8B48E1C0D1CCD7 /* HYPSlowAnimationsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB7BC0EB591DCE4EC0AE7E3F44575B /* HYPSlowAnimationsPluginModule.m */; };
+		75D06681BA424547243CA74ECE6D67FA /* HYPMeasurementsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8207267F5C0C0071EB55F2B32D0BCB96 /* HYPMeasurementsPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8287F179FCE3F105FA8265897F85A40F /* HYPVisualLoggingContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E5B43B46C2F8149FDFEEE7B9D762CE /* HYPVisualLoggingContainerView.m */; };
+		849392EB8967BBA6F7E382E85DB25758 /* UIWindow+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F34D8DD4DB67A2BCAAD1462B5FB8A0 /* UIWindow+Swizzling.m */; };
+		97FE2D13FE5482B51297F5881B6FB718 /* HYPPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB15468754454F2327196DAD3D80A69 /* HYPPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99125A3D2AF9C1928F408875EA7D4E47 /* HYPDebuggingOverlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98DABEE0562EBAEFE30B7167B442C583 /* HYPDebuggingOverlayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B225E09AE537FC52946C1133D945336 /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E40F40A4CDC2F1DFDA6CB187FEE6E /* HYPAttributesInspectorPlugin.m */; };
+		9CC7361C6B78401B8031EB5BF4F58658 /* HYPInAppOverlayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C71AB128906F18419AD57D59EC3A29C3 /* HYPInAppOverlayContainer.m */; };
+		A769E98A5ED570BD3610C758E14700C7 /* HYPVisualLoggerPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 7107D7620E079D9819748975223764F3 /* HYPVisualLoggerPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B44498570ABC1C897BAACBB2C5E3E5 /* HYPMeasurementsInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 340DDC1A2A08EBD596D8B9FB14314D68 /* HYPMeasurementsInteractionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F613E5328EFE245E1A5B6EA5006EB1 /* HYPAttributesInspectorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 417D237A07ABFB580B9C0FCB1640FDCB /* HYPAttributesInspectorPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB78DC9C1F369AC187CA0D5098D49DEE /* HYPPluginExtensionImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5170D07E06A27103E5A7BBC89F5DE9B2 /* HYPPluginExtensionImp.m */; };
+		B06E945544720E1F5DFCA47414BE1817 /* HYPMaskDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0EEDE28560B63BB77648638C36192D /* HYPMaskDetailViewAttribute.m */; };
+		B5EC4B40A97FD13B75EE68DC56F19DA3 /* TabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB7430ABEEE7CAD20BC947AFCEE735 /* TabView.m */; };
+		B6797B11C52B5D6BA95923265BEE0D07 /* HYPOverlayContainerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 297EA4F9B83458EC2E051174CE920596 /* HYPOverlayContainerListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB2411B7FD466B2B19CA22CF90A2161C /* HYPFontPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F2C32CB9FC45493988CDEAF9CF8B31 /* HYPFontPickerViewController.m */; };
+		BF0EE3001C5CD7B4C368777A581ADC27 /* UIWindow+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = E87560A10DBE7D88B88CBCA948EF2746 /* UIWindow+Swizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C227703109A21DA68FEBF4A7CBC4899F /* FontDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F697579D966F721FBA4115983F7F88 /* FontDetailViewAttribute.m */; };
+		C5917E3A32DD9DA641A8691E447D557B /* HYPVisualLoggingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1689CF0E8176E90C86BB0AB9735457B5 /* HYPVisualLoggingManager.m */; };
+		C6BC3B9787341FD8D9487FEFB3E5D71A /* HYPTargetViewListener.h in Headers */ = {isa = PBXBuildFile; fileRef = B81D29F48474699989311226C484690D /* HYPTargetViewListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9F04E409D5951586731512D103D7107 /* HYPLogItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F016542678DFC3567570F27F1E920B0A /* HYPLogItemView.m */; };
+		CF5124A8ABF3B2341E12D6486D95DE4F /* HyperioniOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94F6D0389E07F71CBBD6764EFD0A9512 /* HyperioniOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF662C589AF0B27A3F450EF916325049 /* HYPOverlayContainerImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 648E707BFE0ECB6D95CE3E9EAF721A30 /* HYPOverlayContainerImp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DBA11C1EECED8A384B89DC87A43F47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		DA79829EA8E76FE3D85879E9028F4A6A /* AttributesTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F00192903D4282D3D60D5B9E8F4312 /* AttributesTabViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCDBF8749B6CE47FAE18662E4E478D99 /* HYPVisualLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 75819619191C95C23A4B54EC8CA1384F /* HYPVisualLoggerPlugin.m */; };
 		EB6840BB56089E19FB15C233B207B708 /* Pods-HyperioniOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7009B53751EEA843E4E119D7AF32D8 /* Pods-HyperioniOS_Example-dummy.m */; };
-		ECCD9996B78B6B103AE413577525E251 /* HYPMeasurementsInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 629AF5CC9C47707316E227A19EC05BCE /* HYPMeasurementsInteractionView.m */; };
-		EF64BCAD91A08C3F2C0245F184090152 /* HyperioniOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF78E12D5386D839325E8A4D9711B640 /* HyperioniOS-dummy.m */; };
-		F46944C5F12158346E0E423FE7287832 /* UIWindow+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D36BEDE958F1AE50180F09E0594DD /* UIWindow+Swizzling.m */; };
-		F7B559CBD5FC79B66CAF9CC8A9BCE9C2 /* FontDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6F4DEAC641DF1FC946D0656EC7C2D /* FontDetailViewAttribute.m */; };
-		FDE3A21F3DB6E4D02023F27FC8A79B7E /* TabView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD05C17DC67CAB1A0BE88F16FA3BBE7E /* TabView.m */; };
-		FF42A876BE81D0EBA250782A4CB8EF8C /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C6800EC531DAFA5DB28449E38C46C886 /* HYPAttributesInspectorPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF97A7C254DB6EB2A6BC5FB238C7D15F /* HYPPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 563624531897FCFF1C920FBD72E33AB8 /* HYPPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC7AA5A258DB25B87B434B5AFC4DAB8C /* HYPVisualLoggingContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = AEEE338346791167B5E7DD82EE213B78 /* HYPVisualLoggingContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F48D0DD72F0C4E7C8F647CFCA044BC /* TabView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F99A29B6A030F5FC24B742E6254B17 /* TabView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F306D859E5FDA5F941DE60BD53F4C77D /* HYPMeasurementsInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7C5415F2522444D135B9D2B72D8432 /* HYPMeasurementsInteractionView.m */; };
+		F599E757B9248D4690C598CC90745C81 /* HYPMeasurementsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = D2237EB8E5844CD4A1B963243D24CC23 /* HYPMeasurementsPluginModule.m */; };
+		F8ED2E9F5D5C780D457ABE3A5C81C629 /* TabStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 5401A63EE20EE5699282F5A0E79B5DDA /* TabStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4EA1E6114A2A3EF0EB941E7CD98C3E /* FontDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB97CAD8D74834F0071B3146F65BC82 /* FontDetailViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB9011B02996DB08736607E470FCF4C0 /* HYPInAppDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 083919114AE4EF04ABEDECFACBE65CAC /* HYPInAppDebuggingWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC7D75451257C03347001B60AFB1AEEA /* HYPDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F17C0B89C403452E2EA5A2F8BF14929 /* HYPDebuggingWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD0F93D9AF2648C0F15735BDEB3524B0 /* ToolsTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D771E41239A6C4A27FCCEC421A4C8F3 /* ToolsTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,101 +96,116 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FF77C22D3F14B551353905CFEE583229;
+			remoteGlobalIDString = B9A88E01BC28527B802D50C0B76E78E0;
 			remoteInfo = HyperioniOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008A375D275DF6330FF022C5F18B6523 /* Pods-HyperioniOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HyperioniOS_Tests-dummy.m"; sourceTree = "<group>"; };
-		0138475A1947A6344D96329FF607A15B /* HYPMeasurementsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsPlugin.h; sourceTree = "<group>"; };
-		08B4C462AE42E0CE74334224647C948F /* ViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ViewAttribute.m; sourceTree = "<group>"; };
+		079FB7D668506EA8E4BD0393526B8975 /* InteractionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InteractionView.h; sourceTree = "<group>"; };
+		083919114AE4EF04ABEDECFACBE65CAC /* HYPInAppDebuggingWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPInAppDebuggingWindow.h; sourceTree = "<group>"; };
+		09CB7BC0EB591DCE4EC0AE7E3F44575B /* HYPSlowAnimationsPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPSlowAnimationsPluginModule.m; sourceTree = "<group>"; };
 		0D8DF16FB85D4C81238914E099C3CAC2 /* Pods-HyperioniOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HyperioniOS_Tests-umbrella.h"; sourceTree = "<group>"; };
-		0DDA70D5BBBB76B92461DCCD61F695E0 /* ToolsTabViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ToolsTabViewController.h; sourceTree = "<group>"; };
-		0ED23B2B808F058A8C5ED05BCB34F9F0 /* HyperioniOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HyperioniOS.modulemap; sourceTree = "<group>"; };
-		11A39B4AF335EFBAC85B3310A748AE3E /* HYPAttributesInspectorPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPAttributesInspectorPlugin.h; sourceTree = "<group>"; };
-		12075EE2C3E8BBF2F624B6D8492EEDBB /* HYPSlowAnimationsPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPSlowAnimationsPluginModule.m; sourceTree = "<group>"; };
 		12C805CBA91E54F8502BF19909F99CFB /* Pods-HyperioniOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HyperioniOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		146ABE851AEBD8925B58380EC2561F0F /* Pods_HyperioniOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HyperioniOS_Example.framework; path = "Pods-HyperioniOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B7354099B5566E3E7997882B746581C /* HYPMaskDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMaskDetailViewController.m; sourceTree = "<group>"; };
-		1FA73834AAAAEBB6EE276D28D2402A38 /* HYPPluginExtensionImp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPPluginExtensionImp.m; sourceTree = "<group>"; };
-		1FD6F4DEAC641DF1FC946D0656EC7C2D /* FontDetailViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FontDetailViewAttribute.m; sourceTree = "<group>"; };
-		20097DA9464130E92B4BB7314A3E99A8 /* HyperioniOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperioniOS-umbrella.h"; sourceTree = "<group>"; };
-		228A5953EAD2D1C835C0E424FE0E6610 /* HYPMeasurementsPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsPluginModule.m; sourceTree = "<group>"; };
-		2332B60EE7E50E768222D9B99ADD88DD /* HyperioniOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperioniOS-prefix.pch"; sourceTree = "<group>"; };
-		25E60F0A8C4A90335B8DD75422E5FECD /* HYPTargetViewListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPTargetViewListener.h; sourceTree = "<group>"; };
-		2C8FE228D2CD667EE28CEC02D2D67336 /* HYPPluginExtensionImp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPPluginExtensionImp.h; sourceTree = "<group>"; };
-		2D19AB3F54BCE1EB303FEBCA9D138DBA /* HYPMaskDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMaskDetailViewController.h; sourceTree = "<group>"; };
-		31A2B80148CEF477FB544ACC68994DCF /* HyperioniOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperioniOS.xcconfig; sourceTree = "<group>"; };
-		3CD8956CF900C2B82425164776AEE657 /* AttributesTabViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AttributesTabViewController.m; sourceTree = "<group>"; };
-		3F7D355BF5722A73247A1CEDDA33A58B /* HYPListenerContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPListenerContainer.m; sourceTree = "<group>"; };
+		1689CF0E8176E90C86BB0AB9735457B5 /* HYPVisualLoggingManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPVisualLoggingManager.m; sourceTree = "<group>"; };
+		189500E660D2422740A24A455E923033 /* HYPSlowAnimationsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPSlowAnimationsPlugin.h; sourceTree = "<group>"; };
+		1BB97CAD8D74834F0071B3146F65BC82 /* FontDetailViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FontDetailViewAttribute.h; sourceTree = "<group>"; };
+		1CB15468754454F2327196DAD3D80A69 /* HYPPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPPluginModule.h; sourceTree = "<group>"; };
+		1D771E41239A6C4A27FCCEC421A4C8F3 /* ToolsTabViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ToolsTabViewController.m; sourceTree = "<group>"; };
+		208F7DA3560E172BA6FE9FAB1105E1F9 /* HYPMeasurementsPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsPlugin.m; sourceTree = "<group>"; };
+		21F00192903D4282D3D60D5B9E8F4312 /* AttributesTabViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AttributesTabViewController.h; sourceTree = "<group>"; };
+		29742529D29D7660E12CF753B93F0FB8 /* HYPInAppDebuggingWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPInAppDebuggingWindow.m; sourceTree = "<group>"; };
+		297EA4F9B83458EC2E051174CE920596 /* HYPOverlayContainerListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPOverlayContainerListener.h; sourceTree = "<group>"; };
+		2B845981CF180C884658EC3C580E637B /* HYPLogItemView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPLogItemView.h; sourceTree = "<group>"; };
+		2C865950DF344C921EE9FA92E4E1CCE6 /* HyperioniOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HyperioniOS-dummy.m"; sourceTree = "<group>"; };
+		2DA49AC396C9661794ADB7C82F56B254 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F17C0B89C403452E2EA5A2F8BF14929 /* HYPDebuggingWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPDebuggingWindow.h; sourceTree = "<group>"; };
+		325357ECD40B4EC09D359631307316D9 /* HYPMaskDetailViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMaskDetailViewController.m; sourceTree = "<group>"; };
+		340DDC1A2A08EBD596D8B9FB14314D68 /* HYPMeasurementsInteractionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsInteractionView.h; sourceTree = "<group>"; };
+		40F99A29B6A030F5FC24B742E6254B17 /* TabView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TabView.h; sourceTree = "<group>"; };
+		413289DBF7137BDB5E606129F1FDF6BE /* HYPAttributeInspectorInteractionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPAttributeInspectorInteractionView.h; sourceTree = "<group>"; };
+		417D237A07ABFB580B9C0FCB1640FDCB /* HYPAttributesInspectorPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPAttributesInspectorPlugin.h; sourceTree = "<group>"; };
+		456DA822E6200FB1A7D1AE60A21620F4 /* HYPListenerContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPListenerContainer.h; sourceTree = "<group>"; };
+		489660E409F9485099CE72CA9CA89C27 /* HYPInAppOverlayContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPInAppOverlayContainer.h; sourceTree = "<group>"; };
+		48B99C183B8E0E874F2B93B2445683F8 /* HYPAttributeInspectorInteractionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPAttributeInspectorInteractionView.m; sourceTree = "<group>"; };
 		49A9473C6B271D8F7E69A8E46C2BE5EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1E40F40A4CDC2F1DFDA6CB187FEE6E /* HYPAttributesInspectorPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesInspectorPlugin.m; sourceTree = "<group>"; };
 		4FF783E465932A510DB33282B871D764 /* Pods_HyperioniOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HyperioniOS_Tests.framework; path = "Pods-HyperioniOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5170D07E06A27103E5A7BBC89F5DE9B2 /* HYPPluginExtensionImp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPPluginExtensionImp.m; sourceTree = "<group>"; };
 		52B7D4CA6A2743845C4321A757C523EB /* Pods-HyperioniOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HyperioniOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		563624531897FCFF1C920FBD72E33AB8 /* HYPPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPPlugin.h; sourceTree = "<group>"; };
-		5B0AC791CB681C02B4EE35A1C67255D3 /* HYPMaskDetailViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMaskDetailViewAttribute.h; sourceTree = "<group>"; };
-		60CC199C24CF739133F6A90B981A31B4 /* HYPTargetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPTargetView.h; sourceTree = "<group>"; };
+		539F56E094FB3ED3CB857274536BB748 /* HYPMaskDetailViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMaskDetailViewController.h; sourceTree = "<group>"; };
+		5401A63EE20EE5699282F5A0E79B5DDA /* TabStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TabStack.h; sourceTree = "<group>"; };
+		55309D1913AC646A9F5B336B7BE43C0C /* InteractionViewDatasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InteractionViewDatasource.h; sourceTree = "<group>"; };
+		55CC4DA6C3D24E25E75B5BD305C67F5D /* HyperioniOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HyperioniOS.xcconfig; sourceTree = "<group>"; };
+		57AD451D0E4EDF6B019D0B62529DDF8E /* HYPMeasurementsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsPlugin.h; sourceTree = "<group>"; };
+		5880C74857909077BE591E93509A725B /* ViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ViewAttribute.m; sourceTree = "<group>"; };
+		5A11CCBA44274F7DA8DC6539C22B43D7 /* HYPPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPPlugin.h; sourceTree = "<group>"; };
+		5B9DFFA28093C61B458DA4A626310283 /* HYPListenerContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPListenerContainer.m; sourceTree = "<group>"; };
+		61065E0DCEDC9BCA3C533F9D973CBE1F /* HYPOverlayViewProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPOverlayViewProvider.h; sourceTree = "<group>"; };
 		6131DCBA42EB92F485307F26DF023AFF /* Pods-HyperioniOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HyperioniOS_Tests.modulemap"; sourceTree = "<group>"; };
-		629AF5CC9C47707316E227A19EC05BCE /* HYPMeasurementsInteractionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsInteractionView.m; sourceTree = "<group>"; };
+		61E51989D31927357487E03F04C0FC66 /* HYPMaskDetailViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMaskDetailViewAttribute.h; sourceTree = "<group>"; };
 		62A0D75BD676AE6687350BDD88F627BB /* Pods-HyperioniOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HyperioniOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6446F9313A014324D2C67948D4126A09 /* Pods-HyperioniOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HyperioniOS_Example-resources.sh"; sourceTree = "<group>"; };
-		65B0DB1C4BE5E2B6360C6DBF00F5A388 /* HYPSlowAnimationsPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPSlowAnimationsPlugin.m; sourceTree = "<group>"; };
-		6A13E397FCDE570D1E5EA36A9D4B90E1 /* UIWindow+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Swizzling.h"; sourceTree = "<group>"; };
-		6A8363852B4BDDCF15BD268F88444994 /* HYPDebuggingOverlayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPDebuggingOverlayViewController.m; sourceTree = "<group>"; };
+		648E707BFE0ECB6D95CE3E9EAF721A30 /* HYPOverlayContainerImp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPOverlayContainerImp.h; sourceTree = "<group>"; };
+		64F2C32CB9FC45493988CDEAF9CF8B31 /* HYPFontPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPFontPickerViewController.m; sourceTree = "<group>"; };
+		667153C093B35473DEF819A75DB5F805 /* HYPPluginExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPPluginExtension.h; sourceTree = "<group>"; };
+		6ABB7430ABEEE7CAD20BC947AFCEE735 /* TabView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TabView.m; sourceTree = "<group>"; };
 		6D7009B53751EEA843E4E119D7AF32D8 /* Pods-HyperioniOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HyperioniOS_Example-dummy.m"; sourceTree = "<group>"; };
-		7347699993CE53B424722F3076B0DD62 /* TabStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TabStack.h; sourceTree = "<group>"; };
-		73C3FEEB2DFDE04871CB01B45C3FF1C3 /* HYPAttributeInspectorInteractionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPAttributeInspectorInteractionView.h; sourceTree = "<group>"; };
-		746CE370D6090AC6510EA86908DFBF96 /* HyperionDependencies-Internal.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HyperionDependencies-Internal.plist"; sourceTree = "<group>"; };
-		74E5DC4A38A6AFE6A531901653B36C24 /* HYPPluginExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPPluginExtension.h; sourceTree = "<group>"; };
-		7611C9C22AA4E38096DEEEAB083413FE /* HYPAttributesInspectorPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesInspectorPlugin.m; sourceTree = "<group>"; };
+		7107D7620E079D9819748975223764F3 /* HYPVisualLoggerPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPVisualLoggerPluginModule.h; sourceTree = "<group>"; };
+		75819619191C95C23A4B54EC8CA1384F /* HYPVisualLoggerPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPVisualLoggerPlugin.m; sourceTree = "<group>"; };
 		762D2B7416E48247B9024F99E4E75340 /* Pods-HyperioniOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HyperioniOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		79CB60714C4A41A36E77422398F59675 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7ABC380CB8988A8C498DB59C334AD58D /* HYPMeasurementsPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsPlugin.m; sourceTree = "<group>"; };
-		7F1D36BEDE958F1AE50180F09E0594DD /* UIWindow+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Swizzling.m"; sourceTree = "<group>"; };
-		8668E7B60D1B8C8175A294387C9582AB /* HYPDebuggingOverlayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPDebuggingOverlayViewController.h; sourceTree = "<group>"; };
-		894DA203D7A0817FB4685E2D61483ACE /* HYPDebuggingWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPDebuggingWindow.m; sourceTree = "<group>"; };
-		8DBC3A7521A77E238029D3C6A8A06C73 /* HYPPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPPluginModule.h; sourceTree = "<group>"; };
-		8E0F67D6AECDE71985C80A4F716BA6E9 /* HYPAttributeInspectorInteractionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPAttributeInspectorInteractionView.m; sourceTree = "<group>"; };
-		90F1CED31B22427F94DA67534E7427DD /* HYPOverlayContainerImp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPOverlayContainerImp.m; sourceTree = "<group>"; };
+		79124711795C453182A633BA3BBA1247 /* HYPAttributesInspectorPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPAttributesInspectorPluginModule.h; sourceTree = "<group>"; };
+		7B1B21572B24CD75D38197F361148C9E /* AttributesTabViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AttributesTabViewController.m; sourceTree = "<group>"; };
+		7E0EEDE28560B63BB77648638C36192D /* HYPMaskDetailViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMaskDetailViewAttribute.m; sourceTree = "<group>"; };
+		8003DDBB8ED11B168F869536BBA8DE28 /* ToolsTabViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ToolsTabViewController.h; sourceTree = "<group>"; };
+		802B254FAB58B1F640772C774FBEC3BD /* HYPTargetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPTargetView.h; sourceTree = "<group>"; };
+		81F697579D966F721FBA4115983F7F88 /* FontDetailViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FontDetailViewAttribute.m; sourceTree = "<group>"; };
+		8207267F5C0C0071EB55F2B32D0BCB96 /* HYPMeasurementsPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsPluginModule.h; sourceTree = "<group>"; };
+		890185C784127D6B9AE856F511A79E38 /* TabStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TabStack.m; sourceTree = "<group>"; };
+		8E50A206C518682D9DA13B37E122974A /* HYPVisualLoggerPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPVisualLoggerPlugin.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9571D46DD397A44031003AF397B1B32A /* HYPAttributesInspectorPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesInspectorPluginModule.m; sourceTree = "<group>"; };
-		95F0259D2B087B95C5035716E0685481 /* HYPDebuggingWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPDebuggingWindow.h; sourceTree = "<group>"; };
-		9A07D5A451A2C29BD7FC617F6632DAAF /* HYPOverlayContainerListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPOverlayContainerListener.h; sourceTree = "<group>"; };
-		A158FB390EE618841346D22AE4003324 /* HYPMaskDetailViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMaskDetailViewAttribute.m; sourceTree = "<group>"; };
-		A228A1C1BFF0109134695198E04FAB65 /* TabView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TabView.h; sourceTree = "<group>"; };
+		94B6AEF54953C6B1093B2A3A43D8E4F8 /* HYPSlowAnimationsPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPSlowAnimationsPlugin.m; sourceTree = "<group>"; };
+		94F6D0389E07F71CBBD6764EFD0A9512 /* HyperioniOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperioniOS-umbrella.h"; sourceTree = "<group>"; };
+		98DABEE0562EBAEFE30B7167B442C583 /* HYPDebuggingOverlayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPDebuggingOverlayViewController.h; sourceTree = "<group>"; };
+		99A1E630438578C96123FB881AAC9CA1 /* HyperioniOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HyperioniOS.modulemap; sourceTree = "<group>"; };
+		9D57A5ED55C9132EF90697AC334391C3 /* HYPOverlayContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPOverlayContainer.h; sourceTree = "<group>"; };
+		A1F34D8DD4DB67A2BCAAD1462B5FB8A0 /* UIWindow+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Swizzling.m"; sourceTree = "<group>"; };
+		A326005D70D038BB841E8201948078EC /* HYPFontPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPFontPickerViewController.h; sourceTree = "<group>"; };
 		A39B8903C59CFB762E25A6ABC95F419E /* Pods-HyperioniOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HyperioniOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A5CF09407C430CCD99377A23668D2D5B /* InteractionViewDatasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InteractionViewDatasource.h; sourceTree = "<group>"; };
 		A7130E7BFDFB2564B4245C454040427F /* Pods-HyperioniOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HyperioniOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AC03782A341643DF1F45C6BC940B7888 /* HYPMeasurementsInteractionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsInteractionView.h; sourceTree = "<group>"; };
 		AC333522D4C6B583FF5FB9195556B9A1 /* Pods-HyperioniOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HyperioniOS_Example-umbrella.h"; sourceTree = "<group>"; };
-		AC987E6A8EE1AC32A681E59C1BC41D23 /* InteractionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = InteractionView.m; sourceTree = "<group>"; };
+		AEEE338346791167B5E7DD82EE213B78 /* HYPVisualLoggingContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPVisualLoggingContainerView.h; sourceTree = "<group>"; };
 		B255EE4D9283C6C25EB2B9BC09C1235F /* Pods-HyperioniOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HyperioniOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B2FEB1461CA39112E72DBFC5AF889C71 /* FontDetailViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FontDetailViewAttribute.h; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BAEECAAEC42FDD7E4B86BB5774D9156D /* HYPMeasurementsPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsPluginModule.h; sourceTree = "<group>"; };
-		BD05C17DC67CAB1A0BE88F16FA3BBE7E /* TabView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TabView.m; sourceTree = "<group>"; };
+		B81D29F48474699989311226C484690D /* HYPTargetViewListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPTargetViewListener.h; sourceTree = "<group>"; };
+		BB7C5415F2522444D135B9D2B72D8432 /* HYPMeasurementsInteractionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsInteractionView.m; sourceTree = "<group>"; };
 		BF5C9C80797C6A536C82B606DCF4D6E5 /* Pods-HyperioniOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HyperioniOS_Example.modulemap"; sourceTree = "<group>"; };
-		C19E5DE5D4653F94B7C009B2044F4DE1 /* HYPListenerContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPListenerContainer.h; sourceTree = "<group>"; };
 		C577105A5822B73772A77632530B8E15 /* Pods-HyperioniOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HyperioniOS_Tests-resources.sh"; sourceTree = "<group>"; };
-		C6800EC531DAFA5DB28449E38C46C886 /* HYPAttributesInspectorPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPAttributesInspectorPluginModule.h; sourceTree = "<group>"; };
-		C80F97EF499BD49DFDA4B3828184C2F3 /* HYPFontPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPFontPickerViewController.h; sourceTree = "<group>"; };
+		C71AB128906F18419AD57D59EC3A29C3 /* HYPInAppOverlayContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPInAppOverlayContainer.m; sourceTree = "<group>"; };
+		C9B2723915A188AC9A683649D60AD5BF /* HYPDebuggingWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPDebuggingWindow.m; sourceTree = "<group>"; };
 		CA366045B9E1E657BB0CD05D83AA8442 /* Pods-HyperioniOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HyperioniOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CC1370510BF3A8F545D855188032B7F1 /* AttributesTabViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AttributesTabViewController.h; sourceTree = "<group>"; };
-		CF3E49C864F9F56E1EA28BC902BC651A /* HYPOverlayContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPOverlayContainer.h; sourceTree = "<group>"; };
-		D59AD78606CFAB2425A643781D97C8F2 /* HYPSlowAnimationsPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPSlowAnimationsPlugin.h; sourceTree = "<group>"; };
-		D5EE0253D8AC988777E728EF7407C5B2 /* TabStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TabStack.m; sourceTree = "<group>"; };
+		D2237EB8E5844CD4A1B963243D24CC23 /* HYPMeasurementsPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsPluginModule.m; sourceTree = "<group>"; };
+		D65FB8198D16B3A3500C5059563C0884 /* HYPDebuggingOverlayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPDebuggingOverlayViewController.m; sourceTree = "<group>"; };
+		D6CD19146071BC9B086F852C37853400 /* HYPOverlayContainerImp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPOverlayContainerImp.m; sourceTree = "<group>"; };
+		D6E8BC46DE98D774D49B2B81012DB60D /* HYPPluginExtensionImp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPPluginExtensionImp.h; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E15104A453B34C8A63D47B0713C21B43 /* ViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ViewAttribute.h; sourceTree = "<group>"; };
+		DB596EB8AD9AE996704BBFEDB952E3D1 /* HyperioniOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HyperioniOS-prefix.pch"; sourceTree = "<group>"; };
+		DD8C458FE537E7862BF970E5A3CE4FE9 /* HYPAttributesInspectorPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesInspectorPluginModule.m; sourceTree = "<group>"; };
+		DFD4393491C03DE9F6C14C2B34000AB3 /* InteractionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = InteractionView.m; sourceTree = "<group>"; };
 		E45B3BEC2BEADA96C423FF9FD0857AED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B2A3BACE69040FAF9227CC4612421F /* HyperionDependencies-Internal.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HyperionDependencies-Internal.plist"; sourceTree = "<group>"; };
+		E6159544012B4383D5B989D34263EF3A /* HYPVisualLoggerPluginModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPVisualLoggerPluginModule.m; sourceTree = "<group>"; };
+		E87560A10DBE7D88B88CBCA948EF2746 /* UIWindow+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Swizzling.h"; sourceTree = "<group>"; };
 		EA7CEC2DE4E186542BD308BF579FF8E9 /* Pods-HyperioniOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HyperioniOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EBAA552AFE258DC07789DA0A4284E161 /* HYPSlowAnimationsPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPSlowAnimationsPluginModule.h; sourceTree = "<group>"; };
+		EBE116B7282251459A7D6C6D02E49AF2 /* ViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ViewAttribute.h; sourceTree = "<group>"; };
 		ECDE16988E5810AC30931FC5322A1D4F /* HyperioniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HyperioniOS.framework; path = HyperioniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB30BB2D3BC9DEC3EA138CE213CD971 /* HYPVisualLoggingManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPVisualLoggingManager.h; sourceTree = "<group>"; };
 		EF0604574DA6E146F60D3EAF36B1D944 /* Pods-HyperioniOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HyperioniOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EF3AE6D21A7D76F87A8CDBB942279C7E /* InteractionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = InteractionView.h; sourceTree = "<group>"; };
-		EF78E12D5386D839325E8A4D9711B640 /* HyperioniOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HyperioniOS-dummy.m"; sourceTree = "<group>"; };
-		F483DB47458647FA5E054C2A8005AEE7 /* HYPFontPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPFontPickerViewController.m; sourceTree = "<group>"; };
-		F61717B7DA9F1637348CB291D59AFF90 /* ToolsTabViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ToolsTabViewController.m; sourceTree = "<group>"; };
-		FE4D565F516C84CE48CAADEB21B672B3 /* HYPOverlayContainerImp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPOverlayContainerImp.h; sourceTree = "<group>"; };
+		F016542678DFC3567570F27F1E920B0A /* HYPLogItemView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPLogItemView.m; sourceTree = "<group>"; };
+		F19B8FBAB935C6AEAB38243E22110688 /* HYPSlowAnimationsPluginModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HYPSlowAnimationsPluginModule.h; sourceTree = "<group>"; };
+		F5E5B43B46C2F8149FDFEEE7B9D762CE /* HYPVisualLoggingContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HYPVisualLoggingContainerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,20 +217,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		820EA007B6656873D2DFCAED8800D34B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DBA11C1EECED8A384B89DC87A43F47 /* Foundation.framework in Frameworks */,
+				15AD3D1B3AF11B9F89CE6B47F67EF2BF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AD0B6770CEB2FD600359DD5CB063F86D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3433CC2B0596A76D06D3F19B1A6271F4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EF6D3759307CC290099957B48D411E2A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15A0348B2525D01729F4209280EA9D77 /* Foundation.framework in Frameworks */,
-				B7E9494E54B98154AA6B65E215664678 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +255,40 @@
 			path = "Target Support Files/Pods-HyperioniOS_Example";
 			sourceTree = "<group>";
 		};
+		07FFB5A7197672AB89AA2AC5197E89D9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				98DABEE0562EBAEFE30B7167B442C583 /* HYPDebuggingOverlayViewController.h */,
+				D65FB8198D16B3A3500C5059563C0884 /* HYPDebuggingOverlayViewController.m */,
+				2F17C0B89C403452E2EA5A2F8BF14929 /* HYPDebuggingWindow.h */,
+				C9B2723915A188AC9A683649D60AD5BF /* HYPDebuggingWindow.m */,
+				E4B2A3BACE69040FAF9227CC4612421F /* HyperionDependencies-Internal.plist */,
+				083919114AE4EF04ABEDECFACBE65CAC /* HYPInAppDebuggingWindow.h */,
+				29742529D29D7660E12CF753B93F0FB8 /* HYPInAppDebuggingWindow.m */,
+				489660E409F9485099CE72CA9CA89C27 /* HYPInAppOverlayContainer.h */,
+				C71AB128906F18419AD57D59EC3A29C3 /* HYPInAppOverlayContainer.m */,
+				456DA822E6200FB1A7D1AE60A21620F4 /* HYPListenerContainer.h */,
+				5B9DFFA28093C61B458DA4A626310283 /* HYPListenerContainer.m */,
+				9D57A5ED55C9132EF90697AC334391C3 /* HYPOverlayContainer.h */,
+				648E707BFE0ECB6D95CE3E9EAF721A30 /* HYPOverlayContainerImp.h */,
+				D6CD19146071BC9B086F852C37853400 /* HYPOverlayContainerImp.m */,
+				297EA4F9B83458EC2E051174CE920596 /* HYPOverlayContainerListener.h */,
+				D6E8BC46DE98D774D49B2B81012DB60D /* HYPPluginExtensionImp.h */,
+				5170D07E06A27103E5A7BBC89F5DE9B2 /* HYPPluginExtensionImp.m */,
+				B81D29F48474699989311226C484690D /* HYPTargetViewListener.h */,
+				5401A63EE20EE5699282F5A0E79B5DDA /* TabStack.h */,
+				890185C784127D6B9AE856F511A79E38 /* TabStack.m */,
+				40F99A29B6A030F5FC24B742E6254B17 /* TabView.h */,
+				6ABB7430ABEEE7CAD20BC947AFCEE735 /* TabView.m */,
+				E87560A10DBE7D88B88CBCA948EF2746 /* UIWindow+Swizzling.h */,
+				A1F34D8DD4DB67A2BCAAD1462B5FB8A0 /* UIWindow+Swizzling.m */,
+				CC7E6B6D2727CD5C2EB070BEA844D2D3 /* Plugin */,
+				631188DD253680C4709B677284242BB2 /* Tools */,
+			);
+			name = Core;
+			path = Core;
+			sourceTree = "<group>";
+		};
 		08FED257962256ABD4278A376B7339B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +297,40 @@
 				4FF783E465932A510DB33282B871D764 /* Pods_HyperioniOS_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0AC7880B0FB86925F90194CBB75A4D1F /* VisualLogger */ = {
+			isa = PBXGroup;
+			children = (
+				73E40A46EB09BC32E28A706A3069AED1 /* VisualLogger */,
+			);
+			name = VisualLogger;
+			sourceTree = "<group>";
+		};
+		0ADCCA2C11233AAB720A984FAA011E32 /* DetailViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A326005D70D038BB841E8201948078EC /* HYPFontPickerViewController.h */,
+				64F2C32CB9FC45493988CDEAF9CF8B31 /* HYPFontPickerViewController.m */,
+				539F56E094FB3ED3CB857274536BB748 /* HYPMaskDetailViewController.h */,
+				325357ECD40B4EC09D359631307316D9 /* HYPMaskDetailViewController.m */,
+			);
+			name = DetailViewControllers;
+			path = DetailViewControllers;
+			sourceTree = "<group>";
+		};
+		1092761B9692D4F4A0477330AD0CBE64 /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				340DDC1A2A08EBD596D8B9FB14314D68 /* HYPMeasurementsInteractionView.h */,
+				BB7C5415F2522444D135B9D2B72D8432 /* HYPMeasurementsInteractionView.m */,
+				57AD451D0E4EDF6B019D0B62529DDF8E /* HYPMeasurementsPlugin.h */,
+				208F7DA3560E172BA6FE9FAB1105E1F9 /* HYPMeasurementsPlugin.m */,
+				8207267F5C0C0071EB55F2B32D0BCB96 /* HYPMeasurementsPluginModule.h */,
+				D2237EB8E5844CD4A1B963243D24CC23 /* HYPMeasurementsPluginModule.m */,
+			);
+			name = Measurements;
+			path = Measurements;
 			sourceTree = "<group>";
 		};
 		11CD522DB3E498E6425838F6F236BD1D /* Pods-HyperioniOS_Tests */ = {
@@ -253,39 +351,46 @@
 			path = "Target Support Files/Pods-HyperioniOS_Tests";
 			sourceTree = "<group>";
 		};
-		1BFCC128B56394190DF2A5FEF54C15B9 /* Measurements */ = {
+		310B5578E970D3E870411EE81155762E /* AttributesViewer */ = {
 			isa = PBXGroup;
 			children = (
-				2AA93696B6FD594BE3904B424C5F7E19 /* Measurements */,
+				21F00192903D4282D3D60D5B9E8F4312 /* AttributesTabViewController.h */,
+				7B1B21572B24CD75D38197F361148C9E /* AttributesTabViewController.m */,
+				EBE116B7282251459A7D6C6D02E49AF2 /* ViewAttribute.h */,
+				5880C74857909077BE591E93509A725B /* ViewAttribute.m */,
+				0ADCCA2C11233AAB720A984FAA011E32 /* DetailViewControllers */,
+				3792FBF6DD7F13D927DE7CA272B5C589 /* ViewAttributes */,
+			);
+			name = AttributesViewer;
+			path = AttributesViewer;
+			sourceTree = "<group>";
+		};
+		35ABEBEC98A2E49F605AD4513A7F293B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3B982FD9DF7C556E784924A27DB923F /* HyperioniOS */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		36342BC364EC025D5E0AC6FBFCB41314 /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				1092761B9692D4F4A0477330AD0CBE64 /* Measurements */,
 			);
 			name = Measurements;
 			sourceTree = "<group>";
 		};
-		2AA93696B6FD594BE3904B424C5F7E19 /* Measurements */ = {
+		3792FBF6DD7F13D927DE7CA272B5C589 /* ViewAttributes */ = {
 			isa = PBXGroup;
 			children = (
-				AC03782A341643DF1F45C6BC940B7888 /* HYPMeasurementsInteractionView.h */,
-				629AF5CC9C47707316E227A19EC05BCE /* HYPMeasurementsInteractionView.m */,
-				0138475A1947A6344D96329FF607A15B /* HYPMeasurementsPlugin.h */,
-				7ABC380CB8988A8C498DB59C334AD58D /* HYPMeasurementsPlugin.m */,
-				BAEECAAEC42FDD7E4B86BB5774D9156D /* HYPMeasurementsPluginModule.h */,
-				228A5953EAD2D1C835C0E424FE0E6610 /* HYPMeasurementsPluginModule.m */,
+				1BB97CAD8D74834F0071B3146F65BC82 /* FontDetailViewAttribute.h */,
+				81F697579D966F721FBA4115983F7F88 /* FontDetailViewAttribute.m */,
+				61E51989D31927357487E03F04C0FC66 /* HYPMaskDetailViewAttribute.h */,
+				7E0EEDE28560B63BB77648638C36192D /* HYPMaskDetailViewAttribute.m */,
 			);
-			name = Measurements;
-			path = Measurements;
-			sourceTree = "<group>";
-		};
-		39016F257C7FDA9585922E3122BC301A /* HyperioniOS */ = {
-			isa = PBXGroup;
-			children = (
-				97F5582D84E89F3CC09FD0CEBBF3780A /* AttributesInspector */,
-				8F7C28E8E5B157A502BEAB62C1BBD9CE /* Core */,
-				1BFCC128B56394190DF2A5FEF54C15B9 /* Measurements */,
-				F64C5EF0C0913DC355D37CBA58A91208 /* SlowAnimations */,
-				B79171A440123AE9137995C2EFE15EC4 /* Support Files */,
-			);
-			name = HyperioniOS;
-			path = ../..;
+			name = ViewAttributes;
+			path = ViewAttributes;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -305,31 +410,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		45B98F2BF68F3490BB60726A4B719E9D /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				EF3AE6D21A7D76F87A8CDBB942279C7E /* InteractionView.h */,
-				AC987E6A8EE1AC32A681E59C1BC41D23 /* InteractionView.m */,
-				A5CF09407C430CCD99377A23668D2D5B /* InteractionViewDatasource.h */,
-				0DDA70D5BBBB76B92461DCCD61F695E0 /* ToolsTabViewController.h */,
-				F61717B7DA9F1637348CB291D59AFF90 /* ToolsTabViewController.m */,
-			);
-			name = Tools;
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		479B8457F0BA0544028B2C8FBBDDFCDE /* DetailViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				C80F97EF499BD49DFDA4B3828184C2F3 /* HYPFontPickerViewController.h */,
-				F483DB47458647FA5E054C2A8005AEE7 /* HYPFontPickerViewController.m */,
-				2D19AB3F54BCE1EB303FEBCA9D138DBA /* HYPMaskDetailViewController.h */,
-				1B7354099B5566E3E7997882B746581C /* HYPMaskDetailViewController.m */,
-			);
-			name = DetailViewControllers;
-			path = DetailViewControllers;
-			sourceTree = "<group>";
-		};
 		4EEF5DC51A2467B4AC3C16E2F800D6D8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,201 +419,143 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		782F7D6DE062FA80ABB766928910DA50 /* Core */ = {
+		631188DD253680C4709B677284242BB2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				8668E7B60D1B8C8175A294387C9582AB /* HYPDebuggingOverlayViewController.h */,
-				6A8363852B4BDDCF15BD268F88444994 /* HYPDebuggingOverlayViewController.m */,
-				95F0259D2B087B95C5035716E0685481 /* HYPDebuggingWindow.h */,
-				894DA203D7A0817FB4685E2D61483ACE /* HYPDebuggingWindow.m */,
-				746CE370D6090AC6510EA86908DFBF96 /* HyperionDependencies-Internal.plist */,
-				C19E5DE5D4653F94B7C009B2044F4DE1 /* HYPListenerContainer.h */,
-				3F7D355BF5722A73247A1CEDDA33A58B /* HYPListenerContainer.m */,
-				CF3E49C864F9F56E1EA28BC902BC651A /* HYPOverlayContainer.h */,
-				FE4D565F516C84CE48CAADEB21B672B3 /* HYPOverlayContainerImp.h */,
-				90F1CED31B22427F94DA67534E7427DD /* HYPOverlayContainerImp.m */,
-				9A07D5A451A2C29BD7FC617F6632DAAF /* HYPOverlayContainerListener.h */,
-				2C8FE228D2CD667EE28CEC02D2D67336 /* HYPPluginExtensionImp.h */,
-				1FA73834AAAAEBB6EE276D28D2402A38 /* HYPPluginExtensionImp.m */,
-				25E60F0A8C4A90335B8DD75422E5FECD /* HYPTargetViewListener.h */,
-				7347699993CE53B424722F3076B0DD62 /* TabStack.h */,
-				D5EE0253D8AC988777E728EF7407C5B2 /* TabStack.m */,
-				A228A1C1BFF0109134695198E04FAB65 /* TabView.h */,
-				BD05C17DC67CAB1A0BE88F16FA3BBE7E /* TabView.m */,
-				6A13E397FCDE570D1E5EA36A9D4B90E1 /* UIWindow+Swizzling.h */,
-				7F1D36BEDE958F1AE50180F09E0594DD /* UIWindow+Swizzling.m */,
-				8D9E5CD9B9E65FF85E9AC2DBC6D4979B /* Plugin */,
-				45B98F2BF68F3490BB60726A4B719E9D /* Tools */,
+				079FB7D668506EA8E4BD0393526B8975 /* InteractionView.h */,
+				DFD4393491C03DE9F6C14C2B34000AB3 /* InteractionView.m */,
+				55309D1913AC646A9F5B336B7BE43C0C /* InteractionViewDatasource.h */,
+				8003DDBB8ED11B168F869536BBA8DE28 /* ToolsTabViewController.h */,
+				1D771E41239A6C4A27FCCEC421A4C8F3 /* ToolsTabViewController.m */,
 			);
-			name = Core;
-			path = Core;
+			name = Tools;
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		73E40A46EB09BC32E28A706A3069AED1 /* VisualLogger */ = {
+			isa = PBXGroup;
+			children = (
+				2B845981CF180C884658EC3C580E637B /* HYPLogItemView.h */,
+				F016542678DFC3567570F27F1E920B0A /* HYPLogItemView.m */,
+				8E50A206C518682D9DA13B37E122974A /* HYPVisualLoggerPlugin.h */,
+				75819619191C95C23A4B54EC8CA1384F /* HYPVisualLoggerPlugin.m */,
+				7107D7620E079D9819748975223764F3 /* HYPVisualLoggerPluginModule.h */,
+				E6159544012B4383D5B989D34263EF3A /* HYPVisualLoggerPluginModule.m */,
+				AEEE338346791167B5E7DD82EE213B78 /* HYPVisualLoggingContainerView.h */,
+				F5E5B43B46C2F8149FDFEEE7B9D762CE /* HYPVisualLoggingContainerView.m */,
+				EEB30BB2D3BC9DEC3EA138CE213CD971 /* HYPVisualLoggingManager.h */,
+				1689CF0E8176E90C86BB0AB9735457B5 /* HYPVisualLoggingManager.m */,
+			);
+			name = VisualLogger;
+			path = VisualLogger;
+			sourceTree = "<group>";
+		};
+		744637D74661D7C8E4E54A529F50ACBD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99A1E630438578C96123FB881AAC9CA1 /* HyperioniOS.modulemap */,
+				55CC4DA6C3D24E25E75B5BD305C67F5D /* HyperioniOS.xcconfig */,
+				2C865950DF344C921EE9FA92E4E1CCE6 /* HyperioniOS-dummy.m */,
+				DB596EB8AD9AE996704BBFEDB952E3D1 /* HyperioniOS-prefix.pch */,
+				94F6D0389E07F71CBBD6764EFD0A9512 /* HyperioniOS-umbrella.h */,
+				2DA49AC396C9661794ADB7C82F56B254 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HyperioniOS";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BACF44DC77FBF20456C92E6BFDDEAC7F /* Development Pods */,
+				35ABEBEC98A2E49F605AD4513A7F293B /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				08FED257962256ABD4278A376B7339B3 /* Products */,
 				4EEF5DC51A2467B4AC3C16E2F800D6D8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8D9E5CD9B9E65FF85E9AC2DBC6D4979B /* Plugin */ = {
+		A02C5F37DC037AA247B2EDBE0BDC3EBB /* SlowAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				563624531897FCFF1C920FBD72E33AB8 /* HYPPlugin.h */,
-				74E5DC4A38A6AFE6A531901653B36C24 /* HYPPluginExtension.h */,
-				8DBC3A7521A77E238029D3C6A8A06C73 /* HYPPluginModule.h */,
-				60CC199C24CF739133F6A90B981A31B4 /* HYPTargetView.h */,
-			);
-			name = Plugin;
-			path = Plugin;
-			sourceTree = "<group>";
-		};
-		8E1F5A7D4B61E291719151C2656E3B07 /* SlowAnimations */ = {
-			isa = PBXGroup;
-			children = (
-				D59AD78606CFAB2425A643781D97C8F2 /* HYPSlowAnimationsPlugin.h */,
-				65B0DB1C4BE5E2B6360C6DBF00F5A388 /* HYPSlowAnimationsPlugin.m */,
-				EBAA552AFE258DC07789DA0A4284E161 /* HYPSlowAnimationsPluginModule.h */,
-				12075EE2C3E8BBF2F624B6D8492EEDBB /* HYPSlowAnimationsPluginModule.m */,
+				B0DF6A7671A1FE4B22ECC5E1943AF405 /* SlowAnimations */,
 			);
 			name = SlowAnimations;
-			path = SlowAnimations;
 			sourceTree = "<group>";
 		};
-		8F7C28E8E5B157A502BEAB62C1BBD9CE /* Core */ = {
+		AAC6A3AB4300A05A9E5815387224920E /* AttributesInspector */ = {
 			isa = PBXGroup;
 			children = (
-				782F7D6DE062FA80ABB766928910DA50 /* Core */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		97F5582D84E89F3CC09FD0CEBBF3780A /* AttributesInspector */ = {
-			isa = PBXGroup;
-			children = (
-				A7A850C8DD995933F3327B95C03DFA7A /* AttributesInspector */,
-			);
-			name = AttributesInspector;
-			sourceTree = "<group>";
-		};
-		A7A850C8DD995933F3327B95C03DFA7A /* AttributesInspector */ = {
-			isa = PBXGroup;
-			children = (
-				73C3FEEB2DFDE04871CB01B45C3FF1C3 /* HYPAttributeInspectorInteractionView.h */,
-				8E0F67D6AECDE71985C80A4F716BA6E9 /* HYPAttributeInspectorInteractionView.m */,
-				11A39B4AF335EFBAC85B3310A748AE3E /* HYPAttributesInspectorPlugin.h */,
-				7611C9C22AA4E38096DEEEAB083413FE /* HYPAttributesInspectorPlugin.m */,
-				C6800EC531DAFA5DB28449E38C46C886 /* HYPAttributesInspectorPluginModule.h */,
-				9571D46DD397A44031003AF397B1B32A /* HYPAttributesInspectorPluginModule.m */,
-				C2B45D8906480AB6560B365C31D51A39 /* AttributesViewer */,
+				413289DBF7137BDB5E606129F1FDF6BE /* HYPAttributeInspectorInteractionView.h */,
+				48B99C183B8E0E874F2B93B2445683F8 /* HYPAttributeInspectorInteractionView.m */,
+				417D237A07ABFB580B9C0FCB1640FDCB /* HYPAttributesInspectorPlugin.h */,
+				4C1E40F40A4CDC2F1DFDA6CB187FEE6E /* HYPAttributesInspectorPlugin.m */,
+				79124711795C453182A633BA3BBA1247 /* HYPAttributesInspectorPluginModule.h */,
+				DD8C458FE537E7862BF970E5A3CE4FE9 /* HYPAttributesInspectorPluginModule.m */,
+				310B5578E970D3E870411EE81155762E /* AttributesViewer */,
 			);
 			name = AttributesInspector;
 			path = AttributesInspector;
 			sourceTree = "<group>";
 		};
-		A8C5565C740E22ECCC92068AB2780D05 /* ViewAttributes */ = {
+		AF6616C203F86F2F003F4623E6F47288 /* AttributesInspector */ = {
 			isa = PBXGroup;
 			children = (
-				B2FEB1461CA39112E72DBFC5AF889C71 /* FontDetailViewAttribute.h */,
-				1FD6F4DEAC641DF1FC946D0656EC7C2D /* FontDetailViewAttribute.m */,
-				5B0AC791CB681C02B4EE35A1C67255D3 /* HYPMaskDetailViewAttribute.h */,
-				A158FB390EE618841346D22AE4003324 /* HYPMaskDetailViewAttribute.m */,
+				AAC6A3AB4300A05A9E5815387224920E /* AttributesInspector */,
 			);
-			name = ViewAttributes;
-			path = ViewAttributes;
+			name = AttributesInspector;
 			sourceTree = "<group>";
 		};
-		B79171A440123AE9137995C2EFE15EC4 /* Support Files */ = {
+		B0DF6A7671A1FE4B22ECC5E1943AF405 /* SlowAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				0ED23B2B808F058A8C5ED05BCB34F9F0 /* HyperioniOS.modulemap */,
-				31A2B80148CEF477FB544ACC68994DCF /* HyperioniOS.xcconfig */,
-				EF78E12D5386D839325E8A4D9711B640 /* HyperioniOS-dummy.m */,
-				2332B60EE7E50E768222D9B99ADD88DD /* HyperioniOS-prefix.pch */,
-				20097DA9464130E92B4BB7314A3E99A8 /* HyperioniOS-umbrella.h */,
-				79CB60714C4A41A36E77422398F59675 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HyperioniOS";
-			sourceTree = "<group>";
-		};
-		BACF44DC77FBF20456C92E6BFDDEAC7F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				39016F257C7FDA9585922E3122BC301A /* HyperioniOS */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C2B45D8906480AB6560B365C31D51A39 /* AttributesViewer */ = {
-			isa = PBXGroup;
-			children = (
-				CC1370510BF3A8F545D855188032B7F1 /* AttributesTabViewController.h */,
-				3CD8956CF900C2B82425164776AEE657 /* AttributesTabViewController.m */,
-				E15104A453B34C8A63D47B0713C21B43 /* ViewAttribute.h */,
-				08B4C462AE42E0CE74334224647C948F /* ViewAttribute.m */,
-				479B8457F0BA0544028B2C8FBBDDFCDE /* DetailViewControllers */,
-				A8C5565C740E22ECCC92068AB2780D05 /* ViewAttributes */,
-			);
-			name = AttributesViewer;
-			path = AttributesViewer;
-			sourceTree = "<group>";
-		};
-		F64C5EF0C0913DC355D37CBA58A91208 /* SlowAnimations */ = {
-			isa = PBXGroup;
-			children = (
-				8E1F5A7D4B61E291719151C2656E3B07 /* SlowAnimations */,
+				189500E660D2422740A24A455E923033 /* HYPSlowAnimationsPlugin.h */,
+				94B6AEF54953C6B1093B2A3A43D8E4F8 /* HYPSlowAnimationsPlugin.m */,
+				F19B8FBAB935C6AEAB38243E22110688 /* HYPSlowAnimationsPluginModule.h */,
+				09CB7BC0EB591DCE4EC0AE7E3F44575B /* HYPSlowAnimationsPluginModule.m */,
 			);
 			name = SlowAnimations;
+			path = SlowAnimations;
+			sourceTree = "<group>";
+		};
+		B39BAE58FAC943891AA52ADB5815DDB9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				07FFB5A7197672AB89AA2AC5197E89D9 /* Core */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CC7E6B6D2727CD5C2EB070BEA844D2D3 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				61065E0DCEDC9BCA3C533F9D973CBE1F /* HYPOverlayViewProvider.h */,
+				5A11CCBA44274F7DA8DC6539C22B43D7 /* HYPPlugin.h */,
+				667153C093B35473DEF819A75DB5F805 /* HYPPluginExtension.h */,
+				1CB15468754454F2327196DAD3D80A69 /* HYPPluginModule.h */,
+				802B254FAB58B1F640772C774FBEC3BD /* HYPTargetView.h */,
+			);
+			name = Plugin;
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		F3B982FD9DF7C556E784924A27DB923F /* HyperioniOS */ = {
+			isa = PBXGroup;
+			children = (
+				AF6616C203F86F2F003F4623E6F47288 /* AttributesInspector */,
+				B39BAE58FAC943891AA52ADB5815DDB9 /* Core */,
+				36342BC364EC025D5E0AC6FBFCB41314 /* Measurements */,
+				A02C5F37DC037AA247B2EDBE0BDC3EBB /* SlowAnimations */,
+				744637D74661D7C8E4E54A529F50ACBD /* Support Files */,
+				0AC7880B0FB86925F90194CBB75A4D1F /* VisualLogger */,
+			);
+			name = HyperioniOS;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		203C341AD1784CC7AC1FC5D162CB90B3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4887B367883A2F20FE3B2615C75F21F7 /* AttributesTabViewController.h in Headers */,
-				707AEE2E7BD111E1E41ED5B21D7E7F0C /* FontDetailViewAttribute.h in Headers */,
-				1A2173D65A7924B7ACC01F7BB401BA48 /* HYPAttributeInspectorInteractionView.h in Headers */,
-				3C1C0E47D9078DD01933F9FBE6C4BBCE /* HYPAttributesInspectorPlugin.h in Headers */,
-				FF42A876BE81D0EBA250782A4CB8EF8C /* HYPAttributesInspectorPluginModule.h in Headers */,
-				B4DB27C935F04DD897DB4031A8D6776B /* HYPDebuggingOverlayViewController.h in Headers */,
-				A5310BFD663B999A98E0BE6A1D996A89 /* HYPDebuggingWindow.h in Headers */,
-				87C48215A813C3397629058776FA151B /* HyperioniOS-umbrella.h in Headers */,
-				4816AB33F68921C6B669F7575E99DE61 /* HYPFontPickerViewController.h in Headers */,
-				A5654447B1D06434CAD9E3DE2FE36979 /* HYPListenerContainer.h in Headers */,
-				2B0704A6FB232E5980B630B776AA9FF1 /* HYPMaskDetailViewAttribute.h in Headers */,
-				4DF6661C98704C01F4D9871E2F73864D /* HYPMaskDetailViewController.h in Headers */,
-				C9085ECC9020952D846E26BBFFB64F38 /* HYPMeasurementsInteractionView.h in Headers */,
-				A345F02AD80692D04E80EED526F847EC /* HYPMeasurementsPlugin.h in Headers */,
-				3713BE284BFEE51643940DC2B004A491 /* HYPMeasurementsPluginModule.h in Headers */,
-				9945D2ED97FD3895D811395C26B9706A /* HYPOverlayContainer.h in Headers */,
-				CE28E6BB3D6A73A59448E78EDE69EE12 /* HYPOverlayContainerImp.h in Headers */,
-				4CDD8B7197B078BA0600EBFDE8CC064C /* HYPOverlayContainerListener.h in Headers */,
-				FF97A7C254DB6EB2A6BC5FB238C7D15F /* HYPPlugin.h in Headers */,
-				C01EE2FFEBF424F88BEEA4AC885D0531 /* HYPPluginExtension.h in Headers */,
-				859BD6FCB789B75B641C050CBD5300C1 /* HYPPluginExtensionImp.h in Headers */,
-				5691D76172FD2BA77A3D043A10BB7938 /* HYPPluginModule.h in Headers */,
-				D9092B1B2CDD058090ADD24A53C69D49 /* HYPSlowAnimationsPlugin.h in Headers */,
-				22226A3F0C356666AC3E558C4971374B /* HYPSlowAnimationsPluginModule.h in Headers */,
-				86C9644C209AE403CABC3919A9998501 /* HYPTargetView.h in Headers */,
-				948139B0193DC85E9CA75570A4AD98FC /* HYPTargetViewListener.h in Headers */,
-				E18C26BC4582557268A70F2451D73B6C /* InteractionView.h in Headers */,
-				D8FD1C6D73CD0665D9D497A51F3584FE /* InteractionViewDatasource.h in Headers */,
-				C299655139A135818E926C6CA1ED3288 /* TabStack.h in Headers */,
-				592F79DCC006010CB5B2A40BFD97E392 /* TabView.h in Headers */,
-				79C4018311C0C0CBA23F1BE4140749BF /* ToolsTabViewController.h in Headers */,
-				6C8F32922AD21050308F3A422316F9AC /* UIWindow+Swizzling.h in Headers */,
-				813C9A0D221C32D7BCEAE138FF1D92FC /* ViewAttribute.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		54D14C25C57379462424F6EFC54AC017 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,6 +569,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				623023BD1DFB04777E868D75C4971916 /* Pods-HyperioniOS_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7395A67CB4C0ECD8722A47CB2EA0B73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA79829EA8E76FE3D85879E9028F4A6A /* AttributesTabViewController.h in Headers */,
+				FB4EA1E6114A2A3EF0EB941E7CD98C3E /* FontDetailViewAttribute.h in Headers */,
+				20F01D7E0E0C8F98DF18117D1E9EAFE3 /* HYPAttributeInspectorInteractionView.h in Headers */,
+				A8F613E5328EFE245E1A5B6EA5006EB1 /* HYPAttributesInspectorPlugin.h in Headers */,
+				2A8C6E719B3AA8CB1008223884F5972F /* HYPAttributesInspectorPluginModule.h in Headers */,
+				99125A3D2AF9C1928F408875EA7D4E47 /* HYPDebuggingOverlayViewController.h in Headers */,
+				FC7D75451257C03347001B60AFB1AEEA /* HYPDebuggingWindow.h in Headers */,
+				CF5124A8ABF3B2341E12D6486D95DE4F /* HyperioniOS-umbrella.h in Headers */,
+				2F5477CDC11AC4A99D4E3DD7FE7C8998 /* HYPFontPickerViewController.h in Headers */,
+				FB9011B02996DB08736607E470FCF4C0 /* HYPInAppDebuggingWindow.h in Headers */,
+				17C0EA11EA3FB96117971EED9D5F4657 /* HYPInAppOverlayContainer.h in Headers */,
+				478DDC7A9AB7CD2D075A1007ED42BD27 /* HYPListenerContainer.h in Headers */,
+				354F64F7D52D83E24DEEA197867E9C0C /* HYPLogItemView.h in Headers */,
+				0ABC2157E2605101C474727D23033210 /* HYPMaskDetailViewAttribute.h in Headers */,
+				14C48DC19FD20D05EF4854E92DBFB011 /* HYPMaskDetailViewController.h in Headers */,
+				A7B44498570ABC1C897BAACBB2C5E3E5 /* HYPMeasurementsInteractionView.h in Headers */,
+				7087F6FADF1C7E4F5F6B7AB9E299DBA1 /* HYPMeasurementsPlugin.h in Headers */,
+				75D06681BA424547243CA74ECE6D67FA /* HYPMeasurementsPluginModule.h in Headers */,
+				74CF54526EB600951825AFB3EA9F7B3B /* HYPOverlayContainer.h in Headers */,
+				CF662C589AF0B27A3F450EF916325049 /* HYPOverlayContainerImp.h in Headers */,
+				B6797B11C52B5D6BA95923265BEE0D07 /* HYPOverlayContainerListener.h in Headers */,
+				6B7B010E0124FAAD4AB42AB7A268AE16 /* HYPOverlayViewProvider.h in Headers */,
+				08B4BD8678D1E466D392A1FAFB3C3F45 /* HYPPlugin.h in Headers */,
+				472B534690046BE0295A832CBBBD30F5 /* HYPPluginExtension.h in Headers */,
+				1EE9A2268C6A30F7485B2E61E1E08B2D /* HYPPluginExtensionImp.h in Headers */,
+				97FE2D13FE5482B51297F5881B6FB718 /* HYPPluginModule.h in Headers */,
+				3195D857A0E98CAED48B91C730B026D6 /* HYPSlowAnimationsPlugin.h in Headers */,
+				6CE1E0E728C3C52C8F706159D973D6E4 /* HYPSlowAnimationsPluginModule.h in Headers */,
+				1E49047F32A56A94D9344A6CA3135D60 /* HYPTargetView.h in Headers */,
+				C6BC3B9787341FD8D9487FEFB3E5D71A /* HYPTargetViewListener.h in Headers */,
+				24B4A9AFD1F732490F15698F1A2927CD /* HYPVisualLoggerPlugin.h in Headers */,
+				A769E98A5ED570BD3610C758E14700C7 /* HYPVisualLoggerPluginModule.h in Headers */,
+				EC7AA5A258DB25B87B434B5AFC4DAB8C /* HYPVisualLoggingContainerView.h in Headers */,
+				097F605E6BF84E1A855734F137BBDAB3 /* HYPVisualLoggingManager.h in Headers */,
+				39A89A06D77B27B41E1789902AF702B8 /* InteractionView.h in Headers */,
+				62205565BE6011B182D9D385FF110526 /* InteractionViewDatasource.h in Headers */,
+				F8ED2E9F5D5C780D457ABE3A5C81C629 /* TabStack.h in Headers */,
+				F1F48D0DD72F0C4E7C8F647CFCA044BC /* TabView.h in Headers */,
+				6B698CA8FDA64E3A6E0E0AB4EB4AC730 /* ToolsTabViewController.h in Headers */,
+				BF0EE3001C5CD7B4C368777A581ADC27 /* UIWindow+Swizzling.h in Headers */,
+				237C92A9227FD7D1DAFAA7F2A916128B /* ViewAttribute.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,13 +658,13 @@
 			productReference = 146ABE851AEBD8925B58380EC2561F0F /* Pods_HyperioniOS_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FF77C22D3F14B551353905CFEE583229 /* HyperioniOS */ = {
+		B9A88E01BC28527B802D50C0B76E78E0 /* HyperioniOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E1113BB0A7775ABC7C76687A61226B6 /* Build configuration list for PBXNativeTarget "HyperioniOS" */;
+			buildConfigurationList = EB85B0CC0056BC78EF0DF7607D068DB3 /* Build configuration list for PBXNativeTarget "HyperioniOS" */;
 			buildPhases = (
-				669CCF4E9714DBE3DB2098E60D7C0EE1 /* Sources */,
-				EF6D3759307CC290099957B48D411E2A /* Frameworks */,
-				203C341AD1784CC7AC1FC5D162CB90B3 /* Headers */,
+				897DD4E52EF43FDA5A6762ADB8435674 /* Sources */,
+				820EA007B6656873D2DFCAED8800D34B /* Frameworks */,
+				F7395A67CB4C0ECD8722A47CB2EA0B73 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -626,7 +696,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF77C22D3F14B551353905CFEE583229 /* HyperioniOS */,
+				B9A88E01BC28527B802D50C0B76E78E0 /* HyperioniOS */,
 				26D5458C90257D84A3AC088CA1929B81 /* Pods-HyperioniOS_Example */,
 				1C5EDB5BFD5062DA12B11308E1ED334D /* Pods-HyperioniOS_Tests */,
 			);
@@ -634,36 +704,43 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		669CCF4E9714DBE3DB2098E60D7C0EE1 /* Sources */ = {
+		897DD4E52EF43FDA5A6762ADB8435674 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5027A6E94ABB5DB314B8CC067A03249E /* AttributesTabViewController.m in Sources */,
-				F7B559CBD5FC79B66CAF9CC8A9BCE9C2 /* FontDetailViewAttribute.m in Sources */,
-				14541CEFFEA9A8B9A0ABA005832F2AF1 /* HYPAttributeInspectorInteractionView.m in Sources */,
-				3E7C5E202CF1C79D32B5995C119568DE /* HYPAttributesInspectorPlugin.m in Sources */,
-				250F883A33BE2DD7C13CE51C53BE7FB5 /* HYPAttributesInspectorPluginModule.m in Sources */,
-				736DAB6666E5C9E147F0A8EEAB107776 /* HYPDebuggingOverlayViewController.m in Sources */,
-				89E9E818A7F1AC86278451E851EB9E06 /* HYPDebuggingWindow.m in Sources */,
-				27DCBA38F494192F4C645C5A075514B4 /* HyperionDependencies-Internal.plist in Sources */,
-				EF64BCAD91A08C3F2C0245F184090152 /* HyperioniOS-dummy.m in Sources */,
-				22D80428A94B299E3002693C609E493D /* HYPFontPickerViewController.m in Sources */,
-				8114EC1A44BC3EAE20DB38BD9DA7956B /* HYPListenerContainer.m in Sources */,
-				5140897F14F765B3F6F7D3BA6F0123DF /* HYPMaskDetailViewAttribute.m in Sources */,
-				0B9ADB79C2448A5C51C5707C8337D642 /* HYPMaskDetailViewController.m in Sources */,
-				ECCD9996B78B6B103AE413577525E251 /* HYPMeasurementsInteractionView.m in Sources */,
-				4520636299A46B71334069D4C48414B4 /* HYPMeasurementsPlugin.m in Sources */,
-				C8DA0A7A0EE731048FC8CEC19301EFE0 /* HYPMeasurementsPluginModule.m in Sources */,
-				16DBE8CD2150BC863346647C7EC1B024 /* HYPOverlayContainerImp.m in Sources */,
-				AC0A982376E3922969EAE6F9C5F2DF94 /* HYPPluginExtensionImp.m in Sources */,
-				218870E6611A3E046B2A9E2DBB8DB918 /* HYPSlowAnimationsPlugin.m in Sources */,
-				A51E6E0E2FC3FF291CA8870D56B342BD /* HYPSlowAnimationsPluginModule.m in Sources */,
-				B2D4C8BB86F76D0EF1EDF37DCC4F8D93 /* InteractionView.m in Sources */,
-				8C2FAF5233E61272314F192F79F5ACD0 /* TabStack.m in Sources */,
-				FDE3A21F3DB6E4D02023F27FC8A79B7E /* TabView.m in Sources */,
-				6C5C6639B48BE8074E327B4010F94838 /* ToolsTabViewController.m in Sources */,
-				F46944C5F12158346E0E423FE7287832 /* UIWindow+Swizzling.m in Sources */,
-				9B01A1CDE871C70ECA47D8A64A5A928B /* ViewAttribute.m in Sources */,
+				4FE91F3B6B3B9F297BAB57F4BC3EBC70 /* AttributesTabViewController.m in Sources */,
+				C227703109A21DA68FEBF4A7CBC4899F /* FontDetailViewAttribute.m in Sources */,
+				02317FF32E8E4E7918464008A00A0955 /* HYPAttributeInspectorInteractionView.m in Sources */,
+				9B225E09AE537FC52946C1133D945336 /* HYPAttributesInspectorPlugin.m in Sources */,
+				295CACC67354FE2094455782ED532262 /* HYPAttributesInspectorPluginModule.m in Sources */,
+				409B314188201774E09E886C0A4D0AB3 /* HYPDebuggingOverlayViewController.m in Sources */,
+				3EB9E4A61AB402D56B379339B3409766 /* HYPDebuggingWindow.m in Sources */,
+				61CDC78C432E158AF29F40BE30CBC033 /* HyperionDependencies-Internal.plist in Sources */,
+				1462506CC77A00C59D7879E9014E0B0E /* HyperioniOS-dummy.m in Sources */,
+				BB2411B7FD466B2B19CA22CF90A2161C /* HYPFontPickerViewController.m in Sources */,
+				5DBF62E521A7201B471CB7D68BBB1113 /* HYPInAppDebuggingWindow.m in Sources */,
+				9CC7361C6B78401B8031EB5BF4F58658 /* HYPInAppOverlayContainer.m in Sources */,
+				629172A0F370DF60E803D763CCB5413D /* HYPListenerContainer.m in Sources */,
+				C9F04E409D5951586731512D103D7107 /* HYPLogItemView.m in Sources */,
+				B06E945544720E1F5DFCA47414BE1817 /* HYPMaskDetailViewAttribute.m in Sources */,
+				2B66857B5CFC4BFA3CC1463655662FD3 /* HYPMaskDetailViewController.m in Sources */,
+				F306D859E5FDA5F941DE60BD53F4C77D /* HYPMeasurementsInteractionView.m in Sources */,
+				1BE9DAD47FCD70D131D7EC97EDB21DF1 /* HYPMeasurementsPlugin.m in Sources */,
+				F599E757B9248D4690C598CC90745C81 /* HYPMeasurementsPluginModule.m in Sources */,
+				41A574754870B143DA4A272E113FDF58 /* HYPOverlayContainerImp.m in Sources */,
+				AB78DC9C1F369AC187CA0D5098D49DEE /* HYPPluginExtensionImp.m in Sources */,
+				549A3C1E4D4D923D9D950DC30DA46DEF /* HYPSlowAnimationsPlugin.m in Sources */,
+				7543CFAABCAE3C636B8B48E1C0D1CCD7 /* HYPSlowAnimationsPluginModule.m in Sources */,
+				DCDBF8749B6CE47FAE18662E4E478D99 /* HYPVisualLoggerPlugin.m in Sources */,
+				2556EEAEE42587431125203C151FE6A8 /* HYPVisualLoggerPluginModule.m in Sources */,
+				8287F179FCE3F105FA8265897F85A40F /* HYPVisualLoggingContainerView.m in Sources */,
+				C5917E3A32DD9DA641A8691E447D557B /* HYPVisualLoggingManager.m in Sources */,
+				103A6EE3807EFC4562166AEAF9976A24 /* InteractionView.m in Sources */,
+				4F1BD1558B88E8A793304AD06E9F3F39 /* TabStack.m in Sources */,
+				B5EC4B40A97FD13B75EE68DC56F19DA3 /* TabView.m in Sources */,
+				FD0F93D9AF2648C0F15735BDEB3524B0 /* ToolsTabViewController.m in Sources */,
+				849392EB8967BBA6F7E382E85DB25758 /* UIWindow+Swizzling.m in Sources */,
+				53CF084C675B9EB317A2EA44FA8A608E /* ViewAttribute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,7 +766,7 @@
 		847801C7D5D6FDB67DF9BBA5B6E34615 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HyperioniOS;
-			target = FF77C22D3F14B551353905CFEE583229 /* HyperioniOS */;
+			target = B9A88E01BC28527B802D50C0B76E78E0 /* HyperioniOS */;
 			targetProxy = 41D59BF40ADCD925E159EBC66C8B1B43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -815,38 +892,6 @@
 			};
 			name = Debug;
 		};
-		4D1214A6FC78AFF39C5AB14D53EE09B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31A2B80148CEF477FB544ACC68994DCF /* HyperioniOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HyperioniOS/HyperioniOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HyperioniOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HyperioniOS/HyperioniOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = HyperioniOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -891,9 +936,41 @@
 			};
 			name = Release;
 		};
-		B7C93766603DF27F3BE042C3E12F2678 /* Release */ = {
+		8CE0A91A117DFF3F3B750D8DF14296FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31A2B80148CEF477FB544ACC68994DCF /* HyperioniOS.xcconfig */;
+			baseConfigurationReference = 55CC4DA6C3D24E25E75B5BD305C67F5D /* HyperioniOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HyperioniOS/HyperioniOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HyperioniOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HyperioniOS/HyperioniOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HyperioniOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9BA5B3FDF4536626EB8A9186B0340AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CC4DA6C3D24E25E75B5BD305C67F5D /* HyperioniOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1007,15 +1084,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E1113BB0A7775ABC7C76687A61226B6 /* Build configuration list for PBXNativeTarget "HyperioniOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D1214A6FC78AFF39C5AB14D53EE09B8 /* Debug */,
-				B7C93766603DF27F3BE042C3E12F2678 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9C4081A435C29A919B87667B66B8FD98 /* Build configuration list for PBXNativeTarget "Pods-HyperioniOS_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1030,6 +1098,15 @@
 			buildConfigurations = (
 				34D2B1830927DE8C17B13CFE29125AA8 /* Debug */,
 				C42EC6E2F735F1FCFD71678E9D009737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB85B0CC0056BC78EF0DF7607D068DB3 /* Build configuration list for PBXNativeTarget "HyperioniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE0A91A117DFF3F3B750D8DF14296FD /* Debug */,
+				9BA5B3FDF4536626EB8A9186B0340AB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

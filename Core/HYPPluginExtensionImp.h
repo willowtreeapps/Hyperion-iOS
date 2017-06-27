@@ -16,6 +16,6 @@
 
 @interface HYPPluginExtensionImp : NSObject<HYPPluginExtension>
 
--(instancetype)initWithOverlayContainer:(id<HYPOverlayContainer>)overlayContainer hypeWindow:(UIWindow *)hypeWindow;
+-(instancetype)initWithOverlayContainer:(id<HYPOverlayContainer>)overlayContainer inAppOverlay:(id<HYPOverlayContainer>)inAppOverlay hypeWindow:(UIWindow *)hypeWindow;
 
 @end

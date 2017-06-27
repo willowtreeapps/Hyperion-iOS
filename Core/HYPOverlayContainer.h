@@ -9,16 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "HYPOverlayContainerListener.h"
+#import "HYPOverlayViewProvider.h"
+
+@protocol HYPPluginModule;
 
 @protocol HYPOverlayContainer <NSObject>
 
--(void)addOverlayView:(UIView *)view;
--(void)removeOverlayView:(UIView *)view;
+@property (nonatomic) id<HYPPluginModule, HYPOverlayViewProvider> overlayModule;
 
 -(void)addContainerListener:(NSObject<HYPOverlayContainerListener> *)listener;
 -(void)removeContainerListener:(NSObject<HYPOverlayContainerListener> *)listener;
-
--(BOOL)containsOverlaysOfClass:(Class)overlayClass;
--(BOOL)removeAllOverlaysOfClass:(Class)overlayClass;
 
 @end

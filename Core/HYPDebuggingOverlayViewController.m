@@ -16,6 +16,7 @@
 #import "HYPOverlayContainerImp.h"
 #import "HYPDebuggingWindow.h"
 #import <objc/runtime.h>
+#import "HYPInAppDebuggingWindow.h"
 
 @interface TabViewTuple : NSObject
 
@@ -51,12 +52,18 @@
 @property (nonatomic) UIPanGestureRecognizer *deactivateDrawerPanGesture;
 @property (nonatomic) UIScreenEdgePanGestureRecognizer *internalPanGestureRecognizer;
 
+@property (nonatomic) UIWindow *inAppOverlayWindow;
+@property (nonatomic) HYPOverlayContainerImp *inAppOverlayContainer;
+
 @property (nonatomic) BOOL drawerActive;
+
+@property (nonatomic) HYPInAppDebuggingWindow *inAppDebuggingWindow;
 
 @end
 
 @implementation HYPDebuggingOverlayViewController
 const CGFloat MenuWidth = 300;
+
 
 -(instancetype)initWithDebuggingWindow:(HYPDebuggingWindow *)debuggingWindow
 {
@@ -74,6 +81,8 @@ const CGFloat MenuWidth = 300;
     self.internalPanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self.internalPanGestureRecognizer setEdges:UIRectEdgeRight];
     self.internalPanGestureRecognizer.delegate = self;
+
+    [self setupInAppDebuggingView];
 
     return self;
 }
@@ -150,7 +159,7 @@ const CGFloat MenuWidth = 300;
     _menuWidthConstraint = [_menuContainer.view.widthAnchor constraintEqualToConstant:MenuWidth];
     _menuWidthConstraint.active = YES;
 
-    self.pluginExtension = [[HYPPluginExtensionImp alloc] initWithOverlayContainer:self.scrollViewContainer hypeWindow:_debuggingWindow];
+    self.pluginExtension = [[HYPPluginExtensionImp alloc] initWithOverlayContainer:self.scrollViewContainer inAppOverlay:self.inAppDebuggingWindow.overlayContainer hypeWindow:_debuggingWindow];
 
     [self initializePlugins];
 }
@@ -166,6 +175,15 @@ const CGFloat MenuWidth = 300;
     [self.fadeView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
     [self.fadeView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
     [self.fadeView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+}
+
+-(void)setupInAppDebuggingView
+{
+    self.inAppDebuggingWindow = [[HYPInAppDebuggingWindow alloc] initWithFrame:[[[UIApplication sharedApplication] keyWindow] frame]];
+    self.inAppDebuggingWindow.backgroundColor = [UIColor clearColor];
+    [self.inAppDebuggingWindow setRootViewController:[UIViewController new]];
+    self.inAppDebuggingWindow.hidden = NO;
+    self.inAppDebuggingWindow.rootViewController.view.backgroundColor = [UIColor clearColor];
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -358,7 +376,7 @@ const CGFloat MenuWidth = 300;
 }
 
 #pragma HYPOverlayContainerListener
--(void)overlayViewChanged:(UIView *)overlayView
+-(void)overlayModuleChanged:(id<HYPPluginModule, HYPOverlayViewProvider>)overlayProvider;
 {
     self.scrollView.layer.borderColor = self.scrollViewContainer.numberOfOverlays > 0 ? [[UIColor purpleColor] CGColor] : [[UIColor clearColor] CGColor];
     self.scrollView.layer.borderWidth = 3;

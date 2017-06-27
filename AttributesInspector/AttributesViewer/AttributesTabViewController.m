@@ -190,12 +190,6 @@
 
     if ([color getRed:&red green:&green blue:&blue alpha:&alpha])
     {
-        CGColorRef ref = [color CGColor];
-
-        CGFloat *components = CGColorGetComponents(ref);
-
-        CGFloat r = components[1];
-
         return  [NSString stringWithFormat:@"%.1f, %.1f, %.1f, %.1f", red * 255, green * 255, blue * 255, alpha * 255];
     }
 

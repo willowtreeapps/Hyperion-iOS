@@ -21,12 +21,15 @@
 #import "HYPAttributesInspectorPluginModule.h"
 #import "HYPDebuggingOverlayViewController.h"
 #import "HYPDebuggingWindow.h"
+#import "HYPInAppDebuggingWindow.h"
+#import "HYPInAppOverlayContainer.h"
 #import "HYPListenerContainer.h"
 #import "HYPOverlayContainer.h"
 #import "HYPOverlayContainerImp.h"
 #import "HYPOverlayContainerListener.h"
 #import "HYPPluginExtensionImp.h"
 #import "HYPTargetViewListener.h"
+#import "HYPOverlayViewProvider.h"
 #import "HYPPlugin.h"
 #import "HYPPluginExtension.h"
 #import "HYPPluginModule.h"
@@ -42,6 +45,11 @@
 #import "HYPMeasurementsPluginModule.h"
 #import "HYPSlowAnimationsPlugin.h"
 #import "HYPSlowAnimationsPluginModule.h"
+#import "HYPLogItemView.h"
+#import "HYPVisualLoggerPlugin.h"
+#import "HYPVisualLoggerPluginModule.h"
+#import "HYPVisualLoggingContainerView.h"
+#import "HYPVisualLoggingManager.h"
 
 FOUNDATION_EXPORT double HyperioniOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char HyperioniOSVersionString[];
