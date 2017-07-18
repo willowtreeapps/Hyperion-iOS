@@ -114,11 +114,18 @@ const CGFloat InspectorHeight = 350;
 
 -(void)pluginViewSelected:(UITableViewCell *)pluginView
 {
-    _overlayView = [[HYPAttributeInspectorInteractionView alloc] initWithPluginExtension:self.extension];
+    _active = ![self.extension.overlayContainer.overlayModule isKindOfClass:[self class]];
 
-    _active = YES;
+    if (_active)
+    {
+        _overlayView = [[HYPAttributeInspectorInteractionView alloc] initWithPluginExtension:self.extension];
 
-    self.extension.overlayContainer.overlayModule = self;
+        self.extension.overlayContainer.overlayModule = self;
+    }
+    else
+    {
+        self.extension.overlayContainer.overlayModule = nil;
+    }
 }
 
 -(void)overlayModuleChanged:(id<HYPPluginModule, HYPOverlayViewProvider>)overlayProvider
