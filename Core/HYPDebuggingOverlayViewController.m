@@ -370,6 +370,16 @@ const CGFloat MenuWidth = 300;
     }
 
 }
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
     return YES;
@@ -386,5 +396,7 @@ const CGFloat MenuWidth = 300;
         [self.scrollView setZoomScale:1.0 animated:YES];
     }
 }
+
+
 
 @end

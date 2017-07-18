@@ -7,7 +7,9 @@
 //
 
 @import UIKit;
+@interface WTANavViewController : UINavigationController
 
+@end
 @interface WTAViewController : UIViewController
 
 @end

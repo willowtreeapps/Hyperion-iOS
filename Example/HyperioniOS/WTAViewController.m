@@ -10,6 +10,23 @@
 #import "TabView.h"
 #import "HYPDebuggingWindow.h"
 
+// ...
+
+@interface WTANavViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *button;
+
+@end
+
+@implementation WTANavViewController
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+@end
+
+
 @interface WTAViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *button;
 @end
@@ -47,6 +64,10 @@
 
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 - (void)didReceiveMemoryWarning
 {

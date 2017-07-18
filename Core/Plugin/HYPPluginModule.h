@@ -13,9 +13,9 @@
 
 @protocol HYPPluginModule <NSObject>
 
-@property (nonatomic, readonly) UITableViewCell *pluginView;
+@property (nonatomic, readonly, nullable) UITableViewCell *pluginView;
 
 @optional
--(void)pluginViewSelected:(UITableViewCell *)pluginView;
+-(void)pluginViewSelected:(UITableViewCell *_Nonnull)pluginView;
 
 @end

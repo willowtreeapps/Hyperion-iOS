@@ -13,10 +13,10 @@
 
 @protocol HYPPluginExtension <NSObject>
 
--(UIWindow *)appWindow;
--(UIWindow *)hypeWindow;
--(id<HYPOverlayContainer>)overlayContainer;
--(id<HYPOverlayContainer>)inAppOverlayContainer;
--(id<HYPTargetView>)getViewTarget;
+-(nonnull UIWindow *)appWindow;
+-(nonnull UIWindow *)hypeWindow;
+-(nonnull id<HYPOverlayContainer>)overlayContainer;
+-(nonnull id<HYPOverlayContainer>)inAppOverlayContainer;
+-(nullable id<HYPTargetView>)getViewTarget;
 
 @end

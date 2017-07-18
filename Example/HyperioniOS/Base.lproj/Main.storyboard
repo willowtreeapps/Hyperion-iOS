@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="1900" y="426.83658170914543"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav View Controller-->
         <scene sceneID="Zgh-BO-4IL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fQL-bE-b2n" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="fQL-bE-b2n" customClass="WTANavViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mrd-yG-VNd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
