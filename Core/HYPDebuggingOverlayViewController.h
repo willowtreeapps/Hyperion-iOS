@@ -13,5 +13,6 @@
 -(instancetype)initWithDebuggingWindow:(UIWindow *)debuggingWindow;
 
 @property (nonatomic) UIScreenEdgePanGestureRecognizer *panGesture;
+@property (nonatomic) UITapGestureRecognizer *tapGesture;
 
 @end

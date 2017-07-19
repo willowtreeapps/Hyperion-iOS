@@ -75,8 +75,11 @@ const CGFloat MenuWidth = 300;
 
     self.panGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self.panGesture setEdges:UIRectEdgeRight];
-
     self.panGesture.delegate = self;
+
+    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [self.tapGesture setNumberOfTapsRequired:3];
+    self.tapGesture.delegate = self;
 
     self.internalPanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [self.internalPanGestureRecognizer setEdges:UIRectEdgeRight];
@@ -162,6 +165,7 @@ const CGFloat MenuWidth = 300;
     self.pluginExtension = [[HYPPluginExtensionImp alloc] initWithOverlayContainer:self.scrollViewContainer inAppOverlay:self.inAppDebuggingWindow.overlayContainer hypeWindow:_debuggingWindow];
 
     [self initializePlugins];
+    [self.view layoutIfNeeded];
 }
 
 -(void)setupFadeView
@@ -169,6 +173,7 @@ const CGFloat MenuWidth = 300;
     self.fadeView = [[UIView alloc] init];
     self.fadeView.backgroundColor = [UIColor blackColor];
     self.fadeView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.fadeView.alpha = 0;
     [self.view addSubview:self.fadeView];
 
     [self.fadeView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
@@ -301,6 +306,32 @@ const CGFloat MenuWidth = 300;
     [self.scrollViewContainer setSnapshotView:self.currentSnapshotView];
 
     [self performSelector:@selector(takeSnapshot) withObject:nil afterDelay:1.0];
+}
+
+-(void)activate
+{
+    self.debuggingWindow.hidden = NO;
+    self.menuTrailingConstraint.constant = -MenuWidth;
+    self.drawerActive = YES;
+
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+        self.fadeView.alpha = 0.6;
+    }];
+}
+
+-(void)deactivate
+{
+    self.menuTrailingConstraint.constant = 0;
+    self.drawerActive = NO;
+
+    [UIView animateWithDuration:0.3 animations:^{
+        [self.view layoutIfNeeded];
+        self.fadeView.alpha = 0.0;
+    }
+    completion:^(BOOL finished) {
+        [self.debuggingWindow setHidden:YES];
+    }];
 }
 
 -(void)pan:(UIPanGestureRecognizer *)recognizer

@@ -82,6 +82,11 @@ static HYPDebuggingWindow *debuggingWindow;
     return self.overlayVC.panGesture;
 }
 
+-(UITapGestureRecognizer *)tapGesture
+{
+    return self.overlayVC.tapGesture;
+}
+
 -(void)deactivate
 {
     self.hidden = YES;
