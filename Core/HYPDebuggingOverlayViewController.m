@@ -50,7 +50,7 @@
 @property (nonatomic) UIView *fadeView;
 
 @property (nonatomic) UIPanGestureRecognizer *deactivateDrawerPanGesture;
-@property (nonatomic) UIScreenEdgePanGestureRecognizer *internalPanGestureRecognizer;
+@property (nonatomic) UITapGestureRecognizer *dismissDrawerTapGesture;
 
 @property (nonatomic) UIWindow *inAppOverlayWindow;
 @property (nonatomic) HYPOverlayContainerImp *inAppOverlayContainer;
@@ -81,10 +81,6 @@ const CGFloat MenuWidth = 300;
     [self.tapGesture setNumberOfTapsRequired:3];
     self.tapGesture.delegate = self;
 
-    self.internalPanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-    [self.internalPanGestureRecognizer setEdges:UIRectEdgeRight];
-    self.internalPanGestureRecognizer.delegate = self;
-
     [self setupInAppDebuggingView];
 
     return self;
@@ -103,7 +99,6 @@ const CGFloat MenuWidth = 300;
 
 -(void)setup
 {
-    [self.view addGestureRecognizer:self.internalPanGestureRecognizer];
     self.menuTabTuples = [[NSMutableArray alloc] init];
 
     self.deactivateDrawerPanGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
@@ -310,28 +305,32 @@ const CGFloat MenuWidth = 300;
 
 -(void)activate
 {
-    self.debuggingWindow.hidden = NO;
-    self.menuTrailingConstraint.constant = -MenuWidth;
-    self.drawerActive = YES;
+    if (!self.drawerActive) {
+        self.debuggingWindow.hidden = NO;
+        self.menuTrailingConstraint.constant = -MenuWidth;
+        self.drawerActive = YES;
 
-    [UIView animateWithDuration:0.3 animations:^{
-        [self.view layoutIfNeeded];
-        self.fadeView.alpha = 0.6;
-    }];
+        [UIView animateWithDuration:0.3 animations:^{
+            [self.view layoutIfNeeded];
+            self.fadeView.alpha = 0.6;
+        }];
+    }
 }
 
 -(void)deactivate
 {
-    self.menuTrailingConstraint.constant = 0;
-    self.drawerActive = NO;
+    if (self.drawerActive) {
+        self.menuTrailingConstraint.constant = 0;
+        self.drawerActive = NO;
 
-    [UIView animateWithDuration:0.3 animations:^{
-        [self.view layoutIfNeeded];
-        self.fadeView.alpha = 0.0;
+        [UIView animateWithDuration:0.3 animations:^{
+            [self.view layoutIfNeeded];
+            self.fadeView.alpha = 0.0;
+        }
+        completion:^(BOOL finished) {
+            [self.debuggingWindow setHidden:YES];
+        }];
     }
-    completion:^(BOOL finished) {
-        [self.debuggingWindow setHidden:YES];
-    }];
 }
 
 -(void)pan:(UIPanGestureRecognizer *)recognizer
