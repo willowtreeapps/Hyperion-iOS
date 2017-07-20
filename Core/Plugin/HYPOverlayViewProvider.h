@@ -10,6 +10,6 @@
 
 @protocol HYPOverlayViewProvider <NSObject>
 
-@property (nonatomic, readonly) UIView *overlayView;
+@property (nonatomic, readonly)  UIView * _Nullable overlayView;
 
 @end

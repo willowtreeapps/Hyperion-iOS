@@ -9,8 +9,20 @@
 #import "HYPInAppDebuggingWindow.h"
 #import "HYPInAppOverlayContainer.h"
 
-@interface HYPInAppDebuggingWindow ()
+@interface VC : UIViewController
 
+@end
+
+@implementation VC
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+@end
+
+@interface HYPInAppDebuggingWindow ()
 @end
 
 @implementation HYPInAppDebuggingWindow
@@ -41,7 +53,7 @@
 -(void)setup
 {
     self.overlayContainer = [[HYPInAppOverlayContainer alloc] init];
-    [self setRootViewController:[[UIViewController alloc] init]];
+    [self setRootViewController:[[VC alloc] init]];
 
     self.overlayContainer.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.overlayContainer];

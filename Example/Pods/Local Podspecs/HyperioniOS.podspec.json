@@ -41,6 +41,10 @@
     {
       "name": "VisualLogger",
       "source_files": "VisualLogger/**/*"
+    },
+    {
+      "name": "Impeccable",
+      "source_files": "Impeccable/**/*"
     }
   ]
 }

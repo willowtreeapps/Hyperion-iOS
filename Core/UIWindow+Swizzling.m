@@ -42,9 +42,7 @@
 {
     [self xxx_makeKeyWindow];
 
-    HYPDebuggingWindow *window = [[HYPDebuggingWindow alloc] initWithFrame:[[[UIApplication sharedApplication] keyWindow] frame]];
-    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:window.panGesture];
-    objc_setAssociatedObject(self, @selector(debugWindow), window, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[HYPDebuggingWindow sharedInstance].panGesture];
 }
 
 -(HYPDebuggingWindow *)debugWindow

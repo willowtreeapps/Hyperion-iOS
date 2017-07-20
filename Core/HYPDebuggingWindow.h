@@ -11,6 +11,8 @@
 
 @interface HYPDebuggingWindow : UIWindow
 
++(HYPDebuggingWindow *)sharedInstance;
+
 @property (nonatomic) UIEvent *lastEvent;
 @property (nonatomic) UIView *highlightView;
 @property (nonatomic) UIView *lastSelectedView;

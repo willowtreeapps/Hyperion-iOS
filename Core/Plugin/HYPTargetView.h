@@ -17,9 +17,9 @@
 @protocol HYPTargetView <NSObject>
 
 
-@property (nonatomic, weak) UIView *targetView;
+@property (nonatomic, weak, nullable) UIView *targetView;
 
--(void)addTargetViewListener:(NSObject<HYPTargetViewListener> *)listener;
--(void)removeTargetViewListener:(NSObject<HYPTargetViewListener> *)listener;
+-(void)addTargetViewListener:(NSObject<HYPTargetViewListener> *_Nonnull)listener;
+-(void)removeTargetViewListener:(NSObject<HYPTargetViewListener> *_Nonnull)listener;
 
 @end

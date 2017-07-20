@@ -12,6 +12,6 @@
 
 @protocol HYPPlugin <NSObject>
 
--(id<HYPPluginModule>)createPluginModule:(id<HYPPluginExtension>)pluginExtension;
+-(nonnull id<HYPPluginModule>)createPluginModule:(_Nonnull id<HYPPluginExtension>)pluginExtension;
 
 @end
