@@ -47,7 +47,6 @@
 
     [tab.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor].active = YES;
     [tab.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor constant:100].active = YES;
-    [tab.widthAnchor constraintEqualToConstant:50].active = YES;
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChanged:) name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChanged:) name:UIKeyboardWillShowNotification object:nil];
