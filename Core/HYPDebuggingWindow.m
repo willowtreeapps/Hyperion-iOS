@@ -30,12 +30,6 @@ static HYPDebuggingWindow *debuggingWindow;
 
 + (void)load
 {
-    if ([[UIApplication sharedApplication] keyWindow])
-    {
-        dispatch_after(DISPATCH_TIME_NOW + (NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-                 [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[self sharedInstance].panGesture];
-         });
-    }
 }
 
 +(HYPDebuggingWindow *)sharedInstance
@@ -75,11 +69,6 @@ static HYPDebuggingWindow *debuggingWindow;
     self.hidden = YES;
     self.backgroundColor = [UIColor clearColor];
 
-}
-
--(UIScreenEdgePanGestureRecognizer *)panGesture
-{
-    return self.overlayVC.panGesture;
 }
 
 -(UITapGestureRecognizer *)tapGesture

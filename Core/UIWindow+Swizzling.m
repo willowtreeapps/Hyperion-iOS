@@ -42,7 +42,7 @@
 {
     [self xxx_makeKeyWindow];
 
-    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[HYPDebuggingWindow sharedInstance].panGesture];
+    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[HYPDebuggingWindow sharedInstance].tapGesture];
 }
 
 -(HYPDebuggingWindow *)debugWindow
