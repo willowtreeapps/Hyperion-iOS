@@ -71,9 +71,9 @@ static HYPDebuggingWindow *debuggingWindow;
 
 }
 
--(UITapGestureRecognizer *)tapGesture
+-(UITapGestureRecognizer *)tapGestureRecognizer
 {
-    return self.overlayVC.tapGesture;
+    return self.overlayVC.tapGestureRecognizer;
 }
 
 -(void)deactivate

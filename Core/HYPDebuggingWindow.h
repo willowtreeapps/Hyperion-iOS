@@ -15,7 +15,7 @@
 @property (nonatomic) UIEvent *lastEvent;
 @property (nonatomic) UIView *highlightView;
 @property (nonatomic) UIView *lastSelectedView;
-@property (nonatomic) UITapGestureRecognizer *tapGesture;
+@property (nonatomic) UITapGestureRecognizer *tapGestureRecognizer;
 @property (nonatomic) CGPoint start;
 @property (nonatomic) CGPoint end;
 

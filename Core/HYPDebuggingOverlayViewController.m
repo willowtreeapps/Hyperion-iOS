@@ -51,6 +51,7 @@
 
 @property (nonatomic) UIPanGestureRecognizer *deactivateDrawerPanGesture;
 @property (nonatomic) UITapGestureRecognizer *dismissDrawerTapGesture;
+@property (nonatomic) UITapGestureRecognizer *fadeViewTapRecognizer;
 
 @property (nonatomic) UIWindow *inAppOverlayWindow;
 @property (nonatomic) HYPOverlayContainerImp *inAppOverlayContainer;
@@ -77,9 +78,17 @@ const CGFloat MenuWidth = 300;
     [self.panGesture setEdges:UIRectEdgeRight];
     self.panGesture.delegate = self;
 
-    self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
-    [self.tapGesture setNumberOfTapsRequired:3];
-    self.tapGesture.delegate = self;
+    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [self.tapGestureRecognizer setNumberOfTapsRequired:3];
+    self.tapGestureRecognizer.delegate = self;
+
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [recognizer setNumberOfTapsRequired:3];
+    recognizer.delegate = self;
+    [debuggingWindow addGestureRecognizer:recognizer];
+
+    self.fadeViewTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(deactivate)];
+    self.fadeViewTapRecognizer.delegate = self;
 
     [self setupInAppDebuggingView];
 
@@ -160,6 +169,7 @@ const CGFloat MenuWidth = 300;
     self.pluginExtension = [[HYPPluginExtensionImp alloc] initWithOverlayContainer:self.scrollViewContainer inAppOverlay:self.inAppDebuggingWindow.overlayContainer hypeWindow:_debuggingWindow];
 
     [self initializePlugins];
+
     [self.view layoutIfNeeded];
 }
 
@@ -175,6 +185,8 @@ const CGFloat MenuWidth = 300;
     [self.fadeView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
     [self.fadeView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
     [self.fadeView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
+
+    [self.fadeView addGestureRecognizer:self.fadeViewTapRecognizer];
 }
 
 -(void)setupInAppDebuggingView
@@ -328,7 +340,9 @@ const CGFloat MenuWidth = 300;
             self.fadeView.alpha = 0.0;
         }
         completion:^(BOOL finished) {
-            [self.debuggingWindow setHidden:YES];
+            if (self.scrollViewContainer.numberOfOverlays == 0) {
+                [self.debuggingWindow setHidden:YES];
+            }
         }];
     }
 }
@@ -398,7 +412,6 @@ const CGFloat MenuWidth = 300;
              }
          }];
     }
-
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
