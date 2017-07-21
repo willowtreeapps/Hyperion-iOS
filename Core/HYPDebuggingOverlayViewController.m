@@ -62,6 +62,9 @@
 
 @end
 
+const int ACTIVATION_GESTURE_TAPS = 2;
+const int ACTIVATION_GESTURE_TOUCHES = 2;
+
 @implementation HYPDebuggingOverlayViewController
 const CGFloat MenuWidth = 300;
 
@@ -79,12 +82,13 @@ const CGFloat MenuWidth = 300;
     self.panGesture.delegate = self;
 
     self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
-    [self.tapGestureRecognizer setNumberOfTapsRequired:2];
-    [self.tapGestureRecognizer setNumberOfTouchesRequired:2];
+    [self.tapGestureRecognizer setNumberOfTapsRequired:ACTIVATION_GESTURE_TAPS];
+    [self.tapGestureRecognizer setNumberOfTouchesRequired:ACTIVATION_GESTURE_TOUCHES];
     self.tapGestureRecognizer.delegate = self;
 
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
-    [recognizer setNumberOfTapsRequired:3];
+    [recognizer setNumberOfTapsRequired:ACTIVATION_GESTURE_TAPS];
+    [recognizer setNumberOfTouchesRequired:ACTIVATION_GESTURE_TOUCHES];
     recognizer.delegate = self;
     [debuggingWindow addGestureRecognizer:recognizer];
 
