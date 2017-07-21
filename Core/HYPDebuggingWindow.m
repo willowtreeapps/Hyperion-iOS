@@ -30,12 +30,6 @@ static HYPDebuggingWindow *debuggingWindow;
 
 + (void)load
 {
-    if ([[UIApplication sharedApplication] keyWindow])
-    {
-        dispatch_after(DISPATCH_TIME_NOW + (NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-                 [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[self sharedInstance].panGesture];
-         });
-    }
 }
 
 +(HYPDebuggingWindow *)sharedInstance
@@ -77,9 +71,9 @@ static HYPDebuggingWindow *debuggingWindow;
 
 }
 
--(UIScreenEdgePanGestureRecognizer *)panGesture
+-(UITapGestureRecognizer *)tapGestureRecognizer
 {
-    return self.overlayVC.panGesture;
+    return self.overlayVC.tapGestureRecognizer;
 }
 
 -(void)deactivate

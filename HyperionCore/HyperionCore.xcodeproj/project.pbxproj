@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329076421F1FFC6200D42286 /* HYPActivationGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 329076411F1FFC6200D42286 /* HYPActivationGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */; };
 		493DCABB1F01F93900EB5007 /* HYPInAppOverlayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */; };
@@ -97,6 +98,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		329076411F1FFC6200D42286 /* HYPActivationGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPActivationGesture.h; sourceTree = "<group>"; };
 		493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayViewProvider.h; sourceTree = "<group>"; };
 		493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPInAppOverlayContainer.h; sourceTree = "<group>"; };
 		493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPInAppOverlayContainer.m; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				49C6B4E21EFD9B1A00345B78 /* UIWindow+Swizzling.m */,
 				498E34B91EFA0D5700A0BC4E /* HYPDebuggingWindow.h */,
 				498E34BA1EFA0D5700A0BC4E /* HYPDebuggingWindow.m */,
+				329076411F1FFC6200D42286 /* HYPActivationGesture.h */,
 				493DCABC1F01FBB800EB5007 /* HYPInAppDebuggingWindow.h */,
 				493DCABD1F01FBB800EB5007 /* HYPInAppDebuggingWindow.m */,
 				498E34BD1EFA0D5700A0BC4E /* HyperionDependencies-Internal.plist */,
@@ -427,6 +430,7 @@
 			files = (
 				493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */,
 				493DCAF01F04526E00EB5007 /* HYPImpeccableZepPhotoPickerViewController.h in Headers */,
+				329076421F1FFC6200D42286 /* HYPActivationGesture.h in Headers */,
 				498E34E01EFA0D5700A0BC4E /* HYPPluginExtensionImp.h in Headers */,
 				498E34F21EFA0EB600A0BC4E /* HYPTargetViewListener.h in Headers */,
 				498E35481EFA20D800A0BC4E /* FontDetailViewAttribute.h in Headers */,
