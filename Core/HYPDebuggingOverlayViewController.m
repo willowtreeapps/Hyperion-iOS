@@ -79,7 +79,8 @@ const CGFloat MenuWidth = 300;
     self.panGesture.delegate = self;
 
     self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
-    [self.tapGestureRecognizer setNumberOfTapsRequired:3];
+    [self.tapGestureRecognizer setNumberOfTapsRequired:2];
+    [self.tapGestureRecognizer setNumberOfTouchesRequired:2];
     self.tapGestureRecognizer.delegate = self;
 
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
