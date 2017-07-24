@@ -19,7 +19,6 @@
 
 @interface HYPDebuggingWindow() <UIGestureRecognizerDelegate>
 
-@property (nonatomic) HYPDebuggingOverlayViewController *overlayVC;
 @property (nonatomic) NSString *associatedFlag;
 
 @end
@@ -68,12 +67,6 @@ static HYPDebuggingWindow *debuggingWindow;
 
     self.hidden = YES;
     self.backgroundColor = [UIColor clearColor];
-
-}
-
--(UITapGestureRecognizer *)tapGestureRecognizer
-{
-    return self.overlayVC.tapGestureRecognizer;
 }
 
 -(void)deactivate
