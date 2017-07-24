@@ -6,10 +6,10 @@
 //  Copyright © 2017 WillowTree. All rights reserved.
 //
 
-#import "HYPActivationGesture.h"
+#import "HYPActivationGestureOptions.h"
 
 @interface HyperionManager : NSObject
 
-+(void)setActivationGesture:(HYPActivationGesture)gesture;
++(void)setActivationGesture:(HYPActivationGestureOptions)gesture;
 
 @end

@@ -12,7 +12,7 @@
 
 @implementation HyperionManager : NSObject
 
-+(void)setActivationGesture:(HYPActivationGesture)gesture {
++(void)setActivationGesture:(HYPActivationGestureOptions)gesture {
 
     if ((gesture & HYPActivationGestureNone) == HYPActivationGestureNone)
     {
