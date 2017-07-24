@@ -6,8 +6,9 @@
 //  Copyright © 2017 WillowTree. All rights reserved.
 //
 
-typedef enum {
-    HYPActivationGestureTripleTap,
-    HYPActivationGestureRightEdgeSwipe,
-    HYPActivationGestureNone
+typedef enum HYPActivationGesture : NSUInteger {
+    HYPActivationGestureNone                    = 1 << 0,
+    HYPActivationGestureTwoFingerDoubleTap      = 1 << 1,
+    HYPActivationGestureThreeFingerSingleTap    = 1 << 2,
+    HYPActivationGestureRightEdgeSwipe          = 1 << 3
 } HYPActivationGesture;
