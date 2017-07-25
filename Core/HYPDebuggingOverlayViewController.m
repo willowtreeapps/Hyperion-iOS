@@ -62,9 +62,6 @@
 
 @end
 
-const int ACTIVATION_GESTURE_TAPS = 2;
-const int ACTIVATION_GESTURE_TOUCHES = 2;
-
 @implementation HYPDebuggingOverlayViewController
 const CGFloat MenuWidth = 300;
 
@@ -77,23 +74,7 @@ const CGFloat MenuWidth = 300;
 
     _debuggingWindow.windowLevel = 10000001;
 
-    self.panGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-    [self.panGesture setEdges:UIRectEdgeRight];
-    self.panGesture.delegate = self;
-
-    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
-    [self.tapGestureRecognizer setNumberOfTapsRequired:ACTIVATION_GESTURE_TAPS];
-    [self.tapGestureRecognizer setNumberOfTouchesRequired:ACTIVATION_GESTURE_TOUCHES];
-    self.tapGestureRecognizer.delegate = self;
-
-    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
-    [recognizer setNumberOfTapsRequired:ACTIVATION_GESTURE_TAPS];
-    [recognizer setNumberOfTouchesRequired:ACTIVATION_GESTURE_TOUCHES];
-    recognizer.delegate = self;
-    [debuggingWindow addGestureRecognizer:recognizer];
-
-    self.fadeViewTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(deactivate)];
-    self.fadeViewTapRecognizer.delegate = self;
+    [self setupGestureRecognizers:debuggingWindow];
 
     [self setupInAppDebuggingView];
 
@@ -176,6 +157,48 @@ const CGFloat MenuWidth = 300;
     [self initializePlugins];
 
     [self.view layoutIfNeeded];
+}
+
+-(void)setupGestureRecognizers:(HYPDebuggingWindow *)window
+{
+    self.panGesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    [self.panGesture setEdges:UIRectEdgeRight];
+    self.panGesture.delegate = self;
+
+    self.twoFingerTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [self.twoFingerTapRecognizer setNumberOfTapsRequired:2];
+    [self.twoFingerTapRecognizer setNumberOfTouchesRequired:2];
+    self.twoFingerTapRecognizer.delegate = self;
+
+    window.twoFingerTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [window.twoFingerTapRecognizer setNumberOfTapsRequired:2];
+    [window.twoFingerTapRecognizer setNumberOfTouchesRequired:2];
+    window.twoFingerTapRecognizer.delegate = self;
+    [window addGestureRecognizer:window.twoFingerTapRecognizer];
+
+    self.threeFingerTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [self.threeFingerTapRecognizer setNumberOfTapsRequired:1];
+    [self.threeFingerTapRecognizer setNumberOfTouchesRequired:3];
+    self.threeFingerTapRecognizer.delegate = self;
+
+    window.threeFingerTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [window.threeFingerTapRecognizer setNumberOfTapsRequired:1];
+    [window.threeFingerTapRecognizer setNumberOfTouchesRequired:3];
+    window.threeFingerTapRecognizer.delegate = self;
+    [window addGestureRecognizer:window.threeFingerTapRecognizer];
+
+    self.edgeSwipeRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [self.edgeSwipeRecognizer setEdges:UIRectEdgeRight];
+    self.edgeSwipeRecognizer.delegate = self;
+
+    window.edgeSwipeRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
+    [window.edgeSwipeRecognizer setEdges:UIRectEdgeRight];
+    window.edgeSwipeRecognizer.delegate = self;
+    [window addGestureRecognizer:window.edgeSwipeRecognizer];
+
+    self.fadeViewTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(deactivate)];
+    self.fadeViewTapRecognizer.delegate = self;
+
 }
 
 -(void)setupFadeView

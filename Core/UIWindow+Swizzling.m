@@ -42,7 +42,10 @@
 {
     [self xxx_makeKeyWindow];
 
-    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[HYPDebuggingWindow sharedInstance].tapGestureRecognizer];
+    [HYPDebuggingWindow sharedInstance].frame = self.frame;
+    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[HYPDebuggingWindow sharedInstance].overlayVC.twoFingerTapRecognizer];
+    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[HYPDebuggingWindow sharedInstance].overlayVC.threeFingerTapRecognizer];
+    [[[UIApplication sharedApplication] keyWindow] addGestureRecognizer:[HYPDebuggingWindow sharedInstance].overlayVC.edgeSwipeRecognizer];
 }
 
 -(HYPDebuggingWindow *)debugWindow

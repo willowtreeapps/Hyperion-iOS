@@ -7,63 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		320E5D3A1F2796EE00C42FC0 /* Impeccable.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D381F2796EE00C42FC0 /* Impeccable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		320E5D3E1F27970300C42FC0 /* HYPImpeccablePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAD61F03F9E600EB5007 /* HYPImpeccablePlugin.h */; };
-		320E5D3F1F27970300C42FC0 /* HYPImpeccablePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAD71F03F9E600EB5007 /* HYPImpeccablePlugin.m */; };
-		320E5D401F27970300C42FC0 /* HYPImpeccablePluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCADA1F03FA1900EB5007 /* HYPImpeccablePluginModule.h */; };
-		320E5D411F27970300C42FC0 /* HYPImpeccablePluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCADB1F03FA1900EB5007 /* HYPImpeccablePluginModule.m */; };
-		320E5D421F27970300C42FC0 /* HYPImpeccableOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCADE1F0403E400EB5007 /* HYPImpeccableOverlayView.h */; };
-		320E5D431F27970300C42FC0 /* HYPImpeccableOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCADF1F0403E400EB5007 /* HYPImpeccableOverlayView.m */; };
-		320E5D441F27970300C42FC0 /* HYPImpeccableZepAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAE21F0442EA00EB5007 /* HYPImpeccableZepAPIManager.h */; };
-		320E5D451F27970300C42FC0 /* HYPImpeccableZepAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAE31F0442EA00EB5007 /* HYPImpeccableZepAPIManager.m */; };
-		320E5D461F27970300C42FC0 /* HYPImpeccableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAE61F04430B00EB5007 /* HYPImpeccableSection.h */; };
-		320E5D471F27970300C42FC0 /* HYPImpeccableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAE71F04430B00EB5007 /* HYPImpeccableSection.m */; };
-		320E5D481F27970300C42FC0 /* HYPImpeccableAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAEA1F04431600EB5007 /* HYPImpeccableAsset.h */; };
-		320E5D491F27970300C42FC0 /* HYPImpeccableAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAEB1F04431600EB5007 /* HYPImpeccableAsset.m */; };
-		320E5D4A1F27970300C42FC0 /* HYPImpeccableZepPhotoPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAEE1F04526E00EB5007 /* HYPImpeccableZepPhotoPickerViewController.h */; };
-		320E5D4B1F27970300C42FC0 /* HYPImpeccableZepPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAEF1F04526E00EB5007 /* HYPImpeccableZepPhotoPickerViewController.m */; };
-		320E5D4C1F27971400C42FC0 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
-		320E5D561F27983F00C42FC0 /* VisualLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D541F27983F00C42FC0 /* VisualLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		320E5D5A1F27984B00C42FC0 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
-		320E5D5B1F27985600C42FC0 /* HYPVisualLoggerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAC11F0200DB00EB5007 /* HYPVisualLoggerPlugin.h */; };
-		320E5D5C1F27985600C42FC0 /* HYPVisualLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAC21F0200DB00EB5007 /* HYPVisualLoggerPlugin.m */; };
-		320E5D5D1F27985600C42FC0 /* HYPVisualLoggerPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAC51F02010A00EB5007 /* HYPVisualLoggerPluginModule.h */; };
-		320E5D5E1F27985600C42FC0 /* HYPVisualLoggerPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAC61F02010A00EB5007 /* HYPVisualLoggerPluginModule.m */; };
-		320E5D5F1F27985600C42FC0 /* HYPVisualLoggingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAC91F02034F00EB5007 /* HYPVisualLoggingManager.h */; };
-		320E5D601F27985600C42FC0 /* HYPVisualLoggingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCACA1F02034F00EB5007 /* HYPVisualLoggingManager.m */; };
-		320E5D611F27985600C42FC0 /* HYPVisualLoggingContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCACD1F0206AC00EB5007 /* HYPVisualLoggingContainerView.h */; };
-		320E5D621F27985600C42FC0 /* HYPVisualLoggingContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCACE1F0206AC00EB5007 /* HYPVisualLoggingContainerView.m */; };
-		320E5D631F27985600C42FC0 /* HYPLogItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAD11F0206EB00EB5007 /* HYPLogItemView.h */; };
-		320E5D641F27985600C42FC0 /* HYPLogItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAD21F0206EB00EB5007 /* HYPLogItemView.m */; };
-		320E5D6E1F27988500C42FC0 /* Measurements.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D6C1F27988500C42FC0 /* Measurements.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		320E5D721F27988D00C42FC0 /* HYPMeasurementsInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E351E1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.h */; };
-		320E5D731F27988D00C42FC0 /* HYPMeasurementsInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E351F1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.m */; };
-		320E5D741F27988D00C42FC0 /* HYPMeasurementsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35201EFA20CF00A0BC4E /* HYPMeasurementsPlugin.h */; };
-		320E5D751F27988D00C42FC0 /* HYPMeasurementsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35211EFA20CF00A0BC4E /* HYPMeasurementsPlugin.m */; };
-		320E5D761F27988D00C42FC0 /* HYPMeasurementsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35221EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.h */; };
-		320E5D771F27988D00C42FC0 /* HYPMeasurementsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35231EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.m */; };
-		320E5D781F27989D00C42FC0 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
-		320E5D821F27991400C42FC0 /* AttributesInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D801F27991400C42FC0 /* AttributesInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		320E5D861F27992500C42FC0 /* AttributesTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352C1EFA20D800A0BC4E /* AttributesTabViewController.h */; };
-		320E5D871F27992500C42FC0 /* AttributesTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E352D1EFA20D800A0BC4E /* AttributesTabViewController.m */; };
-		320E5D881F27992500C42FC0 /* HYPFontPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352F1EFA20D800A0BC4E /* HYPFontPickerViewController.h */; };
-		320E5D891F27992500C42FC0 /* HYPFontPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35301EFA20D800A0BC4E /* HYPFontPickerViewController.m */; };
-		320E5D8A1F27992500C42FC0 /* HYPMaskDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35311EFA20D800A0BC4E /* HYPMaskDetailViewController.h */; };
-		320E5D8B1F27992500C42FC0 /* HYPMaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35321EFA20D800A0BC4E /* HYPMaskDetailViewController.m */; };
-		320E5D8C1F27992500C42FC0 /* ViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35331EFA20D800A0BC4E /* ViewAttribute.h */; };
-		320E5D8D1F27992500C42FC0 /* ViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35341EFA20D800A0BC4E /* ViewAttribute.m */; };
-		320E5D8E1F27992C00C42FC0 /* FontDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35361EFA20D800A0BC4E /* FontDetailViewAttribute.h */; };
-		320E5D8F1F27992C00C42FC0 /* FontDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35371EFA20D800A0BC4E /* FontDetailViewAttribute.m */; };
-		320E5D901F27992C00C42FC0 /* HYPMaskDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35381EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.h */; };
-		320E5D911F27992C00C42FC0 /* HYPMaskDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35391EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.m */; };
-		320E5D921F27992C00C42FC0 /* HYPAttributeInspectorInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353A1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h */; };
-		320E5D931F27992C00C42FC0 /* HYPAttributeInspectorInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353B1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m */; };
-		320E5D941F27992C00C42FC0 /* HYPAttributesInspectorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353C1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h */; };
-		320E5D951F27992C00C42FC0 /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */; };
-		320E5D961F27992C00C42FC0 /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */; };
-		320E5D971F27992C00C42FC0 /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */; };
-		320E5D981F27993D00C42FC0 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
-		329076421F1FFC6200D42286 /* HYPActivationGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 329076411F1FFC6200D42286 /* HYPActivationGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		329076421F1FFC6200D42286 /* HYPActivationGestureOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 329076411F1FFC6200D42286 /* HYPActivationGestureOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		329076441F226F5100D42286 /* HyperionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 329076431F226F5100D42286 /* HyperionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		329076461F2270F000D42286 /* HyperionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 329076451F2270F000D42286 /* HyperionManager.m */; };
 		493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */; };
 		493DCABB1F01F93900EB5007 /* HYPInAppOverlayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */; };
@@ -120,7 +66,6 @@
 		320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AttributesInspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		320E5D801F27991400C42FC0 /* AttributesInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesInspector.h; sourceTree = "<group>"; };
 		320E5D811F27991400C42FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		329076411F1FFC6200D42286 /* HYPActivationGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPActivationGesture.h; sourceTree = "<group>"; };
 		493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayViewProvider.h; sourceTree = "<group>"; };
 		493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPInAppOverlayContainer.h; sourceTree = "<group>"; };
 		493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPInAppOverlayContainer.m; sourceTree = "<group>"; };
@@ -399,7 +344,7 @@
 				49C6B4E21EFD9B1A00345B78 /* UIWindow+Swizzling.m */,
 				498E34B91EFA0D5700A0BC4E /* HYPDebuggingWindow.h */,
 				498E34BA1EFA0D5700A0BC4E /* HYPDebuggingWindow.m */,
-				329076411F1FFC6200D42286 /* HYPActivationGesture.h */,
+				329076411F1FFC6200D42286 /* HYPActivationGestureOptions.h */,
 				493DCABC1F01FBB800EB5007 /* HYPInAppDebuggingWindow.h */,
 				493DCABD1F01FBB800EB5007 /* HYPInAppDebuggingWindow.m */,
 				498E34BD1EFA0D5700A0BC4E /* HyperionDependencies-Internal.plist */,
@@ -420,6 +365,8 @@
 				498E34CC1EFA0D5700A0BC4E /* TabView.h */,
 				498E34CD1EFA0D5700A0BC4E /* TabView.m */,
 				498E34CE1EFA0D5700A0BC4E /* Tools */,
+				329076431F226F5100D42286 /* HyperionManager.h */,
+				329076451F2270F000D42286 /* HyperionManager.m */,
 			);
 			name = Core;
 			path = ../../Core;
@@ -615,7 +562,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */,
-				329076421F1FFC6200D42286 /* HYPActivationGesture.h in Headers */,
+				493DCAF01F04526E00EB5007 /* HYPImpeccableZepPhotoPickerViewController.h in Headers */,
+				329076421F1FFC6200D42286 /* HYPActivationGestureOptions.h in Headers */,
 				498E34E01EFA0D5700A0BC4E /* HYPPluginExtensionImp.h in Headers */,
 				498E34F21EFA0EB600A0BC4E /* HYPTargetViewListener.h in Headers */,
 				498E34E21EFA0D5700A0BC4E /* HYPPlugin.h in Headers */,
@@ -634,6 +582,10 @@
 				498E34DE1EFA0D5700A0BC4E /* HYPOverlayContainerImp.h in Headers */,
 				498E34E61EFA0D5700A0BC4E /* TabStack.h in Headers */,
 				49C6B4E31EFD9B1A00345B78 /* UIWindow+Swizzling.h in Headers */,
+				498E354E1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h in Headers */,
+				493DCADC1F03FA1900EB5007 /* HYPImpeccablePluginModule.h in Headers */,
+				329076441F226F5100D42286 /* HyperionManager.h in Headers */,
+				493DCAD31F0206EB00EB5007 /* HYPLogItemView.h in Headers */,
 				498E34E81EFA0D5700A0BC4E /* TabView.h in Headers */,
 				493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */,
 			);
@@ -925,6 +877,11 @@
 				493DCABB1F01F93900EB5007 /* HYPInAppOverlayContainer.m in Sources */,
 				498E34E11EFA0D5700A0BC4E /* HYPPluginExtensionImp.m in Sources */,
 				49C6B4E41EFD9B1A00345B78 /* UIWindow+Swizzling.m in Sources */,
+				329076461F2270F000D42286 /* HyperionManager.m in Sources */,
+				498E35511EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m in Sources */,
+				498E354B1EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.m in Sources */,
+				493DCACC1F02034F00EB5007 /* HYPVisualLoggingManager.m in Sources */,
+				498E35451EFA20D800A0BC4E /* HYPMaskDetailViewController.m in Sources */,
 				498E34EE1EFA0D5700A0BC4E /* ToolsTabViewController.m in Sources */,
 				49C6B4E01EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m in Sources */,
 				498E34DC1EFA0D5700A0BC4E /* HYPListenerContainer.m in Sources */,
