@@ -14,6 +14,54 @@
 		32EA53481F27DA340012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53491F27DA3A0012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA534A1F27DA3E0012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
+		32EA534B1F27E1010012DFB6 /* HYPImpeccablePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAD61F03F9E600EB5007 /* HYPImpeccablePlugin.h */; };
+		32EA534C1F27E1010012DFB6 /* HYPImpeccablePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAD71F03F9E600EB5007 /* HYPImpeccablePlugin.m */; };
+		32EA534D1F27E1010012DFB6 /* HYPImpeccablePluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCADA1F03FA1900EB5007 /* HYPImpeccablePluginModule.h */; };
+		32EA534E1F27E1010012DFB6 /* HYPImpeccablePluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCADB1F03FA1900EB5007 /* HYPImpeccablePluginModule.m */; };
+		32EA534F1F27E1010012DFB6 /* HYPImpeccableOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCADE1F0403E400EB5007 /* HYPImpeccableOverlayView.h */; };
+		32EA53501F27E1010012DFB6 /* HYPImpeccableOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCADF1F0403E400EB5007 /* HYPImpeccableOverlayView.m */; };
+		32EA53511F27E1010012DFB6 /* HYPImpeccableZepAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAE21F0442EA00EB5007 /* HYPImpeccableZepAPIManager.h */; };
+		32EA53521F27E1010012DFB6 /* HYPImpeccableZepAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAE31F0442EA00EB5007 /* HYPImpeccableZepAPIManager.m */; };
+		32EA53531F27E1010012DFB6 /* HYPImpeccableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAE61F04430B00EB5007 /* HYPImpeccableSection.h */; };
+		32EA53541F27E1010012DFB6 /* HYPImpeccableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAE71F04430B00EB5007 /* HYPImpeccableSection.m */; };
+		32EA53551F27E1010012DFB6 /* HYPImpeccableAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAEA1F04431600EB5007 /* HYPImpeccableAsset.h */; };
+		32EA53561F27E1010012DFB6 /* HYPImpeccableAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAEB1F04431600EB5007 /* HYPImpeccableAsset.m */; };
+		32EA53571F27E1010012DFB6 /* HYPImpeccableZepPhotoPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAEE1F04526E00EB5007 /* HYPImpeccableZepPhotoPickerViewController.h */; };
+		32EA53581F27E1010012DFB6 /* HYPImpeccableZepPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAEF1F04526E00EB5007 /* HYPImpeccableZepPhotoPickerViewController.m */; };
+		32EA53591F27E1080012DFB6 /* HYPVisualLoggerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAC11F0200DB00EB5007 /* HYPVisualLoggerPlugin.h */; };
+		32EA535A1F27E1080012DFB6 /* HYPVisualLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAC21F0200DB00EB5007 /* HYPVisualLoggerPlugin.m */; };
+		32EA535B1F27E1080012DFB6 /* HYPVisualLoggerPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAC51F02010A00EB5007 /* HYPVisualLoggerPluginModule.h */; };
+		32EA535C1F27E1080012DFB6 /* HYPVisualLoggerPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAC61F02010A00EB5007 /* HYPVisualLoggerPluginModule.m */; };
+		32EA535D1F27E1080012DFB6 /* HYPVisualLoggingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAC91F02034F00EB5007 /* HYPVisualLoggingManager.h */; };
+		32EA535E1F27E1080012DFB6 /* HYPVisualLoggingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCACA1F02034F00EB5007 /* HYPVisualLoggingManager.m */; };
+		32EA535F1F27E1080012DFB6 /* HYPVisualLoggingContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCACD1F0206AC00EB5007 /* HYPVisualLoggingContainerView.h */; };
+		32EA53601F27E1080012DFB6 /* HYPVisualLoggingContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCACE1F0206AC00EB5007 /* HYPVisualLoggingContainerView.m */; };
+		32EA53611F27E1080012DFB6 /* HYPLogItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAD11F0206EB00EB5007 /* HYPLogItemView.h */; };
+		32EA53621F27E1080012DFB6 /* HYPLogItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAD21F0206EB00EB5007 /* HYPLogItemView.m */; };
+		32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E351E1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.h */; };
+		32EA53641F27E10F0012DFB6 /* HYPMeasurementsInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E351F1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.m */; };
+		32EA53651F27E10F0012DFB6 /* HYPMeasurementsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35201EFA20CF00A0BC4E /* HYPMeasurementsPlugin.h */; };
+		32EA53661F27E10F0012DFB6 /* HYPMeasurementsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35211EFA20CF00A0BC4E /* HYPMeasurementsPlugin.m */; };
+		32EA53671F27E10F0012DFB6 /* HYPMeasurementsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35221EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.h */; };
+		32EA53681F27E10F0012DFB6 /* HYPMeasurementsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35231EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.m */; };
+		32EA53691F27E11C0012DFB6 /* AttributesTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352C1EFA20D800A0BC4E /* AttributesTabViewController.h */; };
+		32EA536A1F27E11C0012DFB6 /* AttributesTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E352D1EFA20D800A0BC4E /* AttributesTabViewController.m */; };
+		32EA536B1F27E11C0012DFB6 /* HYPFontPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352F1EFA20D800A0BC4E /* HYPFontPickerViewController.h */; };
+		32EA536C1F27E11C0012DFB6 /* HYPFontPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35301EFA20D800A0BC4E /* HYPFontPickerViewController.m */; };
+		32EA536D1F27E11C0012DFB6 /* HYPMaskDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35311EFA20D800A0BC4E /* HYPMaskDetailViewController.h */; };
+		32EA536E1F27E11C0012DFB6 /* HYPMaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35321EFA20D800A0BC4E /* HYPMaskDetailViewController.m */; };
+		32EA536F1F27E11C0012DFB6 /* ViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35331EFA20D800A0BC4E /* ViewAttribute.h */; };
+		32EA53701F27E11C0012DFB6 /* ViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35341EFA20D800A0BC4E /* ViewAttribute.m */; };
+		32EA53711F27E1220012DFB6 /* FontDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35361EFA20D800A0BC4E /* FontDetailViewAttribute.h */; };
+		32EA53721F27E1220012DFB6 /* FontDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35371EFA20D800A0BC4E /* FontDetailViewAttribute.m */; };
+		32EA53731F27E1220012DFB6 /* HYPMaskDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35381EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.h */; };
+		32EA53741F27E1220012DFB6 /* HYPMaskDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35391EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.m */; };
+		32EA53751F27E1220012DFB6 /* HYPAttributeInspectorInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353A1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h */; };
+		32EA53761F27E1220012DFB6 /* HYPAttributeInspectorInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353B1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m */; };
+		32EA53771F27E1220012DFB6 /* HYPAttributesInspectorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353C1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h */; };
+		32EA53781F27E1220012DFB6 /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */; };
+		32EA53791F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */; };
+		32EA537A1F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */; };
 		493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */; };
 		493DCABB1F01F93900EB5007 /* HYPInAppOverlayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */; };
@@ -496,6 +544,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA53571F27E1010012DFB6 /* HYPImpeccableZepPhotoPickerViewController.h in Headers */,
+				32EA53511F27E1010012DFB6 /* HYPImpeccableZepAPIManager.h in Headers */,
+				32EA534D1F27E1010012DFB6 /* HYPImpeccablePluginModule.h in Headers */,
+				32EA53551F27E1010012DFB6 /* HYPImpeccableAsset.h in Headers */,
+				32EA53531F27E1010012DFB6 /* HYPImpeccableSection.h in Headers */,
+				32EA534B1F27E1010012DFB6 /* HYPImpeccablePlugin.h in Headers */,
+				32EA534F1F27E1010012DFB6 /* HYPImpeccableOverlayView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +558,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA53611F27E1080012DFB6 /* HYPLogItemView.h in Headers */,
+				32EA53591F27E1080012DFB6 /* HYPVisualLoggerPlugin.h in Headers */,
+				32EA535B1F27E1080012DFB6 /* HYPVisualLoggerPluginModule.h in Headers */,
+				32EA535D1F27E1080012DFB6 /* HYPVisualLoggingManager.h in Headers */,
+				32EA535F1F27E1080012DFB6 /* HYPVisualLoggingContainerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +570,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA53651F27E10F0012DFB6 /* HYPMeasurementsPlugin.h in Headers */,
+				32EA53671F27E10F0012DFB6 /* HYPMeasurementsPluginModule.h in Headers */,
+				32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +580,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA53711F27E1220012DFB6 /* FontDetailViewAttribute.h in Headers */,
+				32EA536F1F27E11C0012DFB6 /* ViewAttribute.h in Headers */,
+				32EA53771F27E1220012DFB6 /* HYPAttributesInspectorPlugin.h in Headers */,
+				32EA536B1F27E11C0012DFB6 /* HYPFontPickerViewController.h in Headers */,
+				32EA53731F27E1220012DFB6 /* HYPMaskDetailViewAttribute.h in Headers */,
+				32EA53691F27E11C0012DFB6 /* AttributesTabViewController.h in Headers */,
+				32EA536D1F27E11C0012DFB6 /* HYPMaskDetailViewController.h in Headers */,
+				32EA53791F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.h in Headers */,
+				32EA53751F27E1220012DFB6 /* HYPAttributeInspectorInteractionView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +852,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA53501F27E1010012DFB6 /* HYPImpeccableOverlayView.m in Sources */,
+				32EA53521F27E1010012DFB6 /* HYPImpeccableZepAPIManager.m in Sources */,
+				32EA53541F27E1010012DFB6 /* HYPImpeccableSection.m in Sources */,
+				32EA53561F27E1010012DFB6 /* HYPImpeccableAsset.m in Sources */,
+				32EA53581F27E1010012DFB6 /* HYPImpeccableZepPhotoPickerViewController.m in Sources */,
+				32EA534C1F27E1010012DFB6 /* HYPImpeccablePlugin.m in Sources */,
+				32EA534E1F27E1010012DFB6 /* HYPImpeccablePluginModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,6 +866,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA53621F27E1080012DFB6 /* HYPLogItemView.m in Sources */,
+				32EA53601F27E1080012DFB6 /* HYPVisualLoggingContainerView.m in Sources */,
+				32EA535C1F27E1080012DFB6 /* HYPVisualLoggerPluginModule.m in Sources */,
+				32EA535A1F27E1080012DFB6 /* HYPVisualLoggerPlugin.m in Sources */,
+				32EA535E1F27E1080012DFB6 /* HYPVisualLoggingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +878,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA53641F27E10F0012DFB6 /* HYPMeasurementsInteractionView.m in Sources */,
+				32EA53681F27E10F0012DFB6 /* HYPMeasurementsPluginModule.m in Sources */,
+				32EA53661F27E10F0012DFB6 /* HYPMeasurementsPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +888,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32EA53721F27E1220012DFB6 /* FontDetailViewAttribute.m in Sources */,
+				32EA536A1F27E11C0012DFB6 /* AttributesTabViewController.m in Sources */,
+				32EA537A1F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.m in Sources */,
+				32EA53761F27E1220012DFB6 /* HYPAttributeInspectorInteractionView.m in Sources */,
+				32EA53701F27E11C0012DFB6 /* ViewAttribute.m in Sources */,
+				32EA536C1F27E11C0012DFB6 /* HYPFontPickerViewController.m in Sources */,
+				32EA53741F27E1220012DFB6 /* HYPMaskDetailViewAttribute.m in Sources */,
+				32EA536E1F27E11C0012DFB6 /* HYPMaskDetailViewController.m in Sources */,
+				32EA53781F27E1220012DFB6 /* HYPAttributesInspectorPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
