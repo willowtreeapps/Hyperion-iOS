@@ -43,6 +43,26 @@
 		320E5D761F27988D00C42FC0 /* HYPMeasurementsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35221EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.h */; };
 		320E5D771F27988D00C42FC0 /* HYPMeasurementsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35231EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.m */; };
 		320E5D781F27989D00C42FC0 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
+		320E5D821F27991400C42FC0 /* AttributesInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D801F27991400C42FC0 /* AttributesInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		320E5D861F27992500C42FC0 /* AttributesTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352C1EFA20D800A0BC4E /* AttributesTabViewController.h */; };
+		320E5D871F27992500C42FC0 /* AttributesTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E352D1EFA20D800A0BC4E /* AttributesTabViewController.m */; };
+		320E5D881F27992500C42FC0 /* HYPFontPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352F1EFA20D800A0BC4E /* HYPFontPickerViewController.h */; };
+		320E5D891F27992500C42FC0 /* HYPFontPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35301EFA20D800A0BC4E /* HYPFontPickerViewController.m */; };
+		320E5D8A1F27992500C42FC0 /* HYPMaskDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35311EFA20D800A0BC4E /* HYPMaskDetailViewController.h */; };
+		320E5D8B1F27992500C42FC0 /* HYPMaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35321EFA20D800A0BC4E /* HYPMaskDetailViewController.m */; };
+		320E5D8C1F27992500C42FC0 /* ViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35331EFA20D800A0BC4E /* ViewAttribute.h */; };
+		320E5D8D1F27992500C42FC0 /* ViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35341EFA20D800A0BC4E /* ViewAttribute.m */; };
+		320E5D8E1F27992C00C42FC0 /* FontDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35361EFA20D800A0BC4E /* FontDetailViewAttribute.h */; };
+		320E5D8F1F27992C00C42FC0 /* FontDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35371EFA20D800A0BC4E /* FontDetailViewAttribute.m */; };
+		320E5D901F27992C00C42FC0 /* HYPMaskDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35381EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.h */; };
+		320E5D911F27992C00C42FC0 /* HYPMaskDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35391EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.m */; };
+		320E5D921F27992C00C42FC0 /* HYPAttributeInspectorInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353A1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h */; };
+		320E5D931F27992C00C42FC0 /* HYPAttributeInspectorInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353B1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m */; };
+		320E5D941F27992C00C42FC0 /* HYPAttributesInspectorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353C1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h */; };
+		320E5D951F27992C00C42FC0 /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */; };
+		320E5D961F27992C00C42FC0 /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */; };
+		320E5D971F27992C00C42FC0 /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */; };
+		320E5D981F27993D00C42FC0 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		329076421F1FFC6200D42286 /* HYPActivationGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 329076411F1FFC6200D42286 /* HYPActivationGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */; };
@@ -81,24 +101,6 @@
 		498E34EE1EFA0D5700A0BC4E /* ToolsTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34D51EFA0D5700A0BC4E /* ToolsTabViewController.m */; };
 		498E34F01EFA0EA800A0BC4E /* HYPOverlayContainerListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34EF1EFA0EA800A0BC4E /* HYPOverlayContainerListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		498E34F21EFA0EB600A0BC4E /* HYPTargetViewListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34F11EFA0EB600A0BC4E /* HYPTargetViewListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		498E35401EFA20D800A0BC4E /* AttributesTabViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352C1EFA20D800A0BC4E /* AttributesTabViewController.h */; };
-		498E35411EFA20D800A0BC4E /* AttributesTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E352D1EFA20D800A0BC4E /* AttributesTabViewController.m */; };
-		498E35421EFA20D800A0BC4E /* HYPFontPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352F1EFA20D800A0BC4E /* HYPFontPickerViewController.h */; };
-		498E35431EFA20D800A0BC4E /* HYPFontPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35301EFA20D800A0BC4E /* HYPFontPickerViewController.m */; };
-		498E35441EFA20D800A0BC4E /* HYPMaskDetailViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35311EFA20D800A0BC4E /* HYPMaskDetailViewController.h */; };
-		498E35451EFA20D800A0BC4E /* HYPMaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35321EFA20D800A0BC4E /* HYPMaskDetailViewController.m */; };
-		498E35461EFA20D800A0BC4E /* ViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35331EFA20D800A0BC4E /* ViewAttribute.h */; };
-		498E35471EFA20D800A0BC4E /* ViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35341EFA20D800A0BC4E /* ViewAttribute.m */; };
-		498E35481EFA20D800A0BC4E /* FontDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35361EFA20D800A0BC4E /* FontDetailViewAttribute.h */; };
-		498E35491EFA20D800A0BC4E /* FontDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35371EFA20D800A0BC4E /* FontDetailViewAttribute.m */; };
-		498E354A1EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35381EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.h */; };
-		498E354B1EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35391EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.m */; };
-		498E354C1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353A1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h */; };
-		498E354D1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353B1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m */; };
-		498E354E1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353C1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h */; };
-		498E354F1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */; };
-		498E35501EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */; };
-		498E35511EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */; };
 		49C6B4DF1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C6B4DD1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h */; };
 		49C6B4E01EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C6B4DE1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m */; };
 		49C6B4E31EFD9B1A00345B78 /* UIWindow+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C6B4E11EFD9B1900345B78 /* UIWindow+Swizzling.h */; };
@@ -115,6 +117,9 @@
 		320E5D6A1F27988500C42FC0 /* Measurements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Measurements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		320E5D6C1F27988500C42FC0 /* Measurements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Measurements.h; sourceTree = "<group>"; };
 		320E5D6D1F27988500C42FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AttributesInspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320E5D801F27991400C42FC0 /* AttributesInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesInspector.h; sourceTree = "<group>"; };
+		320E5D811F27991400C42FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		329076411F1FFC6200D42286 /* HYPActivationGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPActivationGesture.h; sourceTree = "<group>"; };
 		493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayViewProvider.h; sourceTree = "<group>"; };
 		493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPInAppOverlayContainer.h; sourceTree = "<group>"; };
@@ -234,6 +239,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		320E5D7A1F27991400C42FC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320E5D981F27993D00C42FC0 /* HyperionCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		494A74D41F278EB9003F89F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +293,16 @@
 				320E5D6D1F27988500C42FC0 /* Info.plist */,
 			);
 			path = Measurements;
+			sourceTree = "<group>";
+		};
+		320E5D7F1F27991400C42FC0 /* AttributesInspector */ = {
+			isa = PBXGroup;
+			children = (
+				498E352A1EFA20D800A0BC4E /* AttributesInspector */,
+				320E5D801F27991400C42FC0 /* AttributesInspector.h */,
+				320E5D811F27991400C42FC0 /* Info.plist */,
+			);
+			path = AttributesInspector;
 			sourceTree = "<group>";
 		};
 		493DCAC01F02004200EB5007 /* VisualLogger */ = {
@@ -340,6 +363,7 @@
 				320E5D371F2796EE00C42FC0 /* Impeccable */,
 				320E5D531F27983F00C42FC0 /* VisualLogger */,
 				320E5D6B1F27988500C42FC0 /* Measurements */,
+				320E5D7F1F27991400C42FC0 /* AttributesInspector */,
 				498E34751EFA0C8000A0BC4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -352,6 +376,7 @@
 				320E5D361F2796EE00C42FC0 /* Impeccable.framework */,
 				320E5D521F27983F00C42FC0 /* VisualLogger.framework */,
 				320E5D6A1F27988500C42FC0 /* Measurements.framework */,
+				320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,7 +385,6 @@
 			isa = PBXGroup;
 			children = (
 				498E34B81EFA0D5700A0BC4E /* Core */,
-				498E352A1EFA20D800A0BC4E /* AttributesInspector */,
 				498E34B61EFA0D4800A0BC4E /* Info.plist */,
 			);
 			path = HyperionCore;
@@ -559,6 +583,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		320E5D7B1F27991400C42FC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320E5D901F27992C00C42FC0 /* HYPMaskDetailViewAttribute.h in Headers */,
+				320E5D8C1F27992500C42FC0 /* ViewAttribute.h in Headers */,
+				320E5D961F27992C00C42FC0 /* HYPAttributesInspectorPluginModule.h in Headers */,
+				320E5D881F27992500C42FC0 /* HYPFontPickerViewController.h in Headers */,
+				320E5D941F27992C00C42FC0 /* HYPAttributesInspectorPlugin.h in Headers */,
+				320E5D921F27992C00C42FC0 /* HYPAttributeInspectorInteractionView.h in Headers */,
+				320E5D8E1F27992C00C42FC0 /* FontDetailViewAttribute.h in Headers */,
+				320E5D861F27992500C42FC0 /* AttributesTabViewController.h in Headers */,
+				320E5D8A1F27992500C42FC0 /* HYPMaskDetailViewController.h in Headers */,
+				320E5D821F27991400C42FC0 /* AttributesInspector.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		494A74D51F278EB9003F89F7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,33 +618,24 @@
 				329076421F1FFC6200D42286 /* HYPActivationGesture.h in Headers */,
 				498E34E01EFA0D5700A0BC4E /* HYPPluginExtensionImp.h in Headers */,
 				498E34F21EFA0EB600A0BC4E /* HYPTargetViewListener.h in Headers */,
-				498E35481EFA20D800A0BC4E /* FontDetailViewAttribute.h in Headers */,
-				498E35441EFA20D800A0BC4E /* HYPMaskDetailViewController.h in Headers */,
 				498E34E21EFA0D5700A0BC4E /* HYPPlugin.h in Headers */,
 				498E34E51EFA0D5700A0BC4E /* HYPTargetView.h in Headers */,
 				498E34D61EFA0D5700A0BC4E /* HYPDebuggingWindow.h in Headers */,
 				49C6B4DF1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h in Headers */,
-				498E354A1EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.h in Headers */,
 				498E34DD1EFA0D5700A0BC4E /* HYPOverlayContainer.h in Headers */,
 				498E34EA1EFA0D5700A0BC4E /* InteractionView.h in Headers */,
 				498E34E41EFA0D5700A0BC4E /* HYPPluginModule.h in Headers */,
-				498E35421EFA20D800A0BC4E /* HYPFontPickerViewController.h in Headers */,
-				498E35401EFA20D800A0BC4E /* AttributesTabViewController.h in Headers */,
 				498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */,
 				493DCABE1F01FBB800EB5007 /* HYPInAppDebuggingWindow.h in Headers */,
 				498E34F01EFA0EA800A0BC4E /* HYPOverlayContainerListener.h in Headers */,
 				498E34E31EFA0D5700A0BC4E /* HYPPluginExtension.h in Headers */,
 				498E34ED1EFA0D5700A0BC4E /* ToolsTabViewController.h in Headers */,
 				498E34EC1EFA0D5700A0BC4E /* InteractionViewDatasource.h in Headers */,
-				498E35501EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h in Headers */,
-				498E35461EFA20D800A0BC4E /* ViewAttribute.h in Headers */,
 				498E34DE1EFA0D5700A0BC4E /* HYPOverlayContainerImp.h in Headers */,
 				498E34E61EFA0D5700A0BC4E /* TabStack.h in Headers */,
 				49C6B4E31EFD9B1A00345B78 /* UIWindow+Swizzling.h in Headers */,
-				498E354E1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h in Headers */,
 				498E34E81EFA0D5700A0BC4E /* TabView.h in Headers */,
 				493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */,
-				498E354C1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +696,24 @@
 			productReference = 320E5D6A1F27988500C42FC0 /* Measurements.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		320E5D7D1F27991400C42FC0 /* AttributesInspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320E5D831F27991400C42FC0 /* Build configuration list for PBXNativeTarget "AttributesInspector" */;
+			buildPhases = (
+				320E5D791F27991400C42FC0 /* Sources */,
+				320E5D7A1F27991400C42FC0 /* Frameworks */,
+				320E5D7B1F27991400C42FC0 /* Headers */,
+				320E5D7C1F27991400C42FC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AttributesInspector;
+			productName = AttributesInspector;
+			productReference = 320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		494A74D71F278EB9003F89F7 /* SlowAnimations */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 494A74DF1F278EB9003F89F7 /* Build configuration list for PBXNativeTarget "SlowAnimations" */;
@@ -721,6 +771,10 @@
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
+					320E5D7D1F27991400C42FC0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					494A74D71F278EB9003F89F7 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
@@ -748,6 +802,7 @@
 				320E5D351F2796EE00C42FC0 /* Impeccable */,
 				320E5D511F27983F00C42FC0 /* VisualLogger */,
 				320E5D691F27988500C42FC0 /* Measurements */,
+				320E5D7D1F27991400C42FC0 /* AttributesInspector */,
 			);
 		};
 /* End PBXProject section */
@@ -768,6 +823,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		320E5D681F27988500C42FC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320E5D7C1F27991400C42FC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -829,6 +891,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		320E5D791F27991400C42FC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320E5D8F1F27992C00C42FC0 /* FontDetailViewAttribute.m in Sources */,
+				320E5D871F27992500C42FC0 /* AttributesTabViewController.m in Sources */,
+				320E5D971F27992C00C42FC0 /* HYPAttributesInspectorPluginModule.m in Sources */,
+				320E5D931F27992C00C42FC0 /* HYPAttributeInspectorInteractionView.m in Sources */,
+				320E5D8D1F27992500C42FC0 /* ViewAttribute.m in Sources */,
+				320E5D891F27992500C42FC0 /* HYPFontPickerViewController.m in Sources */,
+				320E5D911F27992C00C42FC0 /* HYPMaskDetailViewAttribute.m in Sources */,
+				320E5D8B1F27992500C42FC0 /* HYPMaskDetailViewController.m in Sources */,
+				320E5D951F27992C00C42FC0 /* HYPAttributesInspectorPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		494A74D31F278EB9003F89F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -842,24 +920,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				498E35411EFA20D800A0BC4E /* AttributesTabViewController.m in Sources */,
 				498E34E91EFA0D5700A0BC4E /* TabView.m in Sources */,
 				498E34D71EFA0D5700A0BC4E /* HYPDebuggingWindow.m in Sources */,
 				493DCABB1F01F93900EB5007 /* HYPInAppOverlayContainer.m in Sources */,
-				498E354D1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m in Sources */,
 				498E34E11EFA0D5700A0BC4E /* HYPPluginExtensionImp.m in Sources */,
-				498E354F1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m in Sources */,
 				49C6B4E41EFD9B1A00345B78 /* UIWindow+Swizzling.m in Sources */,
-				498E35511EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m in Sources */,
-				498E354B1EFA20D800A0BC4E /* HYPMaskDetailViewAttribute.m in Sources */,
-				498E35451EFA20D800A0BC4E /* HYPMaskDetailViewController.m in Sources */,
 				498E34EE1EFA0D5700A0BC4E /* ToolsTabViewController.m in Sources */,
 				49C6B4E01EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m in Sources */,
 				498E34DC1EFA0D5700A0BC4E /* HYPListenerContainer.m in Sources */,
-				498E35471EFA20D800A0BC4E /* ViewAttribute.m in Sources */,
-				498E35491EFA20D800A0BC4E /* FontDetailViewAttribute.m in Sources */,
 				498E34E71EFA0D5700A0BC4E /* TabStack.m in Sources */,
-				498E35431EFA20D800A0BC4E /* HYPFontPickerViewController.m in Sources */,
 				498E34DF1EFA0D5700A0BC4E /* HYPOverlayContainerImp.m in Sources */,
 				498E34EB1EFA0D5700A0BC4E /* InteractionView.m in Sources */,
 				493DCABF1F01FBB800EB5007 /* HYPInAppDebuggingWindow.m in Sources */,
@@ -968,6 +1037,40 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.Measurements;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		320E5D841F27991400C42FC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AttributesInspector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.AttributesInspector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		320E5D851F27991400C42FC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AttributesInspector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.AttributesInspector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -1163,6 +1266,14 @@
 			buildConfigurations = (
 				320E5D701F27988500C42FC0 /* Debug */,
 				320E5D711F27988500C42FC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		320E5D831F27991400C42FC0 /* Build configuration list for PBXNativeTarget "AttributesInspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320E5D841F27991400C42FC0 /* Debug */,
+				320E5D851F27991400C42FC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

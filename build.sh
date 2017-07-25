@@ -7,3 +7,4 @@ sh build-umbrella-framework.sh SlowAnimations
 sh build-umbrella-framework.sh Impeccable
 sh build-umbrella-framework.sh VisualLogger
 sh build-umbrella-framework.sh Measurements
+sh build-umbrella-framework.sh AttributesInspector
