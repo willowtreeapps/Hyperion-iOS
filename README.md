@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
 [![License](https://img.shields.io/cocoapods/l/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
 [![Platform](https://img.shields.io/cocoapods/p/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -12,6 +13,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 iOS 9+
 
 ## Installation
+
+#### CocoaPods
+
 HyperioniOS is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -24,6 +28,12 @@ pod 'HyperioniOS/Measurements'
 pod 'HyperioniOS/SlowAnimations'
 ```
 
+#### Carthage
+•Add `github "willowtreeapps/Hyperion-iOS"` to your cartfile.
+
+•Run `carthage update`
+
+•Drag and drop newly created frameworks into the project.
 ## Adding Tools
 Hyperion automatically finds every class that conforms to HYPPlugin and adds it to the drawer. If you want to customize what tools show up in your drawer you can add a special plist file called `HyperionDependencies.plist` that lists all of the plugins that should be added. Below is an example of the contents:
 
