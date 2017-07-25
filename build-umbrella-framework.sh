@@ -1,12 +1,10 @@
 
-SCHEME=$1
-
 rm -rf tmpsim
 rm -rf tmpos
-rm -rf output
-mkdir output
 mkdir output/iphoneos
 mkdir output/simulator
+
+SCHEME=$1
 
 xcodebuild \
 -workspace "HyperionFramework.xcworkspace" \
