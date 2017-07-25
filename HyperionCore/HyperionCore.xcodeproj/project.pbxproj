@@ -62,6 +62,9 @@
 		32EA53781F27E1220012DFB6 /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */; };
 		32EA53791F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */; };
 		32EA537A1F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */; };
+		32EA537E1F27E3570012DFB6 /* HYPActivationGestureOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA537B1F27E3570012DFB6 /* HYPActivationGestureOptions.h */; };
+		32EA537F1F27E3570012DFB6 /* HyperionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA537C1F27E3570012DFB6 /* HyperionManager.h */; };
+		32EA53801F27E3570012DFB6 /* HyperionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA537D1F27E3570012DFB6 /* HyperionManager.m */; };
 		493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */; };
 		493DCABB1F01F93900EB5007 /* HYPInAppOverlayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */; };
@@ -118,6 +121,9 @@
 		320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AttributesInspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		320E5D801F27991400C42FC0 /* AttributesInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesInspector.h; sourceTree = "<group>"; };
 		320E5D811F27991400C42FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32EA537B1F27E3570012DFB6 /* HYPActivationGestureOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPActivationGestureOptions.h; sourceTree = "<group>"; };
+		32EA537C1F27E3570012DFB6 /* HyperionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperionManager.h; sourceTree = "<group>"; };
+		32EA537D1F27E3570012DFB6 /* HyperionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperionManager.m; sourceTree = "<group>"; };
 		493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayViewProvider.h; sourceTree = "<group>"; };
 		493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPInAppOverlayContainer.h; sourceTree = "<group>"; };
 		493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPInAppOverlayContainer.m; sourceTree = "<group>"; };
@@ -390,6 +396,9 @@
 		498E34B81EFA0D5700A0BC4E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				32EA537B1F27E3570012DFB6 /* HYPActivationGestureOptions.h */,
+				32EA537C1F27E3570012DFB6 /* HyperionManager.h */,
+				32EA537D1F27E3570012DFB6 /* HyperionManager.m */,
 				49C6B4DD1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h */,
 				49C6B4DE1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.m */,
 				49C6B4E11EFD9B1900345B78 /* UIWindow+Swizzling.h */,
@@ -615,11 +624,13 @@
 				498E34D61EFA0D5700A0BC4E /* HYPDebuggingWindow.h in Headers */,
 				49C6B4DF1EFC6C6900345B78 /* HYPDebuggingOverlayViewController.h in Headers */,
 				498E34DD1EFA0D5700A0BC4E /* HYPOverlayContainer.h in Headers */,
+				32EA537E1F27E3570012DFB6 /* HYPActivationGestureOptions.h in Headers */,
 				498E34EA1EFA0D5700A0BC4E /* InteractionView.h in Headers */,
 				498E34E41EFA0D5700A0BC4E /* HYPPluginModule.h in Headers */,
 				498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */,
 				493DCABE1F01FBB800EB5007 /* HYPInAppDebuggingWindow.h in Headers */,
 				498E34F01EFA0EA800A0BC4E /* HYPOverlayContainerListener.h in Headers */,
+				32EA537F1F27E3570012DFB6 /* HyperionManager.h in Headers */,
 				498E34E31EFA0D5700A0BC4E /* HYPPluginExtension.h in Headers */,
 				498E34ED1EFA0D5700A0BC4E /* ToolsTabViewController.h in Headers */,
 				498E34EC1EFA0D5700A0BC4E /* InteractionViewDatasource.h in Headers */,
@@ -924,6 +935,7 @@
 				498E34DC1EFA0D5700A0BC4E /* HYPListenerContainer.m in Sources */,
 				498E34E71EFA0D5700A0BC4E /* TabStack.m in Sources */,
 				498E34DF1EFA0D5700A0BC4E /* HYPOverlayContainerImp.m in Sources */,
+				32EA53801F27E3570012DFB6 /* HyperionManager.m in Sources */,
 				498E34EB1EFA0D5700A0BC4E /* InteractionView.m in Sources */,
 				493DCABF1F01FBB800EB5007 /* HYPInAppDebuggingWindow.m in Sources */,
 			);
