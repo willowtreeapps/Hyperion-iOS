@@ -17,6 +17,12 @@
 -(nonnull UIWindow *)hypeWindow;
 -(nonnull id<HYPOverlayContainer>)overlayContainer;
 -(nonnull id<HYPOverlayContainer>)inAppOverlayContainer;
+-(nonnull NSLayoutYAxisAnchor *)topAnchor;
+-(nonnull NSLayoutYAxisAnchor *)bottomAnchor;
+-(nonnull NSLayoutXAxisAnchor *)leadingAnchor;
+-(nonnull NSLayoutXAxisAnchor *)trailingAnchor;
+-(nonnull NSLayoutDimension *)heightAnchor;
+-(nonnull NSLayoutDimension *)widthAnchor;
 -(nullable id<HYPTargetView>)getViewTarget;
 
 @end
