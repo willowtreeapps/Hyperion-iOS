@@ -180,21 +180,25 @@ const CGFloat MenuWidth = 300;
     [self.threeFingerTapRecognizer setNumberOfTapsRequired:1];
     [self.threeFingerTapRecognizer setNumberOfTouchesRequired:3];
     self.threeFingerTapRecognizer.delegate = self;
+    self.threeFingerTapRecognizer.enabled = NO;
 
     window.threeFingerTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
     [window.threeFingerTapRecognizer setNumberOfTapsRequired:1];
     [window.threeFingerTapRecognizer setNumberOfTouchesRequired:3];
     window.threeFingerTapRecognizer.delegate = self;
     [window addGestureRecognizer:window.threeFingerTapRecognizer];
+    window.threeFingerTapRecognizer.enabled = NO;
 
     self.edgeSwipeRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
     [self.edgeSwipeRecognizer setEdges:UIRectEdgeRight];
     self.edgeSwipeRecognizer.delegate = self;
+    self.edgeSwipeRecognizer.enabled = NO;
 
     window.edgeSwipeRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(activate)];
     [window.edgeSwipeRecognizer setEdges:UIRectEdgeRight];
     window.edgeSwipeRecognizer.delegate = self;
     [window addGestureRecognizer:window.edgeSwipeRecognizer];
+    window.edgeSwipeRecognizer.enabled = NO;
 
     self.fadeViewTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(deactivate)];
     self.fadeViewTapRecognizer.delegate = self;
