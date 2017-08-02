@@ -10,6 +10,10 @@
 		329076421F1FFC6200D42286 /* (null) in Headers */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Public, ); }; };
 		329076441F226F5100D42286 /* (null) in Headers */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Public, ); }; };
 		329076461F2270F000D42286 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		32CF311B1F326CEA00949D21 /* Impeccable.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D381F2796EE00C42FC0 /* Impeccable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CF311C1F326CF400949D21 /* VisualLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D541F27983F00C42FC0 /* VisualLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CF311D1F326CFB00949D21 /* Measurements.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D6C1F27988500C42FC0 /* Measurements.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CF311E1F326D0300949D21 /* AttributesInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D801F27991400C42FC0 /* AttributesInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32EA53471F27DA300012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53481F27DA340012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53491F27DA3A0012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
@@ -560,6 +564,7 @@
 				32EA53531F27E1010012DFB6 /* HYPImpeccableSection.h in Headers */,
 				32EA534B1F27E1010012DFB6 /* HYPImpeccablePlugin.h in Headers */,
 				32EA534F1F27E1010012DFB6 /* HYPImpeccableOverlayView.h in Headers */,
+				32CF311B1F326CEA00949D21 /* Impeccable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +572,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CF311C1F326CF400949D21 /* VisualLogger.h in Headers */,
 				32EA53611F27E1080012DFB6 /* HYPLogItemView.h in Headers */,
 				32EA53591F27E1080012DFB6 /* HYPVisualLoggerPlugin.h in Headers */,
 				32EA535B1F27E1080012DFB6 /* HYPVisualLoggerPluginModule.h in Headers */,
@@ -580,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32EA53651F27E10F0012DFB6 /* HYPMeasurementsPlugin.h in Headers */,
+				32CF311D1F326CFB00949D21 /* Measurements.h in Headers */,
 				32EA53671F27E10F0012DFB6 /* HYPMeasurementsPluginModule.h in Headers */,
 				32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */,
 			);
@@ -594,6 +601,7 @@
 				32EA53771F27E1220012DFB6 /* HYPAttributesInspectorPlugin.h in Headers */,
 				32EA536B1F27E11C0012DFB6 /* HYPFontPickerViewController.h in Headers */,
 				32EA53731F27E1220012DFB6 /* HYPMaskDetailViewAttribute.h in Headers */,
+				32CF311E1F326D0300949D21 /* AttributesInspector.h in Headers */,
 				32EA53691F27E11C0012DFB6 /* AttributesTabViewController.h in Headers */,
 				32EA536D1F27E11C0012DFB6 /* HYPMaskDetailViewController.h in Headers */,
 				32EA53791F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.h in Headers */,
