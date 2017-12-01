@@ -96,7 +96,7 @@ By default, Hyperion automatically finds every plugin that is available in the p
 ## Contributors
 [Chris Mays](https://github.com/chrsmys)
 <br>[Matt Kauper](https://github.com/mhk4g)
-
+<br>[Ben Humphries](https://github.com/imachumphries)
 ## License
 Hyperion is available under the MIT license. See the LICENSE file for more info.
 
