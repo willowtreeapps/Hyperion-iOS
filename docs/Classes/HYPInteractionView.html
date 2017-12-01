@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HYPInteractionView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/HYPInteractionView" class="dashAnchor"></a>
+    <a title="HYPInteractionView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">HyperionCore Docs</a> (60% documented)</p>
+        <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">HyperionCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HYPInteractionView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HYPInteractionView.html">HYPInteractionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPPluginHelper.html">HYPPluginHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPPluginMenuItem.html">HYPPluginMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)HYPPluginModule">HYPPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPSnapshotPluginModule.html">HYPSnapshotPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HyperionManager.html">HyperionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@pluginMenuItem">pluginMenuItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPOverlayContainer.html">HYPOverlayContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPOverlayPluginViewProvider.html">HYPOverlayPluginViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPlugin.html">HYPPlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginExtension.html">HYPPluginExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginMenuItem.html">HYPPluginMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginMenuItemDelegate.html">HYPPluginMenuItemDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginModule.html">HYPPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPSnapShotContainer.html">HYPSnapShotContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPSnapShotPluginViewProvider.html">HYPSnapShotPluginViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPViewSelectionDelegate.html">HYPViewSelectionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HYPInteractionView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">HYPInteractionView</span> <span class="p">:</span> <span class="nc">UIView</span>
+
+<span class="k">-</span><span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithPluginExtension</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPPluginExtension.html">HYPPluginExtension</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">extension</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="n">NSMutableArray</span><span class="o">&lt;</span><span class="n">UIView</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">findViewsInSubviews</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">subviews</span> <span class="nf">intersectingPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span>
+<span class="k">-</span><span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">view</span><span class="p">:(</span><span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">view</span> <span class="nf">surrondsPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span>
+
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPPluginExtension.html">HYPPluginExtension</a></span><span class="o">&gt;</span> <span class="n">extension</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HYPInteractionView(im)initWithPluginExtension:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPluginExtension:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HYPInteractionView(im)initWithPluginExtension:">-initWithPluginExtension:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span><span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithPluginExtension</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPPluginExtension.html">HYPPluginExtension</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">extension</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPInteractionView.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HYPInteractionView(im)findViewsInSubviews:intersectingPoint:"></a>
+                    <a name="//apple_ref/objc/Method/-findViewsInSubviews:intersectingPoint:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HYPInteractionView(im)findViewsInSubviews:intersectingPoint:">-findViewsInSubviews:intersectingPoint:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span><span class="p">(</span><span class="n">NSMutableArray</span><span class="o">&lt;</span><span class="n">UIView</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">findViewsInSubviews</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">subviews</span> <span class="nf">intersectingPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">findViews</span><span class="p">(</span><span class="n">inSubviews</span> <span class="nv">subviews</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="n">intersectingPoint</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPInteractionView.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HYPInteractionView(im)view:surrondsPoint:"></a>
+                    <a name="//apple_ref/objc/Method/-view:surrondsPoint:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HYPInteractionView(im)view:surrondsPoint:">-view:surrondsPoint:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span><span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">view</span><span class="p">:(</span><span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">view</span> <span class="nf">surrondsPoint</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">view</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="n">surrondsPoint</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPInteractionView.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HYPInteractionView(py)extension"></a>
+                    <a name="//apple_ref/objc/Property/extension" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HYPInteractionView(py)extension">extension</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPPluginExtension.html">HYPPluginExtension</a></span><span class="o">&gt;</span> <span class="n">extension</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPInteractionView.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2017-11-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

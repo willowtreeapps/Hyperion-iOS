@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/chrismays/Desktop/HyperioniOS/Core/Public/Plugin/HYPPluginModule.h",
+      "line": 42,
+      "symbol": "pluginMenuItem",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/chrismays/Desktop/HyperioniOS"
+}

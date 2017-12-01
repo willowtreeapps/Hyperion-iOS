@@ -1,0 +1,1370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32EA53471F27DA300012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
+		32EA53481F27DA340012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
+		32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E351E1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.h */; };
+		32EA53641F27E10F0012DFB6 /* HYPMeasurementsInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E351F1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.m */; };
+		32EA53651F27E10F0012DFB6 /* HYPMeasurementsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35201EFA20CF00A0BC4E /* HYPMeasurementsPlugin.h */; };
+		32EA53661F27E10F0012DFB6 /* HYPMeasurementsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35211EFA20CF00A0BC4E /* HYPMeasurementsPlugin.m */; };
+		32EA53671F27E10F0012DFB6 /* HYPMeasurementsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35221EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.h */; };
+		32EA53681F27E10F0012DFB6 /* HYPMeasurementsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35231EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.m */; };
+		32EA536A1F27E11C0012DFB6 /* HYPAttributesPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E352D1EFA20D800A0BC4E /* HYPAttributesPreviewViewController.m */; };
+		32EA53751F27E1220012DFB6 /* HYPAttributeInspectorInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353A1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h */; };
+		32EA53761F27E1220012DFB6 /* HYPAttributeInspectorInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353B1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m */; };
+		32EA53771F27E1220012DFB6 /* HYPAttributesInspectorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353C1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h */; };
+		32EA53781F27E1220012DFB6 /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */; };
+		32EA53791F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */; };
+		32EA537A1F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */; };
+		32EA537E1F27E3570012DFB6 /* HYPActivationGestureOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA537B1F27E3570012DFB6 /* HYPActivationGestureOptions.h */; };
+		32EA537F1F27E3570012DFB6 /* HyperionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA537C1F27E3570012DFB6 /* HyperionManager.h */; };
+		32EA53801F27E3570012DFB6 /* HyperionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA537D1F27E3570012DFB6 /* HyperionManager.m */; };
+		490698F81FC64ED8004ABA02 /* ruler.png in Resources */ = {isa = PBXBuildFile; fileRef = 490698F71FC64ED7004ABA02 /* ruler.png */; };
+		490698FB1FC64EE0004ABA02 /* ruler@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 490698F91FC64EDF004ABA02 /* ruler@3x.png */; };
+		490698FC1FC64EE0004ABA02 /* ruler@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 490698FA1FC64EDF004ABA02 /* ruler@2x.png */; };
+		490699001FC64F36004ABA02 /* attributeInspector@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 490698FD1FC64F35004ABA02 /* attributeInspector@3x.png */; };
+		490699011FC64F36004ABA02 /* attributeInspector@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 490698FE1FC64F35004ABA02 /* attributeInspector@2x.png */; };
+		490699021FC64F36004ABA02 /* attributeInspector.png in Resources */ = {isa = PBXBuildFile; fileRef = 490698FF1FC64F35004ABA02 /* attributeInspector.png */; };
+		490699051FC76AE6004ABA02 /* HYPSnapshotPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 490699031FC76AE6004ABA02 /* HYPSnapshotPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		490699061FC76AE6004ABA02 /* HYPSnapshotPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 490699041FC76AE6004ABA02 /* HYPSnapshotPluginModule.m */; };
+		490699091FC8E544004ABA02 /* HYPPluginHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 490699071FC8E544004ABA02 /* HYPPluginHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4906990A1FC8E544004ABA02 /* HYPPluginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 490699081FC8E544004ABA02 /* HYPPluginHelper.m */; };
+		4906990D1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4906990B1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.h */; };
+		4906990E1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4906990C1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.m */; };
+		490699101FC8E786004ABA02 /* HYPViewSelectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4906990F1FC8E786004ABA02 /* HYPViewSelectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4911C9651FD1036F00E812E4 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = 4911C9621FD1036F00E812E4 /* more.png */; };
+		4911C9661FD1036F00E812E4 /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4911C9631FD1036F00E812E4 /* more@2x.png */; };
+		4911C9671FD1036F00E812E4 /* more@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4911C9641FD1036F00E812E4 /* more@3x.png */; };
+		493044D01FD0B85500731401 /* HYPAttributesProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 493044CE1FD0B85500731401 /* HYPAttributesProvider.h */; };
+		493044D11FD0B85500731401 /* HYPAttributesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 493044CF1FD0B85500731401 /* HYPAttributesProvider.m */; };
+		493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */; };
+		493DCABB1F01F93900EB5007 /* HYPInAppOverlayContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */; };
+		493DCABE1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 493DCABC1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.h */; };
+		493DCABF1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DCABD1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.m */; };
+		4940E69B1FC51DC9008933BF /* timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4940E6981FC51DC9008933BF /* timer@2x.png */; };
+		4940E69C1FC51DC9008933BF /* timer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4940E6991FC51DC9008933BF /* timer@3x.png */; };
+		4940E69D1FC51DC9008933BF /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4940E69A1FC51DC9008933BF /* timer.png */; };
+		49437DE01FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 49437DDE1FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.h */; };
+		49437DE11FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437DDF1FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.m */; };
+		49437DE51FCCFDEE00F4F2A5 /* 25x-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DE21FCCFDEE00F4F2A5 /* 25x-Selected.png */; };
+		49437DE61FCCFDEE00F4F2A5 /* 25x-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DE31FCCFDEE00F4F2A5 /* 25x-Selected@2x.png */; };
+		49437DE71FCCFDEE00F4F2A5 /* 25x-Selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DE41FCCFDEE00F4F2A5 /* 25x-Selected@3x.png */; };
+		49437DEB1FCCFE1600F4F2A5 /* 50x-Unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DE81FCCFE1500F4F2A5 /* 50x-Unselected.png */; };
+		49437DEC1FCCFE1600F4F2A5 /* 50x-Unselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DE91FCCFE1500F4F2A5 /* 50x-Unselected@3x.png */; };
+		49437DED1FCCFE1600F4F2A5 /* 50x-Unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DEA1FCCFE1600F4F2A5 /* 50x-Unselected@2x.png */; };
+		49437DF11FCCFE4E00F4F2A5 /* 75x-Unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DEE1FCCFE4E00F4F2A5 /* 75x-Unselected.png */; };
+		49437DF21FCCFE4E00F4F2A5 /* 75x-Unselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DEF1FCCFE4E00F4F2A5 /* 75x-Unselected@3x.png */; };
+		49437DF31FCCFE4E00F4F2A5 /* 75x-Unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49437DF01FCCFE4E00F4F2A5 /* 75x-Unselected@2x.png */; };
+		494A74E01F278ED0003F89F7 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
+		494A74E11F278F08003F89F7 /* HYPSlowAnimationsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35161EFA20BD00A0BC4E /* HYPSlowAnimationsPlugin.m */; };
+		494A74E21F278F0C003F89F7 /* HYPSlowAnimationsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35151EFA20BD00A0BC4E /* HYPSlowAnimationsPlugin.h */; };
+		494A74E31F278F0F003F89F7 /* HYPSlowAnimationsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35171EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.h */; };
+		494A74E41F278F12003F89F7 /* HYPSlowAnimationsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35181EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.m */; };
+		494CC1BE1FCE5C19007EB9B4 /* HyperionCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 494CC1BD1FCE5C18007EB9B4 /* HyperionCore.h */; };
+		494CC1FA1FCFA15D007EB9B4 /* HYPInspectorAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 494CC1F91FCFA15D007EB9B4 /* HYPInspectorAttribute.h */; };
+		494CC2091FCFAE6E007EB9B4 /* font@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494CC2061FCFAE6E007EB9B4 /* font@2x.png */; };
+		494CC20A1FCFAE6E007EB9B4 /* font@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494CC2071FCFAE6E007EB9B4 /* font@3x.png */; };
+		494CC20B1FCFAE6E007EB9B4 /* font.png in Resources */ = {isa = PBXBuildFile; fileRef = 494CC2081FCFAE6E007EB9B4 /* font.png */; };
+		496D55261FD145C400663F16 /* HYPPopoverViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 496D55241FD145C400663F16 /* HYPPopoverViewController.h */; };
+		496D55271FD145C400663F16 /* HYPPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496D55251FD145C400663F16 /* HYPPopoverViewController.m */; };
+		496D55281FD14DF800663F16 /* HYPAttributesPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E352C1EFA20D800A0BC4E /* HYPAttributesPreviewViewController.h */; };
+		49873CC31FC2508100BBA3C1 /* UIApplication+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 49873CC11FC2508100BBA3C1 /* UIApplication+Swizzling.h */; };
+		49873CC41FC2508100BBA3C1 /* UIApplication+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 49873CC21FC2508100BBA3C1 /* UIApplication+Swizzling.m */; };
+		49873CC71FC2513500BBA3C1 /* HYPConfigurationConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 49873CC51FC2513500BBA3C1 /* HYPConfigurationConstants.h */; };
+		49873CC81FC2513500BBA3C1 /* HYPConfigurationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 49873CC61FC2513500BBA3C1 /* HYPConfigurationConstants.m */; };
+		49873CCA1FC254E100BBA3C1 /* HyperionDefaultConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49873CC91FC254E100BBA3C1 /* HyperionDefaultConfiguration.plist */; };
+		49873CCF1FC5160A00BBA3C1 /* HYPPluginMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 49873CCD1FC5160A00BBA3C1 /* HYPPluginMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49873CD01FC5160A00BBA3C1 /* HYPPluginMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49873CCE1FC5160A00BBA3C1 /* HYPPluginMenuItem.m */; };
+		498E34D61EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34B91EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498E34D71EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34BA1EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.m */; };
+		498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34BE1EFA0D5700A0BC4E /* HYPListenerContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498E34DC1EFA0D5700A0BC4E /* HYPListenerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34BF1EFA0D5700A0BC4E /* HYPListenerContainer.m */; };
+		498E34DD1EFA0D5700A0BC4E /* HYPOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34C01EFA0D5700A0BC4E /* HYPOverlayContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498E34DE1EFA0D5700A0BC4E /* HYPSnapshotContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34C11EFA0D5700A0BC4E /* HYPSnapshotContainer.h */; };
+		498E34DF1EFA0D5700A0BC4E /* HYPSnapshotContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34C21EFA0D5700A0BC4E /* HYPSnapshotContainer.m */; };
+		498E34E01EFA0D5700A0BC4E /* HYPPluginExtensionImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34C31EFA0D5700A0BC4E /* HYPPluginExtensionImp.h */; };
+		498E34E11EFA0D5700A0BC4E /* HYPPluginExtensionImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34C41EFA0D5700A0BC4E /* HYPPluginExtensionImp.m */; };
+		498E34E21EFA0D5700A0BC4E /* HYPPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34C61EFA0D5700A0BC4E /* HYPPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498E34E31EFA0D5700A0BC4E /* HYPPluginExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34C71EFA0D5700A0BC4E /* HYPPluginExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498E34EA1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34CF1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498E34EB1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34D01EFA0D5700A0BC4E /* HYPSnapshotInteractionView.m */; };
+		498E34ED1EFA0D5700A0BC4E /* PluginListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34D41EFA0D5700A0BC4E /* PluginListViewController.h */; };
+		498E34EE1EFA0D5700A0BC4E /* PluginListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34D51EFA0D5700A0BC4E /* PluginListViewController.m */; };
+		49A4C5A11F9BB207006ECD52 /* HyperionWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A4C59F1F9BB207006ECD52 /* HyperionWindowManager.h */; };
+		49A4C5A21F9BB207006ECD52 /* HyperionWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C5A01F9BB207006ECD52 /* HyperionWindowManager.m */; };
+		49A4C5A91F9BC686006ECD52 /* HYPOverlayDebuggingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A4C5A71F9BC686006ECD52 /* HYPOverlayDebuggingViewController.h */; };
+		49A4C5AA1F9BC686006ECD52 /* HYPOverlayDebuggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C5A81F9BC686006ECD52 /* HYPOverlayDebuggingViewController.m */; };
+		49A4C5DD1F9ED251006ECD52 /* HYPPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A4C5DB1F9ED251006ECD52 /* HYPPluginModule.h */; };
+		49A4C5DE1F9ED251006ECD52 /* HYPPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C5DC1F9ED251006ECD52 /* HYPPluginModule.m */; };
+		49A4C5E51F9EF411006ECD52 /* HYPPluginContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C5E31F9EF411006ECD52 /* HYPPluginContainerView.m */; };
+		49C3C20D1FCFB4CB00B170B7 /* fontSize.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C3C20A1FCFB4CB00B170B7 /* fontSize.png */; };
+		49C3C20E1FCFB4CB00B170B7 /* fontSize@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C3C20B1FCFB4CB00B170B7 /* fontSize@3x.png */; };
+		49C3C20F1FCFB4CB00B170B7 /* fontSize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C3C20C1FCFB4CB00B170B7 /* fontSize@2x.png */; };
+		49C3C21E1FCFC7FE00B170B7 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C3C21B1FCFC7FE00B170B7 /* x.png */; };
+		49C3C21F1FCFC7FE00B170B7 /* x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C3C21C1FCFC7FE00B170B7 /* x@2x.png */; };
+		49C3C2201FCFC7FE00B170B7 /* x@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C3C21D1FCFC7FE00B170B7 /* x@3x.png */; };
+		49C6B4DF1EFC6C6900345B78 /* HYPSnapshotViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C6B4DD1EFC6C6900345B78 /* HYPSnapshotViewController.h */; };
+		49C6B4E01EFC6C6900345B78 /* HYPSnapshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C6B4DE1EFC6C6900345B78 /* HYPSnapshotViewController.m */; };
+		49C6B4E31EFD9B1A00345B78 /* UIWindow+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C6B4E11EFD9B1900345B78 /* UIWindow+Swizzling.h */; };
+		49C6B4E41EFD9B1A00345B78 /* UIWindow+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C6B4E21EFD9B1A00345B78 /* UIWindow+Swizzling.m */; };
+		49CD4DE21FD10B5E004769CF /* HYPMoreAttributesListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CD4DE01FD10B5E004769CF /* HYPMoreAttributesListViewController.h */; };
+		49CD4DE31FD10B5E004769CF /* HYPMoreAttributesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CD4DE11FD10B5E004769CF /* HYPMoreAttributesListViewController.m */; };
+		49CD4DE61FD10F0F004769CF /* HYPKeyValueInspectorAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CD4DE41FD10F0F004769CF /* HYPKeyValueInspectorAttribute.h */; };
+		49CD4DE71FD10F0F004769CF /* HYPKeyValueInspectorAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CD4DE51FD10F0F004769CF /* HYPKeyValueInspectorAttribute.m */; };
+		49CD4DEB1FD11046004769CF /* HYPKeyValueTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CD4DE81FD11046004769CF /* HYPKeyValueTableViewCell.h */; };
+		49CD4DEC1FD11046004769CF /* HYPKeyValueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CD4DE91FD11046004769CF /* HYPKeyValueTableViewCell.m */; };
+		49CD4DED1FD11046004769CF /* HYPKeyValueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CD4DEA1FD11046004769CF /* HYPKeyValueTableViewCell.xib */; };
+		49CD4DF01FD11AEE004769CF /* HYPAttributedStringAttributeProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CD4DEE1FD11AEE004769CF /* HYPAttributedStringAttributeProvider.h */; };
+		49CD4DF11FD11AEE004769CF /* HYPAttributedStringAttributeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CD4DEF1FD11AEE004769CF /* HYPAttributedStringAttributeProvider.m */; };
+		49CD4DF41FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CD4DF21FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.h */; };
+		49CD4DF51FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CD4DF31FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.m */; };
+		49CD4DF81FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CD4DF61FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.h */; };
+		49CD4DF91FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CD4DF71FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.m */; };
+		49CFFF6E1FD0CCE300B9E33A /* HYPTextPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CFFF6C1FD0CCE300B9E33A /* HYPTextPreview.h */; };
+		49CFFF6F1FD0CCE300B9E33A /* HYPTextPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFFF6D1FD0CCE300B9E33A /* HYPTextPreview.m */; };
+		49CFFF711FD0CCF700B9E33A /* HYPTextPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CFFF701FD0CCF700B9E33A /* HYPTextPreview.xib */; };
+		49CFFF741FD0D5A600B9E33A /* HYPLabelAttributesProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CFFF721FD0D5A600B9E33A /* HYPLabelAttributesProvider.h */; };
+		49CFFF751FD0D5A600B9E33A /* HYPLabelAttributesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFFF731FD0D5A600B9E33A /* HYPLabelAttributesProvider.m */; };
+		49CFFF781FD0F33400B9E33A /* HYPViewPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CFFF761FD0F33400B9E33A /* HYPViewPreview.h */; };
+		49CFFF791FD0F33400B9E33A /* HYPViewPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFFF771FD0F33400B9E33A /* HYPViewPreview.m */; };
+		49CFFF7B1FD0F34C00B9E33A /* HYPViewPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CFFF7A1FD0F34C00B9E33A /* HYPViewPreview.xib */; };
+		49CFFF7F1FD0F8AD00B9E33A /* HYPUIHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 49CFFF7D1FD0F8AD00B9E33A /* HYPUIHelpers.h */; };
+		49CFFF801FD0F8AD00B9E33A /* HYPUIHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CFFF7E1FD0F8AD00B9E33A /* HYPUIHelpers.m */; };
+		49D23C891FCDC29B0052336F /* 25x-Unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C861FCDC29A0052336F /* 25x-Unselected.png */; };
+		49D23C8A1FCDC29B0052336F /* 25x-Unselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C871FCDC29A0052336F /* 25x-Unselected@2x.png */; };
+		49D23C8B1FCDC29B0052336F /* 25x-Unselected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C881FCDC29A0052336F /* 25x-Unselected@3x.png */; };
+		49D23C8F1FCDC34C0052336F /* 50x-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C8C1FCDC34B0052336F /* 50x-Selected.png */; };
+		49D23C901FCDC34C0052336F /* 50x-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C8D1FCDC34C0052336F /* 50x-Selected@2x.png */; };
+		49D23C911FCDC34C0052336F /* 50x-Selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C8E1FCDC34C0052336F /* 50x-Selected@3x.png */; };
+		49D23C951FCDC3840052336F /* 75x-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C921FCDC3840052336F /* 75x-Selected.png */; };
+		49D23C961FCDC3840052336F /* 75x-Selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C931FCDC3840052336F /* 75x-Selected@3x.png */; };
+		49D23C971FCDC3840052336F /* 75x-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C941FCDC3840052336F /* 75x-Selected@2x.png */; };
+		9D967BDF1FD0F8510035EB8C /* AttributesInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D801F27991400C42FC0 /* AttributesInspector.h */; };
+		9D967BE01FD0F8660035EB8C /* Measurements.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D6C1F27988500C42FC0 /* Measurements.h */; };
+		9D967BE11FD0F9390035EB8C /* SlowAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 494A74DA1F278EB9003F89F7 /* SlowAnimations.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		320E5D6A1F27988500C42FC0 /* Measurements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Measurements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320E5D6C1F27988500C42FC0 /* Measurements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Measurements.h; sourceTree = "<group>"; };
+		320E5D6D1F27988500C42FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AttributesInspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320E5D801F27991400C42FC0 /* AttributesInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesInspector.h; sourceTree = "<group>"; };
+		320E5D811F27991400C42FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32EA537B1F27E3570012DFB6 /* HYPActivationGestureOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPActivationGestureOptions.h; sourceTree = "<group>"; };
+		32EA537C1F27E3570012DFB6 /* HyperionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperionManager.h; sourceTree = "<group>"; };
+		32EA537D1F27E3570012DFB6 /* HyperionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperionManager.m; sourceTree = "<group>"; };
+		490698F71FC64ED7004ABA02 /* ruler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruler.png; sourceTree = "<group>"; };
+		490698F91FC64EDF004ABA02 /* ruler@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruler@3x.png"; sourceTree = "<group>"; };
+		490698FA1FC64EDF004ABA02 /* ruler@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ruler@2x.png"; sourceTree = "<group>"; };
+		490698FD1FC64F35004ABA02 /* attributeInspector@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attributeInspector@3x.png"; sourceTree = "<group>"; };
+		490698FE1FC64F35004ABA02 /* attributeInspector@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attributeInspector@2x.png"; sourceTree = "<group>"; };
+		490698FF1FC64F35004ABA02 /* attributeInspector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attributeInspector.png; sourceTree = "<group>"; };
+		490699031FC76AE6004ABA02 /* HYPSnapshotPluginModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPSnapshotPluginModule.h; sourceTree = "<group>"; };
+		490699041FC76AE6004ABA02 /* HYPSnapshotPluginModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPSnapshotPluginModule.m; sourceTree = "<group>"; };
+		490699071FC8E544004ABA02 /* HYPPluginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPPluginHelper.h; sourceTree = "<group>"; };
+		490699081FC8E544004ABA02 /* HYPPluginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPPluginHelper.m; sourceTree = "<group>"; };
+		4906990B1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPViewSelectionTableViewController.h; sourceTree = "<group>"; };
+		4906990C1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPViewSelectionTableViewController.m; sourceTree = "<group>"; };
+		4906990F1FC8E786004ABA02 /* HYPViewSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPViewSelectionDelegate.h; sourceTree = "<group>"; };
+		4911C9621FD1036F00E812E4 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		4911C9631FD1036F00E812E4 /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
+		4911C9641FD1036F00E812E4 /* more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@3x.png"; sourceTree = "<group>"; };
+		493044CE1FD0B85500731401 /* HYPAttributesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPAttributesProvider.h; sourceTree = "<group>"; };
+		493044CF1FD0B85500731401 /* HYPAttributesProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesProvider.m; sourceTree = "<group>"; };
+		493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayViewProvider.h; sourceTree = "<group>"; };
+		493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPInAppOverlayContainer.h; sourceTree = "<group>"; };
+		493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPInAppOverlayContainer.m; sourceTree = "<group>"; };
+		493DCABC1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayDebuggingWindow.h; sourceTree = "<group>"; };
+		493DCABD1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPOverlayDebuggingWindow.m; sourceTree = "<group>"; };
+		4940E6981FC51DC9008933BF /* timer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer@2x.png"; sourceTree = "<group>"; };
+		4940E6991FC51DC9008933BF /* timer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer@3x.png"; sourceTree = "<group>"; };
+		4940E69A1FC51DC9008933BF /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer.png; sourceTree = "<group>"; };
+		49437DDE1FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPSlowAnimationsPluginMenuItem.h; sourceTree = "<group>"; };
+		49437DDF1FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPSlowAnimationsPluginMenuItem.m; sourceTree = "<group>"; };
+		49437DE21FCCFDEE00F4F2A5 /* 25x-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "25x-Selected.png"; sourceTree = "<group>"; };
+		49437DE31FCCFDEE00F4F2A5 /* 25x-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "25x-Selected@2x.png"; sourceTree = "<group>"; };
+		49437DE41FCCFDEE00F4F2A5 /* 25x-Selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "25x-Selected@3x.png"; sourceTree = "<group>"; };
+		49437DE81FCCFE1500F4F2A5 /* 50x-Unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50x-Unselected.png"; sourceTree = "<group>"; };
+		49437DE91FCCFE1500F4F2A5 /* 50x-Unselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50x-Unselected@3x.png"; sourceTree = "<group>"; };
+		49437DEA1FCCFE1600F4F2A5 /* 50x-Unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50x-Unselected@2x.png"; sourceTree = "<group>"; };
+		49437DEE1FCCFE4E00F4F2A5 /* 75x-Unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Unselected.png"; sourceTree = "<group>"; };
+		49437DEF1FCCFE4E00F4F2A5 /* 75x-Unselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Unselected@3x.png"; sourceTree = "<group>"; };
+		49437DF01FCCFE4E00F4F2A5 /* 75x-Unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Unselected@2x.png"; sourceTree = "<group>"; };
+		494A74D81F278EB9003F89F7 /* SlowAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlowAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		494A74DA1F278EB9003F89F7 /* SlowAnimations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlowAnimations.h; sourceTree = "<group>"; };
+		494A74DB1F278EB9003F89F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494CC1BD1FCE5C18007EB9B4 /* HyperionCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperionCore.h; sourceTree = "<group>"; };
+		494CC1C11FCE8B7E007EB9B4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		494CC1F91FCFA15D007EB9B4 /* HYPInspectorAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPInspectorAttribute.h; sourceTree = "<group>"; };
+		494CC2061FCFAE6E007EB9B4 /* font@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "font@2x.png"; sourceTree = "<group>"; };
+		494CC2071FCFAE6E007EB9B4 /* font@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "font@3x.png"; sourceTree = "<group>"; };
+		494CC2081FCFAE6E007EB9B4 /* font.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font.png; sourceTree = "<group>"; };
+		496D55241FD145C400663F16 /* HYPPopoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPPopoverViewController.h; sourceTree = "<group>"; };
+		496D55251FD145C400663F16 /* HYPPopoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPPopoverViewController.m; sourceTree = "<group>"; };
+		49873CBE1FC24F2D00BBA3C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		49873CC11FC2508100BBA3C1 /* UIApplication+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Swizzling.h"; sourceTree = "<group>"; };
+		49873CC21FC2508100BBA3C1 /* UIApplication+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Swizzling.m"; sourceTree = "<group>"; };
+		49873CC51FC2513500BBA3C1 /* HYPConfigurationConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HYPConfigurationConstants.h; path = OverlayDebuggingWindow/HYPConfigurationConstants.h; sourceTree = "<group>"; };
+		49873CC61FC2513500BBA3C1 /* HYPConfigurationConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HYPConfigurationConstants.m; path = OverlayDebuggingWindow/HYPConfigurationConstants.m; sourceTree = "<group>"; };
+		49873CC91FC254E100BBA3C1 /* HyperionDefaultConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HyperionDefaultConfiguration.plist; sourceTree = "<group>"; };
+		49873CCD1FC5160A00BBA3C1 /* HYPPluginMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPPluginMenuItem.h; sourceTree = "<group>"; };
+		49873CCE1FC5160A00BBA3C1 /* HYPPluginMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPPluginMenuItem.m; sourceTree = "<group>"; };
+		498E34741EFA0C8000A0BC4E /* HyperionCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperionCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		498E34B61EFA0D4800A0BC4E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498E34B91EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSnapshotDebuggingWindow.h; sourceTree = "<group>"; };
+		498E34BA1EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSnapshotDebuggingWindow.m; sourceTree = "<group>"; };
+		498E34BE1EFA0D5700A0BC4E /* HYPListenerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPListenerContainer.h; sourceTree = "<group>"; };
+		498E34BF1EFA0D5700A0BC4E /* HYPListenerContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPListenerContainer.m; sourceTree = "<group>"; };
+		498E34C01EFA0D5700A0BC4E /* HYPOverlayContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayContainer.h; sourceTree = "<group>"; };
+		498E34C11EFA0D5700A0BC4E /* HYPSnapshotContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSnapshotContainer.h; sourceTree = "<group>"; };
+		498E34C21EFA0D5700A0BC4E /* HYPSnapshotContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSnapshotContainer.m; sourceTree = "<group>"; };
+		498E34C31EFA0D5700A0BC4E /* HYPPluginExtensionImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPPluginExtensionImp.h; sourceTree = "<group>"; };
+		498E34C41EFA0D5700A0BC4E /* HYPPluginExtensionImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPPluginExtensionImp.m; sourceTree = "<group>"; };
+		498E34C61EFA0D5700A0BC4E /* HYPPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPPlugin.h; sourceTree = "<group>"; };
+		498E34C71EFA0D5700A0BC4E /* HYPPluginExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPPluginExtension.h; sourceTree = "<group>"; };
+		498E34CF1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSnapshotInteractionView.h; sourceTree = "<group>"; };
+		498E34D01EFA0D5700A0BC4E /* HYPSnapshotInteractionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSnapshotInteractionView.m; sourceTree = "<group>"; };
+		498E34D41EFA0D5700A0BC4E /* PluginListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginListViewController.h; sourceTree = "<group>"; };
+		498E34D51EFA0D5700A0BC4E /* PluginListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginListViewController.m; sourceTree = "<group>"; };
+		498E35151EFA20BD00A0BC4E /* HYPSlowAnimationsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSlowAnimationsPlugin.h; sourceTree = "<group>"; };
+		498E35161EFA20BD00A0BC4E /* HYPSlowAnimationsPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSlowAnimationsPlugin.m; sourceTree = "<group>"; };
+		498E35171EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSlowAnimationsPluginModule.h; sourceTree = "<group>"; };
+		498E35181EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSlowAnimationsPluginModule.m; sourceTree = "<group>"; };
+		498E351E1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsInteractionView.h; sourceTree = "<group>"; };
+		498E351F1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsInteractionView.m; sourceTree = "<group>"; };
+		498E35201EFA20CF00A0BC4E /* HYPMeasurementsPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsPlugin.h; sourceTree = "<group>"; };
+		498E35211EFA20CF00A0BC4E /* HYPMeasurementsPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsPlugin.m; sourceTree = "<group>"; };
+		498E35221EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPMeasurementsPluginModule.h; sourceTree = "<group>"; };
+		498E35231EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPMeasurementsPluginModule.m; sourceTree = "<group>"; };
+		498E352C1EFA20D800A0BC4E /* HYPAttributesPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPAttributesPreviewViewController.h; sourceTree = "<group>"; };
+		498E352D1EFA20D800A0BC4E /* HYPAttributesPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesPreviewViewController.m; sourceTree = "<group>"; };
+		498E353A1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPAttributeInspectorInteractionView.h; sourceTree = "<group>"; };
+		498E353B1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPAttributeInspectorInteractionView.m; sourceTree = "<group>"; };
+		498E353C1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPAttributesInspectorPlugin.h; sourceTree = "<group>"; };
+		498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesInspectorPlugin.m; sourceTree = "<group>"; };
+		498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPAttributesInspectorPluginModule.h; sourceTree = "<group>"; };
+		498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPAttributesInspectorPluginModule.m; sourceTree = "<group>"; };
+		49A4C59F1F9BB207006ECD52 /* HyperionWindowManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperionWindowManager.h; sourceTree = "<group>"; };
+		49A4C5A01F9BB207006ECD52 /* HyperionWindowManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyperionWindowManager.m; sourceTree = "<group>"; };
+		49A4C5A71F9BC686006ECD52 /* HYPOverlayDebuggingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPOverlayDebuggingViewController.h; sourceTree = "<group>"; };
+		49A4C5A81F9BC686006ECD52 /* HYPOverlayDebuggingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPOverlayDebuggingViewController.m; sourceTree = "<group>"; };
+		49A4C5DB1F9ED251006ECD52 /* HYPPluginModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPPluginModule.h; sourceTree = "<group>"; };
+		49A4C5DC1F9ED251006ECD52 /* HYPPluginModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPPluginModule.m; sourceTree = "<group>"; };
+		49A4C5E31F9EF411006ECD52 /* HYPPluginContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPPluginContainerView.m; sourceTree = "<group>"; };
+		49A4C5E41F9EF411006ECD52 /* HYPPluginContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPPluginContainerView.h; sourceTree = "<group>"; };
+		49C3C20A1FCFB4CB00B170B7 /* fontSize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fontSize.png; sourceTree = "<group>"; };
+		49C3C20B1FCFB4CB00B170B7 /* fontSize@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fontSize@3x.png"; sourceTree = "<group>"; };
+		49C3C20C1FCFB4CB00B170B7 /* fontSize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fontSize@2x.png"; sourceTree = "<group>"; };
+		49C3C21B1FCFC7FE00B170B7 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		49C3C21C1FCFC7FE00B170B7 /* x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "x@2x.png"; sourceTree = "<group>"; };
+		49C3C21D1FCFC7FE00B170B7 /* x@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "x@3x.png"; sourceTree = "<group>"; };
+		49C6B4DD1EFC6C6900345B78 /* HYPSnapshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPSnapshotViewController.h; sourceTree = "<group>"; };
+		49C6B4DE1EFC6C6900345B78 /* HYPSnapshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPSnapshotViewController.m; sourceTree = "<group>"; };
+		49C6B4E11EFD9B1900345B78 /* UIWindow+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Swizzling.h"; sourceTree = "<group>"; };
+		49C6B4E21EFD9B1A00345B78 /* UIWindow+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Swizzling.m"; sourceTree = "<group>"; };
+		49CD4DE01FD10B5E004769CF /* HYPMoreAttributesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPMoreAttributesListViewController.h; sourceTree = "<group>"; };
+		49CD4DE11FD10B5E004769CF /* HYPMoreAttributesListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPMoreAttributesListViewController.m; sourceTree = "<group>"; };
+		49CD4DE41FD10F0F004769CF /* HYPKeyValueInspectorAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPKeyValueInspectorAttribute.h; sourceTree = "<group>"; };
+		49CD4DE51FD10F0F004769CF /* HYPKeyValueInspectorAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPKeyValueInspectorAttribute.m; sourceTree = "<group>"; };
+		49CD4DE81FD11046004769CF /* HYPKeyValueTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPKeyValueTableViewCell.h; sourceTree = "<group>"; };
+		49CD4DE91FD11046004769CF /* HYPKeyValueTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPKeyValueTableViewCell.m; sourceTree = "<group>"; };
+		49CD4DEA1FD11046004769CF /* HYPKeyValueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HYPKeyValueTableViewCell.xib; sourceTree = "<group>"; };
+		49CD4DEE1FD11AEE004769CF /* HYPAttributedStringAttributeProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPAttributedStringAttributeProvider.h; sourceTree = "<group>"; };
+		49CD4DEF1FD11AEE004769CF /* HYPAttributedStringAttributeProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPAttributedStringAttributeProvider.m; sourceTree = "<group>"; };
+		49CD4DF21FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPAttributedStringAttributeTableViewCell.h; sourceTree = "<group>"; };
+		49CD4DF31FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPAttributedStringAttributeTableViewCell.m; sourceTree = "<group>"; };
+		49CD4DF61FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPAttributedStringInspectorAttribute.h; sourceTree = "<group>"; };
+		49CD4DF71FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPAttributedStringInspectorAttribute.m; sourceTree = "<group>"; };
+		49CFFF6C1FD0CCE300B9E33A /* HYPTextPreview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPTextPreview.h; sourceTree = "<group>"; };
+		49CFFF6D1FD0CCE300B9E33A /* HYPTextPreview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPTextPreview.m; sourceTree = "<group>"; };
+		49CFFF701FD0CCF700B9E33A /* HYPTextPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HYPTextPreview.xib; sourceTree = "<group>"; };
+		49CFFF721FD0D5A600B9E33A /* HYPLabelAttributesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPLabelAttributesProvider.h; sourceTree = "<group>"; };
+		49CFFF731FD0D5A600B9E33A /* HYPLabelAttributesProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPLabelAttributesProvider.m; sourceTree = "<group>"; };
+		49CFFF761FD0F33400B9E33A /* HYPViewPreview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPViewPreview.h; sourceTree = "<group>"; };
+		49CFFF771FD0F33400B9E33A /* HYPViewPreview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPViewPreview.m; sourceTree = "<group>"; };
+		49CFFF7A1FD0F34C00B9E33A /* HYPViewPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HYPViewPreview.xib; sourceTree = "<group>"; };
+		49CFFF7D1FD0F8AD00B9E33A /* HYPUIHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPUIHelpers.h; sourceTree = "<group>"; };
+		49CFFF7E1FD0F8AD00B9E33A /* HYPUIHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPUIHelpers.m; sourceTree = "<group>"; };
+		49D23C861FCDC29A0052336F /* 25x-Unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "25x-Unselected.png"; sourceTree = "<group>"; };
+		49D23C871FCDC29A0052336F /* 25x-Unselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "25x-Unselected@2x.png"; sourceTree = "<group>"; };
+		49D23C881FCDC29A0052336F /* 25x-Unselected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "25x-Unselected@3x.png"; sourceTree = "<group>"; };
+		49D23C8C1FCDC34B0052336F /* 50x-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50x-Selected.png"; sourceTree = "<group>"; };
+		49D23C8D1FCDC34C0052336F /* 50x-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50x-Selected@2x.png"; sourceTree = "<group>"; };
+		49D23C8E1FCDC34C0052336F /* 50x-Selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50x-Selected@3x.png"; sourceTree = "<group>"; };
+		49D23C921FCDC3840052336F /* 75x-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected.png"; sourceTree = "<group>"; };
+		49D23C931FCDC3840052336F /* 75x-Selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected@3x.png"; sourceTree = "<group>"; };
+		49D23C941FCDC3840052336F /* 75x-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		320E5D661F27988500C42FC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EA53481F27DA340012DFB6 /* HyperionCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320E5D7A1F27991400C42FC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EA53471F27DA300012DFB6 /* HyperionCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A74D41F278EB9003F89F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494A74E01F278ED0003F89F7 /* HyperionCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498E34701EFA0C8000A0BC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320E5D6B1F27988500C42FC0 /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				498E351D1EFA20CF00A0BC4E /* Measurements */,
+				320E5D6C1F27988500C42FC0 /* Measurements.h */,
+				320E5D6D1F27988500C42FC0 /* Info.plist */,
+			);
+			path = Measurements;
+			sourceTree = "<group>";
+		};
+		320E5D7F1F27991400C42FC0 /* AttributesInspector */ = {
+			isa = PBXGroup;
+			children = (
+				498E352A1EFA20D800A0BC4E /* AttributesInspector */,
+				320E5D801F27991400C42FC0 /* AttributesInspector.h */,
+				320E5D811F27991400C42FC0 /* Info.plist */,
+			);
+			path = AttributesInspector;
+			sourceTree = "<group>";
+		};
+		493044CD1FD0B80800731401 /* AttributeProviders */ = {
+			isa = PBXGroup;
+			children = (
+				493044CE1FD0B85500731401 /* HYPAttributesProvider.h */,
+				493044CF1FD0B85500731401 /* HYPAttributesProvider.m */,
+				49CFFF721FD0D5A600B9E33A /* HYPLabelAttributesProvider.h */,
+				49CFFF731FD0D5A600B9E33A /* HYPLabelAttributesProvider.m */,
+				49CD4DEE1FD11AEE004769CF /* HYPAttributedStringAttributeProvider.h */,
+				49CD4DEF1FD11AEE004769CF /* HYPAttributedStringAttributeProvider.m */,
+			);
+			path = AttributeProviders;
+			sourceTree = "<group>";
+		};
+		4940E68F1FC51D07008933BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				490698FF1FC64F35004ABA02 /* attributeInspector.png */,
+				490698FE1FC64F35004ABA02 /* attributeInspector@2x.png */,
+				490698FD1FC64F35004ABA02 /* attributeInspector@3x.png */,
+				494CC2081FCFAE6E007EB9B4 /* font.png */,
+				494CC2061FCFAE6E007EB9B4 /* font@2x.png */,
+				494CC2071FCFAE6E007EB9B4 /* font@3x.png */,
+				49C3C20A1FCFB4CB00B170B7 /* fontSize.png */,
+				49C3C20C1FCFB4CB00B170B7 /* fontSize@2x.png */,
+				49C3C20B1FCFB4CB00B170B7 /* fontSize@3x.png */,
+				4911C9621FD1036F00E812E4 /* more.png */,
+				4911C9631FD1036F00E812E4 /* more@2x.png */,
+				4911C9641FD1036F00E812E4 /* more@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4940E6901FC51D17008933BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				490698F71FC64ED7004ABA02 /* ruler.png */,
+				490698FA1FC64EDF004ABA02 /* ruler@2x.png */,
+				490698F91FC64EDF004ABA02 /* ruler@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4940E6971FC51DB8008933BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49D23C861FCDC29A0052336F /* 25x-Unselected.png */,
+				49D23C871FCDC29A0052336F /* 25x-Unselected@2x.png */,
+				49D23C881FCDC29A0052336F /* 25x-Unselected@3x.png */,
+				49437DE21FCCFDEE00F4F2A5 /* 25x-Selected.png */,
+				49437DE31FCCFDEE00F4F2A5 /* 25x-Selected@2x.png */,
+				49437DE41FCCFDEE00F4F2A5 /* 25x-Selected@3x.png */,
+				49437DE81FCCFE1500F4F2A5 /* 50x-Unselected.png */,
+				49437DEA1FCCFE1600F4F2A5 /* 50x-Unselected@2x.png */,
+				49437DE91FCCFE1500F4F2A5 /* 50x-Unselected@3x.png */,
+				49D23C8C1FCDC34B0052336F /* 50x-Selected.png */,
+				49D23C8D1FCDC34C0052336F /* 50x-Selected@2x.png */,
+				49D23C8E1FCDC34C0052336F /* 50x-Selected@3x.png */,
+				49437DEE1FCCFE4E00F4F2A5 /* 75x-Unselected.png */,
+				49437DF01FCCFE4E00F4F2A5 /* 75x-Unselected@2x.png */,
+				49437DEF1FCCFE4E00F4F2A5 /* 75x-Unselected@3x.png */,
+				49D23C921FCDC3840052336F /* 75x-Selected.png */,
+				49D23C941FCDC3840052336F /* 75x-Selected@2x.png */,
+				49D23C931FCDC3840052336F /* 75x-Selected@3x.png */,
+				4940E69A1FC51DC9008933BF /* timer.png */,
+				4940E6981FC51DC9008933BF /* timer@2x.png */,
+				4940E6991FC51DC9008933BF /* timer@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		494A74D91F278EB9003F89F7 /* SlowAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				498E35141EFA20BD00A0BC4E /* SlowAnimations */,
+				494A74DA1F278EB9003F89F7 /* SlowAnimations.h */,
+				494A74DB1F278EB9003F89F7 /* Info.plist */,
+			);
+			path = SlowAnimations;
+			sourceTree = "<group>";
+		};
+		494CC1BF1FCE8A68007EB9B4 /* SnapShotPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				498E34CF1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.h */,
+				498E34D01EFA0D5700A0BC4E /* HYPSnapshotInteractionView.m */,
+				490699031FC76AE6004ABA02 /* HYPSnapshotPluginModule.h */,
+				490699041FC76AE6004ABA02 /* HYPSnapshotPluginModule.m */,
+			);
+			path = SnapShotPlugin;
+			sourceTree = "<group>";
+		};
+		494CC1C01FCE8A74007EB9B4 /* OverlayPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				494CC1C11FCE8B7E007EB9B4 /* README.md */,
+			);
+			path = OverlayPlugin;
+			sourceTree = "<group>";
+		};
+		494CC1F81FCFA0F5007EB9B4 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				494CC1F91FCFA15D007EB9B4 /* HYPInspectorAttribute.h */,
+				49CD4DE41FD10F0F004769CF /* HYPKeyValueInspectorAttribute.h */,
+				49CD4DE51FD10F0F004769CF /* HYPKeyValueInspectorAttribute.m */,
+				49CD4DF61FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.h */,
+				49CD4DF71FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.m */,
+			);
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		494CC1FF1FCFA20A007EB9B4 /* AttributeCells */ = {
+			isa = PBXGroup;
+			children = (
+				49CD4DE81FD11046004769CF /* HYPKeyValueTableViewCell.h */,
+				49CD4DE91FD11046004769CF /* HYPKeyValueTableViewCell.m */,
+				49CD4DEA1FD11046004769CF /* HYPKeyValueTableViewCell.xib */,
+				49CD4DF21FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.h */,
+				49CD4DF31FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.m */,
+			);
+			path = AttributeCells;
+			sourceTree = "<group>";
+		};
+		49873CBD1FC24EF100BBA3C1 /* Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				49C6B4E11EFD9B1900345B78 /* UIWindow+Swizzling.h */,
+				49C6B4E21EFD9B1A00345B78 /* UIWindow+Swizzling.m */,
+				49873CBE1FC24F2D00BBA3C1 /* README.md */,
+				49873CC11FC2508100BBA3C1 /* UIApplication+Swizzling.h */,
+				49873CC21FC2508100BBA3C1 /* UIApplication+Swizzling.m */,
+			);
+			path = Swizzling;
+			sourceTree = "<group>";
+		};
+		498E346A1EFA0C8000A0BC4E = {
+			isa = PBXGroup;
+			children = (
+				498E34761EFA0C8000A0BC4E /* HyperionCore */,
+				494A74D91F278EB9003F89F7 /* SlowAnimations */,
+				320E5D6B1F27988500C42FC0 /* Measurements */,
+				320E5D7F1F27991400C42FC0 /* AttributesInspector */,
+				498E34751EFA0C8000A0BC4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		498E34751EFA0C8000A0BC4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				498E34741EFA0C8000A0BC4E /* HyperionCore.framework */,
+				494A74D81F278EB9003F89F7 /* SlowAnimations.framework */,
+				320E5D6A1F27988500C42FC0 /* Measurements.framework */,
+				320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		498E34761EFA0C8000A0BC4E /* HyperionCore */ = {
+			isa = PBXGroup;
+			children = (
+				498E34B81EFA0D5700A0BC4E /* Core */,
+				498E34B61EFA0D4800A0BC4E /* Info.plist */,
+			);
+			path = HyperionCore;
+			sourceTree = "<group>";
+		};
+		498E34B81EFA0D5700A0BC4E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				49C3C21A1FCFC7E100B170B7 /* Resources */,
+				49873CBD1FC24EF100BBA3C1 /* Swizzling */,
+				49A4C5AE1F9D4B6E006ECD52 /* OverlayDebuggingWindow */,
+				49A4C5AD1F9D4B3E006ECD52 /* SnapShotDebuggingWindow */,
+				49A4C5AB1F9D498F006ECD52 /* Public */,
+				498E34BE1EFA0D5700A0BC4E /* HYPListenerContainer.h */,
+				498E34BF1EFA0D5700A0BC4E /* HYPListenerContainer.m */,
+				498E34C31EFA0D5700A0BC4E /* HYPPluginExtensionImp.h */,
+				498E34C41EFA0D5700A0BC4E /* HYPPluginExtensionImp.m */,
+				49A4C59F1F9BB207006ECD52 /* HyperionWindowManager.h */,
+				49A4C5A01F9BB207006ECD52 /* HyperionWindowManager.m */,
+				49A4C5E41F9EF411006ECD52 /* HYPPluginContainerView.h */,
+				49A4C5E31F9EF411006ECD52 /* HYPPluginContainerView.m */,
+				49873CC51FC2513500BBA3C1 /* HYPConfigurationConstants.h */,
+				49873CC61FC2513500BBA3C1 /* HYPConfigurationConstants.m */,
+				494CC1BD1FCE5C18007EB9B4 /* HyperionCore.h */,
+				49873CC91FC254E100BBA3C1 /* HyperionDefaultConfiguration.plist */,
+			);
+			name = Core;
+			path = ../../Core;
+			sourceTree = "<group>";
+		};
+		498E35141EFA20BD00A0BC4E /* SlowAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				4940E6971FC51DB8008933BF /* Resources */,
+				498E35151EFA20BD00A0BC4E /* HYPSlowAnimationsPlugin.h */,
+				498E35161EFA20BD00A0BC4E /* HYPSlowAnimationsPlugin.m */,
+				498E35171EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.h */,
+				498E35181EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.m */,
+				49437DDE1FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.h */,
+				49437DDF1FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.m */,
+			);
+			name = SlowAnimations;
+			path = ../../SlowAnimations;
+			sourceTree = "<group>";
+		};
+		498E351D1EFA20CF00A0BC4E /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				4940E6901FC51D17008933BF /* Resources */,
+				498E351E1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.h */,
+				498E351F1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.m */,
+				498E35201EFA20CF00A0BC4E /* HYPMeasurementsPlugin.h */,
+				498E35211EFA20CF00A0BC4E /* HYPMeasurementsPlugin.m */,
+				498E35221EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.h */,
+				498E35231EFA20CF00A0BC4E /* HYPMeasurementsPluginModule.m */,
+			);
+			name = Measurements;
+			path = ../../Measurements;
+			sourceTree = "<group>";
+		};
+		498E352A1EFA20D800A0BC4E /* AttributesInspector */ = {
+			isa = PBXGroup;
+			children = (
+				4940E68F1FC51D07008933BF /* Resources */,
+				498E352B1EFA20D800A0BC4E /* AttributesViewer */,
+				498E353A1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.h */,
+				498E353B1EFA20D800A0BC4E /* HYPAttributeInspectorInteractionView.m */,
+				498E353C1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.h */,
+				498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */,
+				498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */,
+				498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */,
+			);
+			name = AttributesInspector;
+			path = ../../AttributesInspector;
+			sourceTree = "<group>";
+		};
+		498E352B1EFA20D800A0BC4E /* AttributesViewer */ = {
+			isa = PBXGroup;
+			children = (
+				494CC1F81FCFA0F5007EB9B4 /* Attributes */,
+				494CC1FF1FCFA20A007EB9B4 /* AttributeCells */,
+				493044CD1FD0B80800731401 /* AttributeProviders */,
+				49CFFF7C1FD0F86400B9E33A /* Helpers */,
+				49CFFF6B1FD0CC6100B9E33A /* PreviewViews */,
+				498E352C1EFA20D800A0BC4E /* HYPAttributesPreviewViewController.h */,
+				498E352D1EFA20D800A0BC4E /* HYPAttributesPreviewViewController.m */,
+				49CD4DE01FD10B5E004769CF /* HYPMoreAttributesListViewController.h */,
+				49CD4DE11FD10B5E004769CF /* HYPMoreAttributesListViewController.m */,
+			);
+			path = AttributesViewer;
+			sourceTree = "<group>";
+		};
+		49A4C5AB1F9D498F006ECD52 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				49A4C5AC1F9D49D3006ECD52 /* Plugin */,
+				32EA537C1F27E3570012DFB6 /* HyperionManager.h */,
+				32EA537D1F27E3570012DFB6 /* HyperionManager.m */,
+				32EA537B1F27E3570012DFB6 /* HYPActivationGestureOptions.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		49A4C5AC1F9D49D3006ECD52 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				494CC1C01FCE8A74007EB9B4 /* OverlayPlugin */,
+				494CC1BF1FCE8A68007EB9B4 /* SnapShotPlugin */,
+				498E34C61EFA0D5700A0BC4E /* HYPPlugin.h */,
+				498E34C71EFA0D5700A0BC4E /* HYPPluginExtension.h */,
+				493DCAB21F01714500EB5007 /* HYPOverlayViewProvider.h */,
+				498E34C01EFA0D5700A0BC4E /* HYPOverlayContainer.h */,
+				49A4C5DB1F9ED251006ECD52 /* HYPPluginModule.h */,
+				49A4C5DC1F9ED251006ECD52 /* HYPPluginModule.m */,
+				49873CCD1FC5160A00BBA3C1 /* HYPPluginMenuItem.h */,
+				49873CCE1FC5160A00BBA3C1 /* HYPPluginMenuItem.m */,
+				490699071FC8E544004ABA02 /* HYPPluginHelper.h */,
+				490699081FC8E544004ABA02 /* HYPPluginHelper.m */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		49A4C5AD1F9D4B3E006ECD52 /* SnapShotDebuggingWindow */ = {
+			isa = PBXGroup;
+			children = (
+				498E34B91EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h */,
+				498E34BA1EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.m */,
+				49C6B4DD1EFC6C6900345B78 /* HYPSnapshotViewController.h */,
+				49C6B4DE1EFC6C6900345B78 /* HYPSnapshotViewController.m */,
+				498E34D41EFA0D5700A0BC4E /* PluginListViewController.h */,
+				498E34D51EFA0D5700A0BC4E /* PluginListViewController.m */,
+				498E34C11EFA0D5700A0BC4E /* HYPSnapshotContainer.h */,
+				498E34C21EFA0D5700A0BC4E /* HYPSnapshotContainer.m */,
+				4906990B1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.h */,
+				4906990C1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.m */,
+				4906990F1FC8E786004ABA02 /* HYPViewSelectionDelegate.h */,
+				496D55241FD145C400663F16 /* HYPPopoverViewController.h */,
+				496D55251FD145C400663F16 /* HYPPopoverViewController.m */,
+			);
+			path = SnapShotDebuggingWindow;
+			sourceTree = "<group>";
+		};
+		49A4C5AE1F9D4B6E006ECD52 /* OverlayDebuggingWindow */ = {
+			isa = PBXGroup;
+			children = (
+				493DCABC1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.h */,
+				493DCABD1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.m */,
+				49A4C5A71F9BC686006ECD52 /* HYPOverlayDebuggingViewController.h */,
+				49A4C5A81F9BC686006ECD52 /* HYPOverlayDebuggingViewController.m */,
+				493DCAB81F01F93900EB5007 /* HYPInAppOverlayContainer.h */,
+				493DCAB91F01F93900EB5007 /* HYPInAppOverlayContainer.m */,
+			);
+			path = OverlayDebuggingWindow;
+			sourceTree = "<group>";
+		};
+		49C3C21A1FCFC7E100B170B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49C3C21B1FCFC7FE00B170B7 /* x.png */,
+				49C3C21C1FCFC7FE00B170B7 /* x@2x.png */,
+				49C3C21D1FCFC7FE00B170B7 /* x@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49CFFF6B1FD0CC6100B9E33A /* PreviewViews */ = {
+			isa = PBXGroup;
+			children = (
+				49CFFF6C1FD0CCE300B9E33A /* HYPTextPreview.h */,
+				49CFFF6D1FD0CCE300B9E33A /* HYPTextPreview.m */,
+				49CFFF701FD0CCF700B9E33A /* HYPTextPreview.xib */,
+				49CFFF761FD0F33400B9E33A /* HYPViewPreview.h */,
+				49CFFF771FD0F33400B9E33A /* HYPViewPreview.m */,
+				49CFFF7A1FD0F34C00B9E33A /* HYPViewPreview.xib */,
+			);
+			path = PreviewViews;
+			sourceTree = "<group>";
+		};
+		49CFFF7C1FD0F86400B9E33A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				49CFFF7D1FD0F8AD00B9E33A /* HYPUIHelpers.h */,
+				49CFFF7E1FD0F8AD00B9E33A /* HYPUIHelpers.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		320E5D671F27988500C42FC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EA53651F27E10F0012DFB6 /* HYPMeasurementsPlugin.h in Headers */,
+				9D967BE01FD0F8660035EB8C /* Measurements.h in Headers */,
+				32EA53671F27E10F0012DFB6 /* HYPMeasurementsPluginModule.h in Headers */,
+				32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320E5D7B1F27991400C42FC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CD4DEB1FD11046004769CF /* HYPKeyValueTableViewCell.h in Headers */,
+				494CC1FA1FCFA15D007EB9B4 /* HYPInspectorAttribute.h in Headers */,
+				49CD4DF81FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.h in Headers */,
+				49CFFF7F1FD0F8AD00B9E33A /* HYPUIHelpers.h in Headers */,
+				32EA53771F27E1220012DFB6 /* HYPAttributesInspectorPlugin.h in Headers */,
+				49CFFF6E1FD0CCE300B9E33A /* HYPTextPreview.h in Headers */,
+				49CFFF741FD0D5A600B9E33A /* HYPLabelAttributesProvider.h in Headers */,
+				49CD4DF41FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.h in Headers */,
+				49CD4DE21FD10B5E004769CF /* HYPMoreAttributesListViewController.h in Headers */,
+				9D967BDF1FD0F8510035EB8C /* AttributesInspector.h in Headers */,
+				496D55281FD14DF800663F16 /* HYPAttributesPreviewViewController.h in Headers */,
+				493044D01FD0B85500731401 /* HYPAttributesProvider.h in Headers */,
+				49CFFF781FD0F33400B9E33A /* HYPViewPreview.h in Headers */,
+				49CD4DF01FD11AEE004769CF /* HYPAttributedStringAttributeProvider.h in Headers */,
+				49CD4DE61FD10F0F004769CF /* HYPKeyValueInspectorAttribute.h in Headers */,
+				32EA53791F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.h in Headers */,
+				32EA53751F27E1220012DFB6 /* HYPAttributeInspectorInteractionView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A74D51F278EB9003F89F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49437DE01FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.h in Headers */,
+				494A74E21F278F0C003F89F7 /* HYPSlowAnimationsPlugin.h in Headers */,
+				9D967BE11FD0F9390035EB8C /* SlowAnimations.h in Headers */,
+				494A74E31F278F0F003F89F7 /* HYPSlowAnimationsPluginModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498E34711EFA0C8000A0BC4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490699101FC8E786004ABA02 /* HYPViewSelectionDelegate.h in Headers */,
+				490699091FC8E544004ABA02 /* HYPPluginHelper.h in Headers */,
+				49873CCF1FC5160A00BBA3C1 /* HYPPluginMenuItem.h in Headers */,
+				490699051FC76AE6004ABA02 /* HYPSnapshotPluginModule.h in Headers */,
+				49A4C5A91F9BC686006ECD52 /* HYPOverlayDebuggingViewController.h in Headers */,
+				493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */,
+				49A4C5DD1F9ED251006ECD52 /* HYPPluginModule.h in Headers */,
+				498E34E21EFA0D5700A0BC4E /* HYPPlugin.h in Headers */,
+				498E34D61EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h in Headers */,
+				49873CC71FC2513500BBA3C1 /* HYPConfigurationConstants.h in Headers */,
+				49C6B4DF1EFC6C6900345B78 /* HYPSnapshotViewController.h in Headers */,
+				498E34DD1EFA0D5700A0BC4E /* HYPOverlayContainer.h in Headers */,
+				498E34E01EFA0D5700A0BC4E /* HYPPluginExtensionImp.h in Headers */,
+				32EA537E1F27E3570012DFB6 /* HYPActivationGestureOptions.h in Headers */,
+				49873CC31FC2508100BBA3C1 /* UIApplication+Swizzling.h in Headers */,
+				498E34EA1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.h in Headers */,
+				498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */,
+				493DCABE1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.h in Headers */,
+				32EA537F1F27E3570012DFB6 /* HyperionManager.h in Headers */,
+				496D55261FD145C400663F16 /* HYPPopoverViewController.h in Headers */,
+				498E34E31EFA0D5700A0BC4E /* HYPPluginExtension.h in Headers */,
+				498E34ED1EFA0D5700A0BC4E /* PluginListViewController.h in Headers */,
+				498E34DE1EFA0D5700A0BC4E /* HYPSnapshotContainer.h in Headers */,
+				49C6B4E31EFD9B1A00345B78 /* UIWindow+Swizzling.h in Headers */,
+				494CC1BE1FCE5C19007EB9B4 /* HyperionCore.h in Headers */,
+				4906990D1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.h in Headers */,
+				49A4C5A11F9BB207006ECD52 /* HyperionWindowManager.h in Headers */,
+				493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		320E5D691F27988500C42FC0 /* Measurements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320E5D6F1F27988500C42FC0 /* Build configuration list for PBXNativeTarget "Measurements" */;
+			buildPhases = (
+				320E5D651F27988500C42FC0 /* Sources */,
+				320E5D661F27988500C42FC0 /* Frameworks */,
+				320E5D671F27988500C42FC0 /* Headers */,
+				320E5D681F27988500C42FC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Measurements;
+			productName = Measurements;
+			productReference = 320E5D6A1F27988500C42FC0 /* Measurements.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		320E5D7D1F27991400C42FC0 /* AttributesInspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320E5D831F27991400C42FC0 /* Build configuration list for PBXNativeTarget "AttributesInspector" */;
+			buildPhases = (
+				320E5D791F27991400C42FC0 /* Sources */,
+				320E5D7A1F27991400C42FC0 /* Frameworks */,
+				320E5D7B1F27991400C42FC0 /* Headers */,
+				320E5D7C1F27991400C42FC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AttributesInspector;
+			productName = AttributesInspector;
+			productReference = 320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		494A74D71F278EB9003F89F7 /* SlowAnimations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494A74DF1F278EB9003F89F7 /* Build configuration list for PBXNativeTarget "SlowAnimations" */;
+			buildPhases = (
+				494A74D31F278EB9003F89F7 /* Sources */,
+				494A74D41F278EB9003F89F7 /* Frameworks */,
+				494A74D51F278EB9003F89F7 /* Headers */,
+				494A74D61F278EB9003F89F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlowAnimations;
+			productName = SlowAnimations;
+			productReference = 494A74D81F278EB9003F89F7 /* SlowAnimations.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		498E34731EFA0C8000A0BC4E /* HyperionCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498E347C1EFA0C8000A0BC4E /* Build configuration list for PBXNativeTarget "HyperionCore" */;
+			buildPhases = (
+				498E346F1EFA0C8000A0BC4E /* Sources */,
+				498E34701EFA0C8000A0BC4E /* Frameworks */,
+				498E34711EFA0C8000A0BC4E /* Headers */,
+				498E34721EFA0C8000A0BC4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HyperionCore;
+			productName = HyperionCore;
+			productReference = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		498E346B1EFA0C8000A0BC4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = WillowTree;
+				TargetAttributes = {
+					320E5D691F27988500C42FC0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					320E5D7D1F27991400C42FC0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					494A74D71F278EB9003F89F7 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					498E34731EFA0C8000A0BC4E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 498E346E1EFA0C8000A0BC4E /* Build configuration list for PBXProject "HyperionCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 498E346A1EFA0C8000A0BC4E;
+			productRefGroup = 498E34751EFA0C8000A0BC4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				498E34731EFA0C8000A0BC4E /* HyperionCore */,
+				494A74D71F278EB9003F89F7 /* SlowAnimations */,
+				320E5D691F27988500C42FC0 /* Measurements */,
+				320E5D7D1F27991400C42FC0 /* AttributesInspector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		320E5D681F27988500C42FC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490698F81FC64ED8004ABA02 /* ruler.png in Resources */,
+				490698FC1FC64EE0004ABA02 /* ruler@2x.png in Resources */,
+				490698FB1FC64EE0004ABA02 /* ruler@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320E5D7C1F27991400C42FC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CFFF711FD0CCF700B9E33A /* HYPTextPreview.xib in Resources */,
+				49CFFF7B1FD0F34C00B9E33A /* HYPViewPreview.xib in Resources */,
+				494CC20A1FCFAE6E007EB9B4 /* font@3x.png in Resources */,
+				490699021FC64F36004ABA02 /* attributeInspector.png in Resources */,
+				494CC2091FCFAE6E007EB9B4 /* font@2x.png in Resources */,
+				49CD4DED1FD11046004769CF /* HYPKeyValueTableViewCell.xib in Resources */,
+				490699001FC64F36004ABA02 /* attributeInspector@3x.png in Resources */,
+				4911C9671FD1036F00E812E4 /* more@3x.png in Resources */,
+				490699011FC64F36004ABA02 /* attributeInspector@2x.png in Resources */,
+				49C3C20D1FCFB4CB00B170B7 /* fontSize.png in Resources */,
+				494CC20B1FCFAE6E007EB9B4 /* font.png in Resources */,
+				4911C9661FD1036F00E812E4 /* more@2x.png in Resources */,
+				4911C9651FD1036F00E812E4 /* more.png in Resources */,
+				49C3C20E1FCFB4CB00B170B7 /* fontSize@3x.png in Resources */,
+				49C3C20F1FCFB4CB00B170B7 /* fontSize@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A74D61F278EB9003F89F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49437DEC1FCCFE1600F4F2A5 /* 50x-Unselected@3x.png in Resources */,
+				49437DF21FCCFE4E00F4F2A5 /* 75x-Unselected@3x.png in Resources */,
+				49D23C891FCDC29B0052336F /* 25x-Unselected.png in Resources */,
+				4940E69D1FC51DC9008933BF /* timer.png in Resources */,
+				49437DF31FCCFE4E00F4F2A5 /* 75x-Unselected@2x.png in Resources */,
+				49437DEB1FCCFE1600F4F2A5 /* 50x-Unselected.png in Resources */,
+				49D23C8F1FCDC34C0052336F /* 50x-Selected.png in Resources */,
+				49437DE61FCCFDEE00F4F2A5 /* 25x-Selected@2x.png in Resources */,
+				49D23C8B1FCDC29B0052336F /* 25x-Unselected@3x.png in Resources */,
+				49D23C951FCDC3840052336F /* 75x-Selected.png in Resources */,
+				49437DE51FCCFDEE00F4F2A5 /* 25x-Selected.png in Resources */,
+				49D23C911FCDC34C0052336F /* 50x-Selected@3x.png in Resources */,
+				49D23C971FCDC3840052336F /* 75x-Selected@2x.png in Resources */,
+				49D23C901FCDC34C0052336F /* 50x-Selected@2x.png in Resources */,
+				4940E69B1FC51DC9008933BF /* timer@2x.png in Resources */,
+				49437DED1FCCFE1600F4F2A5 /* 50x-Unselected@2x.png in Resources */,
+				49D23C961FCDC3840052336F /* 75x-Selected@3x.png in Resources */,
+				4940E69C1FC51DC9008933BF /* timer@3x.png in Resources */,
+				49437DF11FCCFE4E00F4F2A5 /* 75x-Unselected.png in Resources */,
+				49437DE71FCCFDEE00F4F2A5 /* 25x-Selected@3x.png in Resources */,
+				49D23C8A1FCDC29B0052336F /* 25x-Unselected@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498E34721EFA0C8000A0BC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C3C21E1FCFC7FE00B170B7 /* x.png in Resources */,
+				49C3C21F1FCFC7FE00B170B7 /* x@2x.png in Resources */,
+				49C3C2201FCFC7FE00B170B7 /* x@3x.png in Resources */,
+				49873CCA1FC254E100BBA3C1 /* HyperionDefaultConfiguration.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		320E5D651F27988500C42FC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32EA53641F27E10F0012DFB6 /* HYPMeasurementsInteractionView.m in Sources */,
+				32EA53681F27E10F0012DFB6 /* HYPMeasurementsPluginModule.m in Sources */,
+				32EA53661F27E10F0012DFB6 /* HYPMeasurementsPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320E5D791F27991400C42FC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CD4DE71FD10F0F004769CF /* HYPKeyValueInspectorAttribute.m in Sources */,
+				32EA536A1F27E11C0012DFB6 /* HYPAttributesPreviewViewController.m in Sources */,
+				32EA537A1F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.m in Sources */,
+				49CFFF751FD0D5A600B9E33A /* HYPLabelAttributesProvider.m in Sources */,
+				49CFFF6F1FD0CCE300B9E33A /* HYPTextPreview.m in Sources */,
+				32EA53761F27E1220012DFB6 /* HYPAttributeInspectorInteractionView.m in Sources */,
+				493044D11FD0B85500731401 /* HYPAttributesProvider.m in Sources */,
+				49CD4DE31FD10B5E004769CF /* HYPMoreAttributesListViewController.m in Sources */,
+				49CFFF801FD0F8AD00B9E33A /* HYPUIHelpers.m in Sources */,
+				49CD4DF11FD11AEE004769CF /* HYPAttributedStringAttributeProvider.m in Sources */,
+				49CD4DEC1FD11046004769CF /* HYPKeyValueTableViewCell.m in Sources */,
+				32EA53781F27E1220012DFB6 /* HYPAttributesInspectorPlugin.m in Sources */,
+				49CD4DF51FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.m in Sources */,
+				49CD4DF91FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.m in Sources */,
+				49CFFF791FD0F33400B9E33A /* HYPViewPreview.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494A74D31F278EB9003F89F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494A74E41F278F12003F89F7 /* HYPSlowAnimationsPluginModule.m in Sources */,
+				49437DE11FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.m in Sources */,
+				494A74E11F278F08003F89F7 /* HYPSlowAnimationsPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498E346F1EFA0C8000A0BC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A4C5AA1F9BC686006ECD52 /* HYPOverlayDebuggingViewController.m in Sources */,
+				4906990E1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.m in Sources */,
+				49A4C5E51F9EF411006ECD52 /* HYPPluginContainerView.m in Sources */,
+				49873CD01FC5160A00BBA3C1 /* HYPPluginMenuItem.m in Sources */,
+				498E34D71EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.m in Sources */,
+				493DCABB1F01F93900EB5007 /* HYPInAppOverlayContainer.m in Sources */,
+				498E34E11EFA0D5700A0BC4E /* HYPPluginExtensionImp.m in Sources */,
+				49C6B4E41EFD9B1A00345B78 /* UIWindow+Swizzling.m in Sources */,
+				4906990A1FC8E544004ABA02 /* HYPPluginHelper.m in Sources */,
+				49873CC41FC2508100BBA3C1 /* UIApplication+Swizzling.m in Sources */,
+				498E34EE1EFA0D5700A0BC4E /* PluginListViewController.m in Sources */,
+				49C6B4E01EFC6C6900345B78 /* HYPSnapshotViewController.m in Sources */,
+				49A4C5DE1F9ED251006ECD52 /* HYPPluginModule.m in Sources */,
+				498E34DC1EFA0D5700A0BC4E /* HYPListenerContainer.m in Sources */,
+				49A4C5A21F9BB207006ECD52 /* HyperionWindowManager.m in Sources */,
+				490699061FC76AE6004ABA02 /* HYPSnapshotPluginModule.m in Sources */,
+				498E34DF1EFA0D5700A0BC4E /* HYPSnapshotContainer.m in Sources */,
+				32EA53801F27E3570012DFB6 /* HyperionManager.m in Sources */,
+				496D55271FD145C400663F16 /* HYPPopoverViewController.m in Sources */,
+				498E34EB1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.m in Sources */,
+				49873CC81FC2513500BBA3C1 /* HYPConfigurationConstants.m in Sources */,
+				493DCABF1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		320E5D701F27988500C42FC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Measurements/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.Measurements;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		320E5D711F27988500C42FC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Measurements/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.Measurements;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		320E5D841F27991400C42FC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AttributesInspector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.AttributesInspector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		320E5D851F27991400C42FC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AttributesInspector/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.AttributesInspector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		494A74DD1F278EB9003F89F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SlowAnimations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.SlowAnimations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		494A74DE1F278EB9003F89F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SlowAnimations/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.SlowAnimations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		498E347A1EFA0C8000A0BC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		498E347B1EFA0C8000A0BC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		498E347D1EFA0C8000A0BC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HyperionCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.HyperionCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		498E347E1EFA0C8000A0BC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HyperionCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillowTree.HyperionCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		320E5D6F1F27988500C42FC0 /* Build configuration list for PBXNativeTarget "Measurements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320E5D701F27988500C42FC0 /* Debug */,
+				320E5D711F27988500C42FC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320E5D831F27991400C42FC0 /* Build configuration list for PBXNativeTarget "AttributesInspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320E5D841F27991400C42FC0 /* Debug */,
+				320E5D851F27991400C42FC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494A74DF1F278EB9003F89F7 /* Build configuration list for PBXNativeTarget "SlowAnimations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494A74DD1F278EB9003F89F7 /* Debug */,
+				494A74DE1F278EB9003F89F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498E346E1EFA0C8000A0BC4E /* Build configuration list for PBXProject "HyperionCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498E347A1EFA0C8000A0BC4E /* Debug */,
+				498E347B1EFA0C8000A0BC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498E347C1EFA0C8000A0BC4E /* Build configuration list for PBXNativeTarget "HyperionCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498E347D1EFA0C8000A0BC4E /* Debug */,
+				498E347E1EFA0C8000A0BC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 498E346B1EFA0C8000A0BC4E /* Project object */;
+}

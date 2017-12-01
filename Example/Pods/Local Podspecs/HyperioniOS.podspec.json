@@ -1,0 +1,46 @@
+{
+  "name": "HyperioniOS",
+  "version": "0.99.0",
+  "summary": "Hyperion is a view debugging tool that allows you to inspect views attributes and measurements in app.",
+  "description": "Hyperion is a view debugging tool that allows you to inspect views attributes and measurements in app.",
+  "homepage": "https://github.com/willowtreeapps/Hyperion-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chrsmys": "chris.mays@willowtreeapps.com"
+  },
+  "source": {
+    "git": "https://github.com/willowtreeapps/Hyperion-iOS",
+    "tag": "0.99.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "HyperioniOS/Classes/View\\ debugger/**/*",
+  "public_header_files": "**/*.h",
+  "frameworks": "UIKit",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Core/**/*",
+      "exclude_files": "Core/**/*.md"
+    },
+    {
+      "name": "AttributesInspector",
+      "source_files": "AttributesInspector/**/*",
+      "exclude_files": "AttributesInspector/**/*.md"
+    },
+    {
+      "name": "SlowAnimations",
+      "source_files": "SlowAnimations/**/*",
+      "exclude_files": "SlowAnimations/**/*.md"
+    },
+    {
+      "name": "Measurements",
+      "source_files": "Measurements/**/*",
+      "exclude_files": "Measurements/**/*.md"
+    }
+  ]
+}

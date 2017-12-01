@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">HyperionCore Docs</a> (98% documented)</p>
+        <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">HyperionCore Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/HYPPluginHelper.html">HYPPluginHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HYPPluginMenuItem.html">HYPPluginMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)HYPPluginModule">HYPPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HYPSnapshotInteractionView.html">HYPSnapshotInteractionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HYPSnapshotPluginModule.html">HYPSnapshotPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HyperionManager.html">HyperionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@pluginMenuItem">pluginMenuItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/HYPOverlayContainer.html">HYPOverlayContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPOverlayPluginViewProvider.html">HYPOverlayPluginViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPPlugin.html">HYPPlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPPluginExtension.html">HYPPluginExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPPluginMenuItem.html">HYPPluginMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPPluginMenuItemDelegate.html">HYPPluginMenuItemDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPPluginModule.html">HYPPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPSnapshotContainer.html">HYPSnapshotContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPSnapshotPluginViewProvider.html">HYPSnapshotPluginViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HYPViewSelectionDelegate.html">HYPViewSelectionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPSnapshotContainer"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPSnapshotContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPSnapshotContainer">HYPSnapshotContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The HYPSnapshotContainer provides a mechanism of displaying custom UI over a Snapshot of the current app. This allows the user to zoom on the app and inspect tiny details, but also prevents the user from interacting with the app. The HYPSnapshotContainer holds the HYPSnapshotPluginViewProvider&rsquo;s view when a snapshot plugin becomes active. It also provides convenience methods for presenting common UI across the Snanshot plugin platform.</p>
+
+                        <a href="Protocols/HYPSnapshotContainer.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPSnapshotContainer</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPSnapshotContainer</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayContainer.h#L32-L80">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPOverlayContainer"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPOverlayContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPOverlayContainer">HYPOverlayContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The HYPOverlayContainer provides a mechanism for displaying custom UI over an app while still allowing the user to interact with it. The HYPOverlayContainer holds the HYPOverlayViewProvider&rsquo;s when an overlay plugin becomes active.</p>
+
+                        <a href="Protocols/HYPOverlayContainer.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPOverlayContainer</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPOverlayContainer</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayContainer.h#L85-L94">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPSnapshotPluginViewProvider"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPSnapshotPluginViewProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPSnapshotPluginViewProvider">HYPSnapshotPluginViewProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The HYPSnapshotPluginViewProvider protocol defines a mechanism for requesting
+the view that is placed ontop of the app when a snap shot plugin becomes active.</p>
+
+                        <a href="Protocols/HYPSnapshotPluginViewProvider.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPSnapshotPluginViewProvider</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPSnapshotPluginViewProvider</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L28-L44">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPOverlayPluginViewProvider"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPOverlayPluginViewProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPOverlayPluginViewProvider">HYPOverlayPluginViewProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The HYPOverlayPluginViewProvider protocol defines a mechanism for requesting
+the view that is overlayed on top of the app when an Overlay plugin becomes active.</p>
+
+                        <a href="Protocols/HYPOverlayPluginViewProvider.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPOverlayPluginViewProvider</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPOverlayPluginViewProvider</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L50-L66">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPPlugin"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPPlugin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPPlugin">HYPPlugin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The HYPPlugin protocol defines a mechanism for creating instances of plugins and providing
+ metadata about a plugin.</p>
+
+<p>@since v1.0</p>
+
+                        <a href="Protocols/HYPPlugin.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPPlugin</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPPlugin</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPlugin.h#L32-L76">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPPluginExtension"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPPluginExtension" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPPluginExtension">HYPPluginExtension</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The HYPPluginExtension protocol provides the plugin with context about windows and containers that are available to it.</p>
+
+                        <a href="Protocols/HYPPluginExtension.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPPluginExtension</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPPluginExtension</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginExtension.h#L29-L65">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPPluginMenuItem"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPPluginMenuItem" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPPluginMenuItem">HYPPluginMenuItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>HYPPluginMenuItem Represents a row in the Hyperion plugin list.</p>
+
+                        <a href="Protocols/HYPPluginMenuItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPPluginMenuItem</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPPluginMenuItemProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginMenuItem.h#L29-L48">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPPluginMenuItemDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPPluginMenuItemDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPPluginMenuItemDelegate">HYPPluginMenuItemDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate to be informed on HYPPluginMenuItem actions.</p>
+
+                        <a href="Protocols/HYPPluginMenuItemDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPPluginMenuItemDelegate</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPPluginMenuItemDelegate</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginMenuItem.h#L53-L61">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPPluginModule"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPPluginModule" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPPluginModule">HYPPluginModule</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>HYPPluginModule protocol represents an instance of a plugin.</p>
+
+                        <a href="Protocols/HYPPluginModule.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPPluginModule</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPPluginModuleProtocol</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginModule.h#L32-L54">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPViewSelectionDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/HYPViewSelectionDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPViewSelectionDelegate">HYPViewSelectionDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate used to notify when a view has been selected from the ViewListPopover.</p>
+
+                        <a href="Protocols/HYPViewSelectionDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPViewSelectionDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">protocol</span> <span class="kt">HYPViewSelectionDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/SnapShotDebuggingWindow/HYPViewSelectionDelegate.h#L27-L35">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2017-12-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
