@@ -43,7 +43,7 @@ Having trouble verifying an animation matches design? The Slow Animations plugin
 
 
 ## Third-Party Plugins
-Calling all developers!!! Be one of the first to create a third-party plugin. Follow the plugin creation guide and let us know what you make!
+Calling all developers!!! Be one of the first to create a third-party plugin. The plugin creation guide is a work in progress, but if you are feeling ambitious you can reference the plugins we have already created along with our [documentation](https://willowtreeapps.github.io/Hyperion-iOS/). 
 
 ## How To Show Hyperion Plugin List
 Once Hyperion is integrated into your app, simply shake your phone.
