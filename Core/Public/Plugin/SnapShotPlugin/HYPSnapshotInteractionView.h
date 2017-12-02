@@ -33,11 +33,24 @@
  *  Creates a new HYPSnapshotInteractionView with the provided extension.
  *  @param extension The extension the HYPSnapshotInteractionView should be created with.
  */
--(instancetype)initWithExtension:(id<HYPPluginExtension>)extension;
+-(__nonnull instancetype)initWithExtension:(__nullable id<HYPPluginExtension>)extension;
+
+/**
+ *  Called when the interaction view is about to change size.
+ *  @param size The size that the interaction view is about to change to.
+ *  @param coordinator The transition coordinator allows you to animate views in sync with the size change.
+ */
+-(void)interactionViewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(__nullable id<UIViewControllerTransitionCoordinator>)coordinator;
+
+/**
+ *  Called when the interaction view has changed size.
+ *  @param size The size that the interaction view has changed to.
+ */
+-(void)interactionViewDidTransitionToSize:(CGSize)size;
 
 /**
  *  The extension that the HYPSnapshotInteractionView was intialized with.
  */
-@property (nonatomic, readonly) id<HYPPluginExtension> extension;
+@property (nonatomic, readonly, nullable) id<HYPPluginExtension> extension;
 
 @end

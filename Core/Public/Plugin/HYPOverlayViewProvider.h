@@ -41,6 +41,21 @@
  */
 -(void)deactivateSnapshotPluginView;
 
+@optional
+
+/**
+ *  Called when the plugin view is about to change size.
+ *  @param size The size that the plugin view is about to change to.
+ *  @param coordinator The transition coordinator allows you to animate views in sync with the size change.
+ */
+-(void)snapshotPluginViewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(__nullable id<UIViewControllerTransitionCoordinator>)coordinator;
+
+/**
+ *  Called when the plugin view has changed size.
+ *  @param size The size that the plugin view has changed to.
+ */
+-(void)snapshotPluginViewDidTransitionToSize:(CGSize)size;
+
 @end
 
 /**

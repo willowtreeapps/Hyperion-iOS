@@ -24,9 +24,11 @@
 #import "HyperionManager.h"
 #import "HYPOverlayViewProvider.h"
 
+@interface HYPMeasurementsPluginModule()
+@property (nonatomic) HYPMeasurementsInteractionView *currentMeasurementsView;
+@end
 @implementation HYPMeasurementsPluginModule
 @synthesize snapshotPluginView = _snapshotPluginView;
-
 
 -(instancetype)initWithExtension:(id<HYPPluginExtension>)extension
 {
@@ -49,15 +51,30 @@
 {
     [super activateSnapshotPluginViewWithContext:context];
 
-    [_snapshotPluginView removeFromSuperview];
+    [self.snapshotPluginView removeFromSuperview];
 
-    _snapshotPluginView = [[HYPMeasurementsInteractionView alloc] initWithExtension:self.extension];
-    _snapshotPluginView.translatesAutoresizingMaskIntoConstraints = false;
+    self.currentMeasurementsView = [[HYPMeasurementsInteractionView alloc] initWithExtension:self.extension];
+
+    _snapshotPluginView = self.currentMeasurementsView;
+    
+    self.snapshotPluginView.translatesAutoresizingMaskIntoConstraints = false;
     [context addSubview:_snapshotPluginView];
-    [_snapshotPluginView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor].active = true;
-    [_snapshotPluginView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor].active = true;
-    [_snapshotPluginView.topAnchor constraintEqualToAnchor:context.topAnchor].active = true;
-    [_snapshotPluginView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor].active = true;
+    [self.snapshotPluginView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor].active = true;
+    [self.snapshotPluginView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor].active = true;
+    [self.snapshotPluginView.topAnchor constraintEqualToAnchor:context.topAnchor].active = true;
+    [self.snapshotPluginView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor].active = true;
+}
+
+-(void)snapshotPluginViewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super snapshotPluginViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self.currentMeasurementsView interactionViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+}
+
+-(void)snapshotPluginViewDidTransitionToSize:(CGSize)size
+{
+    [super snapshotPluginViewDidTransitionToSize:size];
+    [self.currentMeasurementsView interactionViewDidTransitionToSize:size];
 }
 
 -(void)deactivateSnapshotPluginView

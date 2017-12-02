@@ -152,6 +152,29 @@
     [self displayMeasurementViewsForView:self.selectedView comparedToView:self.compareView ?: self.selectedView.superview];
     [self.extension.snapshotContainer dismissCurrentPopover];
 }
+-(void)interactionViewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super interactionViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self.extension.snapshotContainer dismissCurrentPopover];
+    [self clearAllStyling];
+}
+
+-(void)interactionViewDidTransitionToSize:(CGSize)size
+{
+    [super interactionViewDidTransitionToSize:size];
+    
+    if(self.selectedView)
+    {
+        [self addBorderForSelectedView];
+        
+        if (self.compareView)
+        {
+            [self addBorderForCompareView];
+        }
+        
+        [self displayMeasurementViewsForView:self.selectedView comparedToView:self.compareView ?: self.selectedView.superview];
+    }
+}
 
 -(void)longPress:(UILongPressGestureRecognizer *)longGesture
 {
@@ -267,6 +290,13 @@
     }
 
     return shapes;
+}
+
+-(void)clearAllStyling
+{
+    [self clearMeasurementViews];
+    [self clearSelectedStyling];
+    [self clearCompareStyling];
 }
 
 -(void)clearMeasurementViews

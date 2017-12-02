@@ -25,6 +25,8 @@
 
 @interface HYPAttributesInspectorPluginModule ()
 
+@property (nonatomic) HYPAttributeInspectorInteractionView *currentAttributesInteractionView;
+
 @end
 
 @implementation HYPAttributesInspectorPluginModule
@@ -47,13 +49,26 @@ const CGFloat InspectorHeight = 350;
 {
     [super activateSnapshotPluginViewWithContext:context];
     [_snapshotPluginView removeFromSuperview];
-    _snapshotPluginView = [[HYPAttributeInspectorInteractionView alloc] initWithExtension:self.extension];
+    self.currentAttributesInteractionView = [[HYPAttributeInspectorInteractionView alloc] initWithExtension:self.extension];
+    _snapshotPluginView = self.currentAttributesInteractionView;
     _snapshotPluginView.translatesAutoresizingMaskIntoConstraints = false;
     [context addSubview:_snapshotPluginView];
     [_snapshotPluginView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor].active = true;
     [_snapshotPluginView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor].active = true;
     [_snapshotPluginView.topAnchor constraintEqualToAnchor:context.topAnchor].active = true;
     [_snapshotPluginView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor].active = true;
+}
+
+-(void)snapshotPluginViewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super snapshotPluginViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self.currentAttributesInteractionView interactionViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+}
+
+-(void)snapshotPluginViewDidTransitionToSize:(CGSize)size
+{
+    [super snapshotPluginViewDidTransitionToSize:size];
+    [self.currentAttributesInteractionView interactionViewDidTransitionToSize:size];
 }
 
 -(void)deactivateSnapshotPluginView

@@ -64,7 +64,6 @@ const CGFloat MaxPopoverHeight = 300;
 
 const CGFloat PluginListWidth = 280;
 
-
 -(instancetype)initWithDebuggingWindow:(HYPSnapshotDebuggingWindow *)snapshotDebuggingWindow attachedWindow:(UIWindow *)attachedWindow
 {
     self = [super init];
@@ -460,6 +459,27 @@ const CGFloat PluginListWidth = 280;
     CGFloat arrowOffset = [self.scrollViewContainer convertPoint:popOverViewController.anchorPoint toView:popOverViewController.view].x;
 
     [popOverViewController setArrowPosition:position offset:arrowOffset];
+}
+
+-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self dismissCurrentPopover];
+    
+    [self.snapshotContainer.overlayModule snapshotPluginViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    self.scrollView.zoomScale = 1;
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        [self takeSnapshot];
+        self.scrollViewContainer.frame = CGRectMake(0, 0, size.width, size.height);
+        self.scrollView.zoomScale = 1;
+        self.scrollView.contentOffset = CGPointZero;
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        [self takeSnapshot];
+        self.scrollView.zoomScale = 1;
+        self.scrollView.contentOffset = CGPointZero;
+        [self.snapshotContainer.overlayModule snapshotPluginViewDidTransitionToSize:size];
+    }];
 }
 
 -(void)presentViewController:(UIViewController *)controller animated:(bool)animated
