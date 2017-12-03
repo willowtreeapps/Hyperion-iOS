@@ -466,7 +466,7 @@ const CGFloat PluginListWidth = 280;
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
     [self dismissCurrentPopover];
     
-    [self.snapshotContainer.overlayModule snapshotPluginViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self.snapshotContainer.overlayModule snapshotContextWillTransitionToSize:size withTransitionCoordinator:coordinator];
     
     self.scrollView.zoomScale = 1;
     [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
@@ -478,7 +478,7 @@ const CGFloat PluginListWidth = 280;
         [self takeSnapshot];
         self.scrollView.zoomScale = 1;
         self.scrollView.contentOffset = CGPointZero;
-        [self.snapshotContainer.overlayModule snapshotPluginViewDidTransitionToSize:size];
+        [self.snapshotContainer.overlayModule snapshotContextDidTransitionToSize:size];
     }];
 }
 

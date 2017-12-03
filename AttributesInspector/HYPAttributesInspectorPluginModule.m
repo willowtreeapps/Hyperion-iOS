@@ -59,15 +59,15 @@ const CGFloat InspectorHeight = 350;
     [_snapshotPluginView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor].active = true;
 }
 
--(void)snapshotPluginViewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+-(void)snapshotContextWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
-    [super snapshotPluginViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [super snapshotContextWillTransitionToSize:size withTransitionCoordinator:coordinator];
     [self.currentAttributesInteractionView interactionViewWillTransitionToSize:size withTransitionCoordinator:coordinator];
 }
 
--(void)snapshotPluginViewDidTransitionToSize:(CGSize)size
+-(void)snapshotContextDidTransitionToSize:(CGSize)size
 {
-    [super snapshotPluginViewDidTransitionToSize:size];
+    [super snapshotContextDidTransitionToSize:size];
     [self.currentAttributesInteractionView interactionViewDidTransitionToSize:size];
 }
 
