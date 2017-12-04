@@ -22,6 +22,7 @@
 #import <UIKit/UIKit.h>
 #import "HYPActivationGestureOptions.h"
 
+@protocol HYPPlugin;
 @protocol HYPPluginModule;
 
 /**
@@ -49,6 +50,13 @@
  *  Toggles Hyperion's plugin drawer.
  */
 -(void)togglePluginDrawer;
+
+/**
+ *  Provides a list of plugin classes.
+ *  @return A list of plugin classes.
+ */
+-(NSArray<Class<HYPPlugin>> *)retrievePluginClasses;
+
 
 /**
  *  Provides a cached list of plugin modules.

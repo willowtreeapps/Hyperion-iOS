@@ -153,18 +153,9 @@ static HyperionManager *sharedManager;
     [window.overlayVC.edgeSwipeRecognizer setEnabled:edgeSwipeEnabled];
 }
 
--(NSArray<id<HYPPluginModule>> *)retrievePluginModules
+-(NSArray<Class<HYPPlugin>> *)retrievePluginClasses
 {
-    //TODO: Cache Plugin Modules
-    return [self forceRefreshPluginModules];
-}
-
--(NSArray<id<HYPPluginModule>> *)forceRefreshPluginModules
-{
-    HYPPluginExtension *pluginExtension = [[HYPPluginExtension alloc] initWithSnapshotContainer:[[[HyperionWindowManager sharedInstance] currentSnapshotWindow] snapshotContainer] overlayContainer:[[[HyperionWindowManager sharedInstance] currentOverlayWindow] overlayContainer] hypeWindow:[[HyperionWindowManager sharedInstance] currentSnapshotWindow] attachedWindow:self.key];
-
-    NSMutableArray<id<HYPPluginModule>> *mutablePluginModules = [[NSMutableArray alloc] init];
-    NSMutableArray *pluginClasses = [[NSMutableArray alloc] init];
+    NSMutableArray<Class<HYPPlugin>> *pluginClasses = [[NSMutableArray alloc] init];
 
     int numClasses;
     Class * classes = NULL;
@@ -189,6 +180,22 @@ static HyperionManager *sharedManager;
 
         free(classes);
     }
+
+    return pluginClasses;
+}
+
+-(NSArray<id<HYPPluginModule>> *)retrievePluginModules
+{
+    //TODO: Cache Plugin Modules
+    return [self forceRefreshPluginModules];
+}
+
+-(NSArray<id<HYPPluginModule>> *)forceRefreshPluginModules
+{
+    HYPPluginExtension *pluginExtension = [[HYPPluginExtension alloc] initWithSnapshotContainer:[[[HyperionWindowManager sharedInstance] currentSnapshotWindow] snapshotContainer] overlayContainer:[[[HyperionWindowManager sharedInstance] currentOverlayWindow] overlayContainer] hypeWindow:[[HyperionWindowManager sharedInstance] currentSnapshotWindow] attachedWindow:self.key];
+
+    NSMutableArray<id<HYPPluginModule>> *mutablePluginModules = [[NSMutableArray alloc] init];
+    NSArray<Class<HYPPlugin>> *pluginClasses = [self retrievePluginClasses];
 
     for (Class<HYPPlugin> pluginClass in pluginClasses)
     {
