@@ -97,4 +97,14 @@
     [_pluginMenuItem setSelected:NO animated:YES];
 }
 
+-(void)snapshotContextWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    //No op;
+}
+
+-(void)snapshotContextDidTransitionToSize:(CGSize)size
+{
+    //No op;
+}
+
 @end

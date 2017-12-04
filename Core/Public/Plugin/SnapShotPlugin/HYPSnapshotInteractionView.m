@@ -34,4 +34,14 @@
     return self;
 }
 
+-(void)interactionViewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(__nullable id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    //No op;
+}
+
+-(void)interactionViewDidTransitionToSize:(CGSize)size
+{
+    //No op;
+}
+
 @end

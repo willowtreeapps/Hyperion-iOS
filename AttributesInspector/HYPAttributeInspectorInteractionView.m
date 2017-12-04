@@ -83,26 +83,40 @@
 
 -(void)viewSelected:(UIView *)selection
 {
-    if (self.lastSelectedView == selection)
+    if (self.currentlySelectedView == selection)
     {
         [self.extension.snapshotContainer dismissCurrentPopover];
-        self.lastSelectedView = nil;
+        self.currentlySelectedView = nil;
 
         return;
     }
 
-    self.lastSelectedView = selection;
-
-    CGRect viewRect = [selection.superview convertRect:selection.frame toView:[self.extension attachedWindow]];
-
-    self.highlightView.frame = viewRect;
-
     self.currentlySelectedView = selection;
 
+    [self updateSelection];
+}
+
+-(void)interactionViewDidTransitionToSize:(CGSize)size
+{
+    [super interactionViewDidTransitionToSize:size];
+    [self updateSelection];
+}
+
+-(void)updateSelection
+{
+    if (!self.currentlySelectedView)
+    {
+        return;
+    }
+    
+    CGRect viewRect = [self.currentlySelectedView.superview convertRect:self.currentlySelectedView.frame toView:[self.extension attachedWindow]];
+    
+    self.highlightView.frame = viewRect;
+    
     HYPAttributesPreviewViewController *attributesView = [[HYPAttributesPreviewViewController alloc] initWithSelectedView:self.currentlySelectedView];
-
+    
     attributesView.delegate = self;
-
+    
     [self.extension.snapshotContainer presentPopover:attributesView recommendedHeight:250 forView:self.currentlySelectedView];
 }
 
