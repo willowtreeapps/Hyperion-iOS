@@ -1,11 +1,10 @@
 # Hyperion
 
-[![CI Status](http://img.shields.io/travis/chrsmys/HyperioniOS.svg?style=flat)](https://travis-ci.org/willowtreeapps/HyperioniOS)
-[![Version](https://img.shields.io/cocoapods/v/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
-[![License](https://img.shields.io/cocoapods/l/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
 [![Platform](https://img.shields.io/cocoapods/p/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
+[![License](https://img.shields.io/cocoapods/l/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
+[![Version](https://img.shields.io/cocoapods/v/HyperioniOS.svg?style=flat)](http://cocoapods.org/pods/HyperioniOS)
+[![CI Status](https://circleci.com/gh/willowtreeapps/Hyperion-iOS.svg?style=shield)](https://circleci.com/gh/willowtreeapps/Hyperion-iOS)
 ![Hyperion Logo](https://github.com/willowtreeapps/Hyperion-ios/raw/master/Img/Hyperion-Logo.png)
 
 # Hyperion - In App Design Review Tool
@@ -43,7 +42,7 @@ Having trouble verifying an animation matches design? The Slow Animations plugin
 
 
 ## Third-Party Plugins
-Calling all developers!!! Be one of the first to create a third-party plugin. The plugin creation guide is a work in progress, but if you are feeling ambitious you can reference the plugins we have already created along with our [documentation](https://willowtreeapps.github.io/Hyperion-iOS/). 
+Calling all developers!!! Be one of the first to create a third-party plugin. The plugin creation guide is a work in progress, but if you are feeling ambitious you can reference the plugins we have already created along with our [documentation](https://willowtreeapps.github.io/Hyperion-iOS/).
 
 ## How To Show Hyperion Plugin List
 Once Hyperion is integrated into your app, simply shake your phone.
