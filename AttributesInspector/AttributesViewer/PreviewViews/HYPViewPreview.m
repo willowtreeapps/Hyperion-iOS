@@ -52,7 +52,7 @@
 
     self.accessibilityTextLabel.text = view.accessibilityLabel ? view.accessibilityLabel : @"--";
 
-    self.frameLabel.text = [NSString stringWithFormat:@"X: %.1f Y: %.1f Width: %.1f Height: %.1f", self.frame.origin.x, self.frame.origin.y, self.frame.size.width, self.frame.size.height];
+    self.frameLabel.text = [NSString stringWithFormat:@"X: %.1f Y: %.1f Width: %.1f Height: %.1f", view.frame.origin.x, view.frame.origin.y, view.frame.size.width, view.frame.size.height];
 
     return self;
 }

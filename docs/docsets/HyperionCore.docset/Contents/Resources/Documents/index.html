@@ -148,7 +148,7 @@
 <p><img src="https://media.giphy.com/media/26FeZcNF9Dbq89MBi/giphy.gif" alt="Slow Animations"></p>
 <h2 id='third-party-plugins' class='heading'>Third-Party Plugins</h2>
 
-<p>Calling all developers!!! Be one of the first to create a third-party plugin. Follow the plugin creation guide and let us know what you make!</p>
+<p>Calling all developers!!! Be one of the first to create a third-party plugin. The plugin creation guide is a work in progress, but if you are feeling ambitious you can reference the plugins we have already created along with our <a href="https://willowtreeapps.github.io/Hyperion-iOS/">documentation</a>. </p>
 <h2 id='how-to-show-hyperion-plugin-list' class='heading'>How To Show Hyperion Plugin List</h2>
 
 <p>Once Hyperion is integrated into your app, simply shake your phone.</p>
@@ -164,31 +164,65 @@
 
 <p>iOS 9+</p>
 <h2 id='installation' class='heading'>Installation</h2>
-<h4 id='cocoapods' class='heading'>CocoaPods</h4>
+
+<p>Since Hyperion is primarily a debugging library and should never be included in production, the steps below will outline how to install Hyperion in a way that keeps it out of production builds. There is also a guide below explaining how to verify which builds have Hyperion and which ones do not.</p>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
 
 <p>HyperioniOS is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
 it, simply add the following line to your Podfile:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"HyperioniOS/Core"</span>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s2">"HyperioniOS/Core"</span><span class="p">,</span> <span class="ss">:configurations</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'Debug'</span><span class="p">]</span>
 
-<span class="c1">#Optional Hyperion Plugins</span>
-<span class="n">pod</span> <span class="s1">'HyperioniOS/AttributesInspector'</span>
-<span class="n">pod</span> <span class="s1">'HyperioniOS/Measurements'</span>
-<span class="n">pod</span> <span class="s1">'HyperioniOS/SlowAnimations'</span>
+<span class="c1">#"Configurations =&gt; Debug" ensures it is only included in debug builds. Add any configurations you would like Hyperion to be included in.</span>
+<span class="n">pod</span> <span class="s1">'HyperioniOS/AttributesInspector'</span><span class="p">,</span> <span class="ss">:configurations</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'Debug'</span><span class="p">]</span>
+<span class="n">pod</span> <span class="s1">'HyperioniOS/Measurements'</span><span class="p">,</span> <span class="ss">:configurations</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'Debug'</span><span class="p">]</span>
+<span class="n">pod</span> <span class="s1">'HyperioniOS/SlowAnimations'</span><span class="p">,</span> <span class="ss">:configurations</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'Debug'</span><span class="p">]</span>
 </code></pre>
-<h4 id='carthage' class='heading'>Carthage</h4>
 
-<p>•Add <code>github &quot;willowtreeapps/Hyperion-iOS&quot;</code> to your cartfile.
-<br>
-•Run <code>carthage update</code>
-<br>
-•Drag and drop newly created frameworks into the project.</p>
-<h3 id='manual' class='heading'>Manual</h3>
+<p>CocoaPods automatically handles ensuring that Hyperion will only be included in the configurations you have specified for the pods. For more information please reference <a href="https://guides.cocoapods.org/syntax/podfile.html#pod">CooaPods Documentation</a>.</p>
+<h3 id='carthage' class='heading'>Carthage</h3>
 
-<p>Clone the git repo. In the root directory run <code>sh build.sh</code>. Once complete, the script will have generated the HyperionCore framework along with all of the first-party plugins. The only required framework is HyperionCore, but you should add at least one of the plugins that was generated.</p>
+<p>To install through Carthage add <code>github &quot;willowtreeapps/Hyperion-iOS&quot;</code> to your cartfile. Then run <code>carthage update</code>. Drag and drop the created frameworks into your Xcode project. <strong><em>Important</em></strong> Make sure that Hyperion and any of it&rsquo;s frameworks are <strong><em>not</em></strong> included as embedded frameworks (Settings should be available in General project settings). Once you ensure that Hyperion is not included in the embedded frameworks change the status of the Hyperion frameworks under <q>Linked Frameworks and Libraries</q> section to optional. At this point your project settings should look something like this.
+<img src="https://github.com/willowtreeapps/Hyperion-iOS/raw/master/Img/FrameworksSettings.png" alt="Hyperion Frameworks Section"></p>
 
-<p>Drag and drop HyperionCore along with any of the plugins you want into your Xcode project. While importing make sure to check <code>copy items if needed</code> checkbox. After importing add HyperionCore along with any plugins in to the embedded binaries section under your projects settings.</p>
+<p>Next hop on over to the build phases section and add a custom run script. Make sure it is inserted right above the <q>Linked Frameworks and Libraries</q> build phase. Make this your custom run script:</p>
+<pre class="highlight plaintext"><code>#Add the configurations you want to include Hyperion in below.
+if ["$CONFIGURATION" == "Debug"]; then
+    /usr/local/bin/carthage copy-frameworks
+fi
+</code></pre>
 
-<p><img src="https://github.com/willowtreeapps/Hyperion-ios/raw/master/Img/Hyperion-Integration.gif" alt="Hyperion Integration"></p>
+<p>Next you are going to want to add each Hyperion framework path to the <q>Input Files</q> section of your build script. Your build script should look something like this:
+<img src="https://github.com/willowtreeapps/Hyperion-iOS/raw/master/Img/CarthageIncludeScript.png" alt="Hyperion Custom Build Script"></p>
+
+<p>For more information on this custom build script please refer to the <a href="https://github.com/Carthage/Carthage">Carthage Documentation</a>.</p>
+<h3 id='manually-building' class='heading'>Manually Building</h3>
+
+<p>Clone the git repo. In the root directory run <code>sh build.sh</code>. Once complete, the script will have generated the HyperionCore framework along with all of the first-party plugins. The only required framework is HyperionCore, but you should add at least one of the plugins that was generated. Follow the Carthage installation guide above to ensure that Hyperion does not get included in production.</p>
+<h3 id='verifying-a-build-does-not-include-hyperion' class='heading'>Verifying A Build Does Not Include Hyperion</h3>
+
+<p><strong><em>Note:</em></strong> This only works if you are using Hyperion Frameworks. If you are using Cocoapods ensure that you have specified <q>use_frameworks!</q>.</p>
+<h4 id='opening-the-ipa' class='heading'>Opening the IPA</h4>
+
+<ol>
+<li>Right click your IPA file and open it with Archive Utility. This should unzip your IPA.</li>
+<li>Inside the unzipped IPA there should be an Application file. Depending on how the IPA was built it might be in a Payload folder. Once found, right click the Application file and select <q>Show Package Contents</q>.</li>
+<li>Inside the package there should be a folder called <q>Frameworks</q>. Ensure that Hyperion and it&rsquo;s plugins are not included in that folder. If Hyperion is in that folder then that means Hyperion is included in that build.</li>
+<li>As an extra step you can ensure that your apps executable is not attempting to load Hyperion. Inside your app package find your app&rsquo;s executable (It should be a unix executable in the root of the package). Run this:</li>
+</ol>
+<pre class="highlight plaintext"><code>otool -L {Unix Executable Path Here}
+</code></pre>
+
+<p>Verify the output does not contain any references to Hyperion or it&rsquo;s plugins</p>
+<h4 id='while-running-the-app' class='heading'>While Running The App</h4>
+
+<ol>
+<li>Ensure that none of the Hyperion triggers (shake, etc.) you have set activate Hyperion.</li>
+<li>If attached to the debugger you can pause the process and run:
+<code>
+image list -b
+</code>
+This will show all of the shared libraries that are currently loaded in the app. Make sure that Hyperion and it&rsquo;s frameworks are not listed.</li>
+</ol>
 <h2 id='adding-plugins' class='heading'>Adding Plugins</h2>
 
 <p>Hyperion plugins need to be added into the app at build time.
@@ -196,7 +230,8 @@ By default, Hyperion automatically finds every plugin that is available in the p
 <h2 id='contributors' class='heading'>Contributors</h2>
 
 <p><a href="https://github.com/chrsmys">Chris Mays</a>
-<br><a href="https://github.com/mhk4g">Matt Kauper</a></p>
+<br><a href="https://github.com/mhk4g">Matt Kauper</a>
+<br><a href="https://github.com/imachumphries">Ben Humphries</a></p>
 <h2 id='license' class='heading'>License</h2>
 
 <p>Hyperion is available under the MIT license. See the LICENSE file for more info.</p>
@@ -211,7 +246,7 @@ By default, Hyperion automatically finds every plugin that is available in the p
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2017-12-01)</p>
+          <p>&copy; 2017 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2017-12-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

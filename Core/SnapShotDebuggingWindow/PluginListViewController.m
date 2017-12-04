@@ -54,8 +54,8 @@
 @interface PluginListViewController ()
 
 @property (nonatomic) NSArray<PluginContainerView *> *containerViews;
-@property (nonatomic) NSMutableArray<UITapGestureRecognizer *> *tapGestures;
 @property (nonatomic) UIStackView *pluginList;
+@property (nonatomic) UIScrollView *pluginScrollView;
 
 @end
 
@@ -63,25 +63,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.pluginList = [[UIStackView alloc] initWithFrame:CGRectZero];
-
-    self.tapGestures = [[NSMutableArray alloc] init];
-
-    self.pluginList.spacing = 20;
     
-    [self.view addSubview:self.pluginList];
-
-    self.pluginList.translatesAutoresizingMaskIntoConstraints = NO;
-
-    self.pluginList.axis = UILayoutConstraintAxisVertical;
-
     self.view.backgroundColor = [UIColor clearColor];
 
-    [self.pluginList.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
-    [self.pluginList.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
-    [self.pluginList.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = YES;
+    self.pluginScrollView = [[UIScrollView alloc] init];
+    self.pluginScrollView.translatesAutoresizingMaskIntoConstraints = false;
+    [self.view addSubview:self.pluginScrollView];
+    
+    [self.pluginScrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = true;
+    [self.pluginScrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = true;
+    [self.pluginScrollView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = true;
+    [self.pluginScrollView.topAnchor constraintGreaterThanOrEqualToAnchor:self.view.topAnchor constant:0].active = true;
+    [self.pluginScrollView.bottomAnchor constraintLessThanOrEqualToAnchor:self.view.bottomAnchor constant:0].active = true;
+    
+    self.pluginList = [[UIStackView alloc] initWithFrame:CGRectZero];
+    self.pluginList.spacing = 20;
+    [self.pluginScrollView addSubview:self.pluginList];
+    
+    self.pluginList.translatesAutoresizingMaskIntoConstraints = NO;
+    self.pluginList.axis = UILayoutConstraintAxisVertical;
+    
+    [self.pluginList.leadingAnchor constraintEqualToAnchor:self.pluginScrollView.leadingAnchor].active = YES;
+    [self.pluginList.trailingAnchor constraintEqualToAnchor:self.pluginScrollView.trailingAnchor].active = YES;
+    [self.pluginList.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
+    [self.pluginList.topAnchor constraintEqualToAnchor:self.pluginScrollView.topAnchor constant:15].active = YES;
+    [self.pluginList.bottomAnchor constraintEqualToAnchor:self.pluginScrollView.bottomAnchor constant:15].active = YES;
 
+    NSLayoutConstraint *heightContraint = [self.pluginList.heightAnchor constraintEqualToAnchor:_pluginScrollView.heightAnchor];
+    
+    //This constraint will only stick around if the plugin list is not big enough to scroll
+    [heightContraint setPriority:250];
+    heightContraint.active = true;
+    
     [self loadTabs];
 }
 
