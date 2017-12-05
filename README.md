@@ -59,7 +59,7 @@ Build the example project by cloning the repo, run `pod install` from the Exampl
 iOS 9+
 
 ## Installation
-Since Hyperion is primarily a debugging library and should never be included in production, the steps below will outline how to install Hyperion in a way that keeps it out of production builds. There is also a guide below explaining how to verify which builds have Hyperion and which ones do not.
+Since Hyperion is primarily a debugging library and should never be included in production, the steps below will outline how to install Hyperion in a way that keeps it out of production builds. There is also a guide below explaining how to verify which builds have Hyperion and which ones do not. Note: Hyperion doesn't require any code to integrate, so it should just work once added.
 
 ### CocoaPods
 
@@ -92,7 +92,11 @@ Next you are going to want to add each Hyperion framework path to the "Input Fil
 
 For more information on this custom build script please refer to the [Carthage Documentation](https://github.com/Carthage/Carthage).
 
-### Manually Building
+### Manual
+You can download the latest frameworks [here](https://github.com/willowtreeapps/Hyperion-iOS/releases). There will be a zip file under the latest release called `HyperionCore.Plugins.framework.zip`. If you want to learn how to integrate into specific build configurations; follow the Carthage guide above.
+
+Or if you want to manually build the frameworks:
+
 Clone the git repo. In the root directory run `sh build.sh`. Once complete, the script will have generated the HyperionCore framework along with all of the first-party plugins. The only required framework is HyperionCore, but you should add at least one of the plugins that was generated. Follow the Carthage installation guide above to ensure that Hyperion does not get included in production.
 
 ### Verifying A Build Does Not Include Hyperion
