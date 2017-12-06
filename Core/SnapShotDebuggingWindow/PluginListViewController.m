@@ -129,6 +129,9 @@
     [emptyStateView addSubview:noPluginsLabel];
 
     UILabel *linkLabel = [[UILabel alloc] init];
+    [linkLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(linkTap:)]];
+    linkLabel.userInteractionEnabled = true;
+
     linkLabel.textColor = [UIColor colorWithRed:43.0/255.0 green:87.0/255.0 blue:244.0/255.0 alpha:1.0];
     linkLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightSemibold];
     linkLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -158,6 +161,11 @@
     [emptyStateView.heightAnchor constraintEqualToConstant:150].active = true;
 
     [self.pluginList addArrangedSubview:emptyStateView];
+}
+
+- (void)linkTap:(UITapGestureRecognizer *)recognizer
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/willowtreeapps/Hyperion-iOS/blob/master/README.md?utm_source=hyperion-core&utm_medium=referral&utm_campaign=introducing-hyperion#installation"]];
 }
 
 -(void)setPluginModules:(NSArray<id<HYPPluginModule>> *)pluginModules
