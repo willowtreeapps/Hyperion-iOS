@@ -11,11 +11,15 @@
 
 ## What is it?
 
-![Hyperion Drawer](https://media.giphy.com/media/l4Ep2JJ27OngKOrmM/giphy.gif)
+<p align="center" id="Hyperion Drawer">
+  <img src="https://media.giphy.com/media/l4Ep2JJ27OngKOrmM/giphy.gif" />
+</p>
 
 Hyperion is a hidden plugin drawer that can easily be integrated into any app. The drawer sits discreetly 🙊 under the app so that it is there when you need it and out of the way when you don't. Hyperion plugins are designed to make inspection of your app quick and simple. For example, check out this plugin that allows you to measure distances between views:
 
-![Example Measurements](https://media.giphy.com/media/3ohjUPP3qnZ5l5osAE/giphy.gif)
+<p align="center" id="Example Measurements">
+  <img src="https://media.giphy.com/media/3ohjUPP3qnZ5l5osAE/giphy.gif" />
+</p>
 
 If you like what you see, there's more where that came from.
 
@@ -24,22 +28,29 @@ If you like what you see, there's more where that came from.
 ### View Inspector
 The View Inspector plugin allows you to inspect the properties of any view live within the app.
 
-![View Inspector Example](https://media.giphy.com/media/l4EoNOILr5Ofvgysw/giphy.gif)
+<p align="center" id="View Inspector Example">
+  <img src="https://media.giphy.com/media/l4EoNOILr5Ofvgysw/giphy.gif" />
+</p>
 
 Have a tiny view you want to inspect? No problem, you can zoom in on any portion of the app while the plugin is active.
 
-![Zoom Example](https://media.giphy.com/media/xT1R9Hf9383WjucomI/giphy.gif)
+<p align="center" id="Zoom Example">
+  <img src="https://media.giphy.com/media/xT1R9Hf9383WjucomI/giphy.gif" />
+</p>
 
 ### Measurements
 The Measurements plugin allows you to measure the distance between any two views on the screen. No more guessing whether padding is correct-this plugin has you covered.
 
-![Example Measurements](https://media.giphy.com/media/3ohjUPP3qnZ5l5osAE/giphy.gif)
+<p align="center" id="Example Measurements2">
+  <img src="https://media.giphy.com/media/3ohjUPP3qnZ5l5osAE/giphy.gif" />
+</p>
 
 ### Slow Animations
 Having trouble verifying an animation matches design? The Slow Animations plugin allows you to slow down all animations within the app to 75%, 50% or 25% the normal speed.
 
-![Slow Animations](https://media.giphy.com/media/26FeZcNF9Dbq89MBi/giphy.gif)
-
+<p align="center" id="Slow Animations">
+  <img src="https://media.giphy.com/media/26FeZcNF9Dbq89MBi/giphy.gif" />
+</p>
 
 ## Third-Party Plugins
 Calling all developers!!! Be one of the first to create a third-party plugin. The plugin creation guide is a work in progress, but if you are feeling ambitious you can reference the plugins we have already created along with our [documentation](https://willowtreeapps.github.io/Hyperion-iOS/).
@@ -70,9 +81,9 @@ it, simply add the following line to your Podfile:
 pod "HyperioniOS/Core", :configurations => ['Debug']
 
 #"Configurations => Debug" ensures it is only included in debug builds. Add any configurations you would like Hyperion to be included in.
-pod 'HyperioniOS/AttributesInspector', :configurations => ['Debug']
-pod 'HyperioniOS/Measurements', :configurations => ['Debug']
-pod 'HyperioniOS/SlowAnimations', :configurations => ['Debug']
+pod 'HyperioniOS/AttributesInspector', :configurations => ['Debug'] # Optional plugin
+pod 'HyperioniOS/Measurements', :configurations => ['Debug'] # Optional plugin
+pod 'HyperioniOS/SlowAnimations', :configurations => ['Debug'] # Optional plugin
 ```
 CocoaPods automatically handles ensuring that Hyperion will only be included in the configurations you have specified for the pods. For more information please reference [CooaPods Documentation](https://guides.cocoapods.org/syntax/podfile.html#pod).
 
