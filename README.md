@@ -81,9 +81,9 @@ it, simply add the following line to your Podfile:
 pod "HyperioniOS/Core", :configurations => ['Debug']
 
 #"Configurations => Debug" ensures it is only included in debug builds. Add any configurations you would like Hyperion to be included in.
-pod 'HyperioniOS/AttributesInspector', :configurations => ['Debug']
-pod 'HyperioniOS/Measurements', :configurations => ['Debug']
-pod 'HyperioniOS/SlowAnimations', :configurations => ['Debug']
+pod 'HyperioniOS/AttributesInspector', :configurations => ['Debug'] # Optional plugin
+pod 'HyperioniOS/Measurements', :configurations => ['Debug'] # Optional plugin
+pod 'HyperioniOS/SlowAnimations', :configurations => ['Debug'] # Optional plugin
 ```
 CocoaPods automatically handles ensuring that Hyperion will only be included in the configurations you have specified for the pods. For more information please reference [CooaPods Documentation](https://guides.cocoapods.org/syntax/podfile.html#pod).
 
