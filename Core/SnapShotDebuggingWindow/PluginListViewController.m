@@ -109,6 +109,55 @@
     {
         [self.pluginList addArrangedSubview:view];
     }
+
+    if (self.containerViews.count == 0) {
+        [self addEmptyState];
+    }
+}
+
+- (void)addEmptyState
+{
+    UIView *emptyStateView = [[UIView alloc] init];
+
+    UILabel *noPluginsLabel = [[UILabel alloc] init];
+
+    noPluginsLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightRegular];
+    noPluginsLabel.textColor = [UIColor colorWithRed:142.0/255.0 green:142.0/255.0 blue:147.0/255.0 alpha:1.0];
+    noPluginsLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    noPluginsLabel.numberOfLines = 0;
+    noPluginsLabel.text = NSLocalizedString(@"Oops! You don't have any plugins yet.", nil);
+    [emptyStateView addSubview:noPluginsLabel];
+
+    UILabel *linkLabel = [[UILabel alloc] init];
+    linkLabel.textColor = [UIColor colorWithRed:43.0/255.0 green:87.0/255.0 blue:244.0/255.0 alpha:1.0];
+    linkLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightSemibold];
+    linkLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    linkLabel.numberOfLines = 0;
+    NSMutableAttributedString *linkString = [[NSMutableAttributedString alloc]
+                                             initWithString:NSLocalizedString(@"Follow this guide to add plugins   ", nil)];
+    NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
+    attachment.image = [UIImage imageWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"linkButton" ofType:@"png"]];
+
+    [linkString appendAttributedString:[NSAttributedString attributedStringWithAttachment:attachment]];
+    linkLabel.attributedText = linkString;
+    [emptyStateView addSubview:linkLabel];
+
+    emptyStateView.translatesAutoresizingMaskIntoConstraints = false;
+    noPluginsLabel.translatesAutoresizingMaskIntoConstraints = false;
+    linkLabel.translatesAutoresizingMaskIntoConstraints = false;
+
+    [noPluginsLabel.topAnchor constraintEqualToAnchor:emptyStateView.topAnchor].active = true;
+    [noPluginsLabel.centerXAnchor constraintEqualToAnchor:emptyStateView.centerXAnchor].active = true;
+    [noPluginsLabel.widthAnchor constraintEqualToConstant:147].active = true;
+    [noPluginsLabel.heightAnchor constraintEqualToConstant:70].active = true;
+    [noPluginsLabel.bottomAnchor constraintEqualToAnchor:linkLabel.topAnchor constant:-30].active = true;
+
+    [linkLabel.widthAnchor constraintEqualToConstant:141.3].active = true;
+    [linkLabel.centerXAnchor constraintEqualToAnchor:emptyStateView.centerXAnchor].active = true;
+
+    [emptyStateView.heightAnchor constraintEqualToConstant:150].active = true;
+
+    [self.pluginList addArrangedSubview:emptyStateView];
 }
 
 -(void)setPluginModules:(NSArray<id<HYPPluginModule>> *)pluginModules
