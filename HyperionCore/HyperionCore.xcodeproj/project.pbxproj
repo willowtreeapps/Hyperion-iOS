@@ -302,6 +302,8 @@
 		49D23C921FCDC3840052336F /* 75x-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected.png"; sourceTree = "<group>"; };
 		49D23C931FCDC3840052336F /* 75x-Selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected@3x.png"; sourceTree = "<group>"; };
 		49D23C941FCDC3840052336F /* 75x-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected@2x.png"; sourceTree = "<group>"; };
+		9DDEB7D61FD78CF8002FC061 /* linkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkButton.png; sourceTree = "<group>"; };
+		9DDEB7D71FD78CF8002FC061 /* linkButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linkButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -678,6 +680,8 @@
 		49C3C21A1FCFC7E100B170B7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9DDEB7D61FD78CF8002FC061 /* linkButton.png */,
+				9DDEB7D71FD78CF8002FC061 /* linkButton@2x.png */,
 				49C3C21B1FCFC7FE00B170B7 /* x.png */,
 				49C3C21C1FCFC7FE00B170B7 /* x@2x.png */,
 				49C3C21D1FCFC7FE00B170B7 /* x@3x.png */,
