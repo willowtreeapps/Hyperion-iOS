@@ -136,10 +136,16 @@ This will show all of the shared libraries that are currently loaded in the app.
 Hyperion plugins need to be added into the app at build time.
 By default, Hyperion automatically finds every plugin that is available in the project. A feature is currently in progress that allows for specifying plugins in a plist for further customization.
 
+## Contributing to Hyperion
+Contributions are welcome. Please see the [Contributing guidelines](CONTRIBUTING.md).
+
+Hyperion has adopted a [code of conduct](CODE_OF_CONDUCT.md) defined by the [Contributor Covenant](http://contributor-covenant.org), the same used by the [Swift language](https://swift.org) and countless other open source software teams.
+
 ## Contributors
 [Chris Mays](https://github.com/chrsmys)
 <br>[Matt Kauper](https://github.com/mhk4g)
 <br>[Ben Humphries](https://github.com/imachumphries)
+
 ## License
 Hyperion is available under the MIT license. See the LICENSE file for more info.
 
