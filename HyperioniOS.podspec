@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HyperioniOS'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Hyperion is an app design review tool that allows you to inspect views and perform measurements live within your app.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Hyperion is an app design review tool that allows you to inspect views and perfo
   s.source           = { :git => 'https://github.com/willowtreeapps/Hyperion-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  
+
   s.frameworks = ["UIKit"]
 
   s.subspec 'Core' do |core|
