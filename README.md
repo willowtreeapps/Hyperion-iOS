@@ -108,7 +108,7 @@ Next you are going to want to add each Hyperion framework path to the "Input Fil
 For more information on this custom build script please refer to the [Carthage Documentation](https://github.com/Carthage/Carthage).
 
 ### Manual
-You can download the latest frameworks [here](https://github.com/willowtreeapps/Hyperion-iOS/releases). There will be a zip file under the latest release called `HyperionCore.Plugins.framework.zip`. If you want to learn how to integrate into specific build configurations; follow the Carthage guide above.
+You can download the latest frameworks [here](https://github.com/willowtreeapps/Hyperion-iOS/releases). There will be a zip file under the latest release called `HyperionCore.framework.Plugins.zip`. If you want to learn how to integrate into specific build configurations; follow the Carthage guide above.
 
 Or if you want to manually build the frameworks:
 
