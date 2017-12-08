@@ -74,10 +74,14 @@ Since Hyperion is primarily a debugging library and should never be included in 
 
 ### CocoaPods
 
+**Important you must specify `use_frameworks!` if this does not work for your project, then refer to the Carthage or manual guide.**
+
 HyperioniOS is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+use_frameworks!
+
 pod "HyperioniOS/Core", :configurations => ['Debug']
 
 #"Configurations => Debug" ensures it is only included in debug builds. Add any configurations you would like Hyperion to be included in.
