@@ -89,6 +89,7 @@ pod 'HyperioniOS/AttributesInspector', :configurations => ['Debug'] # Optional p
 pod 'HyperioniOS/Measurements', :configurations => ['Debug'] # Optional plugin
 pod 'HyperioniOS/SlowAnimations', :configurations => ['Debug'] # Optional plugin
 ```
+
 CocoaPods automatically handles ensuring that Hyperion will only be included in the configurations you have specified for the pods. For more information please reference [CooaPods Documentation](https://guides.cocoapods.org/syntax/podfile.html#pod).
 
 ### Carthage
@@ -144,6 +145,13 @@ By default, Hyperion automatically finds every plugin that is available in the p
 Contributions are welcome. Please see the [Contributing guidelines](CONTRIBUTING.md).
 
 Hyperion has adopted a [code of conduct](CODE_OF_CONDUCT.md) defined by the [Contributor Covenant](http://contributor-covenant.org), the same used by the [Swift language](https://swift.org) and countless other open source software teams.
+
+## Troubleshooting
+I'm getting this error after pod installing:
+```
+Unable to run command 'StripNIB HYPKeyValueTableViewCell.nib' - this target might include its own product.
+```
+This likely means you have not specified `use_frameworks!` in your podfile. If turning your pods into frameowrks does not work for your project configuration, then please reference the Carthage or manual installation guide.
 
 ## Contributors
 [Chris Mays](https://github.com/chrsmys)
