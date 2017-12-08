@@ -202,7 +202,14 @@ static HyperionManager *sharedManager;
         if ([pluginClass conformsToProtocol:@protocol(HYPPlugin)])
         {
             id <HYPPluginModule> module = [pluginClass createPluginModule:pluginExtension];
-            [mutablePluginModules addObject:module];
+            if (module)
+            {
+                [mutablePluginModules addObject:module];
+            }
+            else
+            {
+                NSLog(@"%@ createPluginModule returned a nil plugin module", NSStringFromClass(pluginClass));
+            }
         }
         else
         {
