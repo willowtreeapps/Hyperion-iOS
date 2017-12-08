@@ -22,8 +22,8 @@
 		32EA53781F27E1220012DFB6 /* HYPAttributesInspectorPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353D1EFA20D800A0BC4E /* HYPAttributesInspectorPlugin.m */; };
 		32EA53791F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E353E1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.h */; };
 		32EA537A1F27E1220012DFB6 /* HYPAttributesInspectorPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E353F1EFA20D800A0BC4E /* HYPAttributesInspectorPluginModule.m */; };
-		32EA537E1F27E3570012DFB6 /* HYPActivationGestureOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA537B1F27E3570012DFB6 /* HYPActivationGestureOptions.h */; };
-		32EA537F1F27E3570012DFB6 /* HyperionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA537C1F27E3570012DFB6 /* HyperionManager.h */; };
+		32EA537E1F27E3570012DFB6 /* HYPActivationGestureOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA537B1F27E3570012DFB6 /* HYPActivationGestureOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32EA537F1F27E3570012DFB6 /* HyperionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EA537C1F27E3570012DFB6 /* HyperionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32EA53801F27E3570012DFB6 /* HyperionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EA537D1F27E3570012DFB6 /* HyperionManager.m */; };
 		490698F81FC64ED8004ABA02 /* ruler.png in Resources */ = {isa = PBXBuildFile; fileRef = 490698F71FC64ED7004ABA02 /* ruler.png */; };
 		490698FB1FC64EE0004ABA02 /* ruler@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 490698F91FC64EDF004ABA02 /* ruler@3x.png */; };
@@ -67,7 +67,7 @@
 		494A74E21F278F0C003F89F7 /* HYPSlowAnimationsPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35151EFA20BD00A0BC4E /* HYPSlowAnimationsPlugin.h */; };
 		494A74E31F278F0F003F89F7 /* HYPSlowAnimationsPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E35171EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.h */; };
 		494A74E41F278F12003F89F7 /* HYPSlowAnimationsPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E35181EFA20BD00A0BC4E /* HYPSlowAnimationsPluginModule.m */; };
-		494CC1BE1FCE5C19007EB9B4 /* HyperionCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 494CC1BD1FCE5C18007EB9B4 /* HyperionCore.h */; };
+		494CC1BE1FCE5C19007EB9B4 /* HyperionCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 494CC1BD1FCE5C18007EB9B4 /* HyperionCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		494CC1FA1FCFA15D007EB9B4 /* HYPInspectorAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 494CC1F91FCFA15D007EB9B4 /* HYPInspectorAttribute.h */; };
 		494CC2091FCFAE6E007EB9B4 /* font@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494CC2061FCFAE6E007EB9B4 /* font@2x.png */; };
 		494CC20A1FCFAE6E007EB9B4 /* font@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494CC2071FCFAE6E007EB9B4 /* font@3x.png */; };
@@ -82,9 +82,9 @@
 		49873CCA1FC254E100BBA3C1 /* HyperionDefaultConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49873CC91FC254E100BBA3C1 /* HyperionDefaultConfiguration.plist */; };
 		49873CCF1FC5160A00BBA3C1 /* HYPPluginMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 49873CCD1FC5160A00BBA3C1 /* HYPPluginMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49873CD01FC5160A00BBA3C1 /* HYPPluginMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49873CCE1FC5160A00BBA3C1 /* HYPPluginMenuItem.m */; };
-		498E34D61EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34B91EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498E34D61EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34B91EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h */; };
 		498E34D71EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34BA1EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.m */; };
-		498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34BE1EFA0D5700A0BC4E /* HYPListenerContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34BE1EFA0D5700A0BC4E /* HYPListenerContainer.h */; };
 		498E34DC1EFA0D5700A0BC4E /* HYPListenerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E34BF1EFA0D5700A0BC4E /* HYPListenerContainer.m */; };
 		498E34DD1EFA0D5700A0BC4E /* HYPOverlayContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34C01EFA0D5700A0BC4E /* HYPOverlayContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		498E34DE1EFA0D5700A0BC4E /* HYPSnapshotContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E34C11EFA0D5700A0BC4E /* HYPSnapshotContainer.h */; };
@@ -101,7 +101,7 @@
 		49A4C5A21F9BB207006ECD52 /* HyperionWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C5A01F9BB207006ECD52 /* HyperionWindowManager.m */; };
 		49A4C5A91F9BC686006ECD52 /* HYPOverlayDebuggingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A4C5A71F9BC686006ECD52 /* HYPOverlayDebuggingViewController.h */; };
 		49A4C5AA1F9BC686006ECD52 /* HYPOverlayDebuggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C5A81F9BC686006ECD52 /* HYPOverlayDebuggingViewController.m */; };
-		49A4C5DD1F9ED251006ECD52 /* HYPPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A4C5DB1F9ED251006ECD52 /* HYPPluginModule.h */; };
+		49A4C5DD1F9ED251006ECD52 /* HYPPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A4C5DB1F9ED251006ECD52 /* HYPPluginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49A4C5DE1F9ED251006ECD52 /* HYPPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C5DC1F9ED251006ECD52 /* HYPPluginModule.m */; };
 		49A4C5E51F9EF411006ECD52 /* HYPPluginContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A4C5E31F9EF411006ECD52 /* HYPPluginContainerView.m */; };
 		49C3C20D1FCFB4CB00B170B7 /* fontSize.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C3C20A1FCFB4CB00B170B7 /* fontSize.png */; };
@@ -146,9 +146,9 @@
 		49D23C951FCDC3840052336F /* 75x-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C921FCDC3840052336F /* 75x-Selected.png */; };
 		49D23C961FCDC3840052336F /* 75x-Selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C931FCDC3840052336F /* 75x-Selected@3x.png */; };
 		49D23C971FCDC3840052336F /* 75x-Selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D23C941FCDC3840052336F /* 75x-Selected@2x.png */; };
-		9D967BDF1FD0F8510035EB8C /* AttributesInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D801F27991400C42FC0 /* AttributesInspector.h */; };
-		9D967BE01FD0F8660035EB8C /* Measurements.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D6C1F27988500C42FC0 /* Measurements.h */; };
-		9D967BE11FD0F9390035EB8C /* SlowAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 494A74DA1F278EB9003F89F7 /* SlowAnimations.h */; };
+		9D967BDF1FD0F8510035EB8C /* AttributesInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D801F27991400C42FC0 /* AttributesInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D967BE01FD0F8660035EB8C /* Measurements.h in Headers */ = {isa = PBXBuildFile; fileRef = 320E5D6C1F27988500C42FC0 /* Measurements.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D967BE11FD0F9390035EB8C /* SlowAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 494A74DA1F278EB9003F89F7 /* SlowAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -718,8 +718,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32EA53651F27E10F0012DFB6 /* HYPMeasurementsPlugin.h in Headers */,
 				9D967BE01FD0F8660035EB8C /* Measurements.h in Headers */,
+				32EA53651F27E10F0012DFB6 /* HYPMeasurementsPlugin.h in Headers */,
 				32EA53671F27E10F0012DFB6 /* HYPMeasurementsPluginModule.h in Headers */,
 				32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */,
 			);
@@ -729,6 +729,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D967BDF1FD0F8510035EB8C /* AttributesInspector.h in Headers */,
 				49CD4DEB1FD11046004769CF /* HYPKeyValueTableViewCell.h in Headers */,
 				494CC1FA1FCFA15D007EB9B4 /* HYPInspectorAttribute.h in Headers */,
 				49CD4DF81FD11CF9004769CF /* HYPAttributedStringInspectorAttribute.h in Headers */,
@@ -738,7 +739,6 @@
 				49CFFF741FD0D5A600B9E33A /* HYPLabelAttributesProvider.h in Headers */,
 				49CD4DF41FD11BA5004769CF /* HYPAttributedStringAttributeTableViewCell.h in Headers */,
 				49CD4DE21FD10B5E004769CF /* HYPMoreAttributesListViewController.h in Headers */,
-				9D967BDF1FD0F8510035EB8C /* AttributesInspector.h in Headers */,
 				496D55281FD14DF800663F16 /* HYPAttributesPreviewViewController.h in Headers */,
 				493044D01FD0B85500731401 /* HYPAttributesProvider.h in Headers */,
 				49CFFF781FD0F33400B9E33A /* HYPViewPreview.h in Headers */,
@@ -753,9 +753,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D967BE11FD0F9390035EB8C /* SlowAnimations.h in Headers */,
 				49437DE01FCCFDA100F4F2A5 /* HYPSlowAnimationsPluginMenuItem.h in Headers */,
 				494A74E21F278F0C003F89F7 /* HYPSlowAnimationsPlugin.h in Headers */,
-				9D967BE11FD0F9390035EB8C /* SlowAnimations.h in Headers */,
 				494A74E31F278F0F003F89F7 /* HYPSlowAnimationsPluginModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -764,31 +764,31 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494CC1BE1FCE5C19007EB9B4 /* HyperionCore.h in Headers */,
+				32EA537E1F27E3570012DFB6 /* HYPActivationGestureOptions.h in Headers */,
+				32EA537F1F27E3570012DFB6 /* HyperionManager.h in Headers */,
+				49A4C5DD1F9ED251006ECD52 /* HYPPluginModule.h in Headers */,
 				490699101FC8E786004ABA02 /* HYPViewSelectionDelegate.h in Headers */,
 				490699091FC8E544004ABA02 /* HYPPluginHelper.h in Headers */,
 				49873CCF1FC5160A00BBA3C1 /* HYPPluginMenuItem.h in Headers */,
 				490699051FC76AE6004ABA02 /* HYPSnapshotPluginModule.h in Headers */,
 				49A4C5A91F9BC686006ECD52 /* HYPOverlayDebuggingViewController.h in Headers */,
 				493DCAB31F01714500EB5007 /* HYPOverlayViewProvider.h in Headers */,
-				49A4C5DD1F9ED251006ECD52 /* HYPPluginModule.h in Headers */,
 				498E34E21EFA0D5700A0BC4E /* HYPPlugin.h in Headers */,
-				498E34D61EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h in Headers */,
 				49873CC71FC2513500BBA3C1 /* HYPConfigurationConstants.h in Headers */,
 				49C6B4DF1EFC6C6900345B78 /* HYPSnapshotViewController.h in Headers */,
+				498E34D61EFA0D5700A0BC4E /* HYPSnapshotDebuggingWindow.h in Headers */,
 				498E34DD1EFA0D5700A0BC4E /* HYPOverlayContainer.h in Headers */,
+				498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */,
 				498E34E01EFA0D5700A0BC4E /* HYPPluginExtensionImp.h in Headers */,
-				32EA537E1F27E3570012DFB6 /* HYPActivationGestureOptions.h in Headers */,
 				49873CC31FC2508100BBA3C1 /* UIApplication+Swizzling.h in Headers */,
 				498E34EA1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.h in Headers */,
-				498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */,
 				493DCABE1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.h in Headers */,
-				32EA537F1F27E3570012DFB6 /* HyperionManager.h in Headers */,
 				496D55261FD145C400663F16 /* HYPPopoverViewController.h in Headers */,
 				498E34E31EFA0D5700A0BC4E /* HYPPluginExtension.h in Headers */,
 				498E34ED1EFA0D5700A0BC4E /* PluginListViewController.h in Headers */,
 				498E34DE1EFA0D5700A0BC4E /* HYPSnapshotContainer.h in Headers */,
 				49C6B4E31EFD9B1A00345B78 /* UIWindow+Swizzling.h in Headers */,
-				494CC1BE1FCE5C19007EB9B4 /* HyperionCore.h in Headers */,
 				4906990D1FC8E62A004ABA02 /* HYPViewSelectionTableViewController.h in Headers */,
 				49A4C5A11F9BB207006ECD52 /* HyperionWindowManager.h in Headers */,
 				493DCABA1F01F93900EB5007 /* HYPInAppOverlayContainer.h in Headers */,
@@ -1070,6 +1070,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1088,6 +1089,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1106,6 +1108,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1124,6 +1127,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1142,6 +1146,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1160,6 +1165,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1288,6 +1294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1306,6 +1313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

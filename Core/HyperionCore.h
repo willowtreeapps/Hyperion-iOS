@@ -19,6 +19,8 @@
 //  THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
+
 //! Project version number for HyperionCore.
 FOUNDATION_EXPORT double HyperionCoreVersionNumber;
 
@@ -36,7 +38,6 @@ FOUNDATION_EXPORT const unsigned char HyperionCoreVersionString[];
 #import "HYPPluginMenuItem.h"
 #import "HYPSnapshotPluginModule.h"
 #import "HYPPluginHelper.h"
-
 #import "HyperionManager.h"
 #import "HYPActivationGestureOptions.h"
 
