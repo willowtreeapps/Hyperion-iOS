@@ -11,11 +11,15 @@
 
 ## What is it?
 
-![Hyperion Drawer](https://media.giphy.com/media/l4Ep2JJ27OngKOrmM/giphy.gif)
+<p align="center" id="Hyperion Drawer">
+  <img src="https://media.giphy.com/media/l4Ep2JJ27OngKOrmM/giphy.gif" />
+</p>
 
 Hyperion is a hidden plugin drawer that can easily be integrated into any app. The drawer sits discreetly 🙊 under the app so that it is there when you need it and out of the way when you don't. Hyperion plugins are designed to make inspection of your app quick and simple. For example, check out this plugin that allows you to measure distances between views:
 
-![Example Measurements](https://media.giphy.com/media/3ohjUPP3qnZ5l5osAE/giphy.gif)
+<p align="center" id="Example Measurements">
+  <img src="https://media.giphy.com/media/3ohjUPP3qnZ5l5osAE/giphy.gif" />
+</p>
 
 If you like what you see, there's more where that came from.
 
@@ -24,22 +28,29 @@ If you like what you see, there's more where that came from.
 ### View Inspector
 The View Inspector plugin allows you to inspect the properties of any view live within the app.
 
-![View Inspector Example](https://media.giphy.com/media/l4EoNOILr5Ofvgysw/giphy.gif)
+<p align="center" id="View Inspector Example">
+  <img src="https://media.giphy.com/media/l4EoNOILr5Ofvgysw/giphy.gif" />
+</p>
 
 Have a tiny view you want to inspect? No problem, you can zoom in on any portion of the app while the plugin is active.
 
-![Zoom Example](https://media.giphy.com/media/xT1R9Hf9383WjucomI/giphy.gif)
+<p align="center" id="Zoom Example">
+  <img src="https://media.giphy.com/media/xT1R9Hf9383WjucomI/giphy.gif" />
+</p>
 
 ### Measurements
 The Measurements plugin allows you to measure the distance between any two views on the screen. No more guessing whether padding is correct-this plugin has you covered.
 
-![Example Measurements](https://media.giphy.com/media/3ohjUPP3qnZ5l5osAE/giphy.gif)
+<p align="center" id="Example Measurements2">
+  <img src="https://media.giphy.com/media/3ohjUPP3qnZ5l5osAE/giphy.gif" />
+</p>
 
 ### Slow Animations
 Having trouble verifying an animation matches design? The Slow Animations plugin allows you to slow down all animations within the app to 75%, 50% or 25% the normal speed.
 
-![Slow Animations](https://media.giphy.com/media/26FeZcNF9Dbq89MBi/giphy.gif)
-
+<p align="center" id="Slow Animations">
+  <img src="https://media.giphy.com/media/26FeZcNF9Dbq89MBi/giphy.gif" />
+</p>
 
 ## Third-Party Plugins
 Calling all developers!!! Be one of the first to create a third-party plugin. The plugin creation guide is a work in progress, but if you are feeling ambitious you can reference the plugins we have already created along with our [documentation](https://willowtreeapps.github.io/Hyperion-iOS/).
@@ -59,7 +70,7 @@ Build the example project by cloning the repo, run `pod install` from the Exampl
 iOS 9+
 
 ## Installation
-Since Hyperion is primarily a debugging library and should never be included in production, the steps below will outline how to install Hyperion in a way that keeps it out of production builds. There is also a guide below explaining how to verify which builds have Hyperion and which ones do not.
+Since Hyperion is primarily a debugging library and should never be included in production, the steps below will outline how to install Hyperion in a way that keeps it out of production builds. There is also a guide below explaining how to verify which builds have Hyperion and which ones do not. Note: Hyperion doesn't require any code to integrate, so it should just work once added.
 
 ### CocoaPods
 
@@ -70,9 +81,9 @@ it, simply add the following line to your Podfile:
 pod "HyperioniOS/Core", :configurations => ['Debug']
 
 #"Configurations => Debug" ensures it is only included in debug builds. Add any configurations you would like Hyperion to be included in.
-pod 'HyperioniOS/AttributesInspector', :configurations => ['Debug']
-pod 'HyperioniOS/Measurements', :configurations => ['Debug']
-pod 'HyperioniOS/SlowAnimations', :configurations => ['Debug']
+pod 'HyperioniOS/AttributesInspector', :configurations => ['Debug'] # Optional plugin
+pod 'HyperioniOS/Measurements', :configurations => ['Debug'] # Optional plugin
+pod 'HyperioniOS/SlowAnimations', :configurations => ['Debug'] # Optional plugin
 ```
 CocoaPods automatically handles ensuring that Hyperion will only be included in the configurations you have specified for the pods. For more information please reference [CooaPods Documentation](https://guides.cocoapods.org/syntax/podfile.html#pod).
 
@@ -92,7 +103,11 @@ Next you are going to want to add each Hyperion framework path to the "Input Fil
 
 For more information on this custom build script please refer to the [Carthage Documentation](https://github.com/Carthage/Carthage).
 
-### Manually Building
+### Manual
+You can download the latest frameworks [here](https://github.com/willowtreeapps/Hyperion-iOS/releases). There will be a zip file under the latest release called `HyperionCore.Plugins.framework.zip`. If you want to learn how to integrate into specific build configurations; follow the Carthage guide above.
+
+Or if you want to manually build the frameworks:
+
 Clone the git repo. In the root directory run `sh build.sh`. Once complete, the script will have generated the HyperionCore framework along with all of the first-party plugins. The only required framework is HyperionCore, but you should add at least one of the plugins that was generated. Follow the Carthage installation guide above to ensure that Hyperion does not get included in production.
 
 ### Verifying A Build Does Not Include Hyperion
@@ -121,10 +136,16 @@ This will show all of the shared libraries that are currently loaded in the app.
 Hyperion plugins need to be added into the app at build time.
 By default, Hyperion automatically finds every plugin that is available in the project. A feature is currently in progress that allows for specifying plugins in a plist for further customization.
 
+## Contributing to Hyperion
+Contributions are welcome. Please see the [Contributing guidelines](CONTRIBUTING.md).
+
+Hyperion has adopted a [code of conduct](CODE_OF_CONDUCT.md) defined by the [Contributor Covenant](http://contributor-covenant.org), the same used by the [Swift language](https://swift.org) and countless other open source software teams.
+
 ## Contributors
 [Chris Mays](https://github.com/chrsmys)
 <br>[Matt Kauper](https://github.com/mhk4g)
 <br>[Ben Humphries](https://github.com/imachumphries)
+
 ## License
 Hyperion is available under the MIT license. See the LICENSE file for more info.
 
