@@ -151,7 +151,7 @@ I'm getting this error after pod installing:
 ```
 Unable to run command 'StripNIB HYPKeyValueTableViewCell.nib' - this target might include its own product.
 ```
-This likely means you have not specified `use_frameworks!` in your podfile. If turning your pods into frameowrks does not work for your project configuration, then please reference the Carthage or manual installation guide.
+This likely means you have not specified `use_frameworks!` in your podfile. If turning your pods into frameworks does not work for your project configuration, then please reference the Carthage or manual installation guide.
 
 ## Contributors
 [Chris Mays](https://github.com/chrsmys)
