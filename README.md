@@ -59,7 +59,7 @@ Calling all developers!!! Be one of the first to create a third-party plugin. Th
 Once Hyperion is integrated into your app, simply shake your phone.
 
 ## Customizing Hyperion
-Hyperion was designed as a drag and drop framework that requires 0 code to integrate. If you want to customize Hyperion you can create a configuration file (called HyperionConfiguration.plist). Use [this file](https://github.com/willowtreeapps/Hyperion-ios/raw/master/core/HyperionDefaultConfiguration.plist) as an example. For now you can only configure what gestures trigger the Hyperion drawer, but there are plans to add theming and plugin ordering.
+Hyperion was designed as a drag and drop framework that requires 0 code to integrate. If you want to customize Hyperion you can create a configuration file (called HyperionConfiguration.plist). Use [this file](https://github.com/willowtreeapps/Hyperion-iOS/raw/master/Core/HyperionDefaultConfiguration.plist) as an example. For now you can only configure what gestures trigger the Hyperion drawer, but there are plans to add theming and plugin ordering.
 
 ## Example App
 Want to learn how to use Hyperion? The example app will teach you!
