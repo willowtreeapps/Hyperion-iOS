@@ -59,7 +59,7 @@ Calling all developers!!! Be one of the first to create a third-party plugin. Th
 Once Hyperion is integrated into your app, simply shake your phone.
 
 ## Customizing Hyperion
-Hyperion was designed as a drag and drop framework that requires 0 code to integrate. If you want to customize Hyperion you can create a configuration file (called HyperionConfiguration.plist). Use [this file](https://github.com/willowtreeapps/Hyperion-ios/raw/master/core/HyperionDefaultConfiguration.plist) as an example. For now you can only configure what gestures trigger the Hyperion drawer, but there are plans to add theming and plugin ordering.
+Hyperion was designed as a drag and drop framework that requires 0 code to integrate. If you want to customize Hyperion you can create a configuration file (called HyperionConfiguration.plist). Use [this file](https://github.com/willowtreeapps/Hyperion-iOS/raw/master/Core/HyperionDefaultConfiguration.plist) as an example. For now you can only configure what gestures trigger the Hyperion drawer, but there are plans to add theming and plugin ordering.
 
 ## Example App
 Want to learn how to use Hyperion? The example app will teach you!
@@ -74,10 +74,14 @@ Since Hyperion is primarily a debugging library and should never be included in 
 
 ### CocoaPods
 
+**Important you must specify `use_frameworks!` if this does not work for your project, then refer to the Carthage or manual guide.**
+
 HyperioniOS is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+use_frameworks!
+
 pod "HyperioniOS/Core", :configurations => ['Debug']
 
 #"Configurations => Debug" ensures it is only included in debug builds. Add any configurations you would like Hyperion to be included in.
@@ -85,6 +89,7 @@ pod 'HyperioniOS/AttributesInspector', :configurations => ['Debug'] # Optional p
 pod 'HyperioniOS/Measurements', :configurations => ['Debug'] # Optional plugin
 pod 'HyperioniOS/SlowAnimations', :configurations => ['Debug'] # Optional plugin
 ```
+
 CocoaPods automatically handles ensuring that Hyperion will only be included in the configurations you have specified for the pods. For more information please reference [CooaPods Documentation](https://guides.cocoapods.org/syntax/podfile.html#pod).
 
 ### Carthage
@@ -104,7 +109,7 @@ Next you are going to want to add each Hyperion framework path to the "Input Fil
 For more information on this custom build script please refer to the [Carthage Documentation](https://github.com/Carthage/Carthage).
 
 ### Manual
-You can download the latest frameworks [here](https://github.com/willowtreeapps/Hyperion-iOS/releases). There will be a zip file under the latest release called `HyperionCore.Plugins.framework.zip`. If you want to learn how to integrate into specific build configurations; follow the Carthage guide above.
+You can download the latest frameworks [here](https://github.com/willowtreeapps/Hyperion-iOS/releases). There will be a zip file under the latest release called `HyperionCore.framework.Plugins.zip`. If you want to learn how to integrate into specific build configurations; follow the Carthage guide above.
 
 Or if you want to manually build the frameworks:
 
@@ -140,6 +145,13 @@ By default, Hyperion automatically finds every plugin that is available in the p
 Contributions are welcome. Please see the [Contributing guidelines](CONTRIBUTING.md).
 
 Hyperion has adopted a [code of conduct](CODE_OF_CONDUCT.md) defined by the [Contributor Covenant](http://contributor-covenant.org), the same used by the [Swift language](https://swift.org) and countless other open source software teams.
+
+## Troubleshooting
+I'm getting this error after pod installing:
+```
+Unable to run command 'StripNIB HYPKeyValueTableViewCell.nib' - this target might include its own product.
+```
+This likely means you have not specified `use_frameworks!` in your podfile. If turning your pods into frameworks does not work for your project configuration, then please reference the Carthage or manual installation guide.
 
 ## Contributors
 [Chris Mays](https://github.com/chrsmys)
