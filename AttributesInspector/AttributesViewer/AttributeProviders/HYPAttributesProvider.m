@@ -65,7 +65,9 @@
 
     HYPKeyValueInspectorAttribute *accessibilityHintAttribute = [[HYPKeyValueInspectorAttribute alloc] initWithKey:@"Accessibility Hint" value:view.accessibilityHint ? view.accessibilityHint : @"--" ];
     [viewAttributes addObject:accessibilityHintAttribute];
-
+    
+    HYPKeyValueInspectorAttribute *accessibilityIDAttribute = [[HYPKeyValueInspectorAttribute alloc] initWithKey:@"Accessibility ID" value:view.accessibilityIdentifier ? view.accessibilityIdentifier : @"--" ];
+    [viewAttributes addObject:accessibilityIDAttribute];
 
     return viewAttributes;
 }
