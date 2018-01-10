@@ -1,8 +1,8 @@
 {
   "name": "HyperioniOS",
-  "version": "0.99.0",
-  "summary": "Hyperion is a view debugging tool that allows you to inspect views attributes and measurements in app.",
-  "description": "Hyperion is a view debugging tool that allows you to inspect views attributes and measurements in app.",
+  "version": "1.0.2",
+  "summary": "Hyperion is an app design review tool that allows you to inspect views and perform measurements live within your app.",
+  "description": "Hyperion is an app design review tool that allows you to inspect views and perform measurements live within your app. Hyperion is built on top of a plugin system so you can add and remove plugins as your workflow requires.",
   "homepage": "https://github.com/willowtreeapps/Hyperion-iOS",
   "license": {
     "type": "MIT",
@@ -12,35 +12,85 @@
     "chrsmys": "chris.mays@willowtreeapps.com"
   },
   "source": {
-    "git": "https://github.com/willowtreeapps/Hyperion-iOS",
-    "tag": "0.99.0"
+    "git": "https://github.com/willowtreeapps/Hyperion-iOS.git",
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "HyperioniOS/Classes/View\\ debugger/**/*",
-  "public_header_files": "**/*.h",
-  "frameworks": "UIKit",
+  "frameworks": [
+    "UIKit"
+  ],
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "Core/**/*",
-      "exclude_files": "Core/**/*.md"
+      "source_files": "Core/**/*.{h,m}",
+      "exclude_files": "Core/**/*.md",
+      "resources": [
+        "Core/**/*.png",
+        "Core/**/*.xib",
+        "Core/**/*.plist"
+      ]
     },
     {
       "name": "AttributesInspector",
-      "source_files": "AttributesInspector/**/*",
-      "exclude_files": "AttributesInspector/**/*.md"
+      "dependencies": {
+        "HyperioniOS/Core": [
+
+        ]
+      },
+      "source_files": "AttributesInspector/**/*.{h,m}",
+      "exclude_files": "AttributesInspector/**/*.md",
+      "resources": [
+        "AttributesInspector/**/*.png",
+        "AttributesInspector/**/*.xib",
+        "AttributesInspector/**/*.plist"
+      ]
     },
     {
       "name": "SlowAnimations",
-      "source_files": "SlowAnimations/**/*",
-      "exclude_files": "SlowAnimations/**/*.md"
+      "dependencies": {
+        "HyperioniOS/Core": [
+
+        ]
+      },
+      "source_files": "SlowAnimations/**/*.{h,m}",
+      "exclude_files": "SlowAnimations/**/*.md",
+      "resources": [
+        "SlowAnimations/**/*.png",
+        "SlowAnimations/**/*.xib",
+        "SlowAnimations/**/*.plist"
+      ]
     },
     {
       "name": "Measurements",
-      "source_files": "Measurements/**/*",
-      "exclude_files": "Measurements/**/*.md"
+      "dependencies": {
+        "HyperioniOS/Core": [
+
+        ]
+      },
+      "source_files": "Measurements/**/*.{h,m}",
+      "exclude_files": "Measurements/**/*.md",
+      "resources": [
+        "Measurements/**/*.png",
+        "Measurements/**/*.xib",
+        "Measurements/**/*.plist"
+      ]
+    },
+    {
+      "name": "LoggingOverlay",
+      "dependencies": {
+        "HyperioniOS/Core": [
+
+        ]
+      },
+      "source_files": "LoggingOverlay/**/*.{h,m}",
+      "exclude_files": "LoggingOverlay/**/*.md",
+      "resources": [
+        "LoggingOverlay/**/*.png",
+        "LoggingOverlay/**/*.xib",
+        "LoggingOverlay/**/*.plist"
+      ]
     }
   ]
 }

@@ -58,4 +58,11 @@ Hyperion is an app design review tool that allows you to inspect views and perfo
     measurements.resources = ['Measurements/**/*.png', 'Measurements/**/*.xib', 'Measurements/**/*.plist']
   end
 
+  s.subspec 'LoggingOverlay' do |loggingOverlay|
+    loggingOverlay.dependency 'HyperioniOS/Core'
+    loggingOverlay.source_files = 'LoggingOverlay/**/*.{h,m}'
+    loggingOverlay.exclude_files = 'LoggingOverlay/**/*.md'
+    loggingOverlay.resources = ['LoggingOverlay/**/*.png', 'LoggingOverlay/**/*.xib', 'LoggingOverlay/**/*.plist']
+  end
+
 end

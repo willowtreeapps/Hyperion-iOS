@@ -6,6 +6,7 @@ target 'HyperioniOS_Example' do
   pod 'HyperioniOS/AttributesInspector', :path => '../'
   pod 'HyperioniOS/SlowAnimations', :path => '../'
   pod 'HyperioniOS/Measurements', :path => '../'
+  pod 'HyperioniOS/LoggingOverlay', :path => '../'
   target 'HyperioniOS_Tests' do
     inherit! :search_paths
 
