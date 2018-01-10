@@ -1,4 +1,4 @@
-//  Copyright (c) 2017 WillowTree, Inc.
+//  Copyright (c) 2018 WillowTree, Inc.
 
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -19,31 +19,31 @@
 //  THE SOFTWARE.
 //
 
-#import "HYPSnapshotPluginModule.h"
+#import "HYPOverlayPluginModule.h"
 #import "HYPPluginMenuItem.h"
 #import "HyperionManager.h"
 
-@interface HYPSnapshotPluginModule() <HYPPluginMenuItemDelegate>
+@interface HYPOverlayPluginModule() <HYPPluginMenuItemDelegate>
 
 @end
 
-@implementation HYPSnapshotPluginModule
+@implementation HYPOverlayPluginModule
 
-@synthesize snapshotPluginView = _snapshotPluginView;
+@synthesize pluginMenuItem = _pluginMenuItem;
 
 -(void)pluginMenuItemSelected:(UIView *)pluginView
 {
     bool shouldActivate = ![self active];
-
+    
     if (shouldActivate)
     {
-        self.extension.snapshotContainer.overlayModule = self;
+        self.extension.overlayContainer.overlayModule = self;
     }
     else
     {
-        self.extension.snapshotContainer.overlayModule = nil;
+        self.extension.overlayContainer.overlayModule = nil;
     }
-
+    
     if ([self shouldHideDrawerOnSelection])
     {
         [[HyperionManager sharedInstance] togglePluginDrawer];
@@ -52,27 +52,30 @@
 
 -(BOOL)active
 {
-    return self.extension.snapshotContainer.overlayModule == self;
+    return self.extension.overlayContainer.overlayModule == self;
 }
 
--(void)activateSnapshotPluginViewWithContext:(nonnull UIView *)context
+-(BOOL)shouldHideDrawerOnSelection
 {
-    [self.pluginMenuItem setSelected:YES animated:YES];
+    return true;
 }
 
--(void)deactivateSnapshotPluginView
+/**
+ * This gets called when the plugin view should activate in the provided context.
+ * Simply add your plugin interation view as a subview to the provided context.
+ *
+ * Note: Contexts are changed each plugin activation.
+ * @param context The provided view the plugin interaction view should be added to.
+ */
+-(void)activateOverlayPluginViewWithContext:(nonnull UIView *)context
 {
-    [self.pluginMenuItem setSelected:NO animated:YES];
+    [_pluginMenuItem setSelected:YES animated:YES];
 }
 
--(void)snapshotContextWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+-(void)deactivateOverlayPluginView
 {
-    //No op;
-}
-
--(void)snapshotContextDidTransitionToSize:(CGSize)size
-{
-    //No op;
+    [_pluginMenuItem setSelected:NO animated:YES];
 }
 
 @end
+
