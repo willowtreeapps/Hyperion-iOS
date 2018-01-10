@@ -1,4 +1,4 @@
-//  Copyright (c) 2017 WillowTree, Inc.
+//  Copyright (c) 2018 WillowTree, Inc.
 
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -19,61 +19,18 @@
 //  THE SOFTWARE.
 //
 
+#import <Foundation/Foundation.h>
 #import "HYPPluginModule.h"
-#import "HYPPluginMenuItem.h"
+#import "HYPPluginExtension.h"
+#import "HYPOverlayViewProvider.h"
 
-@interface HYPPluginModule() <HYPPluginMenuItemDelegate>
+@interface HYPOverlayPluginModule : HYPPluginModule<HYPOverlayPluginViewProvider>
 
-@end
-
-@implementation HYPPluginModule
-@synthesize pluginMenuItem = _pluginMenuItem;
-@synthesize extension = _extension;
-@synthesize active = _active;
-
--(instancetype)initWithExtension:(id<HYPPluginExtension>)extension
-{
-    self = [super init];
-
-    _extension = extension;
-
-    return self;
-}
-
--(UIView<HYPPluginMenuItem> *)pluginMenuItem
-{
-    if (_pluginMenuItem)
-    {
-        return _pluginMenuItem;
-    }
-    
-    HYPPluginMenuItem *pluginItem = [[HYPPluginMenuItem alloc] init];
-    pluginItem.delegate = self;
-    [pluginItem bindWithTitle:[self pluginMenuItemTitle] image:[self pluginMenuItemImage]];
-    
-    _pluginMenuItem = pluginItem;
-    
-    return _pluginMenuItem;
-}
-
--(NSString *)pluginMenuItemTitle
-{
-    return @"";
-}
-
--(UIImage *)pluginMenuItemImage
-{
-    return nil;
-}
-
--(BOOL)shouldHideDrawerOnSelection
-{
-    return YES;
-}
-
-
-- (void)pluginMenuItemSelected:(UIView<HYPPluginMenuItem> *)pluginView {
-    // nop;
-}
+/**
+ *  The view that should get added to the overlay container when activated.
+ *  @return The view that should get added to the overlay container when activated.
+ */
+@property (nonatomic, readonly)  UIView * _Nullable overlayPluginView;
 
 @end
+
