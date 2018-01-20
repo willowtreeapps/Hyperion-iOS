@@ -53,12 +53,12 @@
 {
     self = [[NSBundle bundleForClass:[self class]] loadNibNamed:@"HYPTextPreview" owner:self options:nil].firstObject;
 
-    __block NSDictionary<NSAttributedStringKey,id> *attributes;
+    __block NSDictionary<NSString *,id> *attributes;
     __block BOOL viewTooComplicated = false;
 
     NSRange range = NSMakeRange(0, string.length);
 
-    [string enumerateAttributesInRange:range options:0 usingBlock:^(NSDictionary<NSAttributedStringKey,id> * _Nonnull attrs, NSRange range, BOOL * _Nonnull stop) {
+    [string enumerateAttributesInRange:range options:0 usingBlock:^(NSDictionary<NSString *,id> * _Nonnull attrs, NSRange range, BOOL * _Nonnull stop) {
 
         if (attributes)
         {
