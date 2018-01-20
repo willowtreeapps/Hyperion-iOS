@@ -197,6 +197,10 @@ static HyperionManager *sharedManager;
     NSMutableArray<id<HYPPluginModule>> *mutablePluginModules = [[NSMutableArray alloc] init];
     NSArray<Class<HYPPlugin>> *pluginClasses = [self retrievePluginClasses];
 
+    pluginClasses = [pluginClasses sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [[[obj1 class] description] compare:[[obj2 class] description]];
+    }];
+
     for (Class<HYPPlugin> pluginClass in pluginClasses)
     {
         if ([pluginClass conformsToProtocol:@protocol(HYPPlugin)])
