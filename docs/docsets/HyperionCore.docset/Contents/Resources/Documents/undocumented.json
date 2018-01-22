@@ -1,6 +1,20 @@
 {
   "warnings": [
     {
+      "file": "/Users/chrismays/Desktop/HyperioniOS/Core/HyperionCore.h",
+      "line": 25,
+      "symbol": "HyperionCoreVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/chrismays/Desktop/HyperioniOS/Core/HyperionCore.h",
+      "line": 28,
+      "symbol": "HyperionCoreVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/chrismays/Desktop/HyperioniOS/Core/Public/Plugin/HYPPluginModule.h",
       "line": 42,
       "symbol": "pluginMenuItem",
