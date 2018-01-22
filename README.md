@@ -99,7 +99,7 @@ To install through Carthage add `github "willowtreeapps/Hyperion-iOS"` to your c
 Next hop on over to the build phases section and add a custom run script. Make sure it is inserted right above the "Linked Frameworks and Libraries" build phase. Make this your custom run script:
 ```
 #Add the configurations you want to include Hyperion in below.
-if ["$CONFIGURATION" == "Debug"]; then
+if [ "$CONFIGURATION" == "Debug" ]; then
     /usr/local/bin/carthage copy-frameworks
 fi
 ```
