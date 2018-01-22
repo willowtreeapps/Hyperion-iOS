@@ -33,6 +33,8 @@
 {
     self = [super init];
 
+    self.height = 160;
+
     _quarterSpeed = [UIButton buttonWithType:UIButtonTypeCustom];
 
     [_quarterSpeed setImage:[UIImage imageWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"25x-Unselected" ofType:@"png"]] forState:UIControlStateNormal];

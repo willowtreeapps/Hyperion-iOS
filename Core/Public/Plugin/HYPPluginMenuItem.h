@@ -90,4 +90,9 @@
  */
 @property (nonatomic) UIImageView *pluginImageView;
 
+/**
+ * The height of the plugin menu item. This value defaults to 130.
+ */
+@property (nonatomic) CGFloat height;
+
 @end

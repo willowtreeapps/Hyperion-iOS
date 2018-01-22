@@ -20,6 +20,11 @@
 //
 
 #import "HYPPluginMenuItem.h"
+@interface HYPPluginMenuItem()
+
+@property (nonatomic) NSLayoutConstraint *heightConstraint;
+
+@end
 @implementation HYPPluginMenuItem
 @synthesize delegate = _delegate;
 @synthesize selected = _selected;
@@ -34,11 +39,15 @@
     self.titleLabel.translatesAutoresizingMaskIntoConstraints = false;
     self.pluginImageView.translatesAutoresizingMaskIntoConstraints = false;
 
+    _height = 130;
+
+    self.heightConstraint = [self.heightAnchor constraintEqualToConstant:_height];
+    self.heightConstraint.active = true;
+
     [self addSubview:self.titleLabel];
     [self addSubview:self.pluginImageView];
 
     [self.pluginImageView.topAnchor constraintEqualToAnchor:self.topAnchor constant:50].active = true;
-    [self.pluginImageView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-50].active = true;
     [self.pluginImageView.heightAnchor constraintEqualToConstant:30].active = true;
     [self.pluginImageView.widthAnchor constraintEqualToConstant:30].active = true;
 
@@ -46,7 +55,7 @@
 
     self.titleLabel.numberOfLines = 2;
     [self.titleLabel.leadingAnchor constraintEqualToAnchor:self.pluginImageView.trailingAnchor constant:28].active = true;
-    [self.titleLabel.centerYAnchor constraintEqualToAnchor:self.centerYAnchor].active = true;
+    [self.titleLabel.centerYAnchor constraintEqualToAnchor:self.pluginImageView.centerYAnchor].active = true;
     [self.titleLabel.widthAnchor constraintEqualToConstant:114].active = true;
 
     [self setSelected:NO animated:NO];
@@ -85,6 +94,12 @@
     }
 
     self.pluginImageView.tintColor = self.titleLabel.textColor;
+}
+
+-(void)setHeight:(CGFloat)height
+{
+    _height = height;
+    self.heightConstraint.constant = _height;
 }
 
 @end
