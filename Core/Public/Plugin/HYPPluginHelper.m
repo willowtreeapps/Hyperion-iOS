@@ -27,6 +27,7 @@
 {
     NSMutableArray<UIView *> *potentialSelectionViews = [[NSMutableArray alloc] init];
     NSArray *subviews = [view subviews];
+    NSSet *blackList = [self blacklistedViews];
 
     for (UIView *subView in [subviews reverseObjectEnumerator])
     {
@@ -34,7 +35,7 @@
         {
             [potentialSelectionViews addObjectsFromArray:[self findSubviewsInView:subView intersectingPoint:point]];
 
-            if ([self view:subView surrondsPoint:point])
+            if ([self view:subView surrondsPoint:point] && ![blackList containsObject:NSStringFromClass([subView class])])
             {
                 [potentialSelectionViews addObject:subView];
             }
@@ -50,6 +51,17 @@
 
     return  viewRect.origin.x <= point.x && (viewRect.size.width + viewRect.origin.x) >= point.x &&
     viewRect.origin.y <= point.y && (viewRect.size.height + viewRect.origin.y) >= point.y;
+}
+
+/**
+ *  This returns a list of views that we do not want to show up as selectable views.
+ *  Reference: https://github.com/willowtreeapps/Hyperion-iOS/issues/31
+ */
++(NSSet *)blacklistedViews
+{
+    NSMutableSet *blackListedViews = [[NSMutableSet alloc] initWithArray:@[@"_UINavigationControllerPaletteClippingView"]];
+
+    return blackListedViews;
 }
 
 @end

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HyperioniOS'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Hyperion is an app design review tool that allows you to inspect views and perform measurements live within your app.'
 
 # This description is used to generate tags and improve search results.
@@ -31,26 +31,30 @@ Hyperion is an app design review tool that allows you to inspect views and perfo
   s.frameworks = ["UIKit"]
 
   s.subspec 'Core' do |core|
-    core.source_files = 'Core/**/*'
+    core.source_files = 'Core/**/*.{h,m}'
     core.exclude_files = 'Core/**/*.md'
+    core.resources = ['Core/**/*.png', 'Core/**/*.xib', 'Core/**/*.plist']
   end
 
   s.subspec 'AttributesInspector' do |attributes|
     attributes.dependency 'HyperioniOS/Core'
-    attributes.source_files = 'AttributesInspector/**/*'
+    attributes.source_files = 'AttributesInspector/**/*.{h,m}'
     attributes.exclude_files = 'AttributesInspector/**/*.md'
+    attributes.resources = ['AttributesInspector/**/*.png', 'AttributesInspector/**/*.xib', 'AttributesInspector/**/*.plist']
   end
 
   s.subspec 'SlowAnimations' do |slowanimations|
     slowanimations.dependency 'HyperioniOS/Core'
-    slowanimations.source_files = 'SlowAnimations/**/*'
+    slowanimations.source_files = 'SlowAnimations/**/*.{h,m}'
     slowanimations.exclude_files = 'SlowAnimations/**/*.md'
+    slowanimations.resources = ['SlowAnimations/**/*.png', 'SlowAnimations/**/*.xib', 'SlowAnimations/**/*.plist']
   end
 
   s.subspec 'Measurements' do |measurements|
     measurements.dependency 'HyperioniOS/Core'
-    measurements.source_files = 'Measurements/**/*'
+    measurements.source_files = 'Measurements/**/*.{h,m}'
     measurements.exclude_files = 'Measurements/**/*.md'
+    measurements.resources = ['Measurements/**/*.png', 'Measurements/**/*.xib', 'Measurements/**/*.plist']
   end
 
 end

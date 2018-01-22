@@ -28,7 +28,7 @@
 {
     NSMutableArray<id<HYPInspectorAttribute>> *viewAttributes = [[NSMutableArray alloc] init];
 
-    [attributedString enumerateAttributesInRange:NSMakeRange(0, attributedString.length) options:0 usingBlock:^(NSDictionary<NSAttributedStringKey,id> * _Nonnull attrs, NSRange range, BOOL * _Nonnull stop) {
+    [attributedString enumerateAttributesInRange:NSMakeRange(0, attributedString.length) options:0 usingBlock:^(NSDictionary<NSString *,id> * _Nonnull attrs, NSRange range, BOOL * _Nonnull stop) {
         HYPAttributedStringInspectorAttribute *attribute = [[HYPAttributedStringInspectorAttribute alloc] initWithAttributedString:[attributedString attributedSubstringFromRange:range] range:range];
         [viewAttributes addObject:attribute];
     }];
