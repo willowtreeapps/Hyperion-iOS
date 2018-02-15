@@ -7,7 +7,7 @@ jobs:
   build:
     macos:
       xcode: "9.1.0"
-
+    
     steps:
       - checkout
       #Currently commented out due to a gem install error.
@@ -31,6 +31,11 @@ jobs:
       #     key: v1-gems-{{ checksum "Gemfile.lock" }}
       #     paths:
       #       - vendor/bundle
+      - run:
+          name: Install carthage
+          command: |
+            brew update
+            brew outdated carthage || brew upgrade carthage
       - run:
           name: Build Frameworks
           command: sh build.sh
