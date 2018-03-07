@@ -30,7 +30,17 @@
 @implementation HYPLoggingOverlayPluginModule
 
 @synthesize pluginMenuItem = _pluginMenuItem;
+@synthesize loggingOverlayView = _loggingOverlayView;
+@synthesize logger = _logger;
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.logger = [HYPLogger new];
+    }
+    
+    return self;
+}
 -(UIView<HYPPluginMenuItem> *)pluginMenuItem
 {
     if (_pluginMenuItem)
@@ -95,8 +105,17 @@
  */
 -(void)activateOverlayPluginViewWithContext:(nonnull UIView *)context {
     [super activateOverlayPluginViewWithContext:context];
-    UIView *background = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    background.backgroundColor = [UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:0.5f];
+    self.loggingOverlayView = [[HYPLoggingOverlayView alloc] initWithFrame:CGRectMake(0, 0, 320.0f, 200.0f)];
+    self.loggingOverlayView.translatesAutoresizingMaskIntoConstraints = false;
+    [context addSubview:self.loggingOverlayView];
+    
+    NSLayoutConstraint *bottom = [self.loggingOverlayView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor constant:20.0f];
+    NSLayoutConstraint *leading = [self.loggingOverlayView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor constant:15.0f];
+    NSLayoutConstraint *trailing = [self.loggingOverlayView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor constant:15.0f];
+    NSLayoutConstraint *height = [self.loggingOverlayView.heightAnchor constraintEqualToConstant:200.0f];
+    
+    [context addConstraints:@[bottom, leading, trailing, height]];
+
     [context addSubview:background];
 }
 

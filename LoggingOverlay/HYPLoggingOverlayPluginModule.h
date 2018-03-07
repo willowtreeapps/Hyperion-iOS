@@ -24,8 +24,13 @@
 #import "HYPOverlayPluginModule.h"
 #import "HYPPluginExtension.h"
 #import "HYPOverlayViewProvider.h"
+#import "HYPLoggingOverlayView.h"
+#import "HYPLogger.h"
 
 @interface HYPLoggingOverlayPluginModule : HYPOverlayPluginModule<HYPOverlayPluginViewProvider>
+
+@property (nonatomic, strong) HYPLoggingOverlayView *loggingOverlayView;
+@property (nonatomic, strong) HYPLogger *logger;
 
 @end
 
