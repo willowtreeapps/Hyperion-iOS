@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C11F7BD20506ABB005A7081 /* HYPOverlayPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C11F7BB20506ABB005A7081 /* HYPOverlayPluginModule.m */; };
+		1C11F7BE20506ABB005A7081 /* HYPOverlayPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C11F7BC20506ABB005A7081 /* HYPOverlayPluginModule.h */; };
 		32EA53471F27DA300012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53481F27DA340012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E351E1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.h */; };
@@ -152,6 +154,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C11F7BB20506ABB005A7081 /* HYPOverlayPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPOverlayPluginModule.m; sourceTree = "<group>"; };
+		1C11F7BC20506ABB005A7081 /* HYPOverlayPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayPluginModule.h; sourceTree = "<group>"; };
 		320E5D6A1F27988500C42FC0 /* Measurements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Measurements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		320E5D6C1F27988500C42FC0 /* Measurements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Measurements.h; sourceTree = "<group>"; };
 		320E5D6D1F27988500C42FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -455,6 +459,8 @@
 		494CC1C01FCE8A74007EB9B4 /* OverlayPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				1C11F7BC20506ABB005A7081 /* HYPOverlayPluginModule.h */,
+				1C11F7BB20506ABB005A7081 /* HYPOverlayPluginModule.m */,
 				494CC1C11FCE8B7E007EB9B4 /* README.md */,
 			);
 			path = OverlayPlugin;
@@ -782,6 +788,7 @@
 				498E34DB1EFA0D5700A0BC4E /* HYPListenerContainer.h in Headers */,
 				498E34E01EFA0D5700A0BC4E /* HYPPluginExtensionImp.h in Headers */,
 				49873CC31FC2508100BBA3C1 /* UIApplication+Swizzling.h in Headers */,
+				1C11F7BE20506ABB005A7081 /* HYPOverlayPluginModule.h in Headers */,
 				498E34EA1EFA0D5700A0BC4E /* HYPSnapshotInteractionView.h in Headers */,
 				493DCABE1F01FBB800EB5007 /* HYPOverlayDebuggingWindow.h in Headers */,
 				496D55261FD145C400663F16 /* HYPPopoverViewController.h in Headers */,
@@ -1054,6 +1061,7 @@
 				498E34DC1EFA0D5700A0BC4E /* HYPListenerContainer.m in Sources */,
 				49A4C5A21F9BB207006ECD52 /* HyperionWindowManager.m in Sources */,
 				490699061FC76AE6004ABA02 /* HYPSnapshotPluginModule.m in Sources */,
+				1C11F7BD20506ABB005A7081 /* HYPOverlayPluginModule.m in Sources */,
 				498E34DF1EFA0D5700A0BC4E /* HYPSnapshotContainer.m in Sources */,
 				32EA53801F27E3570012DFB6 /* HyperionManager.m in Sources */,
 				496D55271FD145C400663F16 /* HYPPopoverViewController.m in Sources */,

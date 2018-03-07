@@ -57,7 +57,7 @@
 
 -(BOOL)shouldHideDrawerOnSelection
 {
-    return true;
+    return YES;
 }
 
 /**
@@ -69,12 +69,12 @@
  */
 -(void)activateOverlayPluginViewWithContext:(nonnull UIView *)context
 {
-    [_pluginMenuItem setSelected:YES animated:YES];
+    [self.pluginMenuItem setSelected:YES animated:YES];
 }
 
 -(void)deactivateOverlayPluginView
 {
-    [_pluginMenuItem setSelected:NO animated:YES];
+    [self.pluginMenuItem setSelected:NO animated:YES];
 }
 
 @end

@@ -68,7 +68,7 @@
 
 -(BOOL)shouldHideDrawerOnSelection
 {
-    return true;
+    return YES;
 }
 
 
