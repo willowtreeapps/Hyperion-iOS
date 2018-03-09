@@ -28,24 +28,6 @@
 @interface HYPSnapshotPluginModule : HYPPluginModule<HYPSnapshotPluginViewProvider>
 
 /**
- * The title that should display for the plugin menu Item.
- * @return The title that should display for the plugin menu Item.
- */
--(nonnull NSString *)pluginMenuItemTitle;
-
-/**
- * The image that should display for the plugin menu Item.
- * @return The image that should display for the plugin menu Item.
- */
--(nonnull UIImage *)pluginMenuItemImage;
-
-/**
- *  Determines whether the drawer should hide when the plugin becomes active/inactive.
- *  @return Yes if the drawer should hide when the plugin becomes active/inactive.
- */
--(BOOL)shouldHideDrawerOnSelection;
-
-/**
  *  The view that should get added the Snap Shot container when activated.
  *  @return The view that should get added the Snap Shot container when activated.
  */
