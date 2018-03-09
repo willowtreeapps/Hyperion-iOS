@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HyperioniOS'
-  s.version          = '1.0.2'
+  s.version          = '1.1.0'
   s.summary          = 'Hyperion is an app design review tool that allows you to inspect views and perform measurements live within your app.'
+  s.module_name      = 'HyperionCore'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

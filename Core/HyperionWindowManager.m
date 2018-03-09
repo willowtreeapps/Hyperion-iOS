@@ -63,6 +63,7 @@ static HyperionWindowManager *sharedWindowManager;
     [attachedWindow addGestureRecognizer:_snapshotWindow.overlayVC.twoFingerTapRecognizer];
     [attachedWindow addGestureRecognizer:_snapshotWindow.overlayVC.threeFingerTapRecognizer];
     [attachedWindow addGestureRecognizer:_snapshotWindow.overlayVC.edgeSwipeRecognizer];
+    _snapshotWindow.accessibilityLabel = @"HyperionWindow";
 }
 
 -(void)togglePluginDrawer
