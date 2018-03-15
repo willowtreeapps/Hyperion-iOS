@@ -39,6 +39,8 @@
 
 -(void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     self.view.clipsToBounds = true;
     self.containerView = [UIView new];
 
