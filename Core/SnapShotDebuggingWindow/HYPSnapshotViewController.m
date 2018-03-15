@@ -271,7 +271,7 @@ const CGFloat PluginListWidth = 280;
         }
         completion:^(BOOL finished) {
             self.scrollViewContainer.userInteractionEnabled = true;
-            [self.snapshotContainerView removeGestureRecognizer:_dismissDrawerTapGesture];
+            [self.snapshotContainerView removeGestureRecognizer:self->_dismissDrawerTapGesture];
             [self.snapshotContainerView removeGestureRecognizer:self.deactivateDrawerPanGesture];
 
             if (self.scrollViewContainer.overlayModule == nil) {
