@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		1C11F7BD20506ABB005A7081 /* HYPOverlayPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C11F7BB20506ABB005A7081 /* HYPOverlayPluginModule.m */; };
 		1C11F7BE20506ABB005A7081 /* HYPOverlayPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C11F7BC20506ABB005A7081 /* HYPOverlayPluginModule.h */; };
+		1C8F10CE2069705A00FC3F69 /* LoggingOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10CC2069705A00FC3F69 /* LoggingOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C8F10DD2069707500FC3F69 /* HYPLoggingOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10D32069707500FC3F69 /* HYPLoggingOverlayView.m */; };
+		1C8F10DF2069707500FC3F69 /* HYPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10D52069707500FC3F69 /* HYPLogger.h */; };
+		1C8F10E02069707500FC3F69 /* HYPLoggingOverlayPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10D62069707500FC3F69 /* HYPLoggingOverlayPlugin.h */; };
+		1C8F10E12069707500FC3F69 /* HYPLoggingOverlayPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10D72069707500FC3F69 /* HYPLoggingOverlayPluginModule.h */; };
+		1C8F10E22069707500FC3F69 /* HYPLoggingOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10D82069707500FC3F69 /* HYPLoggingOverlayView.h */; };
+		1C8F10E32069707500FC3F69 /* HYPLoggingOverlayPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10D92069707500FC3F69 /* HYPLoggingOverlayPluginModule.m */; };
+		1C8F10E42069707500FC3F69 /* HYPLoggingOverlayPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10DA2069707500FC3F69 /* HYPLoggingOverlayPlugin.m */; };
+		1C8F10E62069707500FC3F69 /* HYPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10DC2069707500FC3F69 /* HYPLogger.m */; };
 		32EA53471F27DA300012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53481F27DA340012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E351E1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.h */; };
@@ -156,6 +165,17 @@
 /* Begin PBXFileReference section */
 		1C11F7BB20506ABB005A7081 /* HYPOverlayPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPOverlayPluginModule.m; sourceTree = "<group>"; };
 		1C11F7BC20506ABB005A7081 /* HYPOverlayPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPOverlayPluginModule.h; sourceTree = "<group>"; };
+		1C8F10CA2069705A00FC3F69 /* LoggingOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoggingOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C8F10CC2069705A00FC3F69 /* LoggingOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggingOverlay.h; sourceTree = "<group>"; };
+		1C8F10CD2069705A00FC3F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8F10D32069707500FC3F69 /* HYPLoggingOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPLoggingOverlayView.m; sourceTree = "<group>"; };
+		1C8F10D52069707500FC3F69 /* HYPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPLogger.h; sourceTree = "<group>"; };
+		1C8F10D62069707500FC3F69 /* HYPLoggingOverlayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPLoggingOverlayPlugin.h; sourceTree = "<group>"; };
+		1C8F10D72069707500FC3F69 /* HYPLoggingOverlayPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPLoggingOverlayPluginModule.h; sourceTree = "<group>"; };
+		1C8F10D82069707500FC3F69 /* HYPLoggingOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPLoggingOverlayView.h; sourceTree = "<group>"; };
+		1C8F10D92069707500FC3F69 /* HYPLoggingOverlayPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPLoggingOverlayPluginModule.m; sourceTree = "<group>"; };
+		1C8F10DA2069707500FC3F69 /* HYPLoggingOverlayPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPLoggingOverlayPlugin.m; sourceTree = "<group>"; };
+		1C8F10DC2069707500FC3F69 /* HYPLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPLogger.m; sourceTree = "<group>"; };
 		320E5D6A1F27988500C42FC0 /* Measurements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Measurements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		320E5D6C1F27988500C42FC0 /* Measurements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Measurements.h; sourceTree = "<group>"; };
 		320E5D6D1F27988500C42FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -311,6 +331,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C8F10C62069705A00FC3F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		320E5D661F27988500C42FC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,6 +372,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C8F10CB2069705A00FC3F69 /* LoggingOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				1C8F10D22069707500FC3F69 /* LoggingOverlay */,
+				1C8F10CC2069705A00FC3F69 /* LoggingOverlay.h */,
+				1C8F10CD2069705A00FC3F69 /* Info.plist */,
+			);
+			path = LoggingOverlay;
+			sourceTree = "<group>";
+		};
+		1C8F10D22069707500FC3F69 /* LoggingOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				1C8F10D32069707500FC3F69 /* HYPLoggingOverlayView.m */,
+				1C8F10D52069707500FC3F69 /* HYPLogger.h */,
+				1C8F10D62069707500FC3F69 /* HYPLoggingOverlayPlugin.h */,
+				1C8F10D72069707500FC3F69 /* HYPLoggingOverlayPluginModule.h */,
+				1C8F10D82069707500FC3F69 /* HYPLoggingOverlayView.h */,
+				1C8F10D92069707500FC3F69 /* HYPLoggingOverlayPluginModule.m */,
+				1C8F10DA2069707500FC3F69 /* HYPLoggingOverlayPlugin.m */,
+				1C8F10DC2069707500FC3F69 /* HYPLogger.m */,
+			);
+			name = LoggingOverlay;
+			path = ../../LoggingOverlay;
+			sourceTree = "<group>";
+		};
 		320E5D6B1F27988500C42FC0 /* Measurements */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +562,7 @@
 				494A74D91F278EB9003F89F7 /* SlowAnimations */,
 				320E5D6B1F27988500C42FC0 /* Measurements */,
 				320E5D7F1F27991400C42FC0 /* AttributesInspector */,
+				1C8F10CB2069705A00FC3F69 /* LoggingOverlay */,
 				498E34751EFA0C8000A0BC4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -520,6 +574,7 @@
 				494A74D81F278EB9003F89F7 /* SlowAnimations.framework */,
 				320E5D6A1F27988500C42FC0 /* Measurements.framework */,
 				320E5D7E1F27991400C42FC0 /* AttributesInspector.framework */,
+				1C8F10CA2069705A00FC3F69 /* LoggingOverlay.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -720,6 +775,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1C8F10C72069705A00FC3F69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8F10E22069707500FC3F69 /* HYPLoggingOverlayView.h in Headers */,
+				1C8F10E12069707500FC3F69 /* HYPLoggingOverlayPluginModule.h in Headers */,
+				1C8F10E02069707500FC3F69 /* HYPLoggingOverlayPlugin.h in Headers */,
+				1C8F10CE2069705A00FC3F69 /* LoggingOverlay.h in Headers */,
+				1C8F10DF2069707500FC3F69 /* HYPLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		320E5D671F27988500C42FC0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -805,6 +872,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1C8F10C92069705A00FC3F69 /* LoggingOverlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C8F10D12069705A00FC3F69 /* Build configuration list for PBXNativeTarget "LoggingOverlay" */;
+			buildPhases = (
+				1C8F10C52069705A00FC3F69 /* Sources */,
+				1C8F10C62069705A00FC3F69 /* Frameworks */,
+				1C8F10C72069705A00FC3F69 /* Headers */,
+				1C8F10C82069705A00FC3F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoggingOverlay;
+			productName = LoggingOverlay;
+			productReference = 1C8F10CA2069705A00FC3F69 /* LoggingOverlay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		320E5D691F27988500C42FC0 /* Measurements */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 320E5D6F1F27988500C42FC0 /* Build configuration list for PBXNativeTarget "Measurements" */;
@@ -886,6 +971,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = WillowTree;
 				TargetAttributes = {
+					1C8F10C92069705A00FC3F69 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					320E5D691F27988500C42FC0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
@@ -920,11 +1009,19 @@
 				494A74D71F278EB9003F89F7 /* SlowAnimations */,
 				320E5D691F27988500C42FC0 /* Measurements */,
 				320E5D7D1F27991400C42FC0 /* AttributesInspector */,
+				1C8F10C92069705A00FC3F69 /* LoggingOverlay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C8F10C82069705A00FC3F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		320E5D681F27988500C42FC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -999,6 +1096,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C8F10C52069705A00FC3F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C8F10DD2069707500FC3F69 /* HYPLoggingOverlayView.m in Sources */,
+				1C8F10E42069707500FC3F69 /* HYPLoggingOverlayPlugin.m in Sources */,
+				1C8F10E32069707500FC3F69 /* HYPLoggingOverlayPluginModule.m in Sources */,
+				1C8F10E62069707500FC3F69 /* HYPLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		320E5D651F27988500C42FC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1074,6 +1182,57 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1C8F10CF2069705A00FC3F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LoggingOverlay/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.LoggingOverlay;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C8F10D02069705A00FC3F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LoggingOverlay/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtreeapps.LoggingOverlay;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		320E5D701F27988500C42FC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1339,6 +1498,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C8F10D12069705A00FC3F69 /* Build configuration list for PBXNativeTarget "LoggingOverlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C8F10CF2069705A00FC3F69 /* Debug */,
+				1C8F10D02069705A00FC3F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		320E5D6F1F27988500C42FC0 /* Build configuration list for PBXNativeTarget "Measurements" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
