@@ -8,19 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-public static final NSNotificationName HYPERION_LOG_NOTIFICATION = @"HYPERION_LOG_NOTIFICATION";
-public static final NSNotificationName HYPERION_LOG_CATEGORY = @"HYPERION_LOG_CATEGORY";
-public static final NSNotificationName HYPERION_LOG_MESSAGE = @"HYPERION_LOG_MESSAGE";
+extern NSString* const _Nonnull HYPERION_LOG_NOTIFICATION;
+extern NSString* const _Nonnull HYPERION_LOG_CATEGORY;
+extern NSString* const _Nonnull HYPERION_LOG_MESSAGE;
 
 @protocol HYPLoggerDelegate
 
-- (void)loggedMessage:(NSString*)message withCategory:(NSString*)category;
+- (void)loggedMessage:(nullable NSString*)message withCategory:(nullable NSString*)category;
 
 @end
 
 @interface HYPLogger : NSObject
 
-@property (nonatomic, strong) NSMutableArray<NSString*> *log;
-@property (nonatomic, weak) id<HYPLoggerDelegate> delegate;
+@property (nonatomic, strong) NSMutableArray<NSString*>* _Nonnull log;
+@property (nonatomic, weak) id<HYPLoggerDelegate> _Nullable delegate;
 
 @end

@@ -18,6 +18,7 @@
 		1C8F10E32069707500FC3F69 /* HYPLoggingOverlayPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10D92069707500FC3F69 /* HYPLoggingOverlayPluginModule.m */; };
 		1C8F10E42069707500FC3F69 /* HYPLoggingOverlayPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10DA2069707500FC3F69 /* HYPLoggingOverlayPlugin.m */; };
 		1C8F10E62069707500FC3F69 /* HYPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10DC2069707500FC3F69 /* HYPLogger.m */; };
+		1C8F10E8206976BF00FC3F69 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53471F27DA300012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53481F27DA340012DFB6 /* HyperionCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E34741EFA0C8000A0BC4E /* HyperionCore.framework */; };
 		32EA53631F27E10F0012DFB6 /* HYPMeasurementsInteractionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 498E351E1EFA20CF00A0BC4E /* HYPMeasurementsInteractionView.h */; };
@@ -335,6 +336,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8F10E8206976BF00FC3F69 /* HyperionCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,17 +387,24 @@
 		1C8F10D22069707500FC3F69 /* LoggingOverlay */ = {
 			isa = PBXGroup;
 			children = (
-				1C8F10D32069707500FC3F69 /* HYPLoggingOverlayView.m */,
 				1C8F10D52069707500FC3F69 /* HYPLogger.h */,
 				1C8F10D62069707500FC3F69 /* HYPLoggingOverlayPlugin.h */,
 				1C8F10D72069707500FC3F69 /* HYPLoggingOverlayPluginModule.h */,
 				1C8F10D82069707500FC3F69 /* HYPLoggingOverlayView.h */,
+				1C8F10D32069707500FC3F69 /* HYPLoggingOverlayView.m */,
 				1C8F10D92069707500FC3F69 /* HYPLoggingOverlayPluginModule.m */,
 				1C8F10DA2069707500FC3F69 /* HYPLoggingOverlayPlugin.m */,
 				1C8F10DC2069707500FC3F69 /* HYPLogger.m */,
 			);
 			name = LoggingOverlay;
 			path = ../../LoggingOverlay;
+			sourceTree = "<group>";
+		};
+		1C8F10E7206976BF00FC3F69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		320E5D6B1F27988500C42FC0 /* Measurements */ = {
@@ -564,6 +573,7 @@
 				320E5D7F1F27991400C42FC0 /* AttributesInspector */,
 				1C8F10CB2069705A00FC3F69 /* LoggingOverlay */,
 				498E34751EFA0C8000A0BC4E /* Products */,
+				1C8F10E7206976BF00FC3F69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

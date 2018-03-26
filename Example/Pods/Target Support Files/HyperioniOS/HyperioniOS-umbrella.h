@@ -56,8 +56,10 @@
 #import "PluginListViewController.h"
 #import "UIApplication+Swizzling.h"
 #import "UIWindow+Swizzling.h"
+#import "HYPLogger.h"
 #import "HYPLoggingOverlayPlugin.h"
 #import "HYPLoggingOverlayPluginModule.h"
+#import "HYPLoggingOverlayView.h"
 #import "HYPMeasurementsInteractionView.h"
 #import "HYPMeasurementsPlugin.h"
 #import "HYPMeasurementsPluginModule.h"
@@ -65,6 +67,6 @@
 #import "HYPSlowAnimationsPluginMenuItem.h"
 #import "HYPSlowAnimationsPluginModule.h"
 
-FOUNDATION_EXPORT double HyperioniOSVersionNumber;
-FOUNDATION_EXPORT const unsigned char HyperioniOSVersionString[];
+FOUNDATION_EXPORT double HyperionCoreVersionNumber;
+FOUNDATION_EXPORT const unsigned char HyperionCoreVersionString[];
 

@@ -33,8 +33,8 @@
 @synthesize loggingOverlayView = _loggingOverlayView;
 @synthesize logger = _logger;
 
-- (instancetype)init {
-    self = [super init];
+- (instancetype)initWithExtension:(id<HYPPluginExtension>)extension  {
+    self = [super initWithExtension:extension];
     if (self) {
         self.logger = [HYPLogger new];
     }
@@ -71,6 +71,9 @@
 {
     bool shouldActivate = ![self active];
     
+    // TODO: Remove this it's only for testing
+    [[NSNotificationCenter defaultCenter] postNotificationName:HYPERION_LOG_NOTIFICATION object:nil userInfo:@{HYPERION_LOG_MESSAGE: @"Hello World", HYPERION_LOG_CATEGORY: @"TEST MESSSAGE"}                                                                                                           ];
+    
     if (shouldActivate)
     {
         self.extension.overlayContainer.overlayModule = self;
@@ -84,6 +87,8 @@
     {
         [[HyperionManager sharedInstance] togglePluginDrawer];
     }
+    
+   
 }
 
 -(BOOL)active
@@ -111,12 +116,11 @@
     
     NSLayoutConstraint *bottom = [self.loggingOverlayView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor constant:20.0f];
     NSLayoutConstraint *leading = [self.loggingOverlayView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor constant:15.0f];
-    NSLayoutConstraint *trailing = [self.loggingOverlayView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor constant:15.0f];
+    NSLayoutConstraint *trailing = [self.loggingOverlayView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor constant:-15.0f];
     NSLayoutConstraint *height = [self.loggingOverlayView.heightAnchor constraintEqualToConstant:200.0f];
     
     [context addConstraints:@[bottom, leading, trailing, height]];
-
-    [context addSubview:background];
+    self.loggingOverlayView.logger = self.logger;
 }
 
 -(void)deactivateOverlayPluginView

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "HYPLogger.h"
+
 @interface HYPLoggingOverlayView : UIView
+
+@property (nonatomic, strong) HYPLogger *logger;
+@property (nonatomic, strong) UITextView *textView;
 
 @end
