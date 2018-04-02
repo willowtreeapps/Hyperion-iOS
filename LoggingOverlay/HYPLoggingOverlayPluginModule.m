@@ -27,24 +27,27 @@
 
 @end
 
-@implementation HYPLoggingOverlayPluginModule
+
+@implementation HYPLoggingOverlayPluginModule {
+    LogTableViewController *logVC;
+    HYPLogger *logger;
+}
 
 @synthesize pluginMenuItem = _pluginMenuItem;
-@synthesize loggingOverlayView = _loggingOverlayView;
-@synthesize logger = _logger;
 
 - (instancetype)initWithExtension:(id<HYPPluginExtension>)extension  {
     self = [super initWithExtension:extension];
     if (self) {
-        self.logger = [HYPLogger new];
+        logger = [HYPLogger new];
+        logVC = [[LogTableViewController alloc] init];
+        [logVC setLogger:logger];
     }
     
     return self;
 }
--(UIView<HYPPluginMenuItem> *)pluginMenuItem
-{
-    if (_pluginMenuItem)
-    {
+
+-(UIView<HYPPluginMenuItem> *)pluginMenuItem {
+    if (_pluginMenuItem) {
         return _pluginMenuItem;
     }
     
@@ -57,47 +60,39 @@
     return _pluginMenuItem;
 }
 
--(NSString *)pluginMenuItemTitle
-{
+-(NSString *)pluginMenuItemTitle {
     return @"Logging Overlay";
 }
 
--(UIImage *)pluginMenuItemImage
-{
-    return nil;
+-(UIImage *)pluginMenuItemImage {
+    return [UIImage imageWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"activeLog" ofType:@"png"]];
 }
 
--(void)pluginMenuItemSelected:(UIView *)pluginView
-{
+-(void)pluginMenuItemSelected:(UIView *)pluginView {
     bool shouldActivate = ![self active];
     
     // TODO: Remove this it's only for testing
     [[NSNotificationCenter defaultCenter] postNotificationName:HYPERION_LOG_NOTIFICATION object:nil userInfo:@{HYPERION_LOG_MESSAGE: @"Hello World", HYPERION_LOG_CATEGORY: @"TEST MESSSAGE"}                                                                                                           ];
     
-    if (shouldActivate)
-    {
+    if (shouldActivate) {
         self.extension.overlayContainer.overlayModule = self;
     }
-    else
-    {
+    else {
         self.extension.overlayContainer.overlayModule = nil;
     }
     
-    if ([self shouldHideDrawerOnSelection])
-    {
+    if ([self shouldHideDrawerOnSelection]) {
         [[HyperionManager sharedInstance] togglePluginDrawer];
     }
     
    
 }
 
--(BOOL)active
-{
+-(BOOL)active {
     return self.extension.overlayContainer.overlayModule == self;
 }
 
--(BOOL)shouldHideDrawerOnSelection
-{
+-(BOOL)shouldHideDrawerOnSelection {
     return true;
 }
 
@@ -110,22 +105,47 @@
  */
 -(void)activateOverlayPluginViewWithContext:(nonnull UIView *)context {
     [super activateOverlayPluginViewWithContext:context];
-    self.loggingOverlayView = [[HYPLoggingOverlayView alloc] initWithFrame:CGRectMake(0, 0, 320.0f, 200.0f)];
-    self.loggingOverlayView.translatesAutoresizingMaskIntoConstraints = false;
-    [context addSubview:self.loggingOverlayView];
-    
-    NSLayoutConstraint *bottom = [self.loggingOverlayView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor constant:20.0f];
-    NSLayoutConstraint *leading = [self.loggingOverlayView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor constant:15.0f];
-    NSLayoutConstraint *trailing = [self.loggingOverlayView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor constant:-15.0f];
-    NSLayoutConstraint *height = [self.loggingOverlayView.heightAnchor constraintEqualToConstant:200.0f];
-    
-    [context addConstraints:@[bottom, leading, trailing, height]];
-    self.loggingOverlayView.logger = self.logger;
+    [self addTableViewToContext:context];
+    [self addLogButtonToContext:context];
 }
 
--(void)deactivateOverlayPluginView
-{
+-(void)deactivateOverlayPluginView {
     [_pluginMenuItem setSelected:NO animated:YES];
 }
+
+-(void)addTableViewToContext:(nonnull UIView *)context {
+    
+    [context addSubview:logVC.tableView];
+    logVC.tableView.translatesAutoresizingMaskIntoConstraints = false;
+    [logVC.tableView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor].active = true;
+    [logVC.tableView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor].active = true;
+    [logVC.tableView.topAnchor constraintEqualToAnchor:context.topAnchor].active = true;
+    [logVC.tableView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor].active = true;
+    [logVC.tableView setHidden:YES];
+}
+
+-(void)addLogButtonToContext:(nonnull UIView *)context {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button addTarget:self
+               action:@selector(logButtonPressed)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setImage:[UIImage imageWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"activeLog" ofType:@"png"]] forState:UIControlStateNormal];
+    button.frame = CGRectMake(context.safeAreaInsets.left + 20, context.safeAreaInsets.top + 20, 40.0, 40.0);
+    button.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    button.layer.cornerRadius = 5;
+    [context addSubview:button];
+    
+}
+
+-(void)logButtonPressed {
+    //Hide and show log overlay
+    if (logVC.tableView.isHidden) {
+        [logVC.tableView setHidden:NO];
+                [[NSNotificationCenter defaultCenter] postNotificationName:HYPERION_LOG_NOTIFICATION object:nil userInfo:@{HYPERION_LOG_MESSAGE: @"TableView shown", HYPERION_LOG_CATEGORY: @"TEST MESSSAGE"}                                                                                                           ];
+    } else {
+        [logVC.tableView setHidden:YES];
+    }
+}
+
 
 @end

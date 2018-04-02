@@ -1,18 +1,17 @@
 //
-//  HYPLoggingOverlayView.h
+//  LogTableViewController.h
 //  LoggingOverlay
 //
-//  Created by Erik LaManna on 1/10/18.
+//  Created by Amanda Harman on 3/29/18.
 //  Copyright © 2018 WillowTree. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
 #import "HYPLogger.h"
 
-@interface HYPLoggingOverlayView : UIView
+@interface LogTableViewController : UIViewController
 
 @property (nonatomic, strong) HYPLogger *logger;
-@property (nonatomic, strong) UITextView *textView;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
