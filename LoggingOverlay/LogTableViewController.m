@@ -16,15 +16,9 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        NSLog(@"TableVC init");
         [self configureTableView];
     }
     return self;
-}
-
--(void)viewDidLoad {
-    [super viewDidLoad];
-    NSLog(@"TableVC viewDidLoad");
 }
 
 - (void)setLogger:(HYPLogger *)logger {
@@ -39,8 +33,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.layer.cornerRadius = 3.0f;
-     self.tableView.backgroundColor = [UIColor colorWithRed:115/255.0 green:115/255.0 blue:115/255.0 alpha:0.8];
-    [self.tableView reloadData];
+    self.tableView.backgroundColor = [UIColor colorWithRed:115/255.0 green:115/255.0 blue:115/255.0 alpha:0.8];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -53,23 +46,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"cellIdentifier";
-    NSLog(@"cellforrow");
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        NSLog(@"made new cell");
-
     }
+    
     cell.textLabel.text =  [self.logger.log objectAtIndex:indexPath.row];
+    cell.textLabel.numberOfLines = 0;
     cell.backgroundColor = [UIColor clearColor];
     [cell.textLabel setTextColor:[UIColor whiteColor]];
     
     return cell;
 }
 
-#pragma mark - Table view data source
+#pragma mark - HYPLoggerDelegate
 
 -(void)loggedMessage:(nullable NSString*)message withCategory:(nullable NSString*)category {
     [self.tableView reloadData];
