@@ -10,11 +10,9 @@
 		1C11F7BD20506ABB005A7081 /* HYPOverlayPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C11F7BB20506ABB005A7081 /* HYPOverlayPluginModule.m */; };
 		1C11F7BE20506ABB005A7081 /* HYPOverlayPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C11F7BC20506ABB005A7081 /* HYPOverlayPluginModule.h */; };
 		1C8F10CE2069705A00FC3F69 /* LoggingOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10CC2069705A00FC3F69 /* LoggingOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C8F10DD2069707500FC3F69 /* HYPLoggingOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10D32069707500FC3F69 /* HYPLoggingOverlayView.m */; };
 		1C8F10DF2069707500FC3F69 /* HYPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10D52069707500FC3F69 /* HYPLogger.h */; };
 		1C8F10E02069707500FC3F69 /* HYPLoggingOverlayPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10D62069707500FC3F69 /* HYPLoggingOverlayPlugin.h */; };
 		1C8F10E12069707500FC3F69 /* HYPLoggingOverlayPluginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10D72069707500FC3F69 /* HYPLoggingOverlayPluginModule.h */; };
-		1C8F10E22069707500FC3F69 /* HYPLoggingOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8F10D82069707500FC3F69 /* HYPLoggingOverlayView.h */; };
 		1C8F10E32069707500FC3F69 /* HYPLoggingOverlayPluginModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10D92069707500FC3F69 /* HYPLoggingOverlayPluginModule.m */; };
 		1C8F10E42069707500FC3F69 /* HYPLoggingOverlayPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10DA2069707500FC3F69 /* HYPLoggingOverlayPlugin.m */; };
 		1C8F10E62069707500FC3F69 /* HYPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8F10DC2069707500FC3F69 /* HYPLogger.m */; };
@@ -174,11 +172,9 @@
 		1C8F10CA2069705A00FC3F69 /* LoggingOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoggingOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8F10CC2069705A00FC3F69 /* LoggingOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoggingOverlay.h; sourceTree = "<group>"; };
 		1C8F10CD2069705A00FC3F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C8F10D32069707500FC3F69 /* HYPLoggingOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPLoggingOverlayView.m; sourceTree = "<group>"; };
 		1C8F10D52069707500FC3F69 /* HYPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPLogger.h; sourceTree = "<group>"; };
 		1C8F10D62069707500FC3F69 /* HYPLoggingOverlayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPLoggingOverlayPlugin.h; sourceTree = "<group>"; };
 		1C8F10D72069707500FC3F69 /* HYPLoggingOverlayPluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPLoggingOverlayPluginModule.h; sourceTree = "<group>"; };
-		1C8F10D82069707500FC3F69 /* HYPLoggingOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPLoggingOverlayView.h; sourceTree = "<group>"; };
 		1C8F10D92069707500FC3F69 /* HYPLoggingOverlayPluginModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPLoggingOverlayPluginModule.m; sourceTree = "<group>"; };
 		1C8F10DA2069707500FC3F69 /* HYPLoggingOverlayPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPLoggingOverlayPlugin.m; sourceTree = "<group>"; };
 		1C8F10DC2069707500FC3F69 /* HYPLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPLogger.m; sourceTree = "<group>"; };
@@ -334,8 +330,6 @@
 		49D23C941FCDC3840052336F /* 75x-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected@2x.png"; sourceTree = "<group>"; };
 		9DDEB7D61FD78CF8002FC061 /* linkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkButton.png; sourceTree = "<group>"; };
 		9DDEB7D71FD78CF8002FC061 /* linkButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linkButton@2x.png"; sourceTree = "<group>"; };
-		E05E564D206C1E1000EA2DF4 /* HYPLoggingTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYPLoggingTableView.h; sourceTree = "<group>"; };
-		E05E564E206C1E1000EA2DF4 /* HYPLoggingTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPLoggingTableView.m; sourceTree = "<group>"; };
 		E07E21A0206D728900B5322A /* LogTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogTableViewController.h; sourceTree = "<group>"; };
 		E07E21A1206D728900B5322A /* LogTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogTableViewController.m; sourceTree = "<group>"; };
 		E07E21A5206E835500B5322A /* activeLog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activeLog@2x.png"; sourceTree = "<group>"; };
@@ -402,10 +396,6 @@
 				E07E21A4206E827800B5322A /* Resources */,
 				1C8F10D52069707500FC3F69 /* HYPLogger.h */,
 				1C8F10DC2069707500FC3F69 /* HYPLogger.m */,
-				1C8F10D82069707500FC3F69 /* HYPLoggingOverlayView.h */,
-				1C8F10D32069707500FC3F69 /* HYPLoggingOverlayView.m */,
-				E05E564D206C1E1000EA2DF4 /* HYPLoggingTableView.h */,
-				E05E564E206C1E1000EA2DF4 /* HYPLoggingTableView.m */,
 				E07E21A0206D728900B5322A /* LogTableViewController.h */,
 				E07E21A1206D728900B5322A /* LogTableViewController.m */,
 				1C8F10D62069707500FC3F69 /* HYPLoggingOverlayPlugin.h */,
@@ -816,11 +806,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8F10E22069707500FC3F69 /* HYPLoggingOverlayView.h in Headers */,
 				1C8F10E12069707500FC3F69 /* HYPLoggingOverlayPluginModule.h in Headers */,
 				1C8F10E02069707500FC3F69 /* HYPLoggingOverlayPlugin.h in Headers */,
 				1C8F10CE2069705A00FC3F69 /* LoggingOverlay.h in Headers */,
-				E05E564F206C1E1000EA2DF4 /* HYPLoggingTableView.h in Headers */,
 				E07E21A2206D728900B5322A /* LogTableViewController.h in Headers */,
 				1C8F10DF2069707500FC3F69 /* HYPLogger.h in Headers */,
 			);
@@ -1142,12 +1130,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8F10DD2069707500FC3F69 /* HYPLoggingOverlayView.m in Sources */,
 				1C8F10E42069707500FC3F69 /* HYPLoggingOverlayPlugin.m in Sources */,
 				E07E21A3206D728900B5322A /* LogTableViewController.m in Sources */,
 				1C8F10E32069707500FC3F69 /* HYPLoggingOverlayPluginModule.m in Sources */,
 				1C8F10E62069707500FC3F69 /* HYPLogger.m in Sources */,
-				E05E5650206C1E1000EA2DF4 /* HYPLoggingTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
