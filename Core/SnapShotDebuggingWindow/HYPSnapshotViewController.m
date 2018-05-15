@@ -49,7 +49,7 @@
 @property (nonatomic) UITapGestureRecognizer *dismissDrawerTapGesture;
 
 @property (nonatomic) BOOL drawerActive;
-@property (nonatomic) UIWindow *attachedWindow;
+@property (nonatomic, weak) UIWindow *attachedWindow;
 @property (nonatomic) UIView *snapshotContainerView;
 
 @property (nonatomic) HYPPopoverViewController *contextMenu;
