@@ -9,7 +9,7 @@ Hyperion is an app design review tool that allows you to inspect views and perfo
 
   s.homepage         = 'https://github.com/willowtreeapps/Hyperion-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'chrsmys' => 'chris.mays@willowtreeapps.com' }
+  s.author           = { 'WillowTree' => 'opensource@willowtreeapps.com' }
   s.source           = { :git => 'https://github.com/willowtreeapps/Hyperion-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
