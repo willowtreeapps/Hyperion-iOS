@@ -1,26 +1,19 @@
 {
   "warnings": [
     {
-      "file": "/Users/chrismays/Desktop/HyperioniOS/Core/HyperionCore.h",
-      "line": 25,
-      "symbol": "HyperionCoreVersionNumber",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "file": "/Users/benhumphries/Documents/GitHub/Hyperion-iOS/Core/Public/HYPActivationGestureOptions.h",
+      "line": 42,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.unexposed",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/chrismays/Desktop/HyperioniOS/Core/HyperionCore.h",
-      "line": 28,
-      "symbol": "HyperionCoreVersionString",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/chrismays/Desktop/HyperioniOS/Core/Public/Plugin/HYPPluginModule.h",
+      "file": "/Users/benhumphries/Documents/GitHub/Hyperion-iOS/Core/Public/Plugin/HYPPluginModule.h",
       "line": 42,
       "symbol": "pluginMenuItem",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/chrismays/Desktop/HyperioniOS"
+  "source_directory": "/Users/benhumphries/Documents/GitHub/Hyperion-iOS"
 }

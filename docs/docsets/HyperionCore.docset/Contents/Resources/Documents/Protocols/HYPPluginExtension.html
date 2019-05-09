@@ -14,7 +14,7 @@
     <a title="HYPPluginExtension Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">HyperionCore Docs</a> (96% documented)</p>
+        <p><a href="../index.html">HyperionCore Docs</a> (97% documented)</p>
         <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -55,21 +55,7 @@
             <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Constants.html#/c:@HyperionCoreVersionNumber">HyperionCoreVersionNumber</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@HyperionCoreVersionString">HyperionCoreVersionString</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@pluginMenuItem">pluginMenuItem</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Enums.html">Enumerations</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
               </li>
             </ul>
           </li>
@@ -108,6 +94,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NS_OPTIONS">NS_OPTIONS</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -116,7 +110,7 @@
             <h1>HYPPluginExtension</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPPluginExtension</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPluginExtension</span></code></pre>
 
                 </div>
               </div>
@@ -146,21 +140,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">attachedWindow</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">attachedWindow</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">attachedWindow</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>The current window Hyperion is attached to.</p>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginExtension.h#L35">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -185,21 +171,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">hypeWindow</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">hypeWindow</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">hypeWindow</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>The window that displays the Hyperion plugin drawer.</p>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginExtension.h#L41">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -224,21 +202,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPSnapshotContainer.html">HYPSnapshotContainer</a></span><span class="o">&gt;</span><span class="p">)</span><span class="n">snapshotContainer</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">snapshotContainer</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/HYPSnapshotContainer.html">HYPSnapshotContainer</a></span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPSnapshotContainer.html">HYPSnapshotContainer</a></span><span class="o">&gt;</span><span class="p">)</span><span class="n">snapshotContainer</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>The container that HYPSnapshotPlugin &lsquo;s will use to display.</p>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginExtension.h#L47">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -263,21 +233,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPOverlayContainer.html">HYPOverlayContainer</a></span><span class="o">&gt;</span><span class="p">)</span><span class="n">overlayContainer</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">overlayContainer</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/HYPOverlayContainer.html">HYPOverlayContainer</a></span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPOverlayContainer.html">HYPOverlayContainer</a></span><span class="o">&gt;</span><span class="p">)</span><span class="n">overlayContainer</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>The container that HYPOverlayPlugin &lsquo;s will use to display.</p>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginExtension.h#L53">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -305,12 +267,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">presentViewControllerOverDrawer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">controller</span> <span class="nf">animated</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">animated</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">presentViewControllerOverDrawer</span><span class="p">(</span><span class="n">_</span> <span class="nv">controller</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">presentViewControllerOverDrawer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">controller</span> <span class="nf">animated</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">animated</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -345,9 +302,6 @@
                           </tbody>
                         </table>
                       </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPluginExtension.h#L63">Show on GitHub</a>
-                      </div>
                     </section>
                   </div>
                 </li>
@@ -356,8 +310,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2018-01-22)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

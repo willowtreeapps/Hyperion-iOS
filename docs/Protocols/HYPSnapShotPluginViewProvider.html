@@ -14,7 +14,7 @@
     <a title="HYPSnapshotPluginViewProvider Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">HyperionCore Docs</a> (96% documented)</p>
+        <p><a href="../index.html">HyperionCore Docs</a> (97% documented)</p>
         <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -55,21 +55,7 @@
             <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Constants.html#/c:@HyperionCoreVersionNumber">HyperionCoreVersionNumber</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@HyperionCoreVersionString">HyperionCoreVersionString</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@pluginMenuItem">pluginMenuItem</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Enums.html">Enumerations</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
               </li>
             </ul>
           </li>
@@ -108,6 +94,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NS_OPTIONS">NS_OPTIONS</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -116,7 +110,7 @@
             <h1>HYPSnapshotPluginViewProvider</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">HYPSnapshotPluginViewProvider</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPSnapshotPluginViewProvider</span></code></pre>
 
                 </div>
               </div>
@@ -150,12 +144,7 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">activateSnapshotPluginViewWithContext</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">context</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">activateSnapshotPluginView</span><span class="p">(</span><span class="n">withContext</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">activateSnapshotPluginViewWithContext</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">context</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -177,9 +166,6 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -204,17 +190,9 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">deactivateSnapshotPluginView</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">deactivateSnapshotPluginView</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">deactivateSnapshotPluginView</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L42">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -239,13 +217,8 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">snapshotContextWillTransitionToSize</span><span class="p">:(</span><span class="n">CGSize</span><span class="p">)</span><span class="nv">size</span>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">snapshotContextWillTransitionToSize</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">size</span>
                   <span class="nf">withTransitionCoordinator</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">coordinator</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">snapshotContextWillTransition</span><span class="p">(</span><span class="n">to</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="n">withTransitionCoordinator</span> <span class="nv">coordinator</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -280,9 +253,6 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                           </tbody>
                         </table>
                       </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L51">Show on GitHub</a>
-                      </div>
                     </section>
                   </div>
                 </li>
@@ -306,12 +276,7 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">snapshotContextDidTransitionToSize</span><span class="p">:(</span><span class="n">CGSize</span><span class="p">)</span><span class="nv">size</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">snapshotContextDidTransition</span><span class="p">(</span><span class="n">to</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">snapshotContextDidTransitionToSize</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">size</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -334,9 +299,6 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                           </tbody>
                         </table>
                       </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L57">Show on GitHub</a>
-                      </div>
                     </section>
                   </div>
                 </li>
@@ -345,8 +307,8 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2018-01-22)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
