@@ -1,3 +1,9 @@
+#!/bin/bash
+
+# Docs by jazzy
+# https://github.com/realm/jazzy
+# ------------------------------
+
 bundle exec jazzy \
 --objc \
 --clean \
