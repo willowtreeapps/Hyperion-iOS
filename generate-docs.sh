@@ -7,4 +7,4 @@ bundle exec jazzy \
 --output docs \
 --umbrella-header Core/HyperionCore.h \
 --framework-root . \
---sdk iphone
+--sdk iphonesimulator
