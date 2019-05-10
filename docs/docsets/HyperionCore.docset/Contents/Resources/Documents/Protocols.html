@@ -55,7 +55,18 @@
             <a href="Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@pluginMenuItem">pluginMenuItem</a>
+                <a href="Constants.html#/c:@HyperionCoreVersionNumber">HyperionCoreVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@HyperionCoreVersionString">HyperionCoreVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
               </li>
             </ul>
           </li>
@@ -94,14 +105,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="Functions.html">Functions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Functions.html#/c:@F@NS_OPTIONS">NS_OPTIONS</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -135,7 +138,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPSnapshotContainer</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPSnapshotContainer</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPSnapshotContainer</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -163,7 +171,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPOverlayContainer</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPOverlayContainer</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPOverlayContainer</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -199,6 +212,11 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPSnapshotPluginViewProvider</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPSnapshotPluginViewProvider</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -226,6 +244,11 @@ the view that is overlayed on top of the app when an Overlay plugin becomes acti
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPOverlayPluginViewProvider</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPOverlayPluginViewProvider</span></code></pre>
 
                         </div>
                       </div>
@@ -260,7 +283,12 @@ the view that is overlayed on top of the app when an Overlay plugin becomes acti
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPlugin</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPlugin</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPPlugin</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -292,7 +320,12 @@ the view that is overlayed on top of the app when an Overlay plugin becomes acti
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPluginExtension</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPluginExtension</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPPluginExtension</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -327,6 +360,11 @@ the view that is overlayed on top of the app when an Overlay plugin becomes acti
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPluginMenuItem</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPPluginMenuItemProtocol</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -353,6 +391,11 @@ the view that is overlayed on top of the app when an Overlay plugin becomes acti
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPluginMenuItemDelegate</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPPluginMenuItemDelegate</span></code></pre>
 
                         </div>
                       </div>
@@ -384,7 +427,12 @@ the view that is overlayed on top of the app when an Overlay plugin becomes acti
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPluginModule</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPluginModule</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPPluginModuleProtocol</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -416,7 +464,12 @@ the view that is overlayed on top of the app when an Overlay plugin becomes acti
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPViewSelectionDelegate</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPViewSelectionDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HYPViewSelectionDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -428,7 +481,7 @@ the view that is overlayed on top of the app when an Overlay plugin becomes acti
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-09)</p>
+          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-10)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
