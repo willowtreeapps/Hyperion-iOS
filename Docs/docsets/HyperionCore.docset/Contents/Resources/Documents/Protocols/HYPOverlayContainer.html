@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HYPOverlayContainer Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/HYPOverlayContainer" class="dashAnchor"></a>
+    <a title="HYPOverlayContainer Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">HyperionCore Docs</a> (97% documented)</p>
+        <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">HyperionCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HYPOverlayContainer Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HYPPluginHelper.html">HYPPluginHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPPluginMenuItem.html">HYPPluginMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)HYPPluginModule">HYPPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPSnapshotInteractionView.html">HYPSnapshotInteractionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPSnapshotPluginModule.html">HYPSnapshotPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HyperionManager.html">HyperionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@HyperionCoreVersionNumber">HyperionCoreVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@HyperionCoreVersionString">HyperionCoreVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPOverlayContainer.html">HYPOverlayContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPOverlayPluginViewProvider.html">HYPOverlayPluginViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPlugin.html">HYPPlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginExtension.html">HYPPluginExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginMenuItem.html">HYPPluginMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginMenuItemDelegate.html">HYPPluginMenuItemDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginModule.html">HYPPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPSnapshotContainer.html">HYPSnapshotContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPSnapshotPluginViewProvider.html">HYPSnapshotPluginViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPViewSelectionDelegate.html">HYPViewSelectionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HYPOverlayContainer</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPOverlayContainer</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>The HYPOverlayContainer provides a mechanism for displaying custom UI over an app while still allowing the user to interact with it. The HYPOverlayContainer holds the HYPOverlayViewProvider&rsquo;s when an overlay plugin becomes active.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HYPOverlayContainer(py)overlayModule"></a>
+                    <a name="//apple_ref/objc/Property/overlayModule" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HYPOverlayContainer(py)overlayModule">overlayModule</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current active plugin module.</p>
+
+<p>Note: This can be set to nil to deactivate the current plugin.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span>
+    <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPPluginModule.html">HYPPluginModule</a></span><span class="p">,</span> <span class="n"><a href="../Protocols/HYPOverlayPluginViewProvider.html">HYPOverlayPluginViewProvider</a></span><span class="o">&gt;</span>
+        <span class="n">overlayModule</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
