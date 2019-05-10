@@ -10,7 +10,7 @@ bundle exec jazzy \
 --author WillowTree \
 --author_url https://willowtreeapps.com \
 --github_url https://github.com/willowtreeapps/Hyperion-iOS \
---output docs \
+--output Docs \
 --umbrella-header Core/HyperionCore.h \
 --framework-root . \
 --sdk iphonesimulator

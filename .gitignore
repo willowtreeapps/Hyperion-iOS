@@ -34,3 +34,6 @@ Carthage
 Output/
 tmpsim/
 tmpos/
+
+Jazzy
+Docs/undocumented.json
