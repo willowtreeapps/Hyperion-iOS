@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HyperionManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/HyperionManager" class="dashAnchor"></a>
+    <a title="HyperionManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">HyperionCore Docs</a> (97% documented)</p>
+        <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">HyperionCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HyperionManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HYPPluginHelper.html">HYPPluginHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPPluginMenuItem.html">HYPPluginMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)HYPPluginModule">HYPPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPSnapshotInteractionView.html">HYPSnapshotInteractionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HYPSnapshotPluginModule.html">HYPSnapshotPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HyperionManager.html">HyperionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@HyperionCoreVersionNumber">HyperionCoreVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@HyperionCoreVersionString">HyperionCoreVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPOverlayContainer.html">HYPOverlayContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPOverlayPluginViewProvider.html">HYPOverlayPluginViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPlugin.html">HYPPlugin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginExtension.html">HYPPluginExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginMenuItem.html">HYPPluginMenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginMenuItemDelegate.html">HYPPluginMenuItemDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPPluginModule.html">HYPPluginModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPSnapshotContainer.html">HYPSnapshotContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPSnapshotPluginViewProvider.html">HYPSnapshotPluginViewProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HYPViewSelectionDelegate.html">HYPViewSelectionDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HyperionManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HyperionManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>HyperionManager</code> is the interaction point between Hyperion and the app it&rsquo;s integrated in.</p>
+
+<p>Note: Hyperion handles embedding itself on it&rsquo;s own, so using HyperionManager is not required.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HyperionManager(cm)sharedInstance"></a>
+                    <a name="//apple_ref/objc/Method/+sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HyperionManager(cm)sharedInstance">+sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The HyperionManager singleton.</p>
+
+<p>Note: This should be the only way used to retrieve an instance of HyperionManager.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">HyperionManager</span> <span class="o">*</span><span class="p">)</span><span class="n">sharedInstance</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HyperionManager(im)attachToWindow:"></a>
+                    <a name="//apple_ref/objc/Method/-attachToWindow:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HyperionManager(im)attachToWindow:">-attachToWindow:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attaches Hyperion to the provided window.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">attachToWindow</span><span class="p">:(</span><span class="n">UIWindow</span> <span class="o">*</span><span class="p">)</span><span class="nv">window</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>window</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The window to attach Hyperion to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HyperionManager(im)togglePluginDrawer"></a>
+                    <a name="//apple_ref/objc/Method/-togglePluginDrawer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HyperionManager(im)togglePluginDrawer">-togglePluginDrawer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Toggles Hyperion&rsquo;s plugin drawer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">togglePluginDrawer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HyperionManager(im)retrievePluginClasses"></a>
+                    <a name="//apple_ref/objc/Method/-retrievePluginClasses" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HyperionManager(im)retrievePluginClasses">-retrievePluginClasses</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a list of plugin classes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">Class</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPPlugin.html">HYPPlugin</a></span><span class="o">&gt;&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">retrievePluginClasses</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A list of plugin classes.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HyperionManager(im)retrievePluginModules"></a>
+                    <a name="//apple_ref/objc/Method/-retrievePluginModules" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HyperionManager(im)retrievePluginModules">-retrievePluginModules</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a cached list of plugin modules.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPPluginModule.html">HYPPluginModule</a></span><span class="o">&gt;&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">retrievePluginModules</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A cached list of plugin modules.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HyperionManager(im)forceRefreshPluginModules"></a>
+                    <a name="//apple_ref/objc/Method/-forceRefreshPluginModules" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HyperionManager(im)forceRefreshPluginModules">-forceRefreshPluginModules</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Force refreshes the plugin modules.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HYPPluginModule.html">HYPPluginModule</a></span><span class="o">&gt;&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">forceRefreshPluginModules</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The latest available plugin modules.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HyperionManager(py)activationGestures"></a>
+                    <a name="//apple_ref/objc/Property/activationGestures" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HyperionManager(py)activationGestures">activationGestures</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A bitmask of gestures that can be used to activate Hyperion.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a></span> <span class="n">activationGestures</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

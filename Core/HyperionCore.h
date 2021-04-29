@@ -40,4 +40,3 @@ FOUNDATION_EXPORT const unsigned char HyperionCoreVersionString[];
 #import "HYPPluginHelper.h"
 #import "HyperionManager.h"
 #import "HYPActivationGestureOptions.h"
-
