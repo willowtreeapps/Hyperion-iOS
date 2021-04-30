@@ -1,51 +1,47 @@
-# iOS CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/ios-migrating-from-1-2/ for more details
-#
-version: 2
+version: 2.1
 jobs:
   build:
     macos:
-      xcode: "10.2.1"
-    
+      xcode: "12.4.0"
     steps:
       - checkout
-      #Currently commented out due to a gem install error.
-      # - restore_cache:
-      #     keys:
-      #     - v1-gems-{{ checksum "Gemfile.lock" }}
-      #     # Fall back to using the latest cache if no exact match is found.
-      #     - v1-gems-
-      # # Install gems.
-      # - run:
-      #     name: Bundle install
-      #     command: bundle check || bundle install
-      #     environment:
-      #       BUNDLE_JOBS: 4
-      #       BUNDLE_RETRY: 3
-      #       BUNDLE_GEMFILE: ./Gemfile
-      #       # This is the path where all the gems will be installed, and
-      #       # which CircleCI will later cache.
-      #       BUNDLE_PATH: vendor/bundle
-      # - save_cache:
-      #     key: v1-gems-{{ checksum "Gemfile.lock" }}
-      #     paths:
-      #       - vendor/bundle
+      - restore_cache:
+          name: ♻️ Restore Gem Cache
+          keys:
+            - v1-gems-{{ checksum "Gemfile.lock" }}
+            # Fall back to using the latest cache if no exact match is found.
+            - v1-gems-
+       # Install gems.
       - run:
-          name: Install carthage
+          name: 🛠 Bundle install
+          command: bundle check || bundle install
+          environment:
+            BUNDLE_JOBS: 4
+            BUNDLE_RETRY: 3
+            BUNDLE_GEMFILE: ./Gemfile
+            # This is the path where all the gems will be installed, and
+            # which CircleCI will later cache.
+            BUNDLE_PATH: vendor/bundle
+      - save_cache:
+          name: 💾 Cache Gems
+          key: v1-gems-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: 📦 Install carthage
           command: |
-            brew update
             brew outdated carthage || brew upgrade carthage
       - run:
-          name: Build Frameworks
+          name: 🏗 Build Frameworks
           command: sh build.sh
       - store_artifacts:
+          name: 🚀 Store Framework Artifacts
           path: ./output
           destination: Frameworks
-      #Currently commented out due to a gem install error.
       # - run:
-      #     name: Generate documentation
-      #     command: jazzy --objc --author WillowTree Inc. --author_url http://willowtreeapps.com --github_url https://github.com/willowtreeapps/Hyperion-iOS --github-file-prefix https://github.com/willowtreeapps/Hyperion-iOS/tree/master/ --module-version 0.99.0 --umbrella-header Core/HyperionCore.h --framework-root . --module HyperionCore
+      #     name: 📚 Generate Docs
+      #     command: bundle exec jazzy --objc --author WillowTree Inc. --author_url https://willowtreeapps.com --github_url https://github.com/willowtreeapps/Hyperion-iOS --github-file-prefix https://github.com/willowtreeapps/Hyperion-iOS/tree/master/ --module-version 0.99.0 --umbrella-header Core/HyperionCore.h --framework-root . --module HyperionCore
       # - store_artifacts:
+      #     name: 📖 Store Docs
       #     path: ./docs
       #     destination: Documentation

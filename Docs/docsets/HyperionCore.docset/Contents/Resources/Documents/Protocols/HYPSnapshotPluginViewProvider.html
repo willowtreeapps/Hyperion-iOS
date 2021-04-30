@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Protocol/HYPSnapshotPluginViewProvider" class="dashAnchor"></a>
     <a title="HYPSnapshotPluginViewProvider Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">HyperionCore Docs</a> (97% documented)</p>
+        <p><a href="../index.html">HyperionCore 0.99.0 Docs</a> (94% documented)</p>
         <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -60,13 +68,8 @@
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@HyperionCoreVersionString">HyperionCoreVersionString</a>
               </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Enums.html">Enumerations</a>
-            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
+                <a href="../Constants.html#/c:@pluginMenuItem">pluginMenuItem</a>
               </li>
             </ul>
           </li>
@@ -105,6 +108,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NS_OPTIONS">NS_OPTIONS</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -113,6 +124,7 @@
             <h1>HYPSnapshotPluginViewProvider</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPSnapshotPluginViewProvider</span></code></pre>
 
                 </div>
@@ -120,6 +132,9 @@
             <p>The HYPSnapshotPluginViewProvider protocol defines a mechanism for requesting
 the view that is placed ontop of the app when a snap shot plugin becomes active.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L28-L59">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -129,7 +144,7 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                     <code>
                     <a name="/c:objc(pl)HYPSnapshotPluginViewProvider(im)activateSnapshotPluginViewWithContext:"></a>
                     <a name="//apple_ref/objc/Method/-activateSnapshotPluginViewWithContext:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)HYPSnapshotPluginViewProvider(im)activateSnapshotPluginViewWithContext:">-activateSnapshotPluginViewWithContext:</a>
+                    <a class="token" href="#/c:objc(pl)HYPSnapshotPluginViewProvider(im)activateSnapshotPluginViewWithContext:">-activateSnapshotPluginViewWithContext:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -147,7 +162,7 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">activateSnapshotPluginViewWithContext</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">context</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">activateSnapshotPluginViewWithContext</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">context</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -169,6 +184,9 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L37">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -197,6 +215,9 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L42">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -205,7 +226,7 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                     <code>
                     <a name="/c:objc(pl)HYPSnapshotPluginViewProvider(im)snapshotContextWillTransitionToSize:withTransitionCoordinator:"></a>
                     <a name="//apple_ref/objc/Method/-snapshotContextWillTransitionToSize:withTransitionCoordinator:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)HYPSnapshotPluginViewProvider(im)snapshotContextWillTransitionToSize:withTransitionCoordinator:">-snapshotContextWillTransitionToSize:withTransitionCoordinator:</a>
+                    <a class="token" href="#/c:objc(pl)HYPSnapshotPluginViewProvider(im)snapshotContextWillTransitionToSize:withTransitionCoordinator:">-snapshotContextWillTransitionToSize:<wbr>withTransitionCoordinator:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -220,10 +241,8 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">snapshotContextWillTransitionToSize</span><span class="p">:(</span><span class="n">CGSize</span><span class="p">)</span><span class="nv">size</span>
-                  <span class="nf">withTransitionCoordinator</span><span class="p">:</span>
-                      <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n">UIViewControllerTransitionCoordinator</span><span class="o">&gt;</span> <span class="n">_Nullable</span><span class="p">)</span>
-                          <span class="n">coordinator</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">snapshotContextWillTransitionToSize</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">size</span>
+                  <span class="nf">withTransitionCoordinator</span><span class="p">:(</span><span class="n">id</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">coordinator</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -258,6 +277,9 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                           </tbody>
                         </table>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L51">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -266,7 +288,7 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                     <code>
                     <a name="/c:objc(pl)HYPSnapshotPluginViewProvider(im)snapshotContextDidTransitionToSize:"></a>
                     <a name="//apple_ref/objc/Method/-snapshotContextDidTransitionToSize:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)HYPSnapshotPluginViewProvider(im)snapshotContextDidTransitionToSize:">-snapshotContextDidTransitionToSize:</a>
+                    <a class="token" href="#/c:objc(pl)HYPSnapshotPluginViewProvider(im)snapshotContextDidTransitionToSize:">-snapshotContextDidTransitionToSize:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -281,7 +303,7 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">snapshotContextDidTransitionToSize</span><span class="p">:(</span><span class="n">CGSize</span><span class="p">)</span><span class="nv">size</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">snapshotContextDidTransitionToSize</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">size</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -304,6 +326,9 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
                           </tbody>
                         </table>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPOverlayViewProvider.h#L57">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -312,8 +337,8 @@ the view that is placed ontop of the app when a snap shot plugin becomes active.
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-10)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2021-04-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
