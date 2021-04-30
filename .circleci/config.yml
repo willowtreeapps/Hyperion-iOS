@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  carthage: ngs/carthage@0.0.3
 jobs:
   build:
     macos:
@@ -6,6 +8,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
+          name: ♻️ Restore Gem Cache
           keys:
             - v1-gems-{{ checksum "Gemfile.lock" }}
             # Fall back to using the latest cache if no exact match is found.
@@ -22,23 +25,25 @@ jobs:
             # which CircleCI will later cache.
             BUNDLE_PATH: vendor/bundle
       - save_cache:
+          name: 💾 Cache Gems
           key: v1-gems-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run:
           name: 📦 Install carthage
           command: |
-            brew update
             brew outdated carthage || brew upgrade carthage
       - run:
           name: 🏗 Build Frameworks
           command: sh build.sh
       - store_artifacts:
+          name: 🚀 Store Framework Artifacts
           path: ./output
           destination: Frameworks
       - run:
           name: 📚 Generate documentation
-          command: jazzy --objc --author WillowTree Inc. --author_url https://willowtreeapps.com --github_url https://github.com/willowtreeapps/Hyperion-iOS --github-file-prefix https://github.com/willowtreeapps/Hyperion-iOS/tree/master/ --module-version 0.99.0 --umbrella-header Core/HyperionCore.h --framework-root . --module HyperionCore
+          command: bundle exec jazzy --objc --author WillowTree Inc. --author_url https://willowtreeapps.com --github_url https://github.com/willowtreeapps/Hyperion-iOS --github-file-prefix https://github.com/willowtreeapps/Hyperion-iOS/tree/master/ --module-version 0.99.0 --umbrella-header Core/HyperionCore.h --framework-root . --module HyperionCore
       - store_artifacts:
+          name: 📖 Store Docs
           path: ./docs
           destination: Documentation
