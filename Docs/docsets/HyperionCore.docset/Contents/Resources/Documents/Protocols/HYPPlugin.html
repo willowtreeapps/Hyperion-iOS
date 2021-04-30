@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Protocol/HYPPlugin" class="dashAnchor"></a>
     <a title="HYPPlugin Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">HyperionCore Docs</a> (97% documented)</p>
+        <p><a href="../index.html">HyperionCore 0.99.0 Docs</a> (94% documented)</p>
         <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -60,13 +68,8 @@
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@HyperionCoreVersionString">HyperionCoreVersionString</a>
               </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Enums.html">Enumerations</a>
-            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
+                <a href="../Constants.html#/c:@pluginMenuItem">pluginMenuItem</a>
               </li>
             </ul>
           </li>
@@ -105,6 +108,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NS_OPTIONS">NS_OPTIONS</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -113,7 +124,8 @@
             <h1>HYPPlugin</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPlugin</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HYPPlugin</span></code></pre>
 
                 </div>
               </div>
@@ -122,6 +134,9 @@
 
 <p>@since v1.0</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPlugin.h#L32-L76">Show on GitHub</a>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -131,7 +146,7 @@
                     <code>
                     <a name="/c:objc(pl)HYPPlugin(cm)createPluginModule:"></a>
                     <a name="//apple_ref/objc/Method/+createPluginModule:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)HYPPlugin(cm)createPluginModule:">+createPluginModule:</a>
+                    <a class="token" href="#/c:objc(pl)HYPPlugin(cm)createPluginModule:">+createPluginModule:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -174,6 +189,9 @@
                         <h4>Return Value</h4>
                         <p>A new plugin module instance the represents the HYPPlugin.</p>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPlugin.h#L39">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -197,13 +215,16 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">pluginVersion</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">pluginVersion</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>The semantic version for the plugin.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPlugin.h#L45">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -231,13 +252,16 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="n">createPluginGuideViewController</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">createPluginGuideViewController</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>A ViewController that guides the user on how to</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPlugin.h#L56">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -265,13 +289,16 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="n">pluginGuideImage</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">pluginGuideImage</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>An image that represents the plugin.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPlugin.h#L65">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -299,13 +326,16 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="n">pluginGuideName</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">pluginGuideName</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>A name that represents the plugin.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/willowtreeapps/Hyperion-iOS/tree/master//Core/Public/Plugin/HYPPlugin.h#L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -315,8 +345,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-10)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2021-04-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

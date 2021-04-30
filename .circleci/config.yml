@@ -5,14 +5,40 @@ jobs:
       xcode: "12.4.0"
     steps:
       - checkout
+      - restore_cache:
+          keys:
+           - v1-gems-{{ checksum "Gemfile.lock" }}
+           # Fall back to using the latest cache if no exact match is found.
+           - v1-gems-
+       # Install gems.
+       - run:
+           name: 🛠 Bundle install
+           command: bundle check || bundle install
+           environment:
+             BUNDLE_JOBS: 4
+             BUNDLE_RETRY: 3
+             BUNDLE_GEMFILE: ./Gemfile
+             # This is the path where all the gems will be installed, and
+             # which CircleCI will later cache.
+             BUNDLE_PATH: vendor/bundle
+       - save_cache:
+           key: v1-gems-{{ checksum "Gemfile.lock" }}
+           paths:
+             - vendor/bundle
       - run:
-          name: Install carthage
+          name: 📦 Install carthage
           command: |
             brew update
             brew outdated carthage || brew upgrade carthage
       - run:
-          name: Build Frameworks
+          name: 🏗 Build Frameworks
           command: sh build.sh
       - store_artifacts:
           path: ./output
           destination: Frameworks
+      - run:
+          name: 📚 Generate documentation
+          command: jazzy --objc --author WillowTree Inc. --author_url https://willowtreeapps.com --github_url https://github.com/willowtreeapps/Hyperion-iOS --github-file-prefix https://github.com/willowtreeapps/Hyperion-iOS/tree/master/ --module-version 0.99.0 --umbrella-header Core/HyperionCore.h --framework-root . --module HyperionCore
+      - store_artifacts:
+          path: ./docs
+          destination: Documentation
