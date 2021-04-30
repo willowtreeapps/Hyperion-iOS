@@ -53,6 +53,10 @@ static HyperionWindowManager *sharedWindowManager;
     _overlayWindow = [[HYPOverlayDebuggingWindow alloc] initWithFrame:attachedWindow.frame];
     _overlayWindow.hidden = YES;
     _overlayWindow.frame = attachedWindow.frame;
+    if (@available(iOS 13, *))
+    {
+        [_overlayWindow setWindowScene:attachedWindow.windowScene];
+    }
 }
 
 -(void)attachSnapshotDebuggingWindowToWindow:(UIWindow *)attachedWindow
@@ -60,6 +64,10 @@ static HyperionWindowManager *sharedWindowManager;
     _currentAttachedWindow = attachedWindow;
     _snapshotWindow = [[HYPSnapshotDebuggingWindow alloc] initWithAttachedWindow:attachedWindow];
     _snapshotWindow.frame = CGRectMake(0, 0, attachedWindow.frame.size.width, attachedWindow.frame.size.height);
+    if (@available(iOS 13, *))
+    {
+        [_snapshotWindow setWindowScene:attachedWindow.windowScene];
+    }
     [attachedWindow addGestureRecognizer:_snapshotWindow.overlayVC.twoFingerTapRecognizer];
     [attachedWindow addGestureRecognizer:_snapshotWindow.overlayVC.threeFingerTapRecognizer];
     [attachedWindow addGestureRecognizer:_snapshotWindow.overlayVC.edgeSwipeRecognizer];
