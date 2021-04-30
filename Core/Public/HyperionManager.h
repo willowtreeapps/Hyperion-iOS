@@ -20,7 +20,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HYPActivationGestureOptions.h"
+#import <HyperionCore/HYPActivationGestureOptions.h>
 
 @protocol HYPPlugin;
 @protocol HYPPluginModule;
