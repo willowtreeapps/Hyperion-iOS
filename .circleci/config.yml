@@ -30,7 +30,7 @@ jobs:
       - run:
           name: 📦 Install carthage
           command: |
-            brew outdated carthage || brew upgrade carthage
+            brew upgrade carthage
       - run:
           name: 🏗 Build Frameworks
           command: sh build.sh

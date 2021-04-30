@@ -310,6 +310,7 @@
 		9D2744B1263CA53F00704ADA /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		9D2744B2263CA53F00704ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9D2744B3263CA85A00704ADA /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = build.sh; path = ../build.sh; sourceTree = "<group>"; };
+		9D2744B4263CAC2A00704ADA /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = config.yml; path = ../.circleci/config.yml; sourceTree = "<group>"; };
 		9DDEB7D61FD78CF8002FC061 /* linkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkButton.png; sourceTree = "<group>"; };
 		9DDEB7D71FD78CF8002FC061 /* linkButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linkButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -513,6 +514,7 @@
 				9D2744B1263CA53F00704ADA /* CHANGELOG.md */,
 				9D2744B2263CA53F00704ADA /* README.md */,
 				9D2744B3263CA85A00704ADA /* build.sh */,
+				9D2744B4263CAC2A00704ADA /* config.yml */,
 				498E34761EFA0C8000A0BC4E /* HyperionCore */,
 				494A74D91F278EB9003F89F7 /* SlowAnimations */,
 				320E5D6B1F27988500C42FC0 /* Measurements */,
