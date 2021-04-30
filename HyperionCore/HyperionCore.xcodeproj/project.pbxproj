@@ -307,6 +307,8 @@
 		49D23C931FCDC3840052336F /* 75x-Selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected@3x.png"; sourceTree = "<group>"; };
 		49D23C941FCDC3840052336F /* 75x-Selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75x-Selected@2x.png"; sourceTree = "<group>"; };
 		9D2744B0263CA50100704ADA /* HyperioniOS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = HyperioniOS.podspec; path = ../HyperioniOS.podspec; sourceTree = "<group>"; };
+		9D2744B1263CA53F00704ADA /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		9D2744B2263CA53F00704ADA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9DDEB7D61FD78CF8002FC061 /* linkButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkButton.png; sourceTree = "<group>"; };
 		9DDEB7D71FD78CF8002FC061 /* linkButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "linkButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -507,6 +509,8 @@
 			isa = PBXGroup;
 			children = (
 				9D2744B0263CA50100704ADA /* HyperioniOS.podspec */,
+				9D2744B1263CA53F00704ADA /* CHANGELOG.md */,
+				9D2744B2263CA53F00704ADA /* README.md */,
 				498E34761EFA0C8000A0BC4E /* HyperionCore */,
 				494A74D91F278EB9003F89F7 /* SlowAnimations */,
 				320E5D6B1F27988500C42FC0 /* Measurements */,
