@@ -7,24 +7,24 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-           - v1-gems-{{ checksum "Gemfile.lock" }}
-           # Fall back to using the latest cache if no exact match is found.
-           - v1-gems-
+            - v1-gems-{{ checksum "Gemfile.lock" }}
+            # Fall back to using the latest cache if no exact match is found.
+            - v1-gems-
        # Install gems.
-       - run:
-           name: 🛠 Bundle install
-           command: bundle check || bundle install
-           environment:
-             BUNDLE_JOBS: 4
-             BUNDLE_RETRY: 3
-             BUNDLE_GEMFILE: ./Gemfile
-             # This is the path where all the gems will be installed, and
-             # which CircleCI will later cache.
-             BUNDLE_PATH: vendor/bundle
-       - save_cache:
-           key: v1-gems-{{ checksum "Gemfile.lock" }}
-           paths:
-             - vendor/bundle
+      - run:
+          name: 🛠 Bundle install
+          command: bundle check || bundle install
+          environment:
+            BUNDLE_JOBS: 4
+            BUNDLE_RETRY: 3
+            BUNDLE_GEMFILE: ./Gemfile
+            # This is the path where all the gems will be installed, and
+            # which CircleCI will later cache.
+            BUNDLE_PATH: vendor/bundle
+      - save_cache:
+          key: v1-gems-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
       - run:
           name: 📦 Install carthage
           command: |
