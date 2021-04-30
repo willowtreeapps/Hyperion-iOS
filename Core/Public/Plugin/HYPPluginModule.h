@@ -21,8 +21,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "HYPPluginExtension.h"
-#import "HYPPluginExtension.h"
+#import <HyperionCore/HYPPluginExtension.h>
+#import <HyperionCore/HYPPluginExtension.h>
 
 @protocol HYPPluginMenuItem;
 

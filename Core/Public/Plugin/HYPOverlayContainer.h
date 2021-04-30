@@ -21,8 +21,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "HYPOverlayViewProvider.h"
-#import "HYPViewSelectionDelegate.h"
+#import <HyperionCore/HYPOverlayViewProvider.h>
+#import <HyperionCore/HYPViewSelectionDelegate.h>
 
 @protocol HYPPluginModule;
 

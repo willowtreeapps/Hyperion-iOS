@@ -19,8 +19,8 @@
 //  THE SOFTWARE.
 //
 
-#import "HYPPluginModule.h"
-#import "HYPOverlayViewProvider.h"
+#import <HyperionCore/HYPPluginModule.h>
+#import <HyperionCore/HYPOverlayViewProvider.h>
 
 /**
  *  HYPSnapshotPluginModule is a base implementation of a Snapshot Plugin.

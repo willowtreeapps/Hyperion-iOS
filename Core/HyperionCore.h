@@ -28,15 +28,14 @@ FOUNDATION_EXPORT double HyperionCoreVersionNumber;
 FOUNDATION_EXPORT const unsigned char HyperionCoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <HyperionCore/PublicHeader.h>
-
-#import "HYPPlugin.h"
-#import "HYPPluginExtension.h"
-#import "HYPOverlayViewProvider.h"
-#import "HYPOverlayContainer.h"
-#import "HYPSnapshotInteractionView.h"
-#import "HYPPluginModule.h"
-#import "HYPPluginMenuItem.h"
-#import "HYPSnapshotPluginModule.h"
-#import "HYPPluginHelper.h"
-#import "HyperionManager.h"
-#import "HYPActivationGestureOptions.h"
+#import <HyperionCore/HYPPlugin.h>
+#import <HyperionCore/HYPPluginExtension.h>
+#import <HyperionCore/HYPOverlayViewProvider.h>
+#import <HyperionCore/HYPOverlayContainer.h>
+#import <HyperionCore/HYPSnapshotInteractionView.h>
+#import <HyperionCore/HYPPluginModule.h>
+#import <HyperionCore/HYPPluginMenuItem.h>
+#import <HyperionCore/HYPSnapshotPluginModule.h>
+#import <HyperionCore/HYPPluginHelper.h>
+#import <HyperionCore/HyperionManager.h>
+#import <HyperionCore/HYPActivationGestureOptions.h>

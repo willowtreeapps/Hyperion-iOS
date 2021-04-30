@@ -21,7 +21,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "HYPOverlayContainer.h"
+#import <HyperionCore/HYPOverlayContainer.h>
 
 /**
  * The HYPPluginExtension protocol provides the plugin with context about windows and containers that are available to it.

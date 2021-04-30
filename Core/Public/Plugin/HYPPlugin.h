@@ -20,8 +20,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HYPPluginModule.h"
-#import "HYPPluginExtension.h"
+#import <HyperionCore/HYPPluginModule.h>
+#import <HyperionCore/HYPPluginExtension.h>
 
 /**
  * The HYPPlugin protocol defines a mechanism for creating instances of plugins and providing
