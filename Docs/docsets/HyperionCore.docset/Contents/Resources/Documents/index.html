@@ -8,13 +8,21 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="HyperionCore  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">HyperionCore Docs</a> (97% documented)</p>
+        <p><a href="index.html">HyperionCore 0.99.0 Docs</a> (94% documented)</p>
         <p class="header-right"><a href="https://github.com/willowtreeapps/Hyperion-iOS"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -59,13 +67,8 @@
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@HyperionCoreVersionString">HyperionCoreVersionString</a>
               </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Enums.html">Enumerations</a>
-            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/HYPActivationGestureOptions.html">HYPActivationGestureOptions</a>
+                <a href="Constants.html#/c:@pluginMenuItem">pluginMenuItem</a>
               </li>
             </ul>
           </li>
@@ -101,6 +104,14 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/HYPViewSelectionDelegate.html">HYPViewSelectionDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@NS_OPTIONS">NS_OPTIONS</a>
               </li>
             </ul>
           </li>
@@ -199,17 +210,17 @@ it, simply add the following line to your Podfile:</p>
 <p>CocoaPods automatically handles ensuring that Hyperion will only be included in the configurations you have specified for the pods. For more information please reference <a href="https://guides.cocoapods.org/syntax/podfile.html#pod">CooaPods Documentation</a>.</p>
 <h3 id='carthage' class='heading'>Carthage</h3>
 
-<p>To install through Carthage add <code>github &quot;willowtreeapps/Hyperion-iOS&quot;</code> to your cartfile. Then run <code>carthage update</code>. Drag and drop the created frameworks into your Xcode project. <strong><em>Important</em></strong> Make sure that Hyperion and any of it&rsquo;s frameworks are <strong><em>not</em></strong> included as embedded frameworks (Settings should be available in General project settings). Once you ensure that Hyperion is not included in the embedded frameworks change the status of the Hyperion frameworks under <q>Linked Frameworks and Libraries</q> section to optional. At this point your project settings should look something like this.
+<p>To install through Carthage add <code>github &quot;willowtreeapps/Hyperion-iOS&quot;</code> to your cartfile. Then run <code>carthage update</code>. Drag and drop the created frameworks into your Xcode project. <strong><em>Important</em></strong> Make sure that Hyperion and any of it&rsquo;s frameworks are <strong><em>not</em></strong> included as embedded frameworks (Settings should be available in General project settings). Once you ensure that Hyperion is not included in the embedded frameworks change the status of the Hyperion frameworks under &ldquo;Linked Frameworks and Libraries&rdquo; section to optional. At this point your project settings should look something like this.
 <img src="https://github.com/willowtreeapps/Hyperion-iOS/raw/master/Img/FrameworksSettings.png" alt="Hyperion Frameworks Section"></p>
 
-<p>Next hop on over to the build phases section and add a custom run script. Make sure it is inserted right above the <q>Linked Frameworks and Libraries</q> build phase. Make this your custom run script:</p>
+<p>Next hop on over to the build phases section and add a custom run script. Make sure it is inserted right above the &ldquo;Linked Frameworks and Libraries&rdquo; build phase. Make this your custom run script:</p>
 <pre class="highlight plaintext"><code>#Add the configurations you want to include Hyperion in below.
 if [ "$CONFIGURATION" == "Debug" ]; then
     /usr/local/bin/carthage copy-frameworks
 fi
 </code></pre>
 
-<p>Next you are going to want to add each Hyperion framework path to the <q>Input Files</q> section of your build script. Your build script should look something like this:
+<p>Next you are going to want to add each Hyperion framework path to the &ldquo;Input Files&rdquo; section of your build script. Your build script should look something like this:
 <img src="https://github.com/willowtreeapps/Hyperion-iOS/raw/master/Img/CarthageIncludeScript.png" alt="Hyperion Custom Build Script"></p>
 
 <p>For more information on this custom build script please refer to the <a href="https://github.com/Carthage/Carthage">Carthage Documentation</a>.</p>
@@ -222,13 +233,13 @@ fi
 <p>Clone the git repo. In the root directory run <code>sh build.sh</code>. Once complete, the script will have generated the HyperionCore framework along with all of the first-party plugins. The only required framework is HyperionCore, but you should add at least one of the plugins that was generated. Follow the Carthage installation guide above to ensure that Hyperion does not get included in production.</p>
 <h3 id='verifying-a-build-does-not-include-hyperion' class='heading'>Verifying A Build Does Not Include Hyperion</h3>
 
-<p><strong><em>Note:</em></strong> This only works if you are using Hyperion Frameworks. If you are using Cocoapods ensure that you have specified <q>use_frameworks!</q>.</p>
+<p><strong><em>Note:</em></strong> This only works if you are using Hyperion Frameworks. If you are using Cocoapods ensure that you have specified &ldquo;use_frameworks!&rdquo;.</p>
 <h4 id='opening-the-ipa' class='heading'>Opening the IPA</h4>
 
 <ol>
 <li>Right click your IPA file and open it with Archive Utility. This should unzip your IPA.</li>
-<li>Inside the unzipped IPA there should be an Application file. Depending on how the IPA was built it might be in a Payload folder. Once found, right click the Application file and select <q>Show Package Contents</q>.</li>
-<li>Inside the package there should be a folder called <q>Frameworks</q>. Ensure that Hyperion and it&rsquo;s plugins are not included in that folder. If Hyperion is in that folder then that means Hyperion is included in that build.</li>
+<li>Inside the unzipped IPA there should be an Application file. Depending on how the IPA was built it might be in a Payload folder. Once found, right click the Application file and select &ldquo;Show Package Contents&rdquo;.</li>
+<li>Inside the package there should be a folder called &ldquo;Frameworks&rdquo;. Ensure that Hyperion and it&rsquo;s plugins are not included in that folder. If Hyperion is in that folder then that means Hyperion is included in that build.</li>
 <li>As an extra step you can ensure that your apps executable is not attempting to load Hyperion. Inside your app package find your app&rsquo;s executable (It should be a unix executable in the root of the package). Run this:</li>
 </ol>
 <pre class="highlight plaintext"><code>otool -L {Unix Executable Path Here}
@@ -280,8 +291,8 @@ By default, Hyperion automatically finds every plugin that is available in the p
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2019-05-10)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="http://willowtreeapps.com" target="_blank" rel="external">WillowTree</a>. All rights reserved. (Last updated: 2021-04-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
