@@ -36,7 +36,7 @@
  * @param pluginExtension Extra data that the plugin might need in order to function.
  * @return A new plugin module instance the represents the HYPPlugin.
  */
-+(nonnull id<HYPPluginModule>)createPluginModule:(_Nonnull id<HYPPluginExtension>)pluginExtension;
++(nullable id<HYPPluginModule>)createPluginModule:(_Nonnull id<HYPPluginExtension>)pluginExtension;
 
 /**
  * This method is used to retrieve the plugin's version.
