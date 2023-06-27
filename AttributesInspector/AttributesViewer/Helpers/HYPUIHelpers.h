@@ -25,5 +25,6 @@
 @interface HYPUIHelpers : NSObject
 
 +(NSString *)rgbTextForColor:(UIColor *)color;
++(NSString *)hexTextForColor:(UIColor *)color;
 
 @end

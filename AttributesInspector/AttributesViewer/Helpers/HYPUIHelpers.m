@@ -39,4 +39,24 @@
     return nil;
 }
 
++(NSString *)hexTextForColor:(UIColor *)color
+{
+    CGFloat red = 0;
+    CGFloat green = 0;
+    CGFloat blue = 0;
+    CGFloat alpha = 0;
+
+    if ([color getRed:&red green:&green blue:&blue alpha:&alpha])
+    {
+        int r = round(red * 255);
+        int g = round(green * 255);
+        int b = round(blue * 255);
+
+        NSString *hexString = [NSString stringWithFormat:@"#%02X%02X%02X", r, g, b];
+        return hexString;
+    }
+
+    return nil;
+}
+
 @end

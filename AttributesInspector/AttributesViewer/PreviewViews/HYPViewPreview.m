@@ -44,6 +44,10 @@
     if (rgbText)
     {
         _colorLabel.text = [NSString stringWithFormat:@"RGBA %@", rgbText];
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelTapped:)];
+        _colorLabel.userInteractionEnabled = YES;
+        [_colorLabel addGestureRecognizer:tapGesture];
     }
     else
     {
@@ -57,5 +61,24 @@
     return self;
 }
 
+-(void)labelTapped:(UITapGestureRecognizer *)gestureRecognizer
+{
+    if ([self.colorLabel.text hasPrefix:@"RGBA"])
+    {
+        NSString *colorText = [HYPUIHelpers hexTextForColor:_previewTarget.backgroundColor];
+        if (colorText)
+        {
+            self.colorLabel.text = [NSString stringWithFormat:@"HEX %@", colorText];
+        }
+    }
+    else
+    {
+        NSString *colorText = [HYPUIHelpers rgbTextForColor:_previewTarget.backgroundColor];
+        if (colorText)
+        {
+            self.colorLabel.text = [NSString stringWithFormat:@"RGBA %@", colorText];
+        }
+    }
+}
 
 @end
