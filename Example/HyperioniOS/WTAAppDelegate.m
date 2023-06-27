@@ -7,7 +7,6 @@
 //
 
 #import "WTAAppDelegate.h"
-#import "HyperionManager.h"
 
 @interface WTAAppDelegate()
 
