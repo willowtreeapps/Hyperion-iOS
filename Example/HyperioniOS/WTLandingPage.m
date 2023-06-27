@@ -7,7 +7,6 @@
 //
 
 #import "WTLandingPage.h"
-#import "HyperionManager.h"
 @import AVFoundation;
 @import AVKit;
 
